@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>proposition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="proposition_files/libs/clipboard/clipboard.min.js"></script>
+<script src="proposition_files/libs/quarto-html/quarto.js"></script>
+<script src="proposition_files/libs/quarto-html/popper.min.js"></script>
+<script src="proposition_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="proposition_files/libs/quarto-html/anchor.min.js"></script>
+<link href="proposition_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="proposition_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="proposition_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="proposition_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="proposition_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="proposition" class="level1">
+<h1>Proposition</h1>
+<p>La multiplication des grands modèles de langage (LLM) et leurs usages de plus en plus nombreux placent les technologies intelligentes <span class="citation" data-cites="lise2020">(<a href="#ref-lise2020" role="doc-biblioref">Lise 2020</a>)</span> au cœur des pratiques scientifiques que ce soit pour gérer la production de textes, pour calculer des modèles économiques, biologiques ou physique ou même pour gagner un prix Nobel<span class="citation" data-cites="mauger2025">(<a href="#ref-mauger2025" role="doc-biblioref">Mauger 2025</a>)</span>. L’IA devient un consommable au même titre que le traitement de texte qui a révolutionné l’éditorialisation scientifique il y a plus de trente ans <span class="citation" data-cites="biezunski1989">(<a href="#ref-biezunski1989" role="doc-biblioref">Biezunski 1989</a>)</span>, ou le CMS il y a plus de vingt ans <span class="citation" data-cites="broudoux2005">(<a href="#ref-broudoux2005" role="doc-biblioref">Broudoux et al. 2005</a>)</span>. Aujourd’hui, les outils numériques forment des environnements spécifiques, des milieux <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque 2009</a>)</span>, dans lesquels nous évoluons en nous “co-développant” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont 2020</a>)</span>. Humains et machines partagent des écosystèmes communs dont ils sont les acteurs humains <span class="citation" data-cites="callon2006">(<a href="#ref-callon2006" role="doc-biblioref">Callon 2006</a>)</span>ou les agents numériques <span class="citation" data-cites="abrami2014 balbo2018 barkol2025">(<a href="#ref-abrami2014" role="doc-biblioref">Abrami et al. 2014</a>; <a href="#ref-balbo2018" role="doc-biblioref">Balbo et al. 2018</a>; <a href="#ref-barkol2025" role="doc-biblioref">Barkol 2025</a>)</span>. Ils possèdent des compétences spécifiques et des manières d’être <span class="citation" data-cites="latour2012">(<a href="#ref-latour2012" role="doc-biblioref">Latour 2012</a>)</span> qui ne sont pas toujours réciproquement profitables. D’autant moins quand on prend en compte ces environnements dans leurs dimensions géopolitiques<span class="citation" data-cites="saleh2024">(<a href="#ref-saleh2024" role="doc-biblioref">Saleh, Szoniecky, and Ghenima 2024</a>)</span>.</p>
+<p>Pourquoi le développement de ces environnements est de plus en plus rapide et global alors qu’ils ne sont pas toujours profitables ?</p>
+<p>Comment évaluer dans les activités scientifiques la symbiose entre acteurs, agents et environnement ?</p>
+<p>Dans cet article, nous souhaitons discuter la proposition du 4ème paradigme présentée par <span class="citation" data-cites="tansley2009">(<a href="#ref-tansley2009" role="doc-biblioref">Tansley, Tolle, and Hey 2009</a>)</span> en montrant pourquoi l’exploration des données massives comme processus de découverte scientifique occupe désormais une place prépondérante dans l’activité scientifique et comment évaluer la durabilité de ces pratiques dans environnement équilibré.</p>
+<p>Dans un premier temps, nous expliquerons pourquoi le travail scientifique tend vers un dépassement de la pensée textuelle au profit d’une pensée diagrammatique qui mobilise des “schémas interprétatifs” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont 2020</a>)</span> impliquant des capacités de calcul de plus en plus grandes.</p>
+<p>Nous montrerons ensuite comment modéliser les actions situées <span class="citation" data-cites="quéré2020">(<a href="#ref-quéré2020" role="doc-biblioref">Quéré 2020</a>)</span> et les protocoles <span class="citation" data-cites="sauret2017">(<a href="#ref-sauret2017" role="doc-biblioref">Sauret 2017</a>)</span> liées à l’écriture d’un article scientifique, afin de mesurer pour les acteurs, les agents et l’environement, l’augmentation et la diminution des pouvoirs de discernement, de raisonnement et d’action <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky 2020</a>)</span>.</p>
+<p>Avec cet article, nous souhaitons orienter la réflexion sur l’intelligibilité du numérique vers une prise en compte de l’adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c’est de poser les bases d’une discussion sur l’éthique du numérique comprise comme la décision d’exercer ou non les pouvoirs que nous octroient les machines.</p>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-abrami2014" class="csl-entry" role="listitem">
+Abrami, Géraldine, Marion Amalric, Frédéric Amblard, Brice Anselme, Arnaud Banos, Elise Beck, Nicolas Becu, et al. 2014. <span>“Modélisation multi-Agents appliquée aux Phénomènes Spatialisés,”</span> December, 258. <a href="https://halshs.archives-ouvertes.fr/cel-01090631/document">https://halshs.archives-ouvertes.fr/cel-01090631/document</a>.
+</div>
+<div id="ref-bachimont2020" class="csl-entry" role="listitem">
+Bachimont, Bruno. 2020. <span>“Manifeste pour l’intelligibilité du numérique.”</span> <em>Revue Intelligibilité du numérique</em>, March. <a href="https://intelligibilite-numerique.numerev.com/manifeste">https://intelligibilite-numerique.numerev.com/manifeste</a>.
+</div>
+<div id="ref-balbo2018" class="csl-entry" role="listitem">
+Balbo, Flavien, Fiona Berreby, Olivier Boissier, Vincent Bonnemains, Gauvain Bourgne, Jean-Gabriel Ganascia, Bruno Mermet, et al. 2018. <span>“Ethique et agents autonomes,”</span> Agence Nationale de la Recherche, no. ANR-13-CORD-0006: 49. <a href="https://ethicaa.greyc.fr/media/files/ethicaa.white.paper.pdf">https://ethicaa.greyc.fr/media/files/ethicaa.white.paper.pdf</a>.
+</div>
+<div id="ref-barkol2025" class="csl-entry" role="listitem">
+Barkol, David. 2025. <span>“L’IA agentique expliquée : Un cadre philosophique pour comprendre les agents d’IA, par David Barkol.”</span> <a href="https://intelligence-artificielle.developpez.com/actu/368113/L-IA-agentique-expliquee-Un-cadre-philosophique-pour-comprendre-les-agents-d-IA-par-David-Barkol/">https://intelligence-artificielle.developpez.com/actu/368113/L-IA-agentique-expliquee-Un-cadre-philosophique-pour-comprendre-les-agents-d-IA-par-David-Barkol/</a>.
+</div>
+<div id="ref-berque2009" class="csl-entry" role="listitem">
+Berque, Augustin. 2009. <em>Ecoumène : Introduction à l’étude Des Milieux Humains</em>. Belin.
+</div>
+<div id="ref-biezunski1989" class="csl-entry" role="listitem">
+Biezunski, Michel. 1989. <span>“Programmer Du Texte.”</span> In. Paris. <a href="https://wicri-demo.istex.fr/Wicri/Sic/H2PTM/fr/index.php/H2PTM_(1989)_Biezunski">https://wicri-demo.istex.fr/Wicri/Sic/H2PTM/fr/index.php/H2PTM_(1989)_Biezunski</a>.
+</div>
+<div id="ref-broudoux2005" class="csl-entry" role="listitem">
+Broudoux, Evelyne, Sylvie Grésillaud, Hervé Le Crosnier, and Véronika Lux-Pogodalla. 2005. <span>“Construction de l’auteur Autour de Ses Modes d’écriture Et de Publication.”</span> In. Paris.
+</div>
+<div id="ref-callon2006" class="csl-entry" role="listitem">
+Callon, Michel. 2006. <span>“Sociologie de l<span>’</span>acteur réseau.”</span> In, edited by Madeleine Akrich and Bruno Latour, 267–76. Sciences sociales. Paris: Presses des Mines. <a href="https://books.openedition.org/pressesmines/1201">https://books.openedition.org/pressesmines/1201</a>.
+</div>
+<div id="ref-latour2012" class="csl-entry" role="listitem">
+Latour, Bruno. 2012. <em>Enquêtes Sur Les Modes d’existence : Une Anthropologie Des Modernes</em>. Paris: Editions La Découverte.
+</div>
+<div id="ref-lise2020" class="csl-entry" role="listitem">
+Lise, VERLAET. 2020. <span>“Le numérique comme artefact technoscientifique : une «r-évolution» paradigmatique ?”</span> <em>Revue Intelligibilité du numérique</em>, March. <a href="https://intelligibilite-numerique.numerev.com/numeros/n-6-2024/2931-le-numerique-comme-artefact-technoscientifique-une-r-evolution-paradigmatique">https://intelligibilite-numerique.numerev.com/numeros/n-6-2024/2931-le-numerique-comme-artefact-technoscientifique-une-r-evolution-paradigmatique</a>.
+</div>
+<div id="ref-mauger2025" class="csl-entry" role="listitem">
+Mauger, Charlotte. 2025. <span>“Pourquoi l<span>’</span>IA a-t-elle gagné un prix Nobel de physique ?”</span> <a href="https://www.mediapart.fr/journal/culture-et-idees/040125/pourquoi-l-ia-t-elle-gagne-un-prix-nobel-de-physique">https://www.mediapart.fr/journal/culture-et-idees/040125/pourquoi-l-ia-t-elle-gagne-un-prix-nobel-de-physique</a>.
+</div>
+<div id="ref-quéré2020" class="csl-entry" role="listitem">
+Quéré, Louis. 2020. <span>“Action Située Et Perception Du Sens.”</span> In, edited by Michel De Fornel, 301–38. Raisons Pratiques. Paris: Éditions de l<span>’</span>École des hautes études en sciences sociales. <a href="http://books.openedition.org/editionsehess/10705">http://books.openedition.org/editionsehess/10705</a>.
+</div>
+<div id="ref-saleh2024" class="csl-entry" role="listitem">
+Saleh, Imad, Samuel Szoniecky, and Malek Ghenima. 2024. <em>Frontières numériques 2023</em>. Paris.
+</div>
+<div id="ref-sauret2017" class="csl-entry" role="listitem">
+Sauret, Nicolas. 2017. <span>“Epistémologie du modèle.”</span> <em>Sens Public</em>, December. <a href="http://sens-public.org/article1287.html">http://sens-public.org/article1287.html</a>.
+</div>
+<div id="ref-szoniecky2020" class="csl-entry" role="listitem">
+Szoniecky, Samuel. 2020. <span>“Conception d<span>’</span>un crible pour mesurer collectivement les impacts écologiques de l<span>’</span>activité.”</span> <em>Les Cahiers du numérique</em> 16 (2-3-4): 175–99. <a href="https://doi.org/10.3166/LCN.2020.007">https://doi.org/10.3166/LCN.2020.007</a>.
+</div>
+<div id="ref-tansley2009" class="csl-entry" role="listitem">
+Tansley, Stewart, Kristin Tolle, and Tony Hey. 2009. <em>The Fourth Paradigm: Data-Intensive Scientific Discovery</em>. Microsoft Pr.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
