@@ -2,7 +2,9 @@
 bibliography: references.bib
 ---
 
-# Proposition
+Proposition pour l'appel à article : [Le 4ème paradigme en question](https://intelligibilite-numerique.numerev.com/appels-a-articles/2921-appel-a-articles-n-7-2025)
+
+# Du texte au diagramme : analyser la symbiose entre acteurs, agents et environnement
 
 La multiplication des grands modèles de langage (LLM) et leurs usages de plus en plus nombreux placent les technologies intelligentes [@lise2020] au cœur des pratiques scientifiques que ce soit pour gérer la production de textes, pour calculer des modèles économiques, biologiques ou physique ou même pour gagner un prix Nobel[@mauger2025]. L'IA devient un consommable au même titre que le traitement de texte qui a révolutionné l'éditorialisation scientifique il y a plus de trente ans [@biezunski1989], ou le CMS il y a plus de vingt ans [@broudoux2005]. Aujourd'hui, les outils numériques forment des environnements spécifiques, des milieux [@berque2009], dans lesquels nous évoluons en nous "co-développant" [@bachimont2020]. Humains et machines partagent des écosystèmes communs dont ils sont les acteurs humains [@callon2006]ou les agents numériques [@abrami2014; @balbo2018; @barkol2025]. Ils possèdent des compétences spécifiques et des manières d'être [@latour2012] qui ne sont pas toujours réciproquement profitables. D'autant moins quand on prend en compte ces environnements dans leurs dimensions géopolitiques[@saleh2024].
 
