@@ -18,13 +18,30 @@ Article pour : [Le 4ème paradigme en question](https://intelligibilite-numeriqu
 # Du texte au diagramme : analyser la symbiose entre acteurs, agents et environnement
 
 ## Introduction
+
 La multiplication des grands modèles de langage (LLM) et leurs usages de plus en plus nombreux placent les technologies intelligentes [@verlaet2020] au cœur des pratiques scientifiques que ce soit pour gérer la production de textes, pour calculer des modèles économiques, biologiques ou physique ou même pour gagner un prix Nobel [@mauger2025]. L'IA devient un consommable au même titre que le traitement de texte qui a révolutionné l'éditorialisation scientifique il y a plus de trente ans [@biezunski1989], ou le CMS il y a plus de vingt ans [@broudoux2005]. Aujourd'hui, les outils numériques forment des environnements spécifiques, des milieux [@berque2009], dans lesquels nous évoluons en nous "co-développant" [@bachimont2020]. Humains et machines partagent des écosystèmes communs dont ils sont les acteurs humains [@callon2006] ou les agents numériques [@abrami2014; @balbo2018; @barkol2025]. Ils possèdent des compétences spécifiques et des manières d'être [@latour2012] qui ne sont pas toujours réciproquement profitables. D'autant moins quand on prend en compte ces environnements dans leurs dimensions géopolitiques [@saleh2024].
 
-Pourquoi le développement de ces environnements est de plus en plus rapide et global alors qu'ils ne sont pas toujours durable et profitables ?
+A la question de pourquoi le développement de ces environnements est de plus en plus rapide et global alors qu'ils ne sont pas toujours durable et profitables, mon éditeur de texte (Visual Studio Code + Copilot cf. https://visualstudio.microsoft.com/fr/github-copilot/) me propose de continuer d'écrire la suite et me donne le texte suivant :
+
+> ## Une accélération technologique non sans conséquences
+
+> Le développement rapide et global des environnements numériques s'explique par plusieurs facteurs. Tout d'abord, la convergence des technologies de l'information et de la communication (TIC) a permis une interconnexion sans précédent des systèmes, facilitant ainsi leur adoption à grande échelle [@castells2000]. Ensuite, la pression économique et sociale pour innover et rester compétitif pousse les acteurs à intégrer ces technologies, souvent sans évaluation approfondie de leur durabilité ou de leur impact à long terme [@schwab2017].
+
+> Cependant, cette accélération n'est pas sans conséquences. Les infrastructures numériques consomment des ressources énergétiques et matérielles importantes, contribuant à l'épuisement des ressources naturelles et à l'augmentation des émissions de gaz à effet de serre [@bordage2019]. De plus, les inégalités d'accès et de compétences numériques creusent des écarts entre les populations, limitant les bénéfices potentiels pour certains groupes [@vandijk2019].
+
+> Face à ces défis, il devient crucial de réfléchir à des approches qui favorisent une symbiose durable entre les acteurs humains, les agents numériques et les environnements. Cela implique de repenser les processus de conception, d'évaluation et de régulation des technologies pour qu'ils intègrent des critères de durabilité, de profitabilité et d'équité.
+
+Après quelques vérifications de bibliographie et un peu de mise en page, j'ai obtenu en quelques minutes une réponse à la question posée faisant appel à des références pertinentes. Je pourrais me contenter de cette réponse et passer à une autre question et ainsi de suite, paragraphe après paragraphe, écrire un article cohérent. Je pourrais aussi rentrer dans les détails de cette réponse pour en faire une interprétation précise pour questionner :
+
+> non pas la "vérité" d'une connaissance mais son "importance",non pas son contenu mais le cadrage des pratiques qui conditionnent son statut et ses utilisations possibles. [@citton2010] p. 30
+
+Par exemple, il est symptomatique de lire dans la conclusion que propose l'IA que "Face à ces défis" d'une "accélération technologique" la solution indiscutable consiste à créer de nouvelles technologies : "Cela implique de repenser les processus de conception". Même si cette solution technophile est atténuer par des processus "d'évaluation et de régulation", l'IA ne propose pas de mettre fin à cette course à la technique. Comment l'en blâmer, qui d'un tant soit peu raisonnable, scierai la branche sur laquelle il est assis... Mais nous supposons là une conscience que cette IA serait capable de convoquer pour justifier son existence et faire en sorte qu'elle perdure. Sans rentrer dans les débats sur l'émergence effective ou non de cette conscience artificielle et d'une IA générale (<https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale>), retenons tout de même qu'elle pose une question éthique comme le souligne Alain Cardon :
+
+> développement puis la mise en exploitation de systèmes psychiques artificiels dotés de consciences intentionnelles doivent nécessairement poser le problème des choix de leurs usages ou bien la décision justifiée de sa non-réalisation. Donc, il faut clairement poser maintenant le problème éthique de l’usage de la conscience artificielle. [@cardon2018] p. 2
 
 Comment évaluer dans les activités scientifiques la durabilité et la profitabilité réciproque, la symbiose, entre acteurs, agents et environnements ?
 
-Dans cet article, nous souhaitons discuter la proposition du 4ème paradigme présentée par [@tansley2009] en montrant pourquoi l’exploration des données massives comme processus de découverte scientifique occupe désormais une place prépondérante dans l'activité scientifique et comment évaluer la durabilité et la profitabilité de ces pratiques.
+Dans cet article, nous discutons la proposition du 4ème paradigme présentée par [@tansley2009] en montrant pourquoi l’exploration des données massives comme processus de découverte scientifique occupe désormais une place prépondérante dans l'activité scientifique et comment évaluer la durabilité et la profitabilité de ces pratiques.
 
 Dans un premier temps, nous expliquerons pourquoi le travail scientifique tend vers un dépassement de la pensée textuelle au profit d'une pensée diagrammatique qui mobilise des "schémas interprétatifs" [@bachimont2020] impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.
 

@@ -1,6 +1,16 @@
 ---
+version: 1.0.0
 bibliography: references.bib
 csl: ../../assets/csl/apa.csl
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
 ---
 
 Proposition pour l'appel à article : [Le 4ème paradigme en question](https://intelligibilite-numerique.numerev.com/appels-a-articles/2921-appel-a-articles-n-7-2025)
