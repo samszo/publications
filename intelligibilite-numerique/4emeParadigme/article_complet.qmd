@@ -35,19 +35,19 @@ Je pourrais me contenter de cette réponse et après quelques vérifications de 
 
 Je pourrais aussi rentrer dans les détails de cette réponse pour en faire une interprétation précise et questionner :
 
-> non pas la "vérité" d'une connaissance mais son "importance", non pas son contenu mais le cadrage des pratiques qui conditionnent son statut et ses utilisations possibles. [@citton2010] p. 30
+> " non pas la "vérité" d'une connaissance mais son "importance", non pas son contenu mais le cadrage des pratiques qui conditionnent son statut et ses utilisations possibles. " [@citton2010] p. 30
 
 Par exemple, il est symptomatique de lire dans la conclusion que propose l'IA que "Face à ces défis" d'une "accélération technologique" la solution indiscutable consiste à créer de nouvelles technologies : "Cela implique de repenser les processus de conception". Même si cette solution technophile est atténuer par des processus "d'évaluation et de régulation", l'IA ne propose pas de mettre fin à cette course à la technique. Comment l'en blâmer, qui d'un tant soit peu raisonnable, scierai la branche sur laquelle il est assis... Mais nous supposons là une conscience que cette IA serait capable de convoquer pour justifier son existence et faire en sorte qu'elle perdure. Sans rentrer dans les débats sur l'émergence effective ou non de cette conscience artificielle ou d'une IA générale (<https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale>), retenons tout de même qu'ils posent une question éthique à trancher comme le souligne Alain Cardon :
 
-> le développement puis la mise en exploitation de systèmes psychiques artificiels dotés de consciences intentionnelles doivent nécessairement poser le problème des choix de leurs usages ou bien la décision justifiée de sa non-réalisation. Donc, il faut clairement poser maintenant le problème éthique de l’usage de la conscience artificielle. [@cardon2018] p. 2
+> " le développement puis la mise en exploitation de systèmes psychiques artificiels dotés de consciences intentionnelles doivent nécessairement poser le problème des choix de leurs usages ou bien la décision justifiée de sa non-réalisation. Donc, il faut clairement poser maintenant le problème éthique de l’usage de la conscience artificielle. " [@cardon2018] p. 2
 
 Je pourrais aussi comme le propose Marcello Vitali Rosatti décrypter les approches computationnelles mises en place par les ingénieurs qui ont conçus l'IA que j'utilise afin de "saisir les présupposés épistémologiques, les implications politiques et culturelles, les visions du monde" [@vitalirosati2025] et ainsi estimer quelles valeurs de l'intelligence sont affirmées et dans quelles hiérarchies sociales elles me placent. C'est sans doute un travail très important a mener face à des pratiques impliquant des formalismes très complexes qu'on fait fonctionner sans questionner leurs sens comme le souligne Miora Mugur-Schächter dans les objectifs de la méthode de conceptualisation relativisée qui :
 
-> élabore un système cohérent et consensuel d'algorithmes de conceptualisation : des algorithmes de génération et développement de sens; à caractère effectif et protégés par construction de toute insertion de faux problèmes ou de paradoxes. [@mugur-schächter2006] p. 314
+> " élabore un système cohérent et consensuel d'algorithmes de conceptualisation : des algorithmes de génération et développement de sens; à caractère effectif et protégés par construction de toute insertion de faux problèmes ou de paradoxes. " [@mugur-schächter2006] p. 314
 
-Toutefois, si l'on adhère aux analyses sur le capitalisme cognitif avancé [@corteel2025], il est discutable de nous lancer dans un décryptage de technologies qui cherchent "à favoriser l’intégration des actions entraînant des gains (information) et l’évacuation des actions entraînant des pertes sur les marchés (entropie), par-delà l’échange interindividuel, au niveau de la coopération entre les cerveaux et les IA". Il nous semble que cette stratégie de décryptage aurait comme effet d'accélérer encore d'avantage l'aliénation de "nos facultés d’invention, de création ou d’innovation" :
+Toutefois, si l'on adhère aux analyses sur le capitalisme cognitif avancé [@corteel2025], il est discutable de nous lancer dans un décryptage de technologies qui cherchent " à favoriser l’intégration des actions entraînant des gains (information) et l’évacuation des actions entraînant des pertes sur les marchés (entropie), par-delà l’échange interindividuel, au niveau de la coopération entre les cerveaux et les IA ". Il nous semble que cette stratégie de décryptage aurait comme effet d'accélérer encore d'avantage l'aliénation de " nos facultés d’invention, de création ou d’innovation " :
 
-> Car ce qui compte, ce n’est pas ce que j’écris, c’est l’activité cognitive que je génère dans l’échange avec l’IA ; c’est la valeur d’échange immatérielle, dont on m’exproprie en analysant mon activité cognitive. [@corteel2025]
+> " Car ce qui compte, ce n’est pas ce que j’écris, c’est l’activité cognitive que je génère dans l’échange avec l’IA ; c’est la valeur d’échange immatérielle, dont on m’exproprie en analysant mon activité cognitive. " [@corteel2025]
 
 Le 4ème paradigme de la science nous mets dans une situation complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l'interprétation critique des productions de ces IAs et le décryptage de leur présupposés épistémoligiques, je choisi de travailler dans cet article une approche consistant à évaluer la durabilité et la profitabilité réciproque, la symbiose, entre mon activité scientifique, les agents IA et nos environnements.
 
@@ -59,72 +59,47 @@ Avec cet article, je souhaite orienter la réflexion sur l'intelligibilité du n
 
 ## Du texte au diagramme
 
-La lecture et l'écriture de textes sont les bases du travail scientifique. Même si je passe toujours une grande partie de mon temps de travail en relation avec des textes, une autre forme graphique prend de plus en plus en place dans mes activités : le diagramme.
+La lecture et l'écriture de textes sont les bases du travail scientifique. Toutefois, on observe une importance grandissante des diagrammes notamment dans les thèses où l'on trouve de plus en plus de diagrammes même dans les disciplines de sciences humaines et sociales. La démocratisation des outils de dessin vectoriel et l'émergence de plateforme facilitant la production de dataviz [@louâpre2017] ont sans doute contribué au développement de ces expressions graphiques et spatiales qui pour David Rabouin sont au cœur du discours scientifique : "Les écritures symboliques qui parsèment désormais n'importe quel écrit scientifique, ne sont d'ailleurs \[...\] qu'un prolongement de ces représentations spatiales." [@rabouin2010] p. 42
 
-Je différencie le texte et le diagramme en opposant d'une part deux formes graphiques, l'une basée sur une succession linéaire de chaînes de caractères issues d'un alphabet et l'autre construite à partir d'un vocabulaire graphique plus global : points, lignes, plans. La différence se faire d'autre part sur l'activité cognitive que ces deux formes génèrent, l'une basée une construction linéaire du sens caractères après caractères, mots après mots... l'autre basée sur une compréhension "qui ne se saisit pas par une succession d’inférences logiques, mais globalement, intuitivement, dans une dimension intellectuelle et corporelle qui passe par le geste." [@jedrzejewski2007] p. 184
+L'importance des diagrammes se manifeste par des recherches spécifiques sur ce mode de représentation ([@jedrzejewski2007; @iafrate2015; @voss2019; @batt2005a; @battistini2004]) qui prennent aujourd'hui la forme d'une "diagrammatologie" pour "rendre visibles les vecteurs de forces tels qu’ils s’opposent et s’entremêlent dans la formation des formes." [@dahan-gaida2023] ou d'une "ingénierie sémiotique des systèmes diagrammatiques" [@ferri2020] qui a pour vocation de modéliser : "les opérations qui excèdent toute formalisation algorithmique".
 
-"C’est encore la topologie qui est au cœur de la pensée de Gilles Deleuze aussi bien dans les méandres psychanalytiques de l’Anti-Œdipe que dans les  strates du pouvoir  de Mille Plateaux. Une philosophie qui puisse rendre compte des transformations multiples des mécanismes de pouvoir et des forces tensives de toutes espèces  se doit de chercher dans  les ob jets qu’elle considère la place qui leur revient. C’est dans cet espace abstrait où s’accumulent les données de tous ordres que germe le sens profond révèlé par l’examen de l’appareil topologique." [@jedrzejewski2007] p. 8
+La présence des diagrammes dans les discours scientifique reflète la volonté des chercheurs de communiquer des informations autrement que par le texte :
 
-"Non pas parce que le diagramme règle l’aléatoire, mais parce qu’il enferme le sens et qu’il nécessite parfois toute la force de l’alchimiste pour réaliser la transmutation du signifiant en signifié." [@jedrzejewski2007] p. 9
+> " Alors que les symboles signifient, les diagrammes se caractérisent par leur générativité, leur capacité à produire autre chose que ce qu’ils représentent. Ils ne sont pas de simples instruments d’expression de la pensée mais participent à la production de la connaissance. Ce sont des inscriptions matérielles dotées d’un sens qui conserve des traces non verbales. " [@dahan-gaida2023]
+
+Le texte et le diagramme se différencient d'une part par leurs formes graphiques, l'une basée sur une succession linéaire de chaînes de caractères issues d'un alphabet et l'autre construite à partir d'un vocabulaire graphique plus global : points, lignes, plans. La différence se faire d'autre part sur l'activité cognitive que ces deux formes génèrent, l'une basée sur une construction linéaire du sens caractères après caractères, mots après mots... l'autre basée sur une compréhension :
+
+> " qui ne se saisit pas par une succession d’inférences logiques, mais globalement, intuitivement, dans une dimension intellectuelle et corporelle qui passe par le geste. " [@jedrzejewski2007] p. 184
+
+Cette communication spécifique est liée au diagramme car il est à la fois : " puissance de modélisation et pouvoir de générativité, il permet de comprendre les dynamiques d’émergence et de transformation des formes et de la pensée " [@dahan-gaida2023].
+
+Dans le contexte du 4ème paradigme, les diagrammes prouvent leurs efficacités pour représenter les masses d'informations complexes générées par les écosystème de connaissances et donnent aux chercheurs les moyens de construire des interprétations sur ces informations. Mais au-delà de ces fonctions heuristiques, les diagrammes offrent un langage pour communiquer avec les agents artificielles autrement que par le texte. Par exemple, nous avons montré comment des diagrammes basés sur des modèles prétopologiques pouvaient servir à gérer les écosystèmes de l'Internet des Objets en offrant un vocabulaire manipulable par les humains et les machines [@szoniecky2020a].
+
+Les enjeux de la diagramatisation des communications entre humains et machines, entre acteurs et agents, sont fondamentaux. Transformer ces échanges du texte vers le diagramme ouvre la voie à une communication qui ne se base plus sur une vectorisation du texte mené par les agents mais sur une modélisation topologique à l'inititative des acteurs qui inclue non seulement les formalismes logiques mais aussi :
+
+*"le contenu non logique d’une connaissance phénoménologique, c’est-à-dire la structure qualitative sur laquelle s’appuie la faculté intuitive non logique"* [@ferri2020]
+
+Ce passage par la topologie donne aux acteurs les moyens d'utiliser les capacités des diagrammes de représenter "des rapports de force qui constituent le pouvoir "([@khatchatourov2017] p. 67) et par la même de se positionner en tant qu'individu responsable, autonome et authentique car :
 
 " Ce qui compte désormais n’est pas la proposition, mais le lieu, le topos qui a sa propre vie organique et qui impose ses modes de raisonnement. Par défaut, la logique immanente d’un topos est intuitionniste : le tiers exclu n’est plus valable, ni le mode de démonstration par l’absurde." [@jedrzejewski2007] p. 183
 
--\> opposition avec Badiou
+Le diagramme implique nécessairement le positionnement d'un acteur dans un champ de force [@chateauraynaud2011] et l'interrogation de ce qui engage cet acteur :
 
-« Pour ce faire, nous tenterons de dégager le diagramme d’ aujourd’hui, dans le sens où ce terme est employé par Gilles Deleuze, à savoir une représentation, une exposition « des rapports de force qui constituent le pouvoir ». » [@khatchatourov2017] (Khatchatourov, 2017, p. 67)
+*Derrière cette question se joue une réflexion éthique sur le rapport à soi dans l’acte d’écrire, qui renvoie à une notion centrale de la philosophie morale contemporaine : l’authenticité, entendue comme cet idéal éthique qui renvoie à la capacité d’un individu à vivre en accord avec lui-même, en restant fidèle à ce qu’il reconnaît comme constitutif de son identité.* [@benbouzid2025]
 
-« En d’autres mots encore, si le diagramme est une représentation qui rend visibles les forces et les rapports de pouvoirs, les conditions de possibilité d’une prise sur les forces qui y circulent résident dans l’archive, et ceci en raison même de leur présupposition réciproque. » (Khatchatourov, 2017, p. 86)
-
-"La représentation des relations chimiques, tout comme la "cartographie" des gènes ou la représentation schématique des "fonctions" biologiques feront ainsi intervenir, toutes sortes de diagrammes, de courbes représentatives, de schéma, de tableaux, etc., dont nous n'avons aucune raison de supposer qu'ils renvoient au fait que les corps considérés dans ces relations se "réduisent" à des déterminations spatiales, mais sans lesquels il nous serait tout simplement impossible de les penser pleinement. Les écritures symboliques qui parsèment désormais n'importe quel écrit scientifique, ne sont d'ailleurs \[...\] qu'un prolongement de ces représentations spatiales." p. 42 [@rabouin2010]
-
-*« Science et art sont presque indiscernables dans le procès de l’observation et de la méditation, pour se séparer dans l’expression, se rapprocher dans l’ordonnance, se diviser définitivement dans les résultats [**\[3\]**](https://shs.cairn.info/l-art-du-diagramme--9782379242915-page-9?lang=fr#re3no3). »* [@dahan-gaida2023]
-
-*Alors que les symboles signifient, les diagrammes se caractérisent par leur générativité, leur capacité à produire autre chose que ce qu’ils représentent. Ils ne sont pas de simples instruments d’expression de la pensée mais participent à la production de la connaissance. Ce sont des inscriptions matérielles dotées d’un sens qui conserve des traces non verbales [**\[6\]**](https://shs.cairn.info/l-art-du-diagramme--9782379242915-page-9?lang=fr#re6no6).* [@dahan-gaida2023]
-
-*C’est ce que la diagrammatologie pourrait nous aider à penser : elle montre que penser formellement, c’est rendre visibles les vecteurs de forces tels qu’ils s’opposent et s’entremêlent dans la formation des formes.* [@dahan-gaida2023]
-
-*À la fois puissance de modélisation et pouvoir de générativité, il permet de comprendre les dynamiques d’émergence et de transformation des formes et de la pensée qui, selon le mot de Deleuze, font de la littérature cette traversée de la pensée par la vie.* [@dahan-gaida2023]
-
-En exploitant les propriétés iconiques du langage et en faisant appel à l’imagination (*phantasia*), les poétiques du diagramme permettent au texte de devenir lui-même, par la force des mots, une image qui place les choses sous les yeux du lecteur, lui donnant à voir la pulsation initiale de l’acte de création, l’impulsion diagrammatique qui anime la pensée en acte.
-
-*La sémiotique diagrammatique est en effet le langage visuel de la pratique entendue comme ensemble des opérations non calculatoires, c’est-à-dire des opérations qui excèdent toute formalisation algorithmique et donc nécessitent pour être modélisées le développement d’une nouvelle discipline que nous appelons l’ingénierie sémiotique des systèmes diagrammatiques (Ferri, 2021a).* [@ferri2020]
-
-*Nous proposons un autre principe de modélisation, complémentaire au principe de formalisation logique, que nous nommons principe de modélisation diagrammatique (Ferri, 2021a, p. 422). Il doit permettre d’exprimer le contenu non logique d’une connaissance phénoménologique, c’est-à-dire la structure qualitative sur laquelle s’appuie la faculté intuitive non logique, qui était déjà reconnue par Turing dans le §11 de sa thèse comme l’une des deux sources du raisonnement mathématique (Turing, 1939, p. 214-215).* [@ferri2020]
-
-Les limites de ce modèle autorisent l’introduction de la notion de dispositif diagrammatique, permettant la modélisation d’opérations non calculables, parce que non saisies par la formalisation algorithmique. Ces opérations non calculables sont l’objet d’une nouvelle discipline, l’ingénierie sémiotique, dont la finalité est de modéliser la géométrie du sens pratique nommée diagrammatique. [@ferri2020]
-
-Une chronotopologie de la matière vivante ne serait-elle pas la bonne candidate pour
-construire une axiomatique de la morphogenèse aux différents ordres de grandeur de la
-réalité biologique, en deçà ou au-delà de la topologie et de la chronologie de l’axiomatique
-physique, dont la bonne candidate semble être actuellement la théorie des topos de
-Grothendieck telle qu’elle est appliquée à l’espace quantique dans le cadre du programme
-de géométrie non commutative initié par Connes, fondé sur les algèbres dites
-d’opérateurs529 ? [@ferri2021]
-
-Notre hypothèse est que l’oracle en question, qui procède par procédures finies
-non mécaniques, est l’esprit enraciné dans la matière techniquement formatée par cette
-machine sémiotique qu’est le diagramme. [@ferri2021] p. 440
-
-En devenant une techno-sémiotique des opérations symboliques où coexistent sur un
-même support graphique sens et calcul. Comment est-ce possible ? En construisant des
-diagrammes. Car les diagrammes sont des machines sémiotiques qui produisent des
-calculs qui ont du sens. Dans cette mesure, ce sont de nouveaux supports de
-connaissances, qui donnent accès à des fonctionnements signifiants et rendent possible
-des manipulations pourvues de sens p. 442
-
-Nous la nommons la
-synthèse analogique. Elle est fondée pas à pas sur les intuitions des opérations non
-calculables de l’expérience que présentifient selon nous les diagrammes. p. 444
-
-La diagrammatique ne peut donc pas être
-réduite à l’intelligibilité d’une pure théorie philosophique et ne relève pourtant pas de
-l’explicabilité d’une théorie scientifique. Elle participe d’une compréhension ingénieuse
-de l’écriture conçue comme une technologie graphique, située au croisement des sciences
-de la nature et des sciences de la culture. p. 445
+Nous concevons cet usage du diagramme comme la modélisation du point de vu d'un acteur sous la forme d'un état transitoire dans une "chronotopologie" [@ferri2021]. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l'oeuvre dans sa construction ? Quelles analyses permettent-ils ?
 
 ## Modéliser l’écriture d’un article scientifique
 
+Nous reprenons ici le modèle de diagramme que nous avons défini dans notre HDR...
+
 ## Analyser les fluctuations de puissances pour évaluer la symbiose
+
+Enrichissement du calcul de la complexité à partir d'une modélisation d'une existence informationelles
+
+Contre exemple d'analyse du pouvoir de décision :
+
+*Les profils obtenus par l’IA prennent en considération la vitesse des sujets, leur précision, leur variabilité et leurs évolutions au cours du test, y compris les modifications du comportement après une erreur.* [@suarez2025]
 
 sur les questions de puissances psychiques et sur le processus de la représentation mentale
 
