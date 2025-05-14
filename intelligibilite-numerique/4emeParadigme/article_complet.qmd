@@ -49,7 +49,13 @@ Toutefois, si l'on adhère aux analyses sur le capitalisme cognitif avancé [@co
 
 > " Car ce qui compte, ce n’est pas ce que j’écris, c’est l’activité cognitive que je génère dans l’échange avec l’IA ; c’est la valeur d’échange immatérielle, dont on m’exproprie en analysant mon activité cognitive. " [@corteel2025]
 
-Le 4ème paradigme de la science nous mets dans une situation complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l'interprétation critique des productions de ces IAs et le décryptage de leur présupposés épistémoligiques, je choisi de travailler dans cet article une approche consistant à évaluer la durabilité et la profitabilité réciproque, la symbiose, entre mon activité scientifique, les agents IA et nos environnements.
+Je pourrais aussi partir de l'idée que "*les intelligences artificielles génératives ne laissent aucune place aux activités d’expression, d’interprétation, de discussion ou de délibération*" [@alombert2023] pour diagnostiquer avec raison les problèmes soulevés par ces technologies intellectuelles :
+
+> le modèle mis en œuvre par un outil comme ChatGPT est un modèle purement consumériste, au sein duquel l’usager est réduit à une position de passeur de commande et de consommateur de contenu, privé de la possibilité de participer à la production symbolique (d’images ou de textes) car incapable de comprendre les règles qui permettent la « génération automatique » des contenus ni de remonter aux sources des opérations algorithmiques. [@alombert2023]
+
+Toutefois, relativisons cette position en replaçant par exemple se propos dans un autre contexte, celui de l'alimentation. La citation ci-dessus garde tout son sens si l'on pense aux consommateurs qui se nourrissent de plats ultra-transformés sans connaître ni la recette, ni le mode de fabrication d'un plat : ils ne participent pas "à la production symbolique" ou plutôt ils participent uniquement à la production symbolique de la marque du produit qu'il consomment. A l'inverse, les personnes qui cuisinent et mangent les légumes de leur jardin, comprennent parfaitement que la « génération automatique » des légumes n'est pas si automatique que ça et demande beaucoup d'efforts même s'ils s'aident d'un motoculteur, de produits chimiques, d'une communauté... Entre ces deux pôles, il y a une multitude de relations possibles entre des aliments et leur consommation que chacun de nous composent suivant des agencements plus ou moins équilibrés : pensons à ces boites de soupes qu'Andy Warhol a transformé en œuvres d'art...
+
+Même si dans l'article que je viens de citer, Anne Alombert émet quelques doute quand à l'usage des analogies pour comprendre et analyser un phénomène, celle que nous venons d'utiliser montre toute la complexité inhérente à la consommation d'un produit qu'il soit une carotte ou un chatbot. Ce sont ces multitudes d'agencements et d'équilibres plus ou moins stables qu'il nous faut étudier pour analyser et comprendre les enjeux du quatrième paradigme de la science. Nous sommes dans un environnement complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l'interprétation critique des productions de ces IAs, le décryptage de leur présupposés épistémologiques et la construction d'automates computationnels au service de l’intelligence collective [@alombert2023], je propose dans cet article une approche dont l'ambition est d'évaluer la durabilité et la profitabilité réciproque, la symbiose, entre mon activité scientifique, les agents IA et nos environnements.
 
 Dans un premier temps, j'expliquerai pourquoi mon travail scientifique tend vers un dépassement de la pensée textuelle au profit d'une pensée diagrammatique qui mobilise des "schémas interprétatifs" [@bachimont2020] impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.
 
@@ -87,11 +93,71 @@ Le diagramme implique nécessairement le positionnement d'un acteur dans un cham
 
 *Derrière cette question se joue une réflexion éthique sur le rapport à soi dans l’acte d’écrire, qui renvoie à une notion centrale de la philosophie morale contemporaine : l’authenticité, entendue comme cet idéal éthique qui renvoie à la capacité d’un individu à vivre en accord avec lui-même, en restant fidèle à ce qu’il reconnaît comme constitutif de son identité.* [@benbouzid2025]
 
-Nous concevons cet usage du diagramme comme la modélisation du point de vu d'un acteur sous la forme d'un état transitoire dans une "chronotopologie" [@ferri2021]. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l'oeuvre dans sa construction ? Quelles analyses permettent-ils ?
+Pour mener cette recherche de l'authenticité, le diagramme, en tant qu'expression d'un topos, est sans doute une forme d'écriture plus féconde que le texte pour gérer les communications entre acteurs et agents. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l'oeuvre dans sa construction ? Quelles analyses permettent-ils ?
 
 ## Modéliser l’écriture d’un article scientifique
 
-Nous reprenons ici le modèle de diagramme que nous avons défini dans notre HDR...
+Pour illustrer notre utilisation des diagrammes dans les communications entre acteurs et agents dans l'environnement numérique du quatrième paradigme de la science, nous prendrons comme exemple l'écriture d'un article scientifique dont nous modélisons l'écosystème de connaissances en suivant les principes que nous avons définis dans notre HDR.
+
+en concevant cette pratique comme la modélisation d'une multitude d'états transitoires dans une "chronotopologie" [@ferri2021]. En accord avec les principes que nous avons défini dans notre HDR, nous concevons ces étatsutilisons pour modéliser des existences informationelles [@morin1981, p. 340] :
+
+-   **principe dialogique** : « L’association complexe (complémentaire/concurrente/antagoniste) d’instances, nécessaires ensemble à l’existence, au fonctionnement et au développement d’un phénomène organisé. » [@morin1992, p. 98]
+
+-   **principe récursif** : « Un processus où les effets ou produits sont en même temps causateurs et producteurs dans le processus lui-même, et où les états finaux sont nécessaires à la génération des états initiaux. » [@morin1992, p. 101]
+
+-   **principe hologrammatique** : « Le tout est d’une certaine façon inclus (engrammé) dans la partie qui est incluse dans le tout. L’organisation complexe du tout (holos) nécessite l’inscription (engramme) du tout (hologramme) en chacune de ses parties pourtant singulières ; ainsi, la complexité organisationnelle du tout nécessite la complexité organisationnelle des parties, laquelle nécessite récursivement la complexité organisationnelle du tout. » [@morin1992, p. 102]
+
+À ces trois principes de complexité, nous ajoutons un quatrième, le **principe du cycle de la sémiose** en considérant que les connaissances se produisent suivant un cycle continu d'expériences dans le monde physique et dans le monde de la pensée @fig-cyclesemiose. Entre les « physicalités » et les « intériorités » [@descola2005] , les « cycles de sémioses » [@µ2015] canalisent nos perceptions par « anasémiose » pour discerner des informations que nous communiquons et par « catasémiose » en donnant forme à l'agir : parler, lire, écrire, gesticuler, ne rien faire...
+
+![Cycle de la sémiose [@µ2015, p. 10]](media/CycleSemiose.png){#fig-cyclesemiose fig-align="center" width="482"}
+
+On nous basant sur les travaux de [@hofstadter2013] pour qui l'analogie est le « moteur » qui relie le discernement et l'action et ceux de Deleuze pour qui le "tissu de l'âme" par lequel Leibniz conçoit la perception, est composé de "plis", nous définissons comme cinquième principe, le **principe des plis analogiques** qui à force de répétition construisent une manière d'être, un mode d'existence [@latour2012] :
+
+> « L'opération de la perception constitue les plis dans l'âme, les plis dont la monade est tapissée du dedans ; mais ceux-ci ressemblent à une matière, qui doit dès lors s'organiser en replis extérieurs. » [@deleuze1988, p. 131]
+
+À la manière de deux miroirs qui plient la lumière en se reflétant l'un dans l'autre à l'infini, discernement et action se réfléchissent en pliant les flux d'information. Chaque pli décompose l'information en signes dont les signifiés plongent vers l'intériorité en stimulant l'intuition et dont les signifiants émergent vers des physicalités en stimulant l'expression.
+
+Entre discerner et agir, intuition et expression, c'est dans ce « milieu » qu'Augustin Berque décrit une « pulsation existentielle » mue par un sixième principe : **principe de la raison trajective** :
+
+> « la raison trajective, elle est en effet dans la pulsation existentielle qui, par la technique, déploie notre corps en monde sur la terre, et qui simultanément, par le symbole, reploie le monde en notre chair » [@berque2009, p. 402]
+
+Cette raison pilote la réflexion en modifiant l'inclinaison du pli vers le discernement de signifiés ou vers l'expression de signifiants. Ce sont des processus que nous contrôlons consciemment en partie et d'autres plus imprévisibles et incontrôlables qui se produisent en fonction d'une multitude de pliages et de leurs capacités à se faire, se défaire, se bloquer suivant un septième principe, le **principe des degrés de flexibilité** [@clément2021].
+
+Notre hypothèse principale est qu'il est possible de modéliser des connaissances en formalisant les pliages et leurs dynamismes dans trois directions correspondant à **trois pouvoirs fondamentaux** :
+
+-   **discerner** : pliage des physicalités extérieures vers l'intériorité,
+
+-   **raisonner** : pliage en boucles récursives dans l'intériorité
+
+-   **agir** : pliage de l'intériorité vers les physicalités extérieures.
+
+Le cycle de la sémiose comme quatrième principe fondamental de la modélisation des connaissances. Revenons, plus en détail sur ce principe pour expliquer la production du sens proposée par [@µ2015]. L’intérêt de cette proposition est de décrire la production du sens comme un cycle continu de relations dans un contexte produisant trois processus : anasémiose, élaboration sémiotique et catasémiose.
+
+L’anasémiose est la capacité de discerner dans l’univers des possibles les informations d’où le sens pourra émerger ; elle exprime un pouvoir de discernement que Deleuze appelle « âme » en référence au crible constitué par le « tissu de l’âme » chez Leibniz [@deleuze2003] et que les auteurs du diagramme appellent « interface ».
+
+L’élaboration sémiotique est la capacité de raisonner avec les informations pour choisir des significations. Même si ce choix ne se résume pas à un processus raisonnable, nous parlons ici de pouvoir de raisonner pour insister sur la dimension constructible du sens qui est très utile pour une pédagogie de l'argumentation et de l'esprit critique. Nous gardons aussi ce terme de "raisonner" parce que son homonyme "résonner" renvoie au « trou noir » de la pensée due à l’imprédictibilité de ce processus qui se déroule dans un espace chaotique constitué d’une infinité de chaînes signifiantes au déploiement illimité. Pourquoi face à une blague faite par un conférencier, une partie de l’assemblée choisit d’exprimer un rire, une autre un sourire alors que d’autres n’y comprennent rien ?
+
+La catasémiose transforme les informations signifiantes en actions dans le monde des possibles (rire, sourire, rien…) à travers une interface (cordes vocales, visage, texte…), ce processus de catasémiose est l’expression du pouvoir d’agir.
+
+Le cycle de la sémiose met donc en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonner (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle se trouve l’interface qui transforme la matière en pensée (discernement) et la pensée en matière (agir), elle est le « crible » par lequel passent les « pulsations existentielles » [@berque2009, p. 402] qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs » superflues et en se chargeant des « valeurs » importantes. Ce crible, Descola propose de le structurer à partir de « matrices ontologiques » [@descola2005, p. 323] qui définiront les rapports entre physicalités et intériorités. [@hofstadter2013, p. 233] nous expliquent que nous élaborons ce crible par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser cette interface, ce crible, ces rapports, ce réseau d’analogies qui va guider nos affects pour augmenter ou diminuer ce que nous discernons parce que nous agissons et vice-versa.
+
+À chaque pulsation existentielle, à chaque événement de nos vies, à chaque pli, ces pouvoirs augmentent ou diminuent, accentuant ainsi des rapports privilégiés, d'autres, plus secrets, et même certains qui nous restent inconnus. Ainsi, la pulsation varie continuellement, elle est parfois instantanée par exemple quand on rit, elle peut aussi prendre beaucoup de temps quand un souvenir longtemps oublié émerge petit à petit ; elle devient un métier quand à force de pratiquer un geste particulier, celui-ci s'automatise. Ces pulsations se transforment parfois en bêtises ou en inconscience quand le pouvoir d'agir prend le pas sur les pouvoirs de discerner et de raisonner en occultant leurs pliages potentiels. Suivant leurs fréquences, les pulsations existentielles forment des ondes dont la vitesse de propagation est fonction de leur longueur (distance séparant deux maxima consécutifs de l'amplitude entre physicalités et intériorité) et du milieu dans lequel elles se déploient. La catégorisation et l'analyse de ces ondes renvoient globalement à une réflexion sur la modélisation de l'esprit qui dépasse le cadre de ce propos, mais que nous illustration par le diagramme suivant @fig-dynamiquesPulsationsExistentielles :
+
+![Dynamiques des pulsations existentielles](media/pulsationsExistentielles.png){#fig-dynamiquesPulsationsExistentielles fig-align="center" width="463"}
+
+Il découle de ces principes que le processus de modélisation des connaissances conçues en tant qu'existences informationnelles est assimilable à un calcul des puissances et de leurs évolutions :
+
+> « Si bien qu’à la question : " Cet être existe-t-il ? " il est prudent d’admettre qu’on ne peut guère répondre selon le couple du Oui ou Non, mais bien plutôt selon celui du Plus ou Moins. » [@souriau2009]
+
+Ces opérations d'augmentation et de diminution s'appliquent aux puissances de discernement, de raisonnement et d'action d'une existence informationnelle et par la même définissent ce qu'elle peut, c'est-à-dire son éthique :
+
+> « Le point de vue d’une éthique c’est : de quoi es-tu capable, qu’est-ce que tu peux ? »[^1]
+
+[^1]: Cours de Deleuze du 09/12/1980 http://www2.univ-paris8.fr/deleuze/article.php3?id_article=137
+
+Notre huitième et dernier principe que nous appelons **principe ontoéthique** reprend l'idée que défend Deleuze concernant la corrélation entre ontologie et éthique c'est à dire la corrélation entre dimensions de l'existence et genres de connaissances chez Spinoza. Ainsi la première dimension de l'existence, celle des parties extensives est corrélée au premier genre de connaissance celui des idées inadéquates, la deuxième dimension celle des rapports est corrélée aux notions communes qui forme le deuxième genre de connaissance et la troisième dimension existentielle, celle des essences, est corrélée au troisième genre de connaissances celui de l'intuition. Nous utilisons, une quatrième corrélation qui n'est pas présentée par Deleuze, mais qui reprend les propositions de [@callon2006] pour définir la dimension des actants corrélés aux connaissances sociales.
+
+À partir des principes que nous venons du définir nous élaborons un métamodèle conçu comme « un générateur de modèles qualitatifs » [@thom1975, p. 372] que nous utilisons pour nos analyses de l'information et la communication.
 
 ## Analyser les fluctuations de puissances pour évaluer la symbiose
 
@@ -110,3 +176,5 @@ sur les questions de puissances psychiques et sur le processus de la représenta
 cf. [@plagnol2025]
 
 ## Vers une éthique symbiotique
+
+développer sur ces bases « des infrastructures \[…\] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » [@stiegler2020] cité par [@alombert2023] : ça s'appelle une université
