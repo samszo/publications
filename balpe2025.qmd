@@ -1,0 +1,26 @@
+---
+version: 0.0.1
+csl: ../../assets/csl/apa.csl
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
+---
+
+
+# Jean-Pierre Balpe, (méta-)auteur : l’écriture infinie
+
+## Résumé critique
+
+Le colloque « Jean-Pierre Balpe, (méta-)auteur : l’écriture infinie » a réuni chercheurs, écrivains et artistes autour de l’œuvre pionnière de Jean-Pierre Balpe, figure majeure de la littérature générative et des écritures numériques. Les interventions ont mis en lumière la richesse de ses expérimentations, questionnant la notion d’auteur à l’ère des machines et des algorithmes. Les débats ont souligné l’importance de Balpe dans la redéfinition des frontières entre humain et machine, texte et programme, tout en interrogeant les enjeux esthétiques, éthiques et philosophiques de l’écriture automatisée. Si certains participants ont salué la créativité et la radicalité de ses démarches, d’autres ont pointé les limites de la générativité, notamment en termes de réception et de sens. Ce colloque a ainsi permis de mesurer l’actualité des questions soulevées par Balpe, tout en ouvrant de nouvelles perspectives pour la recherche en littérature numérique.
+
+## Perspectives scientifiques et créatives
+
+Le travail de Jean-Pierre Balpe ouvre de nombreuses perspectives, tant sur le plan scientifique que créatif. Sur le plan scientifique, ses recherches invitent à approfondir l’étude des algorithmes génératifs, de l’intelligence artificielle appliquée à la littérature, et des interactions homme-machine dans la production textuelle. Elles interrogent également les modèles de l’auteur, la notion de créativité computationnelle, et les méthodologies d’analyse des œuvres numériques.
+
+Sur le plan créatif, l’héritage de Balpe encourage la conception de nouveaux dispositifs d’écriture automatisée, l’exploration de formes narratives inédites, et la collaboration entre artistes, informaticiens et chercheurs. Les outils et concepts qu’il a développés inspirent la création de textes interactifs, de poésie générative, et d’œuvres hybrides mêlant code, langage et multimédia. Enfin, son approche invite à repenser la place du lecteur, désormais acteur potentiel de la co-création littéraire.
