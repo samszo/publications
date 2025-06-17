@@ -97,6 +97,16 @@ Le diagramme implique nécessairement le positionnement d'un acteur dans un cham
 
 Pour mener cette recherche de l'authenticité, le diagramme, en tant qu'expression d'un topos, est sans doute une forme d'écriture plus féconde que le texte pour gérer la complexité sémiotique des communications entre acteurs et agents. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l'oeuvre dans sa construction ? Quelles analyses permettent-ils ?
 
+## Modéliser les pulsations existentielles
+
+De la cartographie des affects à la force de l'habitude en passant par l'analogie...
+
+*une « théorie pragmatiste » aux termes de laquelle l’habitude est un facteur qui permet d’identifier des « mécanismes sociaux » de niveaux de complexité ou d’agrégation faible et « dans lesquels – dans certaines circonstances – une cause X tend à produire un effet Y dans la sphère des relations sociales humaines »* [@ogien2014]
+
+*« l’explication des faits sociaux comme les structures des réseaux sociaux, les structures de la ségrégation résidentielle, les croyances communes, les goûts culturels, les manières courantes d’agir, exige non pas de les rapporter à d’autres faits sociaux mais de décrire en détail les mécanismes par lesquels ils sont produits ».* [@ogien2014]
+
+décrire en détail et individuellement l'intensité de chaque pulsation, de chaque analogie, les mettre en commun pour les comparer et se situer = validation d'un échantillon pour des statistiques psychologiques... mais avant tout = prise de conscience de son positionnement, de son authenticité = connais-toi toi même
+
 ## Modéliser l’écriture d’un article scientifique
 
 Pour illustrer notre utilisation des diagrammes dans les communications entre acteurs et agents dans l'environnement numérique du quatrième paradigme de la science, nous prendrons comme exemple l'écriture d'un article scientifique dont nous modéliserons l'écosystème de connaissances en concevant cette pratique comme la définition d'une multitude d'états transitoires dans ce qu'on pourrait nommer une "chronotopologie" [@ferri2021]. En accord avec les principes que nous avons défini dans notre HDR et du méta-modèle ontoéthique qui en résulte, nous représentons ces états topologiques sous la forme d'une existence informationnelle dans un espace-temps donné pour construire une ontologie en les modélisant et définir une éthique en analysant leurs pouvoirs. Nous ne détaillerons pas ici les principes théoriques et cartographiques du méta-modèle qui compose les dimensions de l’existence (physique, actant, concept, rapport) corrélées aux métriques (euclidienne, topographique, topologique, temporelle) permettant de les mesurer, aux concepts prétopologiques (extérieur, bord, intérieur, flux) permettant de les modéliser et aux analogies (branches, graines, racines, sève) permettant de les représenter :
