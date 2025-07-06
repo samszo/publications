@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,20 +45,24 @@ div.csl-indent {
 
 
 <script src="article_complet_files/libs/clipboard/clipboard.min.js"></script>
-<script src="article_complet_files/libs/quarto-html/quarto.js"></script>
+<script src="article_complet_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="article_complet_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="article_complet_files/libs/quarto-html/popper.min.js"></script>
 <script src="article_complet_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="article_complet_files/libs/quarto-html/anchor.min.js"></script>
 <link href="article_complet_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="article_complet_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="article_complet_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="article_complet_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="article_complet_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="article_complet_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="article_complet_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="article_complet_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="article_complet_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="article_complet_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
 
-<body class="fullcontent">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
@@ -100,7 +104,7 @@ div.csl-indent {
 <h1>Du texte au diagramme : analyser la symbiose entre acteurs, agents et environnement</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>La multiplication des grands modèles de langage (LLM) et leurs usages de plus en plus nombreux placent les technologies intelligentes <span class="citation" data-cites="verlaet2020">(<a href="#ref-verlaet2020" role="doc-biblioref">Verlaet, 2020</a>)</span> au cœur des pratiques scientifiques que ce soit pour gérer la production de textes, pour calculer des modèles économiques, biologiques ou physique ou même pour gagner un prix Nobel <span class="citation" data-cites="mauger2025">(<a href="#ref-mauger2025" role="doc-biblioref">Mauger, 2025</a>)</span>. Ces “IAs” accentuent encore l’importance du 4ème paradigme de la science présentée par <span class="citation" data-cites="tansley2009">(<a href="#ref-tansley2009" role="doc-biblioref">Tansley et al., 2009</a>)</span> en offrant des capacités nouvelles pour l’exploration des données massives comme processus de découverte scientifique qui occupe désormais une place prépondérante dans l’activité scientifique. L’IA devient un consommable incontournable au même titre que le traitement de texte qui a révolutionné l’éditorialisation scientifique il y a plus de trente ans <span class="citation" data-cites="biezunski1989">(<a href="#ref-biezunski1989" role="doc-biblioref">Biezunski, 1989</a>)</span>, ou le CMS (Content MAnagement System) il y a plus de vingt ans <span class="citation" data-cites="broudoux2005">(<a href="#ref-broudoux2005" role="doc-biblioref">Broudoux et al., 2005</a>)</span>. Aujourd’hui, ces outils numériques forment des environnements spécifiques, des milieux <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span>, dans lesquels nous évoluons en nous “co-développant” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont, 2020</a>)</span>. Humains et machines partagent des écosystèmes communs dont ils sont les acteurs humains <span class="citation" data-cites="callon2006">(<a href="#ref-callon2006" role="doc-biblioref">Callon, 2006</a>)</span> ou les agents numériques <span class="citation" data-cites="abrami2014 balbo2018 barkol2025">(<a href="#ref-abrami2014" role="doc-biblioref">Abrami et al., 2014</a>; <a href="#ref-balbo2018" role="doc-biblioref">Balbo et al., 2018</a>; <a href="#ref-barkol2025" role="doc-biblioref">Barkol, 2025</a>)</span>. Ils possèdent des compétences spécifiques et des manières d’être <span class="citation" data-cites="latour2012">(<a href="#ref-latour2012" role="doc-biblioref">Latour, 2012</a>)</span> qui ne sont pas toujours réciproquement profitables. D’autant moins quand on prend en compte ces environnements dans leurs dimensions géopolitiques <span class="citation" data-cites="saleh2024">(<a href="#ref-saleh2024" role="doc-biblioref">Saleh et al., 2024</a>)</span>.</p>
+<p>La multiplication des grands modèles de langage (LLM) et leurs usages de plus en plus nombreux placent les technologies intelligentes <span class="citation" data-cites="verlaet2020">(<a href="#ref-verlaet2020" role="doc-biblioref">Verlaet, 2020</a>)</span> au cœur des pratiques scientifiques que ce soit pour gérer la production de textes, pour calculer des modèles économiques, biologiques ou physique ou même pour gagner un prix Nobel <span class="citation" data-cites="mauger2025">(<a href="#ref-mauger2025" role="doc-biblioref">Mauger, 2025</a>)</span>. Ces “IAs” accentuent encore l’importance du 4ème paradigme de la science présentée par <span class="citation" data-cites="tansley2009">(<a href="#ref-tansley2009" role="doc-biblioref">Tansley et al., 2009</a>)</span> en offrant des capacités nouvelles à l’exploration des données massives qui occupe désormais une place prépondérante dans le processus de découverte scientifique. L’IA devient un consommable incontournable au même titre que le traitement de texte qui a révolutionné l’éditorialisation scientifique il y a plus de trente ans <span class="citation" data-cites="biezunski1989">(<a href="#ref-biezunski1989" role="doc-biblioref">Biezunski, 1989</a>)</span>, ou le CMS (Content MAnagement System) il y a plus de vingt ans <span class="citation" data-cites="broudoux2005">(<a href="#ref-broudoux2005" role="doc-biblioref">Broudoux et al., 2005</a>)</span>. Aujourd’hui, ces outils numériques forment des environnements spécifiques, des milieux <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span>, dans lesquels nous évoluons en nous “co-développant” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont, 2020</a>)</span>. Humains et machines partagent des écosystèmes communs dont ils sont les acteurs humains <span class="citation" data-cites="callon2006">(<a href="#ref-callon2006" role="doc-biblioref">Callon, 2006</a>)</span> ou les agents numériques <span class="citation" data-cites="abrami2014 balbo2018 barkol2025">(<a href="#ref-abrami2014" role="doc-biblioref">Abrami et al., 2014</a>; <a href="#ref-balbo2018" role="doc-biblioref">Balbo et al., 2018</a>; <a href="#ref-barkol2025" role="doc-biblioref">Barkol, 2025</a>)</span>. Ils possèdent des compétences spécifiques et des manières d’être <span class="citation" data-cites="latour2012">(<a href="#ref-latour2012" role="doc-biblioref">Latour, 2012</a>)</span> qui ne sont pas toujours réciproquement profitables. D’autant moins quand on prend en compte ces environnements dans leurs dimensions géopolitiques <span class="citation" data-cites="saleh2024">(<a href="#ref-saleh2024" role="doc-biblioref">Saleh et al., 2024</a>)</span>.</p>
 <p>A la question de pourquoi le développement de ces environnements est de plus en plus rapide et global alors qu’ils ne sont pas toujours durable et profitables, mon éditeur de texte (Visual Studio Code + Copilot cf.&nbsp;https://visualstudio.microsoft.com/fr/github-copilot/) me propose de continuer d’écrire la suite de mon article et me propose le texte suivant :</p>
 <blockquote class="blockquote">
 <h2 id="une-accélération-technologique-non-sans-conséquences" class="anchored">Une accélération technologique non sans conséquences</h2>
@@ -123,7 +127,7 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>” le développement puis la mise en exploitation de systèmes psychiques artificiels dotés de consciences intentionnelles doivent nécessairement poser le problème des choix de leurs usages ou bien la décision justifiée de sa non-réalisation. Donc, il faut clairement poser maintenant le problème éthique de l’usage de la conscience artificielle. ” <span class="citation" data-cites="cardon2018">(<a href="#ref-cardon2018" role="doc-biblioref">Cardon, 2018</a>)</span> p.&nbsp;2</p>
 </blockquote>
-<p>Je pourrais aussi comme le propose Marcello Vitali Rosatti décrypter les approches computationnelles mises en place par les ingénieurs qui ont conçus l’IA que j’utilise afin de “saisir les présupposés épistémologiques, les implications politiques et culturelles, les visions du monde” <span class="citation" data-cites="vitalirosati2025">(<a href="#ref-vitalirosati2025" role="doc-biblioref">Vitali Rosati, 2025</a>)</span> et ainsi estimer quelles valeurs de l’intelligence sont affirmées et dans quelles hiérarchies sociales elles me placent. C’est sans doute un travail très important a mener face à des pratiques impliquant des formalismes très complexes qu’on fait fonctionner sans questionner leurs sens comme le souligne Miora Mugur-Schächter dans les objectifs de la méthode de conceptualisation relativisée qui :</p>
+<p>Je pourrais aussi comme le propose Marcello Vitali Rosatti décrypter les approches computationnelles mises en place par les ingénieurs qui ont conçus l’IA que j’utilise, afin de “saisir les présupposés épistémologiques, les implications politiques et culturelles, les visions du monde” <span class="citation" data-cites="vitalirosati2025">(<a href="#ref-vitalirosati2025" role="doc-biblioref">Vitali Rosati, 2025</a>)</span> et ainsi estimer quelles valeurs de l’intelligence sont affirmées et dans quelles hiérarchies sociales elles me placent. C’est sans doute un travail très important a mener face à des pratiques impliquant des formalismes très complexes qu’on fait fonctionner sans questionner leurs sens comme le souligne Miora Mugur-Schächter dans les objectifs de la méthode de conceptualisation relativisée qui :</p>
 <blockquote class="blockquote">
 <p>” élabore un système cohérent et consensuel d’algorithmes de conceptualisation : des algorithmes de génération et développement de sens; à caractère effectif et protégés par construction de toute insertion de faux problèmes ou de paradoxes. ” <span class="citation" data-cites="mugur-schächter2006">(<a href="#ref-mugur-schächter2006" role="doc-biblioref">Mugur-Schächter, 2006</a>)</span> p.&nbsp;314</p>
 </blockquote>
@@ -131,84 +135,169 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>” Car ce qui compte, ce n’est pas ce que j’écris, c’est l’activité cognitive que je génère dans l’échange avec l’IA ; c’est la valeur d’échange immatérielle, dont on m’exproprie en analysant mon activité cognitive. ” <span class="citation" data-cites="corteel2025">(<a href="#ref-corteel2025" role="doc-biblioref">Corteel, 2025</a>)</span></p>
 </blockquote>
-<p>Le 4ème paradigme de la science nous mets dans une situation complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l’interprétation critique des productions de ces IAs et le décryptage de leur présupposés épistémoligiques, je choisi de travailler dans cet article une approche consistant à évaluer la durabilité et la profitabilité réciproque, la symbiose, entre mon activité scientifique, les agents IA et nos environnements.</p>
-<p>Dans un premier temps, j’expliquerai pourquoi mon travail scientifique tend vers un dépassement de la pensée textuelle au profit d’une pensée diagrammatique qui mobilise des “schémas interprétatifs” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont, 2020</a>)</span> impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.</p>
-<p>Je montrerai ensuite comment modéliser des actions situées <span class="citation" data-cites="quéré2020">(<a href="#ref-quéré2020" role="doc-biblioref">Quéré, 2020</a>)</span> et des protocoles <span class="citation" data-cites="sauret2017">(<a href="#ref-sauret2017" role="doc-biblioref">Sauret, 2017</a>)</span> liés à l’écriture d’un article scientifique, afin de mesurer pour les acteurs, les agents et l’environnement, l’augmentation et la diminution de leurs pouvoirs de discernement, de raisonnement et d’action <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky, 2020</a>)</span>. J’analyserai ensuite ces mesures pour évaluer des niveaux de symbiose en comparant la réciprocité et la durabilité des fluctuations de puissances.</p>
-<p>Avec cet article, je souhaite orienter la réflexion sur l’intelligibilité du numérique vers une prise en compte de l’adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c’est de poser les bases d’une discussion sur l’éthique du numérique comprise comme la décision d’exercer ou non les pouvoirs que nous octroient les machines.</p>
+<p>Je pourrais aussi partir de l’idée que ” les intelligences artificielles génératives ne laissent aucune place aux activités d’expression, d’interprétation, de discussion ou de délibération ” <span class="citation" data-cites="alombert2023">(<a href="#ref-alombert2023" role="doc-biblioref">Alombert, 2023</a>)</span> pour diagnostiquer avec raison les problèmes soulevés par ces technologies intellectuelles :</p>
+<blockquote class="blockquote">
+<p>le modèle mis en œuvre par un outil comme ChatGPT est un modèle purement consumériste, au sein duquel l’usager est réduit à une position de passeur de commande et de consommateur de contenu, privé de la possibilité de participer à la production symbolique (d’images ou de textes) car incapable de comprendre les règles qui permettent la «&nbsp;génération automatique&nbsp;» des contenus ni de remonter aux sources des opérations algorithmiques. <span class="citation" data-cites="alombert2023">(<a href="#ref-alombert2023" role="doc-biblioref">Alombert, 2023</a>)</span></p>
+</blockquote>
+<p>Toutefois, relativisons cette position en replaçant par exemple se propos dans un autre contexte, celui de l’alimentation. La citation ci-dessus garde tout son sens si l’on pense aux consommateurs qui se nourrissent de plats ultra-transformés sans connaître ni la recette, ni le mode de fabrication d’un plat : ils ne participent pas “à la production symbolique” ou plutôt ils participent uniquement à la production symbolique de la marque du produit qu’il consomment. A l’opposé, les personnes qui cuisinent et mangent les légumes de leur jardin, comprennent parfaitement que la «&nbsp;génération automatique&nbsp;» des légumes n’est pas si automatique que ça et demande beaucoup d’efforts même s’ils s’aident d’un motoculteur, de produits chimiques, d’une communauté… Entre ces consommateurs et ces producteurs, il y a une multitude de relations possibles entre des aliments et leur consommation que chacun de nous composent suivant des agencements plus ou moins équilibrés : pensons à ces boites de soupes qu’Andy Warhol a transformé en œuvres d’art…</p>
+<p>Même si dans l’article que je viens de citer, Anne Alombert émet quelques doute quand à l’usage des analogies pour comprendre et analyser un phénomène, celle que nous venons d’utiliser montre toute la complexité inhérente à la consommation d’un produit qu’il soit une carotte ou un chatbot. Ce sont ces multitudes d’agencements et d’équilibres plus ou moins stables qu’il nous faut étudier pour analyser et comprendre les enjeux du quatrième paradigme de la science. Nous sommes dans un environnement complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l’interprétation critique des productions de ces IAs, le décryptage de leur présupposés épistémologiques et la construction d’automates computationnels au service de l’intelligence collective <span class="citation" data-cites="alombert2023">(<a href="#ref-alombert2023" role="doc-biblioref">Alombert, 2023</a>)</span>, je propose dans cet article une méthode de modélisation info-communicationnelle ayant pour ambition d’évaluer la durabilité et la profitabilité réciproque, la symbiose, entre mon activité scientifique, les agents IA et nos environnements.</p>
+<p>Nous nous plaçons dans les perspectives de recherche qu’emprunte <span class="citation" data-cites="chateauraynaud">(<a href="#ref-chateauraynaud" role="doc-biblioref">Chateauraynaud &amp; Lamy, n.d.</a>)</span> pour analyser les pouvoirs des algorithmes dans un écosystème sociotechnique. Mais au lieu de privilégier l’étude de l’environnement matériel dans lequel ils existent, nous nous intéresserons aussi aux relations qu’entretiennent ces matérialités avec nos “intériorités” <span class="citation" data-cites="descola2005">(<a href="#ref-descola2005" role="doc-biblioref">Descola, 2005</a>)</span>. Notre objectif est de définir un protocole de modélisation et d’analyse de ses relations et plus particulièrement des pouvoirs qui sont en jeux et de leur fluctuations. Grâce à ce protocole, nous proposons une méthode pour analyser comment un individu humain ou artificiel évolue dans un son environnement et quelles répercutions cela engendre. Nous concevons ces modélisations et ces analyses comme un travail d’introspection qui cherche à révéler “l’authenticité” <span class="citation" data-cites="benbouzid2025">(<a href="#ref-benbouzid2025" role="doc-biblioref">Benbouzid, 2025</a>)</span> de nos pratiques, renforcer notre esprit critique et nous conduire à des choix éthiques.</p>
+<p>Dans un premier temps, j’expliquerai pourquoi le travail scientifique tend vers un dépassement de la pensée textuelle au profit d’une pensée diagrammatique qui mobilise des “schémas interprétatifs” <span class="citation" data-cites="bachimont2020">(<a href="#ref-bachimont2020" role="doc-biblioref">Bachimont, 2020</a>)</span> impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.</p>
+<p>Je montrerai ensuite comment modéliser des actions situées <span class="citation" data-cites="quéré2020">(<a href="#ref-quéré2020" role="doc-biblioref">Quéré, 2020</a>)</span> et des protocoles <span class="citation" data-cites="sauret2017">(<a href="#ref-sauret2017" role="doc-biblioref">Sauret, 2017</a>)</span> liés à l’écriture d’un article scientifique, afin de mesurer pour les acteurs, les agents et l’environnement, l’augmentation et la diminution de leurs pouvoirs de discernement, de raisonnement et d’agir <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky, 2020</a>)</span>. J’analyserai ensuite ces mesures pour évaluer des niveaux de symbiose en comparant la réciprocité et la durabilité des fluctuations de puissances.</p>
+<p>Avec cet article, je souhaite orienter les réflexions sur l’intelligibilité du numérique vers une prise en compte de l’adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c’est de poser les bases d’une discussion sur l’éthique du numérique comprise comme la décision d’exercer ou non les pouvoirs que nous octroient les machines.</p>
 </section>
 <section id="du-texte-au-diagramme" class="level2">
 <h2 class="anchored" data-anchor-id="du-texte-au-diagramme">Du texte au diagramme</h2>
-<p>La lecture et l’écriture de textes sont les bases du travail scientifique. Toutefois, on observe une importance grandissante des diagrammes notamment dans les thèses où l’on trouve de plus en plus de diagrammes même dans les disciplines de sciences humaines et sociales. La démocratisation des outils de dessin vectoriel et l’émergence de plateforme facilitant la production de dataviz <span class="citation" data-cites="louâpre2017">(<a href="#ref-louâpre2017" role="doc-biblioref">Louâpre &amp; Szoniecky, 2017</a>)</span> ont sans doute contribué au développement de ces expressions graphiques et spatiales qui pour David Rabouin sont au cœur du discours scientifique : “Les écritures symboliques qui parsèment désormais n’importe quel écrit scientifique, ne sont d’ailleurs […] qu’un prolongement de ces représentations spatiales.” <span class="citation" data-cites="rabouin2010">(<a href="#ref-rabouin2010" role="doc-biblioref">Rabouin, 2010</a>)</span> p.&nbsp;42</p>
-<p>L’importance des diagrammes se manifeste par des recherches spécifiques sur ce mode de représentation (<span class="citation" data-cites="jedrzejewski2007 iafrate2015 voss2019 batt2005a battistini2004">(<a href="#ref-batt2005a" role="doc-biblioref">Batt, 2005</a>; <a href="#ref-battistini2004" role="doc-biblioref">Battistini, 2004</a>; <a href="#ref-iafrate2015" role="doc-biblioref">Iafrate, 2015</a>; <a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>; <a href="#ref-voss2019" role="doc-biblioref">Voss, 2019</a>)</span>) qui prennent aujourd’hui la forme d’une “diagrammatologie” pour “rendre visibles les vecteurs de forces tels qu’ils s’opposent et s’entremêlent dans la formation des formes.” <span class="citation" data-cites="dahan-gaida2023">(<a href="#ref-dahan-gaida2023" role="doc-biblioref">Dahan-Gaida, 2023</a>)</span> ou d’une “ingénierie sémiotique des systèmes diagrammatiques” <span class="citation" data-cites="ferri2020">(<a href="#ref-ferri2020" role="doc-biblioref">Ferri, 2020</a>)</span> qui a pour vocation de modéliser : “les opérations qui excèdent toute formalisation algorithmique”.</p>
+<p>La lecture et l’écriture de textes sont les bases du travail scientifique. Cependant, on observe une importance grandissante des diagrammes notamment dans les thèses où l’on trouve de plus en plus de représentations graphiques même dans les disciplines de sciences humaines et sociales. La démocratisation des outils de dessin vectoriel et l’émergence de plateforme facilitant la production de dataviz <span class="citation" data-cites="louâpre2017">(<a href="#ref-louâpre2017" role="doc-biblioref">Louâpre &amp; Szoniecky, 2017</a>)</span> ont sans doute contribué au développement de ces expressions graphiques et spatiales qui pour David Rabouin sont au cœur du discours scientifique : “Les écritures symboliques qui parsèment désormais n’importe quel écrit scientifique, ne sont d’ailleurs […] qu’un prolongement de ces représentations spatiales.” <span class="citation" data-cites="rabouin2010">(<a href="#ref-rabouin2010" role="doc-biblioref">Rabouin, 2010</a>)</span> p.&nbsp;42</p>
+<p>L’importance de ces diagrammes se manifeste par des recherches spécifiques (<span class="citation" data-cites="jedrzejewski2007 iafrate2015 voss2019 batt2005a battistini2004">(<a href="#ref-batt2005a" role="doc-biblioref">Batt, 2005</a>; <a href="#ref-battistini2004" role="doc-biblioref">Battistini, 2004</a>; <a href="#ref-iafrate2015" role="doc-biblioref">Iafrate, 2015</a>; <a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>; <a href="#ref-voss2019" role="doc-biblioref">Voss, 2019</a>)</span>) qui prennent aujourd’hui la forme d’une “diagrammatologie” pour “rendre visibles les vecteurs de forces tels qu’ils s’opposent et s’entremêlent dans la formation des formes.” <span class="citation" data-cites="dahan-gaida2023">(<a href="#ref-dahan-gaida2023" role="doc-biblioref">Dahan-Gaida, 2023</a>)</span> ou d’une “ingénierie sémiotique des systèmes diagrammatiques” <span class="citation" data-cites="ferri2020">(<a href="#ref-ferri2020" role="doc-biblioref">Ferri, 2020</a>)</span> qui a pour vocation de modéliser : “les opérations qui excèdent toute formalisation algorithmique”.</p>
 <p>La présence des diagrammes dans les discours scientifique reflète la volonté des chercheurs de communiquer des informations autrement que par le texte :</p>
 <blockquote class="blockquote">
 <p>” Alors que les symboles signifient, les diagrammes se caractérisent par leur générativité, leur capacité à produire autre chose que ce qu’ils représentent. Ils ne sont pas de simples instruments d’expression de la pensée mais participent à la production de la connaissance. Ce sont des inscriptions matérielles dotées d’un sens qui conserve des traces non verbales. ” <span class="citation" data-cites="dahan-gaida2023">(<a href="#ref-dahan-gaida2023" role="doc-biblioref">Dahan-Gaida, 2023</a>)</span></p>
 </blockquote>
-<p>Le texte et le diagramme se différencient d’une part par leurs formes graphiques, l’une basée sur une succession linéaire de chaînes de caractères issues d’un alphabet et l’autre construite à partir d’un vocabulaire graphique plus global : points, lignes, plans. La différence se faire d’autre part sur l’activité cognitive que ces deux formes génèrent, l’une basée sur une construction linéaire du sens caractères après caractères, mots après mots… l’autre basée sur une compréhension :</p>
+<p>Le texte et le diagramme se différencient d’une part par leurs formes graphiques, l’une basée sur une succession linéaire de chaînes de caractères issues d’un alphabet et l’autre construite à partir d’un vocabulaire graphique plus global : points, lignes, plans. La différence se fait d’autre part sur l’activité cognitive que ces deux formes génèrent, l’une basée sur une construction linéaire du sens caractères après caractères, mots après mots… l’autre basée sur une compréhension :</p>
 <blockquote class="blockquote">
 <p>” qui ne se saisit pas par une succession d’inférences logiques, mais globalement, intuitivement, dans une dimension intellectuelle et corporelle qui passe par le geste. ” <span class="citation" data-cites="jedrzejewski2007">(<a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>)</span> p.&nbsp;184</p>
 </blockquote>
-<p>Cette communication spécifique est liée au diagramme car il est à la fois : ” puissance de modélisation et pouvoir de générativité, il permet de comprendre les dynamiques d’émergence et de transformation des formes et de la pensée ” <span class="citation" data-cites="dahan-gaida2023">(<a href="#ref-dahan-gaida2023" role="doc-biblioref">Dahan-Gaida, 2023</a>)</span>.</p>
-<p>Dans le contexte du 4ème paradigme, les diagrammes prouvent leurs efficacités pour représenter les masses d’informations complexes générées par les écosystème de connaissances et donnent aux chercheurs les moyens de construire des interprétations sur ces informations. Mais au-delà de ces fonctions heuristiques, les diagrammes offrent un langage pour communiquer avec les agents artificielles autrement que par le texte. Par exemple, nous avons montré comment des diagrammes basés sur des modèles prétopologiques pouvaient servir à gérer les écosystèmes de l’Internet des Objets en offrant un vocabulaire manipulable par les humains et les machines <span class="citation" data-cites="szoniecky2020a">(<a href="#ref-szoniecky2020a" role="doc-biblioref">Szoniecky &amp; Toumia, 2020</a>)</span>.</p>
+<p>Cette communication spécifique du diagramme s’opère par un double pouvoir : ” puissance de modélisation et pouvoir de générativité, il permet de comprendre les dynamiques d’émergence et de transformation des formes et de la pensée ” <span class="citation" data-cites="dahan-gaida2023">(<a href="#ref-dahan-gaida2023" role="doc-biblioref">Dahan-Gaida, 2023</a>)</span>.</p>
+<p>Dans le contexte du 4ème paradigme, les diagrammes sont efficaces pour représenter les masses d’informations complexes générées par les écosystèmes de connaissances et donnent aux chercheurs les moyens de construire des interprétations sur ces informations. Mais au-delà de ces fonctions heuristiques, les diagrammes offrent un langage pour communiquer avec les agents artificielles autrement que par le texte. Par exemple, nous avons montré comment des diagrammes basés sur des modèles prétopologiques pouvaient servir à gérer les écosystèmes de l’Internet des Objets en offrant un vocabulaire manipulable par les humains et les machines <span class="citation" data-cites="szoniecky2020a">(<a href="#ref-szoniecky2020a" role="doc-biblioref">Szoniecky &amp; Toumia, 2020</a>)</span>.</p>
 <p>Les enjeux de la diagramatisation des communications entre humains et machines, entre acteurs et agents, sont fondamentaux. Transformer ces échanges du texte vers le diagramme ouvre la voie à une communication qui ne se base plus sur une vectorisation du texte mené par les agents mais sur une modélisation topologique à l’inititative des acteurs qui inclue non seulement les formalismes logiques mais aussi :</p>
-<p><em>“le contenu non logique d’une connaissance phénoménologique, c’est-à-dire la structure qualitative sur laquelle s’appuie la faculté intuitive non logique”</em> <span class="citation" data-cites="ferri2020">(<a href="#ref-ferri2020" role="doc-biblioref">Ferri, 2020</a>)</span></p>
+<blockquote class="blockquote">
+<p>“le contenu non logique d’une connaissance phénoménologique, c’est-à-dire la structure qualitative sur laquelle s’appuie la faculté intuitive non logique” <span class="citation" data-cites="ferri2020">(<a href="#ref-ferri2020" role="doc-biblioref">Ferri, 2020</a>)</span></p>
+</blockquote>
 <p>Ce passage par la topologie donne aux acteurs les moyens d’utiliser les capacités des diagrammes de représenter “des rapports de force qui constituent le pouvoir”(<span class="citation" data-cites="khatchatourov2017">(<a href="#ref-khatchatourov2017" role="doc-biblioref">Khatchatourov, 2017</a>)</span> p.&nbsp;67) et par la même de se positionner en tant qu’individu responsable, autonome et authentique car :</p>
 <p>” Ce qui compte désormais n’est pas la proposition, mais le lieu, le topos qui a sa propre vie organique et qui impose ses modes de raisonnement. Par défaut, la logique immanente d’un topos est intuitionniste : le tiers exclu n’est plus valable, ni le mode de démonstration par l’absurde.” <span class="citation" data-cites="jedrzejewski2007">(<a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>)</span> p.&nbsp;183</p>
 <p>Le diagramme implique nécessairement le positionnement d’un acteur dans un champ de force <span class="citation" data-cites="chateauraynaud2011">(<a href="#ref-chateauraynaud2011" role="doc-biblioref">Chateauraynaud, 2011</a>)</span> et l’interrogation de ce qui engage cet acteur :</p>
-<p><em>Derrière cette question se joue une réflexion éthique sur le rapport à soi dans l’acte d’écrire, qui renvoie à une notion centrale de la philosophie morale contemporaine : l’authenticité, entendue comme cet idéal éthique qui renvoie à la capacité d’un individu à vivre en accord avec lui-même, en restant fidèle à ce qu’il reconnaît comme constitutif de son identité.</em> <span class="citation" data-cites="benbouzid2025">(<a href="#ref-benbouzid2025" role="doc-biblioref">Benbouzid, 2025</a>)</span></p>
-<p>Nous concevons cet usage du diagramme comme la modélisation du point de vu d’un acteur sous la forme d’un état transitoire dans une “chronotopologie” <span class="citation" data-cites="ferri2021">(<a href="#ref-ferri2021" role="doc-biblioref">Ferri, 2021</a>)</span>. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l’oeuvre dans sa construction ? Quelles analyses permettent-ils ?</p>
+<blockquote class="blockquote">
+<p>Derrière cette question se joue une réflexion éthique sur le rapport à soi dans l’acte d’écrire, qui renvoie à une notion centrale de la philosophie morale contemporaine : l’authenticité, entendue comme cet idéal éthique qui renvoie à la capacité d’un individu à vivre en accord avec lui-même, en restant fidèle à ce qu’il reconnaît comme constitutif de son identité. <span class="citation" data-cites="benbouzid2025">(<a href="#ref-benbouzid2025" role="doc-biblioref">Benbouzid, 2025</a>)</span></p>
+</blockquote>
+<p>Pour mener cette recherche de l’authenticité, le diagramme, en tant qu’expression d’un topos, est sans doute une forme d’écriture plus féconde que le texte pour gérer la complexité des flux info-communicationnels entre acteurs, agents et environnements. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l’oeuvre dans sa construction ? Quelles analyses permettent-ils ?</p>
 </section>
-<section id="modéliser-lécriture-dun-article-scientifique" class="level2">
-<h2 class="anchored" data-anchor-id="modéliser-lécriture-dun-article-scientifique">Modéliser l’écriture d’un article scientifique</h2>
-<p>Nous reprenons ici le modèle de diagramme que nous avons défini dans notre HDR en suivant sept principes que nous utilisons pour modéliser des existences informationelles <span class="citation" data-cites="morin1981">(<a href="#ref-morin1981" role="doc-biblioref">Morin, 1981, p. 340</a>)</span> :</p>
-<ul>
-<li><p><strong>principe dialogique</strong> : « L’association complexe (complémentaire/concurrente/antagoniste) d’instances, nécessaires ensemble à l’existence, au fonctionnement et au développement d’un phénomène organisé. » <span class="citation" data-cites="morin1992">(<a href="#ref-morin1992" role="doc-biblioref">Morin, 1992, p. 98</a>)</span></p></li>
-<li><p><strong>principe récursif</strong> : « Un processus où les effets ou produits sont en même temps causateurs et producteurs dans le processus lui-même, et où les états finaux sont nécessaires à la génération des états initiaux. » <span class="citation" data-cites="morin1992">(<a href="#ref-morin1992" role="doc-biblioref">Morin, 1992, p. 101</a>)</span></p></li>
-<li><p><strong>principe hologrammatique</strong> : « Le tout est d’une certaine façon inclus (engrammé) dans la partie qui est incluse dans le tout. L’organisation complexe du tout (holos) nécessite l’inscription (engramme) du tout (hologramme) en chacune de ses parties pourtant singulières ; ainsi, la complexité organisationnelle du tout nécessite la complexité organisationnelle des parties, laquelle nécessite récursivement la complexité organisationnelle du tout. » <span class="citation" data-cites="morin1992">(<a href="#ref-morin1992" role="doc-biblioref">Morin, 1992, p. 102</a>)</span></p></li>
-</ul>
-<p>À ces trois principes de complexité, nous ajoutons un quatrième, le <strong>principe du cycle de la sémiose</strong> en considérant que les connaissances se produisent suivant un cycle continu d’expériences dans le monde physique et dans le monde de la pensée <a href="#fig-cyclesemiose" class="quarto-xref">Figure&nbsp;1</a>. Entre les « physicalités » et les « intériorités » <span class="citation" data-cites="descola2005">(<a href="#ref-descola2005" role="doc-biblioref">Descola, 2005</a>)</span> , les « cycles de sémioses » <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span> canalisent nos perceptions par « anasémiose » pour discerner des informations que nous communiquons et par « catasémiose » en donnant forme à l’agir : parler, lire, écrire, gesticuler, ne rien faire…</p>
-<div id="fig-cyclesemiose" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<section id="modéliser-les-pouvoirs-des-flux-info-communicationnels" class="level2">
+<h2 class="anchored" data-anchor-id="modéliser-les-pouvoirs-des-flux-info-communicationnels">Modéliser les pouvoirs des flux info-communicationnels</h2>
+<p>Il faudrait sans doute replacer les propos qui vont suivre dans un état de l’art plus consistant qui présenterait comment nous positionnons “les images de pensée” <span class="citation" data-cites="caraës2011">(<a href="#ref-caraës2011" role="doc-biblioref">Caraës &amp; Marchand-Zanartu, 2011</a>)</span> comme des cartographies <span class="citation" data-cites="guattari1989">(<a href="#ref-guattari1989" role="doc-biblioref">Guattari, 1989</a>)</span> issues d’une modélisation des espaces vivants <span class="citation" data-cites="aït-touati2019">(<a href="#ref-aït-touati2019" role="doc-biblioref">Aït-Touati et al., 2019</a>)</span>, à partir d’une esthétique orientée par les données <span class="citation" data-cites="drucker2020">(<a href="#ref-drucker2020" role="doc-biblioref">Drucker et al., 2020</a>)</span> et d’une sémiotique visuelle spécifique <span class="citation" data-cites="dondero2020">(<a href="#ref-dondero2020" role="doc-biblioref">Dondero, 2020</a>)</span>. Mais cela dépasserais grandement le cadre de cet article dont l’objectif principal est de donner une méthode concrète pour analyser les fluctuations de pouvoirs à partir d’une modélisation diagrammatique des flux info-communicationnels qui s’appuie sur les principes de modélisation et de représentation que nous avons présenté dans notre HDR <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>.</p>
+<p>Pour illustrer notre utilisation des diagrammes dans les communications entre acteurs et agents dans l’environnement numérique du quatrième paradigme de la science, nous prendrons comme exemple l’écriture d’un article scientifique dont nous modéliserons l’écosystème de connaissances en concevant cette pratique comme la définition d’une multitude d’états transitoires dans ce qu’on pourrait nommer une “chronotopologie” <span class="citation" data-cites="ferri2021">(<a href="#ref-ferri2021" role="doc-biblioref">Ferri, 2021</a>)</span>. En accord avec les principes que nous avons défini dans notre HDR (<em>ibid.</em>) et du méta-modèle ontoéthique qui en résulte, nous représentons ces successions d’états topologiques sous la forme d’une existence informationnelle dans un espace-temps donné. Nous ne détaillerons pas ici les principes théoriques et cartographiques du méta-modèle qui compose les dimensions de l’existence (physique, actant, concept, rapport) corrélées aux métriques (euclidienne, topographique, topologique, temporelle) permettant de les mesurer ; aux concepts prétopologiques (extérieur, bord, intérieur, flux) permettant de les modéliser et aux analogies (branches, graines, racines, sève) permettant de les représenter :</p>
+<div id="fig-ModeleExistenceInformationnelle" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cyclesemiose-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="media/CycleSemiose.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="482">
+<div aria-describedby="fig-ModeleExistenceInformationnelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/ExistenceInformationnelle.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cyclesemiose-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Cycle de la sémiose <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015, p. 10</a>)</span>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ModeleExistenceInformationnelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Modèle d’une existence informationnelle
 </figcaption>
 </figure>
 </div>
-<p>On nous basant sur les travaux de <span class="citation" data-cites="hofstadter2013">(<a href="#ref-hofstadter2013" role="doc-biblioref">Hofstadter &amp; Sander, 2013</a>)</span> pour qui l’analogie est le « moteur » qui relie le discernement et l’action et ceux de Deleuze pour qui le “tissu de l’âme” par lequel Leibniz conçoit la perception, est composé de “plis”, nous définissons comme cinquième principe, le <strong>principe des plis analogiques</strong> qui à force de répétition construisent une manière d’être, un mode d’existence <span class="citation" data-cites="latour2012">(<a href="#ref-latour2012" role="doc-biblioref">Latour, 2012</a>)</span> :</p>
-<blockquote class="blockquote">
-<p>« L’opération de la perception constitue les plis dans l’âme, les plis dont la monade est tapissée du dedans ; mais ceux-ci ressemblent à une matière, qui doit dès lors s’organiser en replis extérieurs. » <span class="citation" data-cites="deleuze1988">(<a href="#ref-deleuze1988" role="doc-biblioref">Deleuze, 1988, p. 131</a>)</span></p>
-</blockquote>
-<p>À la manière de deux miroirs qui plient la lumière en se reflétant l’un dans l’autre à l’infini, discernement et action se réfléchissent en pliant les flux d’information. Chaque pli décompose l’information en signes dont les signifiés plongent vers l’intériorité en stimulant l’intuition et dont les signifiants émergent vers des physicalités en stimulant l’expression.</p>
-<p>Entre discerner et agir, intuition et expression, c’est dans ce « milieu » qu’Augustin Berque décrit une « pulsation existentielle » mue par un sixième principe : <strong>principe de la raison trajective</strong> :</p>
-<blockquote class="blockquote">
-<p>« la raison trajective, elle est en effet dans la pulsation existentielle qui, par la technique, déploie notre corps en monde sur la terre, et qui simultanément, par le symbole, reploie le monde en notre chair » <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009, p. 402</a>)</span></p>
-</blockquote>
-<p>Cette raison pilote la réflexion en modifiant l’inclinaison du pli vers le discernement de signifiés ou vers l’expression de signifiants. Ce sont des processus que nous contrôlons consciemment en partie et d’autres plus imprévisibles et incontrôlables qui se produisent en fonction d’une multitude de pliages et de leurs capacités à se faire, se défaire, se bloquer suivant un septième principe, le <strong>principe des degrés de flexibilité</strong> <span class="citation" data-cites="clément2021">(<a href="#ref-clément2021" role="doc-biblioref">Clément, 2021</a>)</span>.</p>
-<p>Notre hypothèse principale est qu’il est possible de modéliser des connaissances en formalisant les pliages et leurs dynamismes dans trois directions correspondant à <strong>trois pouvoirs fondamentaux</strong> :</p>
+<p>Dans notre HDR nous avons montrer que ce méta-modèle sert à calculer les complexités d’un écosystème de connaissances, comment les représenter, les explorer, les analyser et définir des objectifs existentiels. Ce qui nous importe ici c’est de montrer que ce méta-modèle sert aussi à calculer des fluctuations de puissances dont les analyses alimenteront des discussions éthiques pour déterminer : quelles puissances préserver pour atteindre quels états précis de l’écosystème ?</p>
+<p>Pour calculer ces fluctuations de puissances, nous utilisons les principes des « pulsations existentielles » <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009, p. 402</a>)</span> dans un cycle de sémiose <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span> qui mettent en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonner (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle des interfaces transforment la matière en pensée (discernement) et la pensée en matière (agir), elles sont les « cribles » <span class="citation" data-cites="guattari1992">(<a href="#ref-guattari1992" role="doc-biblioref">Guattari, 1992</a>)</span> par lesquels passent les « pulsations existentielles » qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs » superflues et en se chargeant des « valeurs » importantes. Ces cribles, Descola propose de les structurer à partir de « matrices ontologiques » <span class="citation" data-cites="descola2005">(<a href="#ref-descola2005" role="doc-biblioref">Descola, 2005, p. 323</a>)</span> qui définiront les rapports entre physicalités et intériorités. <span class="citation" data-cites="hofstadter2013">(<a href="#ref-hofstadter2013" role="doc-biblioref">Hofstadter &amp; Sander, 2013, p. 233</a>)</span> nous expliquent que nous élaborons ces cribles par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser ces interfaces, ces cribles, ces rapports, ces réseaux d’analogies qui vont influencer nos affects <span class="citation" data-cites="lordon2025">(<a href="#ref-lordon2025" role="doc-biblioref">Lordon &amp; Lucbert, 2025</a>)</span> pour augmenter ou diminuer nos pouvoirs de discerner, raisonner, agir.</p>
+<p>Nous avons développé un environnement numérique pour modéliser et représenter les fluctuations de pouvoir que produisent les pulsations existentielles. Cet environnement a été expérimenté dans le cadre d’un cours sur l’Ethique des écosystèmes numériques donné aux étudiants du Master 2 Analyse et Conception des Environnements Humains Numériques (<a href="https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-">ACEHN</a>). Cet environnement se compose :</p>
 <ul>
-<li><p><strong>discerner</strong> : pliage des physicalités extérieures vers l’intériorité,</p></li>
-<li><p><strong>raisonner</strong> : pliage en boucles récursives dans l’intériorité</p></li>
-<li><p><strong>agir</strong> : pliage de l’intériorité vers les physicalités extérieures.</p></li>
+<li>une base de données Omeka S paramétrée avec 4 modèles de ressource pour définir 4 classes d’objet <a href="#fig-diagClassRaisonTrajective" class="quarto-xref">Figure&nbsp;2</a> : des raisons trajectives, des pulsations existentielles, des pouvoirs, des temporalités.</li>
 </ul>
-<p>Le cycle de la sémiose comme quatrième principe fondamental de la modélisation des connaissances. Revenons, plus en détail sur ce principe pour expliquer la production du sens proposée par <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span>. L’intérêt de cette proposition est de décrire la production du sens comme un cycle continu de relations dans un contexte produisant trois processus : anasémiose, élaboration sémiotique et catasémiose.</p>
-<p>L’anasémiose est la capacité de discerner dans l’univers des possibles les informations d’où le sens pourra émerger ; elle exprime un pouvoir de discernement que Deleuze appelle « âme » en référence au crible constitué par le « tissu de l’âme » chez Leibniz <span class="citation" data-cites="deleuze2003">(<a href="#ref-deleuze2003" role="doc-biblioref">Deleuze, 2003</a>)</span> et que les auteurs du diagramme appellent « interface ».</p>
-<p>L’élaboration sémiotique est la capacité de raisonner avec les informations pour choisir des significations. Même si ce choix ne se résume pas à un processus raisonnable, nous parlons ici de pouvoir de raisonner pour insister sur la dimension constructible du sens qui est très utile pour une pédagogie de l’argumentation et de l’esprit critique. Nous gardons aussi ce terme de “raisonner” parce que son homonyme “résonner” renvoie au « trou noir » de la pensée due à l’imprédictibilité de ce processus qui se déroule dans un espace chaotique constitué d’une infinité de chaînes signifiantes au déploiement illimité. Pourquoi face à une blague faite par un conférencier, une partie de l’assemblée choisit d’exprimer un rire, une autre un sourire alors que d’autres n’y comprennent rien ?</p>
-<p>La catasémiose transforme les informations signifiantes en actions dans le monde des possibles (rire, sourire, rien…) à travers une interface (cordes vocales, visage, texte…), ce processus de catasémiose est l’expression du pouvoir d’agir.</p>
-<p>Le cycle de la sémiose met donc en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonner (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle se trouve l’interface qui transforme la matière en pensée (discernement) et la pensée en matière (agir), elle est le « crible » par lequel passent les « pulsations existentielles » <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009, p. 402</a>)</span> qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs » superflues et en se chargeant des « valeurs » importantes. Ce crible, Descola propose de le structurer à partir de « matrices ontologiques » <span class="citation" data-cites="descola2005">(<a href="#ref-descola2005" role="doc-biblioref">Descola, 2005, p. 323</a>)</span> qui définiront les rapports entre physicalités et intériorités. <span class="citation" data-cites="hofstadter2013">(<a href="#ref-hofstadter2013" role="doc-biblioref">Hofstadter &amp; Sander, 2013, p. 233</a>)</span> nous expliquent que nous élaborons ce crible par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser cette interface, ce crible, ces rapports, ce réseau d’analogies qui va guider nos affects pour augmenter ou diminuer ce que nous discernons parce que nous agissons et vice-versa.</p>
-<p>À chaque pulsation existentielle, à chaque événement de nos vies, à chaque pli, ces pouvoirs augmentent ou diminuent, accentuant ainsi des rapports privilégiés, d’autres, plus secrets, et même certains qui nous restent inconnus. Ainsi, la pulsation varie continuellement, elle est parfois instantanée par exemple quand on rit, elle peut aussi prendre beaucoup de temps quand un souvenir longtemps oublié émerge petit à petit ; elle devient un métier quand à force de pratiquer un geste particulier, celui-ci s’automatise. Ces pulsations se transforment parfois en bêtises ou en inconscience quand le pouvoir d’agir prend le pas sur les pouvoirs de discerner et de raisonner en occultant leurs pliages potentiels. Suivant leurs fréquences, les pulsations existentielles forment des ondes dont la vitesse de propagation est fonction de leur longueur (distance séparant deux maxima consécutifs de l’amplitude entre physicalités et intériorité) et du milieu dans lequel elles se déploient. La catégorisation et l’analyse de ces ondes renvoient globalement à une réflexion sur la modélisation de l’esprit qui dépasse le cadre de ce propos, mais que nous illustration par le diagramme suivant <a href="#fig-dynamiquesPulsationsExistentielles" class="quarto-xref">Figure&nbsp;2</a> :</p>
+<div id="fig-diagClassRaisonTrajective" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diagClassRaisonTrajective-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">classDiagram
+class Pouvoir["Pouvoir exitentiel"] {
+    +String Title
+    +String Description
+    +Item a comme physique
+    +Item a comme crible
+    +Item a comme actant
+    +Item a comme concept
+    +Types de pouvoir Type
+    +Integer Intensité
+}
+class pulsationExistentielle["Pulsation exitentielle"] {
+    +String Title
+    +String Description
+    +Item A comme pouvoir
+    +Item Flux
+}
+class raisonTrajective["Raison trajective"] {
+    +String Title
+    +String Description
+    +Item A comme pulsation existentielle
+}
+class Temporalitérelativedespulsations["Temporalité relative des pulsations"] {
+    +Temporalités Temporal Coverage
+    +Item A comme pulsation existentielle
+}
+raisonTrajective "1" --&gt; "*" pulsationExistentielle : A comme pulsation existentielle
+pulsationExistentielle "0" --&gt; "*" Temporalitérelativedespulsations : A comme flux
+pulsationExistentielle "1" --&gt; "*" Pouvoir : A comme pouvoir
+Temporalitérelativedespulsations "1" --&gt; "*" pulsationExistentielle  : A comme pulsation existentielle
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diagClassRaisonTrajective-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Diagramme de classes pour la modélisation des raisons trajectives
+</figcaption>
+</figure>
+</div>
+<section id="protocole-de-modélisation-dans-omeka-s" class="level3">
+<h3 class="anchored" data-anchor-id="protocole-de-modélisation-dans-omeka-s">Protocole de modélisation dans Omeka S</h3>
+<p>Le protocole de modélisation dans Omeka S est simple, il consiste à évaluer l’augmentation ou la diminution des pouvoirs dans les pulsations existentielles qui composent une raison trajective. Par exemple, un changement d’actant dans la pulsation existentielle “consulter une page Web” induit une augmentation du pouvoir d’agir si cet actant est un adulte majeur et une diminution si c’est un enfant mineur. Autre exemple, l’utilisation du crible “Inspecter” dans un navigateur Web augmente le pouvoir de dicernement en montrant les structures HTML d’une page… Nous avons résumé le protocole de modélisation en quatre étapes.</p>
+<section id="créer-une-raison-trajective" class="level4">
+<h4 class="anchored" data-anchor-id="créer-une-raison-trajective">Créer une raison trajective</h4>
+<p>Cette étape consiste à créer dans Omeka S un item en utilisant le ressource template : Raison trajective. La raison trajective est définie par un nom, une courte description et par une temporalité des flux évenementiels. Créer une raison trajective consiste à organiser comment des événements se produise dans un environnement. A l’instart d’une partition musicale sous la une partition est pensée comme une partition à réaliPar exemple, dans le cas qui nous occupe à savoir “La rédaction d’un article scientifique”, nous définisons quatre flux dans l’environnement :</p>
+<ol type="1">
+<li><p>Répondre à un appel à proposition,</p></li>
+<li><p>Rédiger une proposition d’article,</p></li>
+<li><p>Ecrire un article scientifique,</p></li>
+<li><p>Publier un document</p></li>
+</ol>
+<p>Dans ce cas, la succession des flux est organisée de manière causale : il est nécessaire de faire l’action 1 avant l’action 2 etc. Toutefois on peut imaginer bien d’autre manière d’organiser la succession des flux, en utilisant par exemple la méthode de l’effectuation :</p>
+<blockquote class="blockquote">
+<p>“Causation processes take a particular effect as given and focus on selecting between means to create that effect. Effectuation processes take a set of means as given and focus on selecting between possible effects that can be created with that set of means.” <span class="citation" data-cites="sarasvathy2001">(<a href="#ref-sarasvathy2001" role="doc-biblioref">Sarasvathy, 2001</a>)</span></p>
+</blockquote>
+<p>Quelque soit la méthode utilisée pour organiser la succession des événements ceux-ci sont modélisés par une pulsation existentielle et un ordre qui correspond à l’historique de l’événement dans la raison trajective.</p>
+<ol start="2" type="1">
+<li>Créer des pulsations existentielles Dams Omeka S créer un item en utilisant le ressource template : Pulsation existentielle. Une pulsation existentielle est modéliser par un ensemble de pouvoirs et par des relations avec d’autres pulsations. Alors que la temporalité des flux dans la raison trajective est déterminée par une succession causale d’états, dans les pulsations existentielles les relations entre les flux s’organisent par une temporalité relative : avant, pendant ou après. Cette différence dans la gestion temporelle des flux entre linéaires pour les raisons trajectives et relatives pour des pulsations exitentielles</li>
+</ol>
+</section>
+</section>
+<section id="créer-les-pouvoirs-existentielles" class="level3">
+<h3 class="anchored" data-anchor-id="créer-les-pouvoirs-existentielles">Créer les pouvoirs existentielles</h3>
+<p>Dans omk créer un item en utilisant le ressource template : Pouvoir existentiel</p>
+<p>Ne pas oublier de définir l’intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir</p>
+<p>Il y a quatre types de pouvoir existentiel ayant chaucun des propriétés particulières : - Pouvoir de discerner : physique -&gt; crible -&gt; actant -&gt; concept - Pouvoir de raisonner : concept -&gt; actant -&gt; concept - Pouvoir de résonner : concept -&gt; concept - Pouvoir de raisonabilité : actant -&gt; concept - Pouvoir d’agir : concept -&gt; actant -&gt; crible -&gt; physique</p>
+</section>
+<section id="associer-les-pouvoirs-existentielles-aux-pulsations-existentielles" class="level3">
+<h3 class="anchored" data-anchor-id="associer-les-pouvoirs-existentielles-aux-pulsations-existentielles">Associer les pouvoirs existentielles aux pulsations existentielles</h3>
+<p>Dans omk, dans l’item Pulsation existentielle, ajouter les items Pouvoir existentiel</p>
+</section>
+<section id="associer-les-pulsations-existentielles-à-la-raison-trajective" class="level3">
+<h3 class="anchored" data-anchor-id="associer-les-pulsations-existentielles-à-la-raison-trajective">Associer les pulsations existentielles à la raison trajective</h3>
+<p>Dans omk, dans l’item Raison trajective, ajouter les items Pulsation existentielle</p>
+</section>
+<section id="vérifier-la-modélisation" class="level3">
+<h3 class="anchored" data-anchor-id="vérifier-la-modélisation">Vérifier la modélisation</h3>
+<p>Ce rendre à la page : https://acehn.jardindesconnaissances.fr/pulsationsExistentielles/index.html Choisir la raison trajective dans la liste déroulante du haut de la page.</p>
+<ul>
+<li>une application pour vérifier et visualiser les pulsations existentielles</li>
+</ul>
 <div id="fig-dynamiquesPulsationsExistentielles" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-dynamiquesPulsationsExistentielles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="media/pulsationsExistentielles.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="463">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dynamiquesPulsationsExistentielles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Dynamiques des pulsations existentielles
+Figure&nbsp;3: Dynamiques des pulsations existentielles
 </figcaption>
 </figure>
 </div>
+<ul>
+<li>un répertoire GitHub pour gérer les sources et la documentation du projet : <a href="https://github.com/samszo/pulsationsExistentielles">pulsationsExistentielles</a></li>
+</ul>
+<p>À chaque pulsation existentielle, à chaque événement de nos vies, à chaque pli, ces pouvoirs augmentent ou diminuent, accentuant ainsi des rapports privilégiés, d’autres, plus secrets, et même certains qui nous restent inconnus. Ainsi, la pulsation varie continuellement, elle est parfois instantanée par exemple quand on rit, elle peut aussi prendre beaucoup de temps quand un souvenir longtemps oublié émerge petit à petit ; elle devient un métier quand à force de pratiquer un geste particulier, celui-ci s’automatise. Ces pulsations se transforment parfois en bêtises ou en inconscience quand le pouvoir d’agir prend le pas sur les pouvoirs de discerner et de raisonner en occultant leurs pliages potentiels. Suivant leurs fréquences, les pulsations existentielles forment des ondes dont la vitesse de propagation est fonction de leur longueur (distance séparant deux maxima consécutifs de l’amplitude entre physicalités et intériorité) et du milieu dans lequel elles se déploient. La catégorisation et l’analyse de ces ondes renvoient globalement à une réflexion sur la modélisation de l’esprit qui dépasse le cadre de ce propos, mais que nous illustration par le diagramme suivant <a href="#fig-dynamiquesPulsationsExistentielles" class="quarto-xref">Figure&nbsp;3</a> :</p>
 <p>Il découle de ces principes que le processus de modélisation des connaissances conçues en tant qu’existences informationnelles est assimilable à un calcul des puissances et de leurs évolutions :</p>
 <blockquote class="blockquote">
 <p>« Si bien qu’à la question : ” Cet être existe-t-il ? ” il est prudent d’admettre qu’on ne peut guère répondre selon le couple du Oui ou Non, mais bien plutôt selon celui du Plus ou Moins. » <span class="citation" data-cites="souriau2009">(<a href="#ref-souriau2009" role="doc-biblioref">Souriau et al., 2009</a>)</span></p>
@@ -220,8 +309,10 @@ Figure&nbsp;2: Dynamiques des pulsations existentielles
 <p>Notre huitième et dernier principe que nous appelons <strong>principe ontoéthique</strong> reprend l’idée que défend Deleuze concernant la corrélation entre ontologie et éthique c’est à dire la corrélation entre dimensions de l’existence et genres de connaissances chez Spinoza. Ainsi la première dimension de l’existence, celle des parties extensives est corrélée au premier genre de connaissance celui des idées inadéquates, la deuxième dimension celle des rapports est corrélée aux notions communes qui forme le deuxième genre de connaissance et la troisième dimension existentielle, celle des essences, est corrélée au troisième genre de connaissances celui de l’intuition. Nous utilisons, une quatrième corrélation qui n’est pas présentée par Deleuze, mais qui reprend les propositions de <span class="citation" data-cites="callon2006">(<a href="#ref-callon2006" role="doc-biblioref">Callon, 2006</a>)</span> pour définir la dimension des actants corrélés aux connaissances sociales.</p>
 <p>À partir des principes que nous venons du définir nous élaborons un métamodèle conçu comme « un générateur de modèles qualitatifs » <span class="citation" data-cites="thom1975">(<a href="#ref-thom1975" role="doc-biblioref">Thom, 1975, p. 372</a>)</span> que nous utilisons pour nos analyses de l’information et la communication.</p>
 </section>
+</section>
 <section id="analyser-les-fluctuations-de-puissances-pour-évaluer-la-symbiose" class="level2">
 <h2 class="anchored" data-anchor-id="analyser-les-fluctuations-de-puissances-pour-évaluer-la-symbiose">Analyser les fluctuations de puissances pour évaluer la symbiose</h2>
+<p>Evaluer la valeur d’une puissance : “<em>Autrement dit, au lieu de tenir les valeurs pour un donné que la sociologie ou la philosophie doivent mettre au jour de façon empirique, il convient de les appréhender comme des principes d’action partagés qui s’élaborent et se découvrent dans le cours de l’activité pratique dans lequel l’usage qui en est fait se réalise.</em>” <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
 <p>Enrichissement du calcul de la complexité à partir d’une modélisation d’une existence informationelles</p>
 <p>Contre exemple d’analyse du pouvoir de décision :</p>
 <p><em>Les profils obtenus par l’IA prennent en considération la vitesse des sujets, leur précision, leur variabilité et leurs évolutions au cours du test, y compris les modifications du comportement après une erreur.</em> <span class="citation" data-cites="suarez2025">(<a href="#ref-suarez2025" role="doc-biblioref">Suarez &amp; Eynard, 2025</a>)</span></p>
@@ -230,16 +321,29 @@ Figure&nbsp;2: Dynamiques des pulsations existentielles
 <p>“La <em>puissance harmonique</em> d’un objet peut être évaluée par l’«&nbsp;étendue&nbsp;» de la reconfiguration de l’espace de représentation que sa présentation (par rencontre et/ou projection) suscite.”</p>
 <p>cf. <span class="citation" data-cites="plagnol2025">(<a href="#ref-plagnol2025" role="doc-biblioref">Plagnol, 2025</a>)</span></p>
 </section>
-<section id="vers-une-éthique-symbiotique" class="level2 unnumbered">
-
+<section id="vers-une-éthique-symbiotique" class="level2">
+<h2 class="anchored" data-anchor-id="vers-une-éthique-symbiotique">Vers une éthique symbiotique</h2>
+<p>développer sur ces bases « des infrastructures […] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » <span class="citation" data-cites="stiegler2020">(<a href="#ref-stiegler2020" role="doc-biblioref">Stiegler &amp; Supiot, 2020</a>)</span> cité par <span class="citation" data-cites="alombert2023">(<a href="#ref-alombert2023" role="doc-biblioref">Alombert, 2023</a>)</span> : ça s’appelle une université</p>
+<p><em>une «&nbsp;théorie pragmatiste&nbsp;» aux termes de laquelle l’habitude est un facteur qui permet d’identifier des «&nbsp;mécanismes sociaux&nbsp;» de niveaux de complexité ou d’agrégation faible et «&nbsp;dans lesquels –&nbsp;dans certaines circonstances&nbsp;–&nbsp;une cause X tend à produire un effet Y dans la sphère des relations sociales humaines&nbsp;»</em> <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
+<p><em>«&nbsp;l’explication des faits sociaux comme les structures des réseaux sociaux, les structures de la ségrégation résidentielle, les croyances communes, les goûts culturels, les manières courantes d’agir, exige non pas de les rapporter à d’autres faits sociaux mais de décrire en détail les mécanismes par lesquels ils sont produits&nbsp;».</em> <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
+<p><em>Dans l’écologie pragmatiste proposée par É. Hache, c’est en regard de la responsabilité vis-à-vis du futur que les citoyens d’aujourd’hui doivent peser les décisions qu’ils prennent pour résoudre les questions d’intérêt général qui se posent aux sociétés développées.</em> <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
+<p><em>La seule façon d’y remédier consiste, selon J. Dewey (2010a, p.&nbsp;283), à inciter les citoyens ordinaires à participer pleinement à l’activité politique en se constituant en Public afin de réunir «&nbsp;les conditions auxquelles la Grande Société pourrait devenir une Grande Communauté, à savoir une société dans laquelle les conséquences toujours plus grandes et confusément ramifiées des activités sociales seraient connues au sens plein de ce mot, de sorte qu’un Public organisé et articulé en viendrait à naître&nbsp;».</em> <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
+<p><em>En un mot, J. Dewey prône l’amélioration des conditions du débat public et affirme que cela «&nbsp;dépend essentiellement de la libération et du perfectionnement des processus d’enquête et de la dissémination de leurs conclusions&nbsp;»(ibid., p.&nbsp;311).</em> <span class="citation" data-cites="ogien2014">(<a href="#ref-ogien2014" role="doc-biblioref">Ogien, 2014</a>)</span></p>
+<p>décrire en détail et individuellement l’intensité de chaque pulsation, de chaque analogie, les mettre en commun pour les comparer et se situer = validation d’un échantillon pour des statistiques psychologiques… mais avant tout = prise de conscience de son positionnement, de son authenticité = connais-toi toi même</p>
 
 </section>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Vers une éthique symbiotique</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-abrami2014" class="csl-entry" role="listitem">
 Abrami, G., Amalric, M., Amblard, F., Anselme, B., Banos, A., Beck, E., Becu, N., Blanpain, B., Caillault, S., Corson, N., Daudé, E., Debolini, M., Delay, E., Duraffour, F., Gaudieux, A., Gaudou, B., Houet, T., Langlois, P., Laperrière, V., … Vannier, C. (2014). <em>Modélisation multi-Agents appliquée aux Phénomènes Spatialisés</em>. 258. <a href="https://halshs.archives-ouvertes.fr/cel-01090631/document">https://halshs.archives-ouvertes.fr/cel-01090631/document</a>
+</div>
+<div id="ref-aït-touati2019" class="csl-entry" role="listitem">
+Aït-Touati, F., Arènes, A., &amp; Grégoire, A. (2019). <em>Terra forma : manuel de cartographies potentielles</em>. Éditions B42.
+</div>
+<div id="ref-alombert2023" class="csl-entry" role="listitem">
+Alombert, A. (2023). Panser la bêtise artificielle. <em>Appareil</em>, <em>26</em>. <a href="https://doi.org/10.4000/appareil.6979">https://doi.org/10.4000/appareil.6979</a>
 </div>
 <div id="ref-bachimont2020" class="csl-entry" role="listitem">
 Bachimont, B. (2020). Manifeste pour l’intelligibilité du numérique. <em>Revue Intelligibilité du numérique</em>. <a href="https://intelligibilite-numerique.numerev.com/manifeste">https://intelligibilite-numerique.numerev.com/manifeste</a>
@@ -274,6 +378,9 @@ Broudoux, E., Grésillaud, S., Crosnier, H. L., &amp; Lux-Pogodalla, V. (2005, S
 <div id="ref-callon2006" class="csl-entry" role="listitem">
 Callon, M. (2006). <em>Sociologie de l<span>’</span>acteur réseau</em> (M. Akrich &amp; B. Latour, Eds.; pp. 267–276). Presses des Mines. <a href="https://books.openedition.org/pressesmines/1201">https://books.openedition.org/pressesmines/1201</a>
 </div>
+<div id="ref-caraës2011" class="csl-entry" role="listitem">
+Caraës, M.-H., &amp; Marchand-Zanartu, N. (2011). <em>Images de pensée</em>. RMN.
+</div>
 <div id="ref-cardon2018" class="csl-entry" role="listitem">
 Cardon, A. (2018). <em>Au-delà de l<span>’</span>intelligence artificielle</em>. ISTE Editions.
 </div>
@@ -283,11 +390,11 @@ Castells, M. (2000). Toward a sociology of the network society. <em>Contemporary
 <div id="ref-chateauraynaud2011" class="csl-entry" role="listitem">
 Chateauraynaud, F. (2011). <em>Argumenter dans un champ de forces : essai de balistique sociologique</em>. Éd. Pétra.
 </div>
+<div id="ref-chateauraynaud" class="csl-entry" role="listitem">
+Chateauraynaud, F., &amp; Lamy, J. (n.d.). <em>Les algorithmes et leurs écologies. Une sociologie du numérique attentive à la matérialité des dispositifs dont dépendent les boucles computationnelles</em>.
+</div>
 <div id="ref-citton2010" class="csl-entry" role="listitem">
 Citton, Y. (2010). <em>L’avenir des humanités : Economie de la connaissance ou cultures de l’interprétation ?</em> Editions La Découverte.
-</div>
-<div id="ref-clément2021" class="csl-entry" role="listitem">
-Clément, E. (2021). <em>La flexibilité cognitive: Pierre angulaire de l’apprentissage</em>. ISTE éditions.
 </div>
 <div id="ref-corteel2025" class="csl-entry" role="listitem">
 Corteel, M. (2025). 6. Le capitalisme cognitif avancé. <em>Poche / Sciences humaines et sociales</em>, 167–195. <a href="https://shs.cairn.info/article/DEC_CORTE_2025_01_0167">https://shs.cairn.info/article/DEC_CORTE_2025_01_0167</a>
@@ -295,20 +402,26 @@ Corteel, M. (2025). 6. Le capitalisme cognitif avancé. <em>Poche / Sciences hum
 <div id="ref-dahan-gaida2023" class="csl-entry" role="listitem">
 Dahan-Gaida, L. (2023). Introduction. L<span>’</span>invention par-delà science et littérature. <em>L<span>’</span>Imaginaire du Texte</em>, 9–19. <a href="https://shs.cairn.info/l-art-du-diagramme--9782379242915-page-9">https://shs.cairn.info/l-art-du-diagramme--9782379242915-page-9</a>
 </div>
-<div id="ref-deleuze1988" class="csl-entry" role="listitem">
-Deleuze, G. (1988). <em>Le pli</em>. Editions de Minuit.
-</div>
-<div id="ref-deleuze2003" class="csl-entry" role="listitem">
-Deleuze, G. (2003). <em>Leibniz : âme et damnation</em>. <a href="https://www.librairie-gallimard.com/livre/9782070734771-leibniz-ame-et-damnation-gilles-deleuze/">https://www.librairie-gallimard.com/livre/9782070734771-leibniz-ame-et-damnation-gilles-deleuze/</a>
-</div>
 <div id="ref-descola2005" class="csl-entry" role="listitem">
 Descola, P. (2005). <em>Par-delà nature et culture</em>. NRF : Gallimard.
+</div>
+<div id="ref-dondero2020" class="csl-entry" role="listitem">
+Dondero, M. G. (2020). <em>Les langages de l’image : de la peinture aux big visual data</em>. Hermann.
+</div>
+<div id="ref-drucker2020" class="csl-entry" role="listitem">
+Drucker, J., Mignon, M., &amp; Bortolotti, M.-M. (2020). <em>Visualisation: L’interprétation modélisante</em> (1er édition). B42.
 </div>
 <div id="ref-ferri2020" class="csl-entry" role="listitem">
 Ferri, F. (2020). Ingénierie sémiotique et modélisation diagrammatique. Au-delà du modèle de Turing. <em>Revue Intelligibilité du numérique</em>. <a href="http://intelligibilite-numerique.numerev.com/numeros/n-3-2022/2629-ingenierie-semiotique-et-modelisation-diagrammatique-au-dela-du-modele-de-turing">http://intelligibilite-numerique.numerev.com/numeros/n-3-2022/2629-ingenierie-semiotique-et-modelisation-diagrammatique-au-dela-du-modele-de-turing</a>
 </div>
 <div id="ref-ferri2021" class="csl-entry" role="listitem">
 Ferri, F. (2021). <em>Science opérative et ingénierie sémiotique: des machines graphiques à la morphogenèse organique</em> [PhD thesis].
+</div>
+<div id="ref-guattari1989" class="csl-entry" role="listitem">
+Guattari, F. (1989). <em>Cartographies schizoanalytiques</em>. Galilée.
+</div>
+<div id="ref-guattari1992" class="csl-entry" role="listitem">
+Guattari, F. (1992). <em>Chaosmose</em>. Galilée.
 </div>
 <div id="ref-hofstadter2013" class="csl-entry" role="listitem">
 Hofstadter, D., &amp; Sander, E. (2013). <em>L’analogie : Coeur de la pensée</em>. Odile Jacob.
@@ -325,20 +438,20 @@ Khatchatourov, A. (2017). <em>Big Data entre l<span>’</span>archive et le diag
 <div id="ref-latour2012" class="csl-entry" role="listitem">
 Latour, B. (2012). <em>Enquêtes sur les modes d’existence : Une anthropologie des modernes</em>. Editions La Découverte.
 </div>
+<div id="ref-lordon2025" class="csl-entry" role="listitem">
+Lordon, F., &amp; Lucbert, S. (2025). Chapitre 18. Politique du symbolique. <em>Sciences humaines et sociales</em>, 411–427. <a href="https://shs.cairn.info/article/DEC_LORDO_2025_01_0411">https://shs.cairn.info/article/DEC_LORDO_2025_01_0411</a>
+</div>
 <div id="ref-louâpre2017" class="csl-entry" role="listitem">
 Louâpre, M., &amp; Szoniecky, S. (2017). <em>Outils pour une modélisation de l<span>’</span>interprétation des archives numériques</em> (Systèmes d’information, web et société). ISTE éditions.
 </div>
 <div id="ref-mauger2025" class="csl-entry" role="listitem">
 Mauger, C. (2025). <em>Pourquoi l<span>’</span>IA a-t-elle gagné un prix Nobel de physique ?</em> <a href="https://www.mediapart.fr/journal/culture-et-idees/040125/pourquoi-l-ia-t-elle-gagne-un-prix-nobel-de-physique">https://www.mediapart.fr/journal/culture-et-idees/040125/pourquoi-l-ia-t-elle-gagne-un-prix-nobel-de-physique</a>
 </div>
-<div id="ref-morin1981" class="csl-entry" role="listitem">
-Morin, E. (1981). <em>La méthode, tome 1</em>. Seuil.
-</div>
-<div id="ref-morin1992" class="csl-entry" role="listitem">
-Morin, E. (1992). <em>La méthode, la connaissance de la connaissance, tome 3</em>. Seuil.
-</div>
 <div id="ref-mugur-schächter2006" class="csl-entry" role="listitem">
 Mugur-Schächter, M. (2006). <em>Sur le tissage des connaissances</em>. Hermes Science Publications.
+</div>
+<div id="ref-ogien2014" class="csl-entry" role="listitem">
+Ogien, A. (2014). Pragmatismes et sociologies. <em>Revue française de sociologie</em>, <em>55</em>(3), 563–579. <a href="https://doi.org/10.3917/rfs.553.0563">https://doi.org/10.3917/rfs.553.0563</a>
 </div>
 <div id="ref-plagnol2025" class="csl-entry" role="listitem">
 Plagnol, A. (2025). Intuitions harmoniques dans un univers mental. <em>PSN</em>, <em>23</em>(1), 73–93. <a href="https://shs.cairn.info/revue-psn-2025-1-page-73">https://shs.cairn.info/revue-psn-2025-1-page-73</a>
@@ -352,6 +465,9 @@ Rabouin, D. (2010). <em>Vivre ici, spinoza, ethique locale</em> (1st ed.). Press
 <div id="ref-saleh2024" class="csl-entry" role="listitem">
 Saleh, I., Szoniecky, S., &amp; Ghenima, M. (2024). <em>Frontières numériques 2023</em>.
 </div>
+<div id="ref-sarasvathy2001" class="csl-entry" role="listitem">
+Sarasvathy, S. D. (2001). Causation and effectuation: Toward a theoretical shift from economic inevitability to entrepreneurial contingency. <em>The Academy of Management Review</em>, <em>26</em>(2), 243–263. <a href="https://doi.org/10.2307/259121">https://doi.org/10.2307/259121</a>
+</div>
 <div id="ref-sauret2017" class="csl-entry" role="listitem">
 Sauret, N. (2017). Epistémologie du modèle. <em>Sens Public</em>. <a href="http://sens-public.org/article1287.html">http://sens-public.org/article1287.html</a>
 </div>
@@ -361,11 +477,17 @@ Schwab, K. (2017). <em>The Fourth Industrial Revolution</em> (1er édition). Por
 <div id="ref-souriau2009" class="csl-entry" role="listitem">
 Souriau, É., Stengers, I., &amp; Latour, B. (2009). <em>Les différents modes d’existence suivi de Du mode d’existence de l’oeuvre à faire</em> (Nouvelle édition). Presses universitaires de France.
 </div>
+<div id="ref-stiegler2020" class="csl-entry" role="listitem">
+Stiegler, B., &amp; Supiot, A. (2020). <em>Bifurquer: <span>"</span>il n’y a pas d’alternative<span>"</span></em>. Éditions les Liens qui libèrent.
+</div>
 <div id="ref-suarez2025" class="csl-entry" role="listitem">
 Suarez, S., &amp; Eynard, B. (2025). MindPulse : un nouvel outil pour mesurer capacités décisionnelles et degré de vigilance. <em>Revue Défense Nationale</em>, <em>HS16</em>, 164–172. <a href="https://doi.org/10.3917/rdna.hs16.0164">https://doi.org/10.3917/rdna.hs16.0164</a>
 </div>
 <div id="ref-szoniecky2020" class="csl-entry" role="listitem">
 Szoniecky, S. (2020). Conception d<span>’</span>un crible pour mesurer collectivement les impacts écologiques de l<span>’</span>activité. <em>Les Cahiers du numérique</em>, <em>16</em>(2-3-4), 175–199. <a href="https://doi.org/10.3166/LCN.2020.007">https://doi.org/10.3166/LCN.2020.007</a>
+</div>
+<div id="ref-szoniecky2024" class="csl-entry" role="listitem">
+Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
 </div>
 <div id="ref-szoniecky2020a" class="csl-entry" role="listitem">
 Szoniecky, S., &amp; Toumia, A. (2020). Design de connaissances dans l<span>’</span>Internet des Objets : Blockchain et réfrigérateur connecté. <em>Communication management</em>, <em>Vol. 17</em>(1), 39–52. <a href="https://www.cairn.info/revue-communication-et-management-2020-1-page-39.htm">https://www.cairn.info/revue-communication-et-management-2020-1-page-39.htm</a>
@@ -399,236 +521,242 @@ Voss, D. (2019). <em>IV. Diagrammes : usages multiples</em>. Hermann. <a href="h
 </section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -636,185 +764,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
