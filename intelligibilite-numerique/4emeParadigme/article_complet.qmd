@@ -220,6 +220,8 @@ Notre huitième et dernier principe que nous appelons **principe ontoéthique** 
 
 Evaluer la valeur d'une puissance : "*Autrement dit, au lieu de tenir les valeurs pour un donné que la sociologie ou la philosophie doivent mettre au jour de façon empirique, il convient de les appréhender comme des principes d’action partagés qui s’élaborent et se découvrent dans le cours de l’activité pratique dans lequel l’usage qui en est fait se réalise.*" [@ogien2014]
 
+Exemple de quantification des rapports humain ai [@riedl]
+
 Enrichissement du calcul de la complexité à partir d'une modélisation d'une existence informationelles
 
 Contre exemple d'analyse du pouvoir de décision :
