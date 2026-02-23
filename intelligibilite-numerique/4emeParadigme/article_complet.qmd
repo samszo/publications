@@ -37,11 +37,11 @@ Je pourrais aussi rentrer dans les détails de cette réponse pour en faire une 
 
 > " non pas la "vérité" d'une connaissance mais son "importance", non pas son contenu mais le cadrage des pratiques qui conditionnent son statut et ses utilisations possibles. " [@citton2010] p. 30
 
-Par exemple, il est symptomatique de lire dans la conclusion que propose l'IA que "Face à ces défis" d'une "accélération technologique" la solution indiscutable consiste à créer de nouvelles technologies : "Cela implique de repenser les processus de conception". Même si cette solution technophile est atténuer par des processus "d'évaluation et de régulation", l'IA ne propose pas de mettre fin à cette course à la technique. Comment l'en blâmer, qui d'un tant soit peu raisonnable, scierai la branche sur laquelle il est assis... Mais nous supposons là une conscience que cette IA serait capable de convoquer pour justifier son existence et faire en sorte qu'elle perdure. Sans rentrer dans les débats sur l'émergence effective ou non de cette conscience artificielle ou d'une IA générale (<https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale>), retenons tout de même qu'ils posent une question éthique à trancher comme le souligne Alain Cardon :
+Par exemple, il est symptomatique de lire dans la conclusion que propose l'IA que "Face à ces défis" d'une "accélération technologique" la solution consiste à créer de nouvelles technologies : "Cela implique de repenser les processus de conception". Même si cette solution technophile est atténuer par des processus "d'évaluation et de régulation", l'IA ne propose pas de mettre fin à cette course à la technique. Comment l'en blâmer, qui d'un tant soit peu raisonnable, scierai la branche sur laquelle il est assis... Mais nous supposons là une conscience que cette IA serait capable de convoquer pour justifier son existence et faire en sorte qu'elle perdure. Sans rentrer dans les débats sur l'émergence effective ou non de cette conscience artificielle ou d'une IA générale (<https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale>), retenons tout de même qu'ils posent une question éthique à trancher comme le souligne Alain Cardon :
 
 > " le développement puis la mise en exploitation de systèmes psychiques artificiels dotés de consciences intentionnelles doivent nécessairement poser le problème des choix de leurs usages ou bien la décision justifiée de sa non-réalisation. Donc, il faut clairement poser maintenant le problème éthique de l’usage de la conscience artificielle. " [@cardon2018] p. 2
 
-Je pourrais aussi comme le propose Marcello Vitali Rosatti décrypter les approches computationnelles mises en place par les ingénieurs qui ont conçus l'IA que j'utilise, afin de "saisir les présupposés épistémologiques, les implications politiques et culturelles, les visions du monde" [@vitalirosati2025] et ainsi estimer quelles valeurs de l'intelligence sont affirmées et dans quelles hiérarchies sociales elles me placent. C'est sans doute un travail très important a mener face à des pratiques impliquant des formalismes très complexes qu'on fait fonctionner sans questionner leurs sens comme le souligne Miora Mugur-Schächter dans les objectifs de la méthode de conceptualisation relativisée qui :
+Je pourrais aussi comme le propose Marcello Vitali Rosatti décrypter les approches computationnelles mises en place par les ingénieurs qui ont conçus l'IA que j'utilise, afin de "saisir les présupposés épistémologiques, les implications politiques et culturelles, les visions du monde" [@vitalirosati2025] et ainsi estimer quelles valeurs de l'intelligence sont affirmées et dans quelles hiérarchies sociales elles me placent. C'est sans doute un travail très important a mener face à des pratiques impliquant des formalismes très complexes qu'on fait fonctionner sans questionner leurs sens comme le soulignait Miora Mugur-Schächter, il y a déjà vingt ans dans le domaine de la mécanique quantique en définissant les objectifs de la méthode de conceptualisation relativisée qui :
 
 > " élabore un système cohérent et consensuel d'algorithmes de conceptualisation : des algorithmes de génération et développement de sens; à caractère effectif et protégés par construction de toute insertion de faux problèmes ou de paradoxes. " [@mugur-schächter2006] p. 314
 
@@ -55,15 +55,19 @@ Je pourrais aussi partir de l'idée que " les intelligences artificielles géné
 
 Relativisons cette position en replaçant par exemple se propos dans un autre contexte, celui de l'alimentation. La citation ci-dessus garde tout son sens si l'on pense aux consommateurs qui se nourrissent de plats ultra-transformés sans connaître ni la recette, ni le mode de fabrication d'un plat : ils ne participent pas " à la production symbolique " ou plutôt ils participent uniquement à la production symbolique de la marque du produit qu'il consomment. A l'opposé, les personnes qui cuisinent et mangent les légumes de leur jardin, comprennent parfaitement que la « génération automatique » des légumes n'est pas si automatique que ça et demande beaucoup d'efforts même s'ils s'aident d'un motoculteur, de produits chimiques, d'une communauté... Entre ces consommateurs et ces producteurs, il y a une multitude de relations possibles entre des aliments et leur consommation que chacun de nous composent suivant des agencements plus ou moins équilibrés : pensons à ces boites de soupes qu'Andy Warhol a transformé en œuvres d'art...
 
-Même si dans l'article que je viens de citer, Anne Alombert émet quelques doute quand à l'usage des analogies pour comprendre et analyser un phénomène, celle que nous venons d'utiliser montre toute la complexité inhérente à la consommation d'un produit qu'il soit une carotte ou un chatbot. Au delà d'une analyse des impacts généraux de l'IA sur nos pratiques [@eddekkar2025], ce sont ces multitudes d'agencements et d'équilibres plus ou moins stables qu'il nous faut étudier pour analyser et comprendre les enjeux du quatrième paradigme de la science. Nous sommes dans un environnement complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur. Entre l'interprétation critique des productions de ces IAs, le décryptage de leur présupposés épistémologiques et la construction d'automates computationnels au service de l’intelligence collective [@alombert2023], je propose dans cet article une méthode de modélisation info-communicationnelle ayant pour ambition d'évaluer la durabilité et la profitabilité réciproque, la symbiose, entre les activités intellectuelles, les agents IA et nos environnements.
+Même si dans l'article que je viens de citer, Anne Alombert émet quelques doute quand à l'usage des analogies pour comprendre et analyser un phénomène, celle que nous venons d'utiliser montre toute la complexité inhérente à la consommation d'un produit qu'il soit une carotte ou un chatbot. Au delà d'une analyse des impacts généraux de l'IA sur nos pratiques [@eddekkar2025], ce sont ces multitudes d'agencements et d'équilibres plus ou moins stables qu'il nous faut étudier pour analyser et comprendre les enjeux du quatrième paradigme de la science. Nous sommes dans un environnement complexe où les IAs deviennent indispensables à la pratique scientifique mais aussi problématique quant à leurs usages pour par exemple produire rapidement un texte sans saveur et contenant des erreurs. Entre l'interprétation critique des productions de ces IAs, le décryptage de leur présupposés épistémologiques et la construction d'automates computationnels au service de l’intelligence collective [@alombert2023], je propose dans cet article une méthode de modélisation info-communicationnelle ayant pour ambition d'évaluer la durabilité et la profitabilité réciproque, la symbiose, entre les activités intellectuelles, les agents IA et nos environnements.
 
-Nous nous plaçons dans les perspectives de recherche qu'emprunte [@chateauraynaud] pour analyser les pouvoirs des algorithmes dans un écosystème sociotechnique. Mais au lieu de privilégier l'étude de l'environnement matériel dans lequel ils existent, nous nous intéresserons aussi aux relations qu'entretiennent ces matérialités avec nos "intériorités" [@descola2005]. Notre objectif est de définir un protocole de modélisation et d'analyse de ses relations et plus particulièrement des pouvoirs qui sont en jeux ainsi que leurs fluctuations. Grâce à ce protocole, nous proposons une méthode pour analyser comment un individu humain ou artificiel évolue dans un son environnement et quelles répercutions cela engendre. Nous concevons ces modélisations et ces analyses comme un travail d'introspection qui cherche à révéler "l'authenticité" [@benbouzid2025] de nos pratiques, renforcer notre esprit critique [@jacquemot2025] et nous conduire à des choix éthiques [@deleuze2003a], c'est à-dire des choix dont nous sommes capables de vivre les conséquences.
+Nous nous plaçons dans les perspectives de recherche qu'emprunte [@chateauraynaud] pour analyser les pouvoirs des algorithmes dans un écosystème sociotechnique. Mais au lieu de privilégier uniquement l'étude de l'environnement matériel dans lequel ils existent, nous nous intéresserons aussi aux relations qu'entretiennent ces matérialités avec nos "intériorités" [@descola2005]. Notre objectif est de définir un protocole de modélisation et d'analyse de ses relations comme le propose les recherches pour une science de la collaboration humain-IA pour la prise de décision :
 
-Dans un premier temps, je montrerai comment modéliser des actions situées [@quéré2020] et des protocoles [@sauret2017] liés à l'écriture d'un article scientifique, afin de mesurer pour les acteurs, les agents et l'environnement, l'augmentation et la diminution de leurs pouvoirs de discernement, de raisonnement et d'agir [@szoniecky2020]. J'analyserai ensuite ces mesures pour évaluer des niveaux de symbiose en comparant la réciprocité et la durabilité des fluctuations de puissances.
+> " Future research will require longitudinal field studies, shared benchmarks that evaluate collaboration processes rather than accuracy alone, and deeper investigation into how Human–AI teams evolve, adapt, and maintain alignment over time " [@gonzalez2026, p. 18]
 
-J'expliquerai ensuite pourquoi le travail scientifique tend vers un dépassement de la pensée textuelle au profit d'une pensée diagrammatique qui mobilise des "schémas interprétatifs" [@bachimont2020] impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.
+Nous proposons une méthode pour analyser comment un individu humain ou artificiel évolue dans un son environnement et quelles répercutions cela engendre. Nous concevons ces modélisations et ces analyses comme un travail d'introspection qui cherche à révéler "l'authenticité" [@benbouzid2025] de nos pratiques, renforcer notre esprit critique [@jacquemot2025] et nous conduire à des choix éthiques [@deleuze2003a], c'est à-dire des choix dont nous sommes capables de vivre les conséquences.
 
-Avec cet article, je souhaite orienter les réflexions sur l'intelligibilité du numérique vers une prise en compte de l'adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c'est de poser les bases d'une discussion sur l'éthique du numérique comprise comme la décision d'exercer ou non les pouvoirs que nous octroient les machines.
+Dans un premier temps, je montrerai comment modéliser des actions situées [@quéré2020] et des protocoles [@sauret2017] liés à l'écriture d'un article scientifique, afin de mesurer pour les acteurs, les agents et l'environnement, l'augmentation et la diminution de leurs pouvoirs de discernement, de raisonnement, de résonnance et d'agir [@szoniecky2020]. J'analyserai ensuite ces mesures pour évaluer des niveaux de symbiose en comparant la réciprocité et la durabilité des fluctuations de puissances.
+
+J'expliquerai ensuite pourquoi ce travail scientifique tend vers un dépassement de la pensée textuelle au profit d'une pensée diagrammatique qui mobilise des "schémas interprétatifs" [@bachimont2020] impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.
+
+Avec cet article, je souhaite orienter les réflexions sur l'intelligibilité du numérique vers une prise en compte de l'adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c'est de poser les bases d'une discussion sur l'éthique du numérique comprise comme la décision d'exercer ou non les pouvoirs qui sont à notre disposition.
 
 ## Modéliser les pouvoirs des flux info-communicationnels
 
@@ -73,13 +77,14 @@ Pour illustrer notre utilisation de cette méthode de modélisation des communic
 
 ![Modèle d'une existence informationnelle](media/ExistenceInformationnelle.png){#fig-ModeleExistenceInformationnelle}
 
-Dans notre HDR nous avons montrer que ce méta-modèle sert à calculer les complexités d'un écosystème de connaissances, comment les représenter, les explorer, les analyser et définir des objectifs existentiels. Ce qui nous importe ici c'est de montrer que ce méta-modèle sert aussi à calculer des fluctuations de puissances dont les analyses alimenteront des discussions éthiques pour déterminer collectivement : quelles puissances préserver pour atteindre quels états précis de l'écosystème ?
+Dans notre HDR, nous avons montrer que ce méta-modèle sert à calculer les complexités d'un écosystème de connaissances, comment les représenter, les explorer, les analyser et définir des objectifs existentiels. Ce qui nous importe ici c'est de montrer que ce méta-modèle sert aussi à calculer des fluctuations de puissances dont les analyses alimenteront des discussions éthiques pour déterminer collectivement : quelles puissances préserver pour atteindre quels états précis de l'écosystème ?
 
-Pour calculer ces fluctuations de puissances, nous utilisons les principes des « pulsations existentielles » [@berque2009, p. 402] dans un cycle de sémiose [@µ2015] qui mettent en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonnement/résonnnance (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle des interfaces transforment la matière en pensée (discernement) et la pensée en matière (agir), elles sont les « cribles » [@guattari1992] par lesquels passent les « pulsations existentielles » qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs superflues» et en se chargeant des « valeurs importantes ». Ces cribles, Descola propose de les structurer à partir de « matrices ontologiques » [@descola2005, p. 323] qui définiront les rapports entre physicalités et intériorités. [@hofstadter2013, p. 233] nous expliquent que nous élaborons ces cribles par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser ces interfaces, ces cribles, ces rapports, ces réseaux d’analogies qui vont influencer nos affects [@lordon2025] pour augmenter ou diminuer nos pouvoirs de discerner, de raisonnement/résonnnance et d'agir.
+Pour calculer ces fluctuations de puissances, nous utilisons les principes des « pulsations existentielles » [@berque2009, p. 402] dans un cycle de sémiose [@µ2015] qui mettent en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonnement/résonnnance (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle des interfaces transforment la matière en pensée (discernement) et la pensée en matière (agir), elles sont les « cribles » [@guattari1992] par lesquels passent les « pulsations existentielles » qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs superflues » et en se chargeant des « valeurs importantes ». Ces cribles, Descola propose de les structurer à partir de « matrices ontologiques » [@descola2005, p. 323] qui définiront les rapports entre physicalités et intériorités. [@hofstadter2013, p. 233] nous expliquent que nous élaborons ces cribles par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser ces interfaces, ces cribles, ces rapports, ces réseaux d’analogies qui vont influencer nos affects [@lordon2025] pour augmenter ou diminuer nos pouvoirs de discerner, de raisonnement/résonnnance et d'agir.
 
-Nous avons développé un environnement numérique pour modéliser et représenter les fluctuations de pouvoir que produisent les pulsations existentielles. Cet environnement a été expérimenté dans le cadre d'un cours sur l'Ethique des écosystèmes numériques donné en 2025 et 2026 aux étudiants du Master 2 Analyse et Conception des Environnements Humains Numériques ([ACEHN](https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-)). Cet environnement se compose :
+Nous avons développé un environnement numérique pour modéliser et représenter les fluctuations de pouvoir que produisent les pulsations existentielles. Cet environnement a été expérimenté dans le cadre d'un cours sur l'Ethique des écosystèmes numériques donné en 2025 et 2026 aux étudiants du Master 2 Analyse et Conception des Environnements Humains Numériques ([ACEHN](https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-)). Cet environnement se compose de :
 
--   une base de données Omeka S paramétrée avec 4 modèles de ressources pour définir 4 classes d'objet @fig-diagClassRaisonTrajective : des raisons trajectives, des pulsations existentielles, des pouvoirs, des temporalités.
+-   une base de données d'objets définis par 4 classes différentes et leurs relations @fig-diagClassRaisonTrajective : des raisons trajectives, des pulsations existentielles, des pouvoirs, des temporalités.
+-   une application web de gestion de ces objets et de leur visualisation sous forme de diagramme @fig-appliweb_raisontrajective
 
 ::: {#fig-diagClassRaisonTrajective}
 ```{mermaid}
@@ -109,7 +114,7 @@ class Temporalitérelativedespulsations["Temporalité relative des pulsations"] 
     +Temporalités Temporal Coverage
     +Item A comme pulsation existentielle
 }
-raisonTrajective "1" --> "*" pulsationExistentielle : A comme pulsation existentielle
+raisonTrajective "1" --> "*" pulsationExistentielle : Ordre de la pulsation existentielle
 pulsationExistentielle "0" --> "*" Temporalitérelativedespulsations : A comme flux
 pulsationExistentielle "1" --> "*" Pouvoir : A comme pouvoir
 Temporalitérelativedespulsations "1" --> "*" pulsationExistentielle  : A comme pulsation existentielle
@@ -118,17 +123,29 @@ Temporalitérelativedespulsations "1" --> "*" pulsationExistentielle  : A comme 
 Diagramme de classes pour la modélisation des raisons trajectives
 :::
 
+![Application web pour la gestion des raisons trajectives](media/raisontrajective.png){#fig-appliweb_raisontrajective}
+
 ### Protocole de modélisation dans Omeka S
 
-Le protocole de modélisation dans Omeka S est simple, il consiste à évaluer l'augmentation ou la diminution des pouvoirs dans les pulsations existentielles qui composent une raison trajective. Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes.
+Nous utilisons l'application Web PHP Omeka S (https://omeka.org/s/) car elle fourni les fonctionnalités nécessaires pour mettre à disposition les données de la recherche suivant les principes FAIR (Facile à trouver, accessible, interopérable et réutilisable) (https://www.inist.fr/realisations/omeka-pour-des-bases-de-donnees-valorisees/). De plus, le développement sous la forme de modules offre une grande souplesse pour ajouter des fonctionnalités spécifiques comme la génération de diagramme, la transcription automatique, l'importation de données extérieures...
 
-Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
+Le protocole de modélisation dans Omeka S est simple, il consiste à évaluer l'augmentation ou la diminution des pouvoirs dans les rapports entre les physicalités et les intériorités (pulsations existentielles) qui composent une suite d'événements (raison trajective). Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes. Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
 
 Nous avons résumé le protocole de modélisation en quatre étapes.
 
-#### Créer une raison trajective
+#### 1. Créer une raison trajective
 
-Cette étape consiste à créer dans Omeka S un item en utilisant le ressource template : Raison trajective. La raison trajective est définie par un nom, une courte description et par une temporalité des flux évenementiels. Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique", nous définisons quatre flux dans l'environnement :
+Cette étape consiste à créer dans Omeka S un item en utilisant le ressource template : Raison trajective ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/47)).
+
+La raison trajective est définie par :
+
+-   un nom,
+
+-   une courte description
+
+-   une temporalité des flux événementiels.
+
+Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique", nous définisons quatre flux dans l'environnement :
 
 1.  Répondre à un appel à proposition,
 
@@ -142,17 +159,53 @@ Dans ce cas, la succession des flux est organisée de manière causale : il est 
 
 > "Causation processes take a particular effect as given and focus on selecting between means to create that effect. Effectuation processes take a set of means as given and focus on selecting between possible effects that can be created with that set of means." [@sarasvathy2001]
 
-Quelque soit la méthode utilisée pour organiser la succession des événements ceux-ci sont modélisés par une pulsation existentielle et un ordre qui correspond à l'historique de l'événement dans la raison trajective.
+Quelque soit la méthode utilisée pour organiser la succession des événements ceux-ci sont modélisés par une pulsation existentielle et un ordre qui correspond à la position temporelle de l'événement dans la raison trajective.
 
-2.  Créer des pulsations existentielles Dams Omeka S créer un item en utilisant le ressource template : Pulsation existentielle. Une pulsation existentielle est modéliser par un ensemble de pouvoirs et par des relations avec d'autres pulsations. Alors que la temporalité des flux dans la raison trajective est déterminée par une succession causale d'états, dans les pulsations existentielles les relations entre les flux s'organisent par une temporalité relative : avant, pendant ou après. Cette différence dans la gestion temporelle des flux entre linéaires pour les raisons trajectives et relatives pour des pulsations exitentielles
+### 2. Créer des pulsations existentielles
 
-### Créer les pouvoirs existentielles
+Dams Omeka S, cela consiste à créer un item en utilisant le ressource template : Pulsation existentielle ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/45)).
 
-Dans omk créer un item en utilisant le ressource template : Pouvoir existentiel
+Une pulsation existentielle est modéliser par :
+
+-   un titre
+
+-   une courte description
+
+-   un ensemble de pouvoirs
+
+-   des relations avec d'autres pulsations.
+
+Alors que la temporalité des flux dans la raison trajective est déterminée par une succession temporelle d'états suivant une règles spécifique comme la causalité, dans les pulsations existentielles les relations entre les flux s'organisent par une temporalité relative : avant, pendant ou après. Cette gestion temporelle entre une succession des flux pour les raisons trajectives et une temporalité relatives pour des pulsations exitentielles, permet tout à la fois de définir l'ordre des flux (raison trajective) et les liens entre flux (pulsation existentielle).
+
+Par exemple, la pulsation existentielle "Rédiger une proposition d'article" est modélisée avec trois pouvoirs :
+
+-   Définir un contexte avec Gemini
+
+-   Définir un contexte manuellement
+
+-   Définir un contexte avec Gemini - Visual Studio - Copilot
+
+Cette pulsation est en relation avec d'autres pulsations :
+
+-   avant : Etre informé d'un appel à communication
+
+Cette modélisation n'a pas pour vocation d'être exhaustive et de refléter tous les états possibles de l'environnement mais uniquement les états qui sont signifiants par rapport à une problématique spécifique. Ainsi, les trois pouvoirs que nous avons choisi, illustrent trois états possibles de la pulsation suivant que nos l'expériementons avec des IAs ou non.
+
+### 3. Créer les pouvoirs existentielles
+
+Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utilisant le ressource template : Pouvoir existentiel
+
+Un pouvoir existentiel se définie Ne pas oublier de définir l'intensité du pouvoir entre :
+
+-100 = diminution extrême du pouvoir 0 = pas de changement 100 = augmentation extrême du pouvoir Il y a quatre types de pouvoir existentiel ayant chaucun des propriétés particulières :
+
+Pouvoir de discerner : physique -\> crible -\> actant -\> concept Pouvoir de résonnance : concept -\> analogie -\> concept Pouvoir de raisonnement : concept -\> logique -\> concept Pouvoir d'agir : concept -\> actant -\> crible -\> physique
 
 Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
 
 Il y a quatre types de pouvoir existentiel ayant chaucun des propriétés particulières : - Pouvoir de discerner : physique -\> crible -\> actant -\> concept - Pouvoir de raisonner : concept -\> actant -\> concept - Pouvoir de résonner : concept -\> concept - Pouvoir de raisonabilité : actant -\> concept - Pouvoir d'agir : concept -\> actant -\> crible -\> physique
+
+Il reviendra ensuite à chacun d'évaluer si son pouvoir augmente ou diminue lors de l'expérience.
 
 ### Associer les pouvoirs existentielles aux pulsations existentielles
 
