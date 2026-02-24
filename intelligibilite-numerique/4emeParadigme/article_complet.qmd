@@ -67,11 +67,11 @@ Dans un premier temps, je montrerai comment modéliser des actions situées [@qu
 
 J'expliquerai ensuite pourquoi ce travail scientifique tend vers un dépassement de la pensée textuelle au profit d'une pensée diagrammatique qui mobilise des "schémas interprétatifs" [@bachimont2020] impliquant des capacités de calcul de plus en plus grandes et une adéquation de plus en plus forte entre acteurs et agents.
 
-Avec cet article, je souhaite orienter les réflexions sur l'intelligibilité du numérique vers une prise en compte de l'adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c'est de poser les bases d'une discussion sur l'éthique du numérique comprise comme la décision d'exercer ou non les pouvoirs qui sont à notre disposition.
+Avec cet article, je souhaite orienter les réflexions sur l'intelligibilité du numérique vers une prise en compte de l'adéquation durable, profitable et réciproque entre acteurs, agents et environnement. Ce qui nous intéresse ici, c'est de poser les bases d'une discussion sur l'éthique du numérique ayant pour objectif de choisir d'exercer ou non les pouvoirs qui sont à notre disposition.
 
-## Modéliser les pouvoirs des flux info-communicationnels
+## Modéliser les pouvoirs dans les flux info-communicationnels
 
-Il faudrait sans doute replacer les propos qui vont suivre dans un état de l'art plus consistant qui présenterait comment nous positionnons "les images de pensée" [@caraës2011] comme des cartographies [@guattari1989] issues d'une modélisation des espaces vivants [@aït-touati2019], à partir d'une esthétique orientée par les données [@drucker2020] et d'une sémiotique visuelle spécifique [@dondero2020]. Mais cela dépasserais grandement le cadre de cet article dont l'objectif principal est de donner une méthode concrète pour analyser les fluctuations de pouvoirs à partir d'une modélisation des flux info-communicationnels qui s'appuie sur les principes de modélisation et de représentation que nous avons présenté dans notre HDR [@szoniecky2024].
+Il faudrait sans doute replacer les propos qui vont suivre dans un état de l'art plus consistant qui présenterait comment nous positionnons "les images de pensée" [@caraës2011] comme des cartographies [@guattari1989] issues d'une modélisation des espaces vivants [@aït-touati2019], à partir d'une esthétique orientée par les données [@drucker2020] et d'une sémiotique visuelle spécifique [@dondero2020] se basant sur une théorie de l'esprit [@plagnol2025]. Mais cela dépasserais grandement le cadre de cet article dont l'objectif principal est de donner une méthode concrète pour analyser les fluctuations de pouvoirs à partir d'une modélisation des flux info-communicationnels qui s'appuie sur les principes de modélisation et de représentation que nous avons présenté dans notre HDR [@szoniecky2024].
 
 Pour illustrer notre utilisation de cette méthode de modélisation des communications entre acteurs et agents dans l'environnement numérique, nous prendrons un exemple en lien avec le quatrième paradigme de la science : l'écriture d'un article scientifique. Pour ce faire, nous modéliserons l'écosystème de connaissances en concevant cette pratique comme la définition d'une multitude d'états transitoires dans ce qu'on pourrait nommer une "chronotopologie" [@ferri2021]. En accord avec les principes que nous avons défini dans notre HDR [@szoniecky2024] et du méta-modèle ontoéthique qui en résulte @fig-ModeleExistenceInformationnelle, nous représentons ces successions d'états topologiques sous la forme d'une existence informationnelle dans un espace-temps donné. Nous ne détaillerons pas ici les principes théoriques et cartographiques du méta-modèle qui compose les dimensions de l’existence (physique, actant, concept, rapport) corrélées aux métriques (euclidienne, topographique, topologique, temporelle) permettant de les mesurer ; aux concepts prétopologiques (extérieur, bord, intérieur, flux) permettant de les modéliser et aux analogies (branches, graines, racines, sève) permettant de les représenter :
 
@@ -129,7 +129,7 @@ Diagramme de classes pour la modélisation des raisons trajectives
 
 Nous utilisons l'application Web PHP Omeka S (https://omeka.org/s/) car elle fourni les fonctionnalités nécessaires pour mettre à disposition les données de la recherche suivant les principes FAIR (Facile à trouver, accessible, interopérable et réutilisable) (https://www.inist.fr/realisations/omeka-pour-des-bases-de-donnees-valorisees/). De plus, le développement sous la forme de modules offre une grande souplesse pour ajouter des fonctionnalités spécifiques comme la génération de diagramme, la transcription automatique, l'importation de données extérieures...
 
-Le protocole de modélisation dans Omeka S est simple, il consiste à évaluer l'augmentation ou la diminution des pouvoirs dans les rapports entre les physicalités et les intériorités (pulsations existentielles) qui composent une suite d'événements (raison trajective). Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes. Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
+Le protocole de modélisation des pouvoirs dans les flux info-communicationnels consiste à évaluer l'augmentation ou la diminution des pouvoirs dans les rapports entre les physicalités et les intériorités (pulsations existentielles) qui composent une suite d'événements (raison trajective). Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes. Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
 
 Nous avons résumé le protocole de modélisation en quatre étapes.
 
@@ -145,7 +145,7 @@ La raison trajective est définie par :
 
 -   une temporalité des flux événementiels.
 
-Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique", nous définisons quatre flux dans l'environnement :
+Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique", nous définissons quatre flux dans l'environnement :
 
 1.  Répondre à un appel à proposition,
 
@@ -175,7 +175,7 @@ Une pulsation existentielle est modéliser par :
 
 -   des relations avec d'autres pulsations.
 
-Alors que la temporalité des flux dans la raison trajective est déterminée par une succession temporelle d'états suivant une règles spécifique comme la causalité, dans les pulsations existentielles les relations entre les flux s'organisent par une temporalité relative : avant, pendant ou après. Cette gestion temporelle entre une succession des flux pour les raisons trajectives et une temporalité relatives pour des pulsations exitentielles, permet tout à la fois de définir l'ordre des flux (raison trajective) et les liens entre flux (pulsation existentielle).
+Alors que la temporalité des flux dans la raison trajective est déterminée par une succession temporelle d'états suivant une règles spécifique comme la causalité, dans les pulsations existentielles les relations entre les flux s'organisent par une temporalité relative : avant, pendant ou après. Cette gestion temporelle entre une succession des flux pour les raisons trajectives et une temporalité relatives pour des pulsations existentielles, permet de définir l'ordre des flux (raison trajective) et les liens entre flux (pulsation existentielle).
 
 Par exemple, la pulsation existentielle "Rédiger une proposition d'article" est modélisée avec trois pouvoirs :
 
@@ -193,13 +193,41 @@ Cette modélisation n'a pas pour vocation d'être exhaustive et de refléter tou
 
 ### 3. Créer les pouvoirs existentielles
 
-Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utilisant le ressource template : Pouvoir existentiel
+Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utilisant le ressource template : Pouvoir existentiel ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/46)).
 
-Un pouvoir existentiel se définie Ne pas oublier de définir l'intensité du pouvoir entre :
+Un pouvoir existentiel définie l'intensité d'un rapport entre des dimensions ontologiques composant une existence informationnelle @fig-ModeleExistenceInformationnelle.
 
--100 = diminution extrême du pouvoir 0 = pas de changement 100 = augmentation extrême du pouvoir Il y a quatre types de pouvoir existentiel ayant chaucun des propriétés particulières :
+L'intensité du pouvoir est définie suivant une échelle :
+-   -100 = diminution extrême du pouvoir 
+    
+-   0 = pas de fluctuation du pouvoir. Notons qu'il nous semble incohérent de définir une intensité à 0 car sauf d'un point de vue subjectif ("ça change rien"), une pulsation engendre toujours une fluctuation. 
+     
+-   +100 = augmentation extrême du pouvoir
+    
+Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suivant le type de pouvoir, chacun correspondant à une étape de la pulsation physicalités <-> intériorités. Suivant les types de pouvoir, les rapports se composent ainsi :
 
-Pouvoir de discerner : physique -\> crible -\> actant -\> concept Pouvoir de résonnance : concept -\> analogie -\> concept Pouvoir de raisonnement : concept -\> logique -\> concept Pouvoir d'agir : concept -\> actant -\> crible -\> physique
+-   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux évenementiel physique par l'intermédiaire d'un crible afin de les conceptualiser. 
+
+    -   séquence de la pulsation : physicalités -> intériorités
+
+    -   dimensions ontologiques : physique -\> crible -\> actant -\> concept.
+
+    -   exemple : 
+        -   physique : un écran d'ordinateur affiche les résultats d'une recherche
+        
+        -   crible : aucun 
+        
+        -   actant : Samuel
+
+        -   concept : regarder une liste
+
+    "je" (actant) "regarde sur un écran d'ordinateur les résultats d'une recherche" (physique) sur un moteur de recherchemur sur lequel je distingue un tableau accroché à un mur
+
+-   Pouvoir de raisonnement : concept -\> logique -\> concept. Le pouvoir de raisonnement consiste
+
+-   Pouvoir de résonnance : concept -\> analogie -\> concept 
+
+-   Pouvoir d'agir : concept -\> actant -\> crible -\> physique
 
 Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
 
