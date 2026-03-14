@@ -129,7 +129,7 @@ Diagramme de classes pour la modélisation des raisons trajectives
 
 Nous utilisons l'application Web PHP Omeka S (https://omeka.org/s/) car elle fourni les fonctionnalités nécessaires pour mettre à disposition les données de la recherche suivant les principes FAIR (Facile à trouver, accessible, interopérable et réutilisable) (https://www.inist.fr/realisations/omeka-pour-des-bases-de-donnees-valorisees/). De plus, le développement sous la forme de modules offre une grande souplesse pour ajouter des fonctionnalités spécifiques comme la génération de diagramme, la transcription automatique, l'importation de données extérieures...
 
-Le protocole de modélisation des pouvoirs dans les flux info-communicationnels consiste à évaluer l'augmentation ou la diminution des pouvoirs dans les rapports entre les physicalités et les intériorités (pulsations existentielles) qui composent une suite d'événements (raison trajective). Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes. Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
+Le protocole de modélisation des pouvoirs dans les flux info-communicationnels consiste dans un premier temps à décrire les éléments qui composent les 4 dimensions existentielles d'un environnement @fig-ModeleExistenceInformationnelle, puis dans un second temps, à évaluer l'augmentation ou la diminution des pouvoirs dans les rapports qui composent une suite d'événements (raison trajective) entre les physicalités et les intériorités, entre les intériorités elles-même et entre les intériorités et les physicalités (pulsations existentielles). Par exemple, un changement d'actant dans la pulsation existentielle "consulter une page Web" induit une augmentation du pouvoir d'agir si cet actant est un adulte majeur et une diminution si c'est un enfant mineur puisque ce dernier n'est pas autorisé à voir des pages réservées aux adultes. Autre exemple, l'utilisation du crible "Inspecter" dans un navigateur Web augmente le pouvoir de discernement en montrant les structures HTML d'une page...
 
 Nous avons résumé le protocole de modélisation en quatre étapes.
 
@@ -185,7 +185,7 @@ Par exemple, la pulsation existentielle "Rédiger une proposition d'article" est
 
 -   Définir un contexte avec Gemini - Visual Studio - Copilot
 
-Cette pulsation est en relation avec d'autres pulsations :
+Cette pulsation est en relation avec une autre pulsation :
 
 -   avant : Etre informé d'un appel à communication
 
@@ -198,36 +198,63 @@ Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utili
 Un pouvoir existentiel définie l'intensité d'un rapport entre des dimensions ontologiques composant une existence informationnelle @fig-ModeleExistenceInformationnelle.
 
 L'intensité du pouvoir est définie suivant une échelle :
--   -100 = diminution extrême du pouvoir 
-    
--   0 = pas de fluctuation du pouvoir. Notons qu'il nous semble incohérent de définir une intensité à 0 car sauf d'un point de vue subjectif ("ça change rien"), une pulsation engendre toujours une fluctuation. 
-     
+
+-   -100 = diminution extrême du pouvoir
+
+-   0 = pas de fluctuation du pouvoir. Notons qu'il peut sembler incohérent de définir une intensité à 0 car une pulsation engendre toujours une fluctuation. D'autre part, si le pouvoir n'entraine pas de fluctuation : pourquoi le modéliser alors qu'il est insignifiant ? Toutefois, nous défendons ici la possibilité d'un point de vue subjectif : "ça ne change rien". Nous verrons plus loin comment une modélisation initiale qui reflète le point de vue du modélisateur est utile pour récolter d'autres points de vue qui eux peuvent considérer qu'un pouvoir n'apporte aucune fluctuation dans la pulsation.
+
 -   +100 = augmentation extrême du pouvoir
-    
-Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suivant le type de pouvoir, chacun correspondant à une étape de la pulsation physicalités <-> intériorités. Suivant les types de pouvoir, les rapports se composent ainsi :
 
--   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux évenementiel physique par l'intermédiaire d'un crible afin de les conceptualiser. 
+Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suivant le type de pouvoir, chacun correspondant à une séquence de la pulsation physicalités \<-\> intériorités. Suivant les types de pouvoir, les rapports se composent ainsi :
 
-    -   séquence de la pulsation : physicalités -> intériorités
+-   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux événementiel physique par l'intermédiaire d'un crible afin de les conceptualiser.
+
+    -   séquence de la pulsation : physicalités -\> intériorités
 
     -   dimensions ontologiques : physique -\> crible -\> actant -\> concept.
 
-    -   exemple : 
+    -   exemple :
+
         -   physique : un écran d'ordinateur affiche les résultats d'une recherche
-        
-        -   crible : aucun 
-        
+
+        -   crible : aucun
+
         -   actant : Samuel
 
         -   concept : regarder une liste
 
-    "je" (actant) "regarde sur un écran d'ordinateur les résultats d'une recherche" (physique) sur un moteur de recherchemur sur lequel je distingue un tableau accroché à un mur
+-   Pouvoir de raisonnement : c'est la capacité d'un actant de créer des rapports formels entre concepts c'est à dire obéissant à une loi : syntaxique, institutionnelle, déontologique, essentielle.
 
--   Pouvoir de raisonnement : concept -\> logique -\> concept. Le pouvoir de raisonnement consiste
+    -   séquence de la pulsation : intériorités \<-\> intériorité
 
--   Pouvoir de résonnance : concept -\> analogie -\> concept 
+    -   dimensions ontologiques : concept (sujet) -\> concept (prédicat) -\> concept (objet)
 
--   Pouvoir d'agir : concept -\> actant -\> crible -\> physique
+    -   exemple :
+
+        -   concept (sujet) : Gemini
+
+        -   concept (prédicat) : propose
+
+        -   concept (objet) : un texte
+
+-   Pouvoir de résonance : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formelle » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
+
+    -   séquence de la pulsation : intériorités \<-\> intériorité
+
+    -   dimensions ontologiques : concept (source) -\> actant -\> concept (destination). \
+        A la différence du pouvoir de raisonnement, l'actant est ici nécessaire car le pouvoir de résonance est spécifique à l'expérience de celui-ci.
+
+    -   exemple :
+
+        -   concept (source) : importance du "close reading"
+
+        -   actant : Samuel Szoniecky
+
+        -   concept (destination) : importance du "close writing"
+
+-   Pouvoir d'agir : définie dans le champ de la psychologie du travail, de l’ergonomie [@gouédard2012] et de l'analyse de l'activité [@brun2017] dans , le pouvoir d'agir se définit dans les relations aux « conditions externes et internes au sujet, qui sont réunies à un moment particulier, comme l’état fonctionnel du sujet, les artefacts et ressources disponibles, les occasions d’intervention, etc. Il est toujours situé dans un rapport singulier au monde réel, rapport qui actualise et réalise la capacité d’agir en transformant les potentialités en pouvoir.
+
+-    concept -\> actant -\> crible -\> physique
 
 Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
 
