@@ -145,7 +145,7 @@ La raison trajective est définie par :
 
 -   une temporalité des flux événementiels.
 
-Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique", nous définissons quatre flux dans l'environnement :
+Créer une raison trajective consiste à organiser les événements qui se produisent dans un environnement. A la manière d'une partition musicale [@stransky2014], la raison trajective va définir les relations temporelles des événements suivant une méthode spécifique. Par exemple, dans le cas qui nous occupe à savoir "La rédaction d'un article scientifique" (<https://acehn.jardindesconnaissances.fr/s/ecosysteme_connnaissances-ecrire_article_scientifique/page/accueil>), nous définissons quatre flux dans l'environnement :
 
 1.  Répondre à un appel à proposition,
 
@@ -177,7 +177,7 @@ Une pulsation existentielle est modéliser par :
 
 Alors que la temporalité des flux dans la raison trajective est déterminée par une succession temporelle d'états suivant une règles spécifique comme la causalité, dans les pulsations existentielles les relations entre les flux s'organisent par une temporalité relative : avant, pendant ou après. Cette gestion temporelle entre une succession des flux pour les raisons trajectives et une temporalité relatives pour des pulsations existentielles, permet de définir l'ordre des flux (raison trajective) et les liens entre flux (pulsation existentielle).
 
-Par exemple, la pulsation existentielle "Rédiger une proposition d'article" est modélisée avec trois pouvoirs :
+Par exemple, la pulsation existentielle "Rédiger une proposition d'article" (<https://acehn.jardindesconnaissances.fr/s/ecosysteme_connnaissances-ecrire_article_scientifique/item/64549>) est modélisée avec trois pouvoirs :
 
 -   Définir un contexte avec Gemini
 
@@ -207,21 +207,21 @@ L'intensité du pouvoir est définie suivant une échelle :
 
 Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suivant le type de pouvoir, chacun correspondant à une séquence de la pulsation physicalités \<-\> intériorités. Suivant les types de pouvoir, les rapports se composent ainsi :
 
--   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux événementiel physique par l'intermédiaire d'un crible afin de les conceptualiser.
+-   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux événementiel physique par l'intermédiaire d'un crible afin de les conceptualiser. Nous de détaillerons pas ici la définition du crible, nous renvoyons les lecteurs curieux à [@szoniecky2024, p. 102; @szoniecky2020]. En résumé, le crible est une interface de lecture et d’écriture utilisée comme grille d’analyse d’un contexte particulier (discerner) et comme système d’expression de ce contexte (agir).
 
     -   séquence de la pulsation : physicalités -\> intériorités
 
     -   dimensions ontologiques : physique -\> crible -\> actant -\> concept.
 
-    -   exemple :
+    -   exemple : Etre informer par sa communauté <https://acehn.jardindesconnaissances.fr/s/ecosysteme_connnaissances-ecrire_article_scientifique/item/65093>
 
-        -   physique : un écran d'ordinateur affiche les résultats d'une recherche
+        -   physique : Paroles
 
-        -   crible : aucun
+        -   crible : Conférence scientifique
 
-        -   actant : Samuel
+        -   actants : Communauté scientifique, Auteur d'un article scientifique
 
-        -   concept : regarder une liste
+        -   concept : informer
 
 -   Pouvoir de raisonnement : c'est la capacité d'un actant de créer des rapports formels entre concepts c'est à dire obéissant à une loi : syntaxique, institutionnelle, déontologique, essentielle.
 
@@ -237,11 +237,11 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   concept (objet) : un texte
 
--   Pouvoir de résonance : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formelle » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
+-   Pouvoir de résonance : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formel » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
 
     -   séquence de la pulsation : intériorités \<-\> intériorité
 
-    -   dimensions ontologiques : concept (source) -\> actant -\> concept (destination). \
+    -   dimensions ontologiques : concept (source) -\> actant -\> concept (destination).\
         A la différence du pouvoir de raisonnement, l'actant est ici nécessaire car le pouvoir de résonance est spécifique à l'expérience de celui-ci.
 
     -   exemple :
@@ -252,9 +252,23 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   concept (destination) : importance du "close writing"
 
--   Pouvoir d'agir : définie dans le champ de la psychologie du travail, de l’ergonomie [@gouédard2012] et de l'analyse de l'activité [@brun2017] dans , le pouvoir d'agir se définit dans les relations aux « conditions externes et internes au sujet, qui sont réunies à un moment particulier, comme l’état fonctionnel du sujet, les artefacts et ressources disponibles, les occasions d’intervention, etc. Il est toujours situé dans un rapport singulier au monde réel, rapport qui actualise et réalise la capacité d’agir en transformant les potentialités en pouvoir.
+-   Pouvoir d'agir : définie dans le champ de la psychologie du travail, de l’ergonomie [@gouédard2012] et de l'analyse de l'activité [@brun2017], le pouvoir d'agir est utilisé ici pour expliciter la passage entre les intériorités et les physicalités par un actant « situé dans un rapport singulier au monde réel, rapport qui actualise et réalise la capacité d’agir en transformant les potentialités en pouvoir. » [@gouédard2012, § 9] Cette transformation des pensées en matières par un actant [@szoniecky2024, p. 102] passe aussi par la médiation des cribles [@szoniecky2024, p.144] qui
 
--    concept -\> actant -\> crible -\> physique
+    > « constituent en interface entre 1) les virtualités virulentes du chaos, les proliférations stochastiques et 2) les potentialités actuelles dûment répertoriables et consolidables. » [@guattari1992, p. 140]
+
+    -   séquence de la pulsation : intériorités -\> physicalités
+
+    -   dimensions ontologiques : concept -\> actant -\> cribles -\> physiques.
+
+    -   exemple :
+
+        -   concept : écrire
+
+        -   actant : Samuel Szoniecky
+
+        -   cribles : clavier d'ordinateur
+
+    -   concept -\> actant -\> crible -\> physique
 
 Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
 
@@ -296,7 +310,7 @@ Notre huitième et dernier principe que nous appelons **principe ontoéthique** 
 
 À partir des principes que nous venons du définir nous élaborons un métamodèle conçu comme « un générateur de modèles qualitatifs » [@thom1975, p. 372] que nous utilisons pour nos analyses de l'information et la communication.
 
-## Analyser les fluctuations de puissances pour évaluer la symbiose
+### Analyser les fluctuations de puissances pour évaluer la symbiose
 
 Evaluer la valeur d'une puissance : "*Autrement dit, au lieu de tenir les valeurs pour un donné que la sociologie ou la philosophie doivent mettre au jour de façon empirique, il convient de les appréhender comme des principes d’action partagés qui s’élaborent et se découvrent dans le cours de l’activité pratique dans lequel l’usage qui en est fait se réalise.*" [@ogien2014]
 
@@ -316,9 +330,35 @@ sur les questions de puissances psychiques et sur le processus de la représenta
 
 cf. [@plagnol2025]
 
+## Vers une éthique symbiotique
+
+développer sur ces bases « des infrastructures \[…\] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » [@stiegler2020] cité par [@alombert2023] : ça s'appelle une université
+
+*une « théorie pragmatiste » aux termes de laquelle l’habitude est un facteur qui permet d’identifier des « mécanismes sociaux » de niveaux de complexité ou d’agrégation faible et « dans lesquels – dans certaines circonstances – une cause X tend à produire un effet Y dans la sphère des relations sociales humaines »* [@ogien2014]
+
+*« l’explication des faits sociaux comme les structures des réseaux sociaux, les structures de la ségrégation résidentielle, les croyances communes, les goûts culturels, les manières courantes d’agir, exige non pas de les rapporter à d’autres faits sociaux mais de décrire en détail les mécanismes par lesquels ils sont produits ».* [@ogien2014]
+
+*Dans l’écologie pragmatiste proposée par É. Hache, c’est en regard de la responsabilité vis-à-vis du futur que les citoyens d’aujourd’hui doivent peser les décisions qu’ils prennent pour résoudre les questions d’intérêt général qui se posent aux sociétés développées.* [@ogien2014]
+
+*La seule façon d’y remédier consiste, selon J. Dewey (2010a, p. 283), à inciter les citoyens ordinaires à participer pleinement à l’activité politique en se constituant en Public afin de réunir « les conditions auxquelles la Grande Société pourrait devenir une Grande Communauté, à savoir une société dans laquelle les conséquences toujours plus grandes et confusément ramifiées des activités sociales seraient connues au sens plein de ce mot, de sorte qu’un Public organisé et articulé en viendrait à naître ».* [@ogien2014]
+
+*En un mot, J. Dewey prône l’amélioration des conditions du débat public et affirme que cela « dépend essentiellement de la libération et du perfectionnement des processus d’enquête et de la dissémination de leurs conclusions »(ibid., p. 311).* [@ogien2014]
+
+décrire en détail et individuellement l'intensité de chaque pulsation, de chaque analogie, les mettre en commun pour les comparer et se situer = validation d'un échantillon pour des statistiques psychologiques... mais avant tout = prise de conscience de son positionnement, de son authenticité = connais-toi toi même
+
+### Concevoir et développer un nouvel outil de modélisation des écosystèmes de connaissances
+
+Les expériences que nous avons menées avec les étudiants du [Master 2 ACEHN](https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-) nous ont montré que les difficultés à comprendre le travail de modélisation pouvaient être atténuées par plusieurs types de médiations. Premièrement, une médiation humaine pour expliquer oralement ce que sont les écosystèmes de connaissances et comment en évaluer l'éthique ; suivi de discussions argumentés par des lectures sur le ce sujet. Deuxièmement, une médiation par des travaux dirigés basés sur un [protocole écrit](https://github.com/Humanites-Numeriques-Universite-Paris-8/ACEHN_25-26/blob/main/ProtocolePulsationExistentielle.md) et réalisé concrètement dans l'environnement numérique dédié à ce travail (Omeka S). Troisièmement, une vérification du travail via l'interface de cartographie @fig-diagClassRaisonTrajective accompagné de discussions sur l'interprétation des diagrammes. Enfin, une réflexion sur les améliorations à apporter au protocole et aux outils permettant de le réaliser qui a été formalisée dans GitHub sous la forme d'[issues](https://github.com/samszo/pulsationsExistentielles/issues).
+
+Il résulte de ces expérimentations que nous avons besoin de concevoir et de développer un nouvel outil de modélisation des écosystèmes de connaissances basé sur celui qui existe et en y intégrant les corrections et les améliorations exprimées par les étudiants. Nous espérons mener à bien ce projet d'ici février 2027 pour continuer ces expérimentations avec la nouvelle promotion des étudiants ACEHN. Cet article est aussi l'occasion de mobiliser d'autres personnes qui seraient intéressées par la conception, le développement ou l'utilisation d'un tel outil.
+
+Quoi qu'en disent certains [@masi], une communication entre les machines et les humains par du texte dans un terminal n'est pas tout ce dont nous avons besoin. Le travail de modélisation que nous venons de présenter, illustre bien la nécessité d'utiliser des abstractions graphiques pour comprendre la complexité des connaissances à gérer et la cohérence des multiplies tâches à effectuer. En guise de conclusion, nous insisterons sur l'importance de penser les communications hommes<->machines autrement que par le texte uniquement en présentant une réflexion épistémiques sur les enjeux du passage du texte au diagramme dans le contexte des sciences pilotée par les données.
+
 ## Du texte au diagramme
 
-La lecture et l'écriture de textes sont les bases du travail scientifique. Cependant, on observe une importance grandissante des diagrammes notamment dans les thèses où l'on trouve de plus en plus de représentations graphiques même dans les disciplines de sciences humaines et sociales. La démocratisation des outils de dessin vectoriel et l'émergence de plateforme facilitant la production de dataviz [@louâpre2017] ont sans doute contribué au développement de ces expressions graphiques et spatiales qui pour David Rabouin sont au cœur du discours scientifique : "Les écritures symboliques qui parsèment désormais n'importe quel écrit scientifique, ne sont d'ailleurs \[...\] qu'un prolongement de ces représentations spatiales." [@rabouin2010] p. 42
+La lecture et l'écriture de textes sont les bases du travail scientifique. Cependant, on observe une importance grandissante des diagrammes notamment dans les thèses où l'on trouve de plus en plus de représentations graphiques même dans les disciplines de sciences humaines et sociales. La démocratisation des outils de dessin vectoriel et l'émergence de plateforme facilitant la production de dataviz [@louâpre2017] ont sans doute contribué au développement de ces expressions graphiques et spatiales qui pour David Rabouin sont au cœur du discours scientifique : 
+
+> "Les écritures symboliques qui parsèment désormais n'importe quel écrit scientifique, ne sont d'ailleurs \[...\] qu'un prolongement de ces représentations spatiales." [@rabouin2010] p. 42
 
 L'importance de ces diagrammes se manifeste par des recherches spécifiques ([@jedrzejewski2007; @iafrate2015; @voss2019; @batt2005a; @battistini2004]) qui prennent aujourd'hui la forme d'une "diagrammatologie" pour "rendre visibles les vecteurs de forces tels qu’ils s’opposent et s’entremêlent dans la formation des formes." [@dahan-gaida2023] ou d'une "ingénierie sémiotique des systèmes diagrammatiques" [@ferri2020] qui a pour vocation de modéliser : "les opérations qui excèdent toute formalisation algorithmique".
 
@@ -347,19 +387,5 @@ Le diagramme implique nécessairement le positionnement d'un acteur dans un cham
 > Derrière cette question se joue une réflexion éthique sur le rapport à soi dans l’acte d’écrire, qui renvoie à une notion centrale de la philosophie morale contemporaine : l’authenticité, entendue comme cet idéal éthique qui renvoie à la capacité d’un individu à vivre en accord avec lui-même, en restant fidèle à ce qu’il reconnaît comme constitutif de son identité. [@benbouzid2025]
 
 Pour mener cette recherche de l'authenticité, le diagramme, en tant qu'expression d'un topos, est sans doute une forme d'écriture plus féconde que le texte pour gérer la complexité des flux info-communicationnels entre acteurs, agents et environnements. Encore faut-il définir quelles formes prend ce diagramme ? Quelles topologies sont à l'oeuvre dans sa construction ? Quelles analyses permettent-ils ?
+Voilà sans doute les questions auxquelles il nous faut encore répondre pour faire évoluer nos pratiques scientifiques à l'ère du quatrième paradigme. 
 
-## Vers une éthique symbiotique
-
-développer sur ces bases « des infrastructures \[…\] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » [@stiegler2020] cité par [@alombert2023] : ça s'appelle une université
-
-*une « théorie pragmatiste » aux termes de laquelle l’habitude est un facteur qui permet d’identifier des « mécanismes sociaux » de niveaux de complexité ou d’agrégation faible et « dans lesquels – dans certaines circonstances – une cause X tend à produire un effet Y dans la sphère des relations sociales humaines »* [@ogien2014]
-
-*« l’explication des faits sociaux comme les structures des réseaux sociaux, les structures de la ségrégation résidentielle, les croyances communes, les goûts culturels, les manières courantes d’agir, exige non pas de les rapporter à d’autres faits sociaux mais de décrire en détail les mécanismes par lesquels ils sont produits ».* [@ogien2014]
-
-*Dans l’écologie pragmatiste proposée par É. Hache, c’est en regard de la responsabilité vis-à-vis du futur que les citoyens d’aujourd’hui doivent peser les décisions qu’ils prennent pour résoudre les questions d’intérêt général qui se posent aux sociétés développées.* [@ogien2014]
-
-*La seule façon d’y remédier consiste, selon J. Dewey (2010a, p. 283), à inciter les citoyens ordinaires à participer pleinement à l’activité politique en se constituant en Public afin de réunir « les conditions auxquelles la Grande Société pourrait devenir une Grande Communauté, à savoir une société dans laquelle les conséquences toujours plus grandes et confusément ramifiées des activités sociales seraient connues au sens plein de ce mot, de sorte qu’un Public organisé et articulé en viendrait à naître ».* [@ogien2014]
-
-*En un mot, J. Dewey prône l’amélioration des conditions du débat public et affirme que cela « dépend essentiellement de la libération et du perfectionnement des processus d’enquête et de la dissémination de leurs conclusions »(ibid., p. 311).* [@ogien2014]
-
-décrire en détail et individuellement l'intensité de chaque pulsation, de chaque analogie, les mettre en commun pour les comparer et se situer = validation d'un échantillon pour des statistiques psychologiques... mais avant tout = prise de conscience de son positionnement, de son authenticité = connais-toi toi même
