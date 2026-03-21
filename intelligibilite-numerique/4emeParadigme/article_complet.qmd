@@ -207,7 +207,7 @@ L'intensité du pouvoir est définie suivant une échelle :
 
 Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suivant le type de pouvoir, chacun correspondant à une séquence de la pulsation physicalités \<-\> intériorités. Suivant les types de pouvoir, les rapports se composent ainsi :
 
--   Pouvoir de discerner : c'est la capacité d'un actant de percevoir les informations dans un flux événementiel physique par l'intermédiaire d'un crible afin de les conceptualiser. Nous de détaillerons pas ici la définition du crible, nous renvoyons les lecteurs curieux à [@szoniecky2024, p. 102; @szoniecky2020]. En résumé, le crible est une interface de lecture et d’écriture utilisée comme grille d’analyse d’un contexte particulier (discerner) et comme système d’expression de ce contexte (agir).
+-   **Pouvoir de discerner** : c'est la capacité d'un actant de percevoir les informations dans un flux événementiel physique par l'intermédiaire d'un crible afin de les conceptualiser. Nous de détaillerons pas ici la définition du crible, nous renvoyons les lecteurs curieux à [@szoniecky2024, p. 102; @szoniecky2020]. En résumé, le crible est une interface de lecture et d’écriture utilisée comme grille d’analyse d’un contexte particulier (discerner) et comme système d’expression de ce contexte (agir).
 
     -   séquence de la pulsation : physicalités -\> intériorités
 
@@ -223,7 +223,7 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   concept : informer
 
--   Pouvoir de raisonnement : c'est la capacité d'un actant de créer des rapports formels entre concepts c'est à dire obéissant à une loi : syntaxique, institutionnelle, déontologique, essentielle.
+-   **Pouvoir de raisonnement** : c'est la capacité d'un actant de créer des rapports formels entre concepts c'est à dire obéissant à une loi : syntaxique, institutionnelle, déontologique, essentielle.
 
     -   séquence de la pulsation : intériorités \<-\> intériorité
 
@@ -231,18 +231,21 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
     -   exemple :
 
-        -   concept (sujet) : Gemini
+        -   concept (sujet) : Gemini.
+
+            Notons que dans ce pouvoir "Gemini" est considéré comme un concept et pas comme un actant. Un peu plus loin, nous verrons comment "Gemini" peut dans un autre pouvoir être considéré comme un actant.
 
         -   concept (prédicat) : propose
 
         -   concept (objet) : un texte
 
--   Pouvoir de résonance : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formel » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
+-   **Pouvoir de résonance** : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formel » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
 
     -   séquence de la pulsation : intériorités \<-\> intériorité
 
-    -   dimensions ontologiques : concept (source) -\> actant -\> concept (destination).\
-        A la différence du pouvoir de raisonnement, l'actant est ici nécessaire car le pouvoir de résonance est spécifique à l'expérience de celui-ci.
+    -   dimensions ontologiques : concept (source) -\> actant -\> concept (destination).
+
+        A la différence du pouvoir de raisonnement, l'actant est ici indispensable car le pouvoir de résonance est spécifique à l'expérience de celui-ci. Notons qu'une des hypothèses fortes que nous défendons, est que le pouvoir de résonance n'est pas accessible aux actants numériques et cela pour deux raisons. Premièrement, les actant numériques ne peuvent pas s'affranchir des rapports formels. Deuxièmement, le pouvoir de résonance en tant que connaissance des essences, passe nécessairement par l'expérimentation de l'éternité [@deleuze1998], ce dont les agents numériques sont incapables.
 
     -   exemple :
 
@@ -252,7 +255,7 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   concept (destination) : importance du "close writing"
 
--   Pouvoir d'agir : définie dans le champ de la psychologie du travail, de l’ergonomie [@gouédard2012] et de l'analyse de l'activité [@brun2017], le pouvoir d'agir est utilisé ici pour expliciter la passage entre les intériorités et les physicalités par un actant « situé dans un rapport singulier au monde réel, rapport qui actualise et réalise la capacité d’agir en transformant les potentialités en pouvoir. » [@gouédard2012, § 9] Cette transformation des pensées en matières par un actant [@szoniecky2024, p. 102] passe aussi par la médiation des cribles [@szoniecky2024, p.144] qui
+-   **Pouvoir d'agir** : définie dans le champ de la psychologie du travail, de l’ergonomie [@gouédard2012] et de l'analyse de l'activité [@brun2017], le pouvoir d'agir est utilisé ici pour expliciter la passage entre les intériorités et les physicalités par un actant « situé dans un rapport singulier au monde réel, rapport qui actualise et réalise la capacité d’agir en transformant les potentialités en pouvoir. » [@gouédard2012, § 9] Cette transformation des pensées en matières par un actant [@szoniecky2024, p. 102] passe aussi par la médiation des cribles [@szoniecky2024, p.144] qui
 
     > « constituent en interface entre 1) les virtualités virulentes du chaos, les proliférations stochastiques et 2) les potentialités actuelles dûment répertoriables et consolidables. » [@guattari1992, p. 140]
 
@@ -268,7 +271,9 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   cribles : clavier d'ordinateur
 
-    -   concept -\> actant -\> crible -\> physique
+### 4. Créer les rapports entre raisons, pulsations et pouvoirs
+
+Une des fonctions très utiles d'Omeka S consiste à donner comme valeur d'une propriété une ressource présente dans la base de données. Ainsi, il est possible de créer des réseaux d'objects informatiques
 
 Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
 
