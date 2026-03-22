@@ -79,7 +79,9 @@ Pour illustrer notre utilisation de cette méthode de modélisation des communic
 
 Dans notre HDR, nous avons montrer que ce méta-modèle sert à calculer les complexités d'un écosystème de connaissances, comment les représenter, les explorer, les analyser et définir des objectifs existentiels. Ce qui nous importe ici c'est de montrer que ce méta-modèle sert aussi à calculer des fluctuations de puissances dont les analyses alimenteront des discussions éthiques pour déterminer collectivement : quelles puissances préserver pour atteindre quels états précis de l'écosystème ?
 
-Pour calculer ces fluctuations de puissances, nous utilisons les principes des « pulsations existentielles » [@berque2009, p. 402] dans un cycle de sémiose [@µ2015] qui mettent en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonnement/résonnnance (élaboration sémiotique), le pouvoir d’agir (catasémiose). Aux deux extrémités du cycle des interfaces transforment la matière en pensée (discernement) et la pensée en matière (agir), elles sont les « cribles » [@guattari1992] par lesquels passent les « pulsations existentielles » qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs superflues » et en se chargeant des « valeurs importantes ». Ces cribles, Descola propose de les structurer à partir de « matrices ontologiques » [@descola2005, p. 323] qui définiront les rapports entre physicalités et intériorités. [@hofstadter2013, p. 233] nous expliquent que nous élaborons ces cribles par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser ces interfaces, ces cribles, ces rapports, ces réseaux d’analogies qui vont influencer nos affects [@lordon2025] pour augmenter ou diminuer nos pouvoirs de discerner, de raisonnement/résonnnance et d'agir.
+Pour calculer ces fluctuations de puissances, nous utilisons les principes des « pulsations existentielles » [@berque2009, p. 402] dans un cycle de sémiose [@µ2015] qui mettent en jeu successivement trois processus correspondant à trois pouvoirs : le pouvoir de discernement (anasémiose), le pouvoir de raisonnement/résonnnance (élaboration sémiotique), le pouvoir d’agir (catasémiose) cf. @fig-dynamiquesPulsationsExistentielles . Aux deux extrémités du cycle des interfaces transforment la matière en pensée (discernement) et la pensée en matière (agir), elles sont les « cribles » [@guattari1992] par lesquels passent les « pulsations existentielles » qui plongent dans l’intimité de nos élaborations et rebondissent jusqu’à la surface de nos expressions en élimant les « valeurs superflues » et en se chargeant des « valeurs importantes ». Ces cribles, Descola propose de les structurer à partir de « matrices ontologiques » [@descola2005, p. 323] qui définiront les rapports entre physicalités et intériorités. [@hofstadter2013, p. 233] nous expliquent que nous élaborons ces cribles par adoption et création d’un réseau d’analogies de plus en plus complexes. Ces auteurs venant de la sémiologie, de la géographie, de l’anthropologie, de l’intelligence artificielle et de la psychologie s’accordent pour dire qu’il est possible de modéliser ces interfaces, ces cribles, ces rapports, ces réseaux d’analogies qui vont influencer nos affects [@lordon2025] pour augmenter ou diminuer nos pouvoirs de discerner, de raisonnement/résonnnance et d'agir.
+
+![Dynamiques des pulsations existentielles](media/pulsationsExistentielles.png){#fig-dynamiquesPulsationsExistentielles fig-align="center" width="463"}
 
 Nous avons développé un environnement numérique pour modéliser et représenter les fluctuations de pouvoir que produisent les pulsations existentielles. Cet environnement a été expérimenté dans le cadre d'un cours sur l'Ethique des écosystèmes numériques donné en 2025 et 2026 aux étudiants du Master 2 Analyse et Conception des Environnements Humains Numériques ([ACEHN](https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-)). Cet environnement se compose de :
 
@@ -123,8 +125,6 @@ Temporalitérelativedespulsations "1" --> "*" pulsationExistentielle  : A comme 
 Diagramme de classes pour la modélisation des raisons trajectives
 :::
 
-![Application web pour la gestion des raisons trajectives](media/raisontrajective.png){#fig-appliweb_raisontrajective}
-
 ### Protocole de modélisation dans Omeka S
 
 Nous utilisons l'application Web PHP Omeka S (https://omeka.org/s/) car elle fourni les fonctionnalités nécessaires pour mettre à disposition les données de la recherche suivant les principes FAIR (Facile à trouver, accessible, interopérable et réutilisable) (https://www.inist.fr/realisations/omeka-pour-des-bases-de-donnees-valorisees/). De plus, le développement sous la forme de modules offre une grande souplesse pour ajouter des fonctionnalités spécifiques comme la génération de diagramme, la transcription automatique, l'importation de données extérieures...
@@ -135,7 +135,7 @@ Nous avons résumé le protocole de modélisation en quatre étapes.
 
 #### 1. Créer une raison trajective
 
-Cette étape consiste à créer dans Omeka S un item en utilisant le ressource template : Raison trajective ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/47)).
+Cette étape consiste à créer dans Omeka S un item en utilisant le "ressource template" (cf. [documentation](https://omeka.org/s/docs/user-manual/content/resource-template/)) : Raison trajective ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/47)).
 
 La raison trajective est définie par :
 
@@ -163,7 +163,7 @@ Quelque soit la méthode utilisée pour organiser la succession des événements
 
 ### 2. Créer des pulsations existentielles
 
-Dams Omeka S, cela consiste à créer un item en utilisant le ressource template : Pulsation existentielle ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/45)).
+Dams Omeka S, cela consiste à créer un item en utilisant le "ressource template" : Pulsation existentielle ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/45)).
 
 Une pulsation existentielle est modéliser par :
 
@@ -193,7 +193,7 @@ Cette modélisation n'a pas pour vocation d'être exhaustive et de refléter tou
 
 ### 3. Créer les pouvoirs existentielles
 
-Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utilisant le ressource template : Pouvoir existentiel ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/46)).
+Pour créer un pouvoir existentiel dans Omeka S, il faut créer un item en utilisant le "ressource template" : Pouvoir existentiel ([définition en json](https://acehn.jardindesconnaissances.fr/api/resource_templates/46)).
 
 Un pouvoir existentiel définie l'intensité d'un rapport entre des dimensions ontologiques composant une existence informationnelle @fig-ModeleExistenceInformationnelle.
 
@@ -239,7 +239,7 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
         -   concept (objet) : un texte
 
--   **Pouvoir de résonance** : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formel » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude.
+-   **Pouvoir de résonance** : c'est la capacité d'un actant de créer des rapports d'analogie au sens de [@hofstadter2013] et d'expérimenter des rapports intuitifs au sens de Spinoza (*Scientia Intuitiva* [@tosel1998]). Ce pouvoir ne rejette pas le pouvoir de raisonnement, mais il le traverse si vite qu'il n'en a plus besoin comme béquille. Il est « non formel » au sens où il n'est plus une manipulation de symboles ou de règles, mais une **vision directe** d'affinité, de sympathie ou d'habitude. Il conviendrait d'appronfondir cette définition en la confrontant au concept de "puissance harmonique" que propose [@plagnol2025] dans sa théorie de l'esprit.
 
     -   séquence de la pulsation : intériorités \<-\> intériorité
 
@@ -273,89 +273,52 @@ Les dimensions ontologiques qui composent le rapport ne sont pas les mêmes suiv
 
 ### 4. Créer les rapports entre raisons, pulsations et pouvoirs
 
-Une des fonctions très utiles d'Omeka S consiste à donner comme valeur d'une propriété une ressource présente dans la base de données. Ainsi, il est possible de créer des réseaux d'objects informatiques
+Une des fonctions très utiles d'Omeka S consiste à donner comme valeur d'une propriété une ou plusieurs ressources (item, collection, media) présentent dans la base de données. Ainsi, il est possible de créer des réseaux d'objets à partir d'un triplet RDF : sujet = une ressource -\> prédicat = une propriété de la ressource -\> objet = une ou plusieurs ressources.
 
-Ne pas oublier de définir l'intensité du pouvoir entre : - -100 = diminution extrême du pouvoir - 0 = pas de changement - 100 = augmentation extrême du pouvoir
+Dans le protocole que nous proposons chaque classe d'objet est reliée aux autres par des propriétés spécifiques comme le décrit le diagramme de classe @fig-diagClassRaisonTrajective en précisant le type "item" pour les propriétés concernées :
 
-Il y a quatre types de pouvoir existentiel ayant chaucun des propriétés particulières : - Pouvoir de discerner : physique -\> crible -\> actant -\> concept - Pouvoir de raisonner : concept -\> actant -\> concept - Pouvoir de résonner : concept -\> concept - Pouvoir de raisonabilité : actant -\> concept - Pouvoir d'agir : concept -\> actant -\> crible -\> physique
+-   dans une item Raison trajective, ajouter les items Pulsation existentielle
 
-Il reviendra ensuite à chacun d'évaluer si son pouvoir augmente ou diminue lors de l'expérience.
+-   dans une item Pulsation existentielle, ajouter les items Pouvoir existentiel
 
-### Associer les pouvoirs existentielles aux pulsations existentielles
+-   dans une item Pouvoir existentiel ajouter les items des dimensions ontologiques liées à ce pouvoir cf. ci-dessus.
 
-Dans omk, dans l'item Pulsation existentielle, ajouter les items Pouvoir existentiel
+Pour faciliter la saisie de ce réseau complexe d'objet nous avons modélisé des "resources templates" qui précisent les propriétés de chaque classe d'objets et le type de valeur attendue pour chaque propriété. Toutefois, la multiplication des objets et de leurs relations rend difficile leur création, leur vérification et leur maintenance à partir de l'interface d'administration d'Omeka S. Nous avons donc développer un outils pour vérifier le réseau d'objet et le représenter sous forme de diagramme.
 
-### Associer les pulsations existentielles à la raison trajective
+### 5. Vérifier la modélisation
 
-Dans omk, dans l'item Raison trajective, ajouter les items Pulsation existentielle
+Nous avons conçu et développé un outil ([code source](https://github.com/samszo/pulsationsExistentielles)) pour afficher et vérifier le travail de modélisation des raisons trajectives que les étudiants ont fait. Il est accessible à la page : https://acehn.jardindesconnaissances.fr/pulsationsExistentielles/index.html.
 
-### Vérifier la modélisation
+Pour commencer la vérification, il faut choisir la raison trajective dans la liste déroulante du haut de la page. Par exemple : ACEHN -\> Samuel Szoniecky -\> Ecrire un article scientifique
 
-Ce rendre à la page : https://acehn.jardindesconnaissances.fr/pulsationsExistentielles/index.html Choisir la raison trajective dans la liste déroulante du haut de la page.
+L'application récupére les données de cette raison trajective via l'API d'Omeka S et affiche (voir ci-dessous @fig-appliweb_raisontrajective ) : - sur la gauche les détails de ces données et les erreurs éventuelles, - sur la droite la représentation de cette raison trajective sous la forme d'un diagramme Mermaid (cf. [documentation](https://mermaid.js.org/))
 
--   une application pour vérifier et visualiser les pulsations existentielles
+![Application web pour la gestion des raisons trajectives](media/raisontrajective.png){#fig-appliweb_raisontrajective}
 
-![Dynamiques des pulsations existentielles](media/pulsationsExistentielles.png){#fig-dynamiquesPulsationsExistentielles fig-align="center" width="463"}
+Cette application propose des fonctionnalités très utiles pour observer les modélisations mais il reste encore beaucoup à faire pour qu'elle soit pleinement opérationnelle cf. \@#design-new-tool. Notamment pour analyser les fluctuations de puissances.
 
--   un répertoire GitHub pour gérer les sources et la documentation du projet : [pulsationsExistentielles](https://github.com/samszo/pulsationsExistentielles)
+### 6. Analyser les fluctuations de puissances
 
-À chaque pulsation existentielle, à chaque événement de nos vies, à chaque pli, ces pouvoirs augmentent ou diminuent, accentuant ainsi des rapports privilégiés, d'autres, plus secrets, et même certains qui nous restent inconnus. Ainsi, la pulsation varie continuellement, elle est parfois instantanée par exemple quand on rit, elle peut aussi prendre beaucoup de temps quand un souvenir longtemps oublié émerge petit à petit ; elle devient un métier quand à force de pratiquer un geste particulier, celui-ci s'automatise. Ces pulsations se transforment parfois en bêtises ou en inconscience quand le pouvoir d'agir prend le pas sur les pouvoirs de discerner et de raisonner en occultant leurs pliages potentiels. Suivant leurs fréquences, les pulsations existentielles forment des ondes dont la vitesse de propagation est fonction de leur longueur (distance séparant deux maxima consécutifs de l'amplitude entre physicalités et intériorité) et du milieu dans lequel elles se déploient. La catégorisation et l'analyse de ces ondes renvoient globalement à une réflexion sur la modélisation de l'esprit qui dépasse le cadre de ce propos, mais que nous illustration par le diagramme suivant @fig-dynamiquesPulsationsExistentielles :
+La première ambition de ce travail était d'utiliser le protocole que nous avons décrit ci-dessus pour évaluer la symbiose entre acteurs, agents et environnement afin de participer aux recherches en cours sur cette question notamment pour quantifier les synergie entre humains et AI [@riedl] ou pour mesurer la capacité décisionnelle des individus [@suarez2025]. Malheureusement, nous n'avons pas mener ce projet en totalité faute de temps et de ressource. La complexité du processus de modélisation qui est nécessaire pour décrire précisément les fluctuations de puissances demande beaucoup de temps et nous ne pouvions pas mobiliser les étudiants pour faire ce travail que seul un chercheur est en capacité de faire. Toutefois, ce travail de conception du protocole et de développement de l'outil associé, nous apporte des indications sur la manière de procéder à ces analyses en développant :
 
-Il découle de ces principes que le processus de modélisation des connaissances conçues en tant qu'existences informationnelles est assimilable à un calcul des puissances et de leurs évolutions :
+> « des infrastructures \[…\] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » [@stiegler2020] cité par [@alombert2023]
 
-> « Si bien qu’à la question : " Cet être existe-t-il ? " il est prudent d’admettre qu’on ne peut guère répondre selon le couple du Oui ou Non, mais bien plutôt selon celui du Plus ou Moins. » [@souriau2009]
+L'objectif que nous poursuivons est celui « du perfectionnement des processus d’enquête et de la dissémination de leurs conclusions » [@ogien2014] en fournissant des dispositifs numériques permettant à chacun de se positionner dans un débat collectif complexe. Ainsi, la modélisation d'une raison trajective crée le contexte d'une « action partagée » \[Ibid.\] à partir de laquelle les individus pourront se positionner. Autrement dit, la modélisation d'une raison trajective est pour le chercheur un moyen de décrire très précisément une hypothèse afin de la soumettre à différents actant ayant chacun leur propre "mode d'existence" [@latour2012]. Suivant le rôle de ces actant, Ils pourront se positionner en :
 
-Ces opérations d'augmentation et de diminution s'appliquent aux puissances de discernement, de raisonnement et d'action d'une existence informationnelle et par la même définissent ce qu'elle peut, c'est-à-dire son éthique :
+-   évaluant l'augmentation ou la diminution de leurs pouvoirs dans ce contexte
 
-> « Le point de vue d’une éthique c’est : de quoi es-tu capable, qu’est-ce que tu peux ? »[^1]
+-   modifiant les dimensions ontologiques qui composent les pouvoirs
 
-[^1]: Cours de Deleuze du 09/12/1980 http://www2.univ-paris8.fr/deleuze/article.php3?id_article=137
+-   créant de nouvelles pulsations existentielles et raisons trajectives.
 
-Notre huitième et dernier principe que nous appelons **principe ontoéthique** reprend l'idée que défend Deleuze concernant la corrélation entre ontologie et éthique c'est à dire la corrélation entre dimensions de l'existence et genres de connaissances chez Spinoza. Ainsi la première dimension de l'existence, celle des parties extensives est corrélée au premier genre de connaissance celui des idées inadéquates, la deuxième dimension celle des rapports est corrélée aux notions communes qui forme le deuxième genre de connaissance et la troisième dimension existentielle, celle des essences, est corrélée au troisième genre de connaissances celui de l'intuition. Nous utilisons, une quatrième corrélation qui n'est pas présentée par Deleuze, mais qui reprend les propositions de [@callon2006] pour définir la dimension des actants corrélés aux connaissances sociales.
+Dès lors, il devient possible de mesurer les fluctuations de puissances entre une hypothèse initiale et ces modifications. Ce positionnement initiale exprime le point de vue particulier du modélisateur en tant qu'individu mais il peut aussi être la simulation des positionnements d'actants ayant des modes d'existences spécifiques. C'est notamment l'ambition que nous avions dans ce projet de recherche en positionnant dans une même raison trajective, celle de l'écriture d'un article scientifique, mon point de vue en tant que chercheur, celui d'un dispositif d'IA comme Gemini et celui de l'environnement en tant individu ayant ses propres manières d'être [@latour2015].
 
-À partir des principes que nous venons du définir nous élaborons un métamodèle conçu comme « un générateur de modèles qualitatifs » [@thom1975, p. 372] que nous utilisons pour nos analyses de l'information et la communication.
 
-### Analyser les fluctuations de puissances pour évaluer la symbiose
-
-Evaluer la valeur d'une puissance : "*Autrement dit, au lieu de tenir les valeurs pour un donné que la sociologie ou la philosophie doivent mettre au jour de façon empirique, il convient de les appréhender comme des principes d’action partagés qui s’élaborent et se découvrent dans le cours de l’activité pratique dans lequel l’usage qui en est fait se réalise.*" [@ogien2014]
-
-Exemple de quantification des rapports humain ai [@riedl]
-
-Enrichissement du calcul de la complexité à partir d'une modélisation d'une existence informationelles
-
-Contre exemple d'analyse du pouvoir de décision :
-
-*Les profils obtenus par l’IA prennent en considération la vitesse des sujets, leur précision, leur variabilité et leurs évolutions au cours du test, y compris les modifications du comportement après une erreur.* [@suarez2025]
-
-sur les questions de puissances psychiques et sur le processus de la représentation mentale
-
-"*La topologie de l’espace de représentation est en effet déterminée par de multiples contraintes qui limitent son codéploiement analogique, entraînant la formation de « plis », à commencer par les « pliages » induits par le format limité de la fenêtre de présence et les « plissements » entre mondes possibles."*
-
-"La *puissance harmonique* d’un objet peut être évaluée par l’« étendue » de la reconfiguration de l’espace de représentation que sa présentation (par rencontre et/ou projection) suscite."
-
-cf. [@plagnol2025]
-
-## Vers une éthique symbiotique
-
-développer sur ces bases « des infrastructures \[…\] destinées à faciliter les processus d’interprétation, de délibération et de prise de décision collective » [@stiegler2020] cité par [@alombert2023] : ça s'appelle une université
-
-*une « théorie pragmatiste » aux termes de laquelle l’habitude est un facteur qui permet d’identifier des « mécanismes sociaux » de niveaux de complexité ou d’agrégation faible et « dans lesquels – dans certaines circonstances – une cause X tend à produire un effet Y dans la sphère des relations sociales humaines »* [@ogien2014]
-
-*« l’explication des faits sociaux comme les structures des réseaux sociaux, les structures de la ségrégation résidentielle, les croyances communes, les goûts culturels, les manières courantes d’agir, exige non pas de les rapporter à d’autres faits sociaux mais de décrire en détail les mécanismes par lesquels ils sont produits ».* [@ogien2014]
-
-*Dans l’écologie pragmatiste proposée par É. Hache, c’est en regard de la responsabilité vis-à-vis du futur que les citoyens d’aujourd’hui doivent peser les décisions qu’ils prennent pour résoudre les questions d’intérêt général qui se posent aux sociétés développées.* [@ogien2014]
-
-*La seule façon d’y remédier consiste, selon J. Dewey (2010a, p. 283), à inciter les citoyens ordinaires à participer pleinement à l’activité politique en se constituant en Public afin de réunir « les conditions auxquelles la Grande Société pourrait devenir une Grande Communauté, à savoir une société dans laquelle les conséquences toujours plus grandes et confusément ramifiées des activités sociales seraient connues au sens plein de ce mot, de sorte qu’un Public organisé et articulé en viendrait à naître ».* [@ogien2014]
-
-*En un mot, J. Dewey prône l’amélioration des conditions du débat public et affirme que cela « dépend essentiellement de la libération et du perfectionnement des processus d’enquête et de la dissémination de leurs conclusions »(ibid., p. 311).* [@ogien2014]
-
-décrire en détail et individuellement l'intensité de chaque pulsation, de chaque analogie, les mettre en commun pour les comparer et se situer = validation d'un échantillon pour des statistiques psychologiques... mais avant tout = prise de conscience de son positionnement, de son authenticité = connais-toi toi même
-
-### Concevoir et développer un nouvel outil de modélisation des écosystèmes de connaissances
+### Concevoir et développer un nouvel outil de modélisation des écosystèmes de connaissances {#design-new-tool}
 
 Les expériences que nous avons menées avec les étudiants du [Master 2 ACEHN](https://humanites-numeriques.univ-paris8.fr/-Master-ACEHN-) nous ont montré que les difficultés à comprendre le travail de modélisation pouvaient être atténuées par plusieurs types de médiations. Premièrement, une médiation humaine pour expliquer oralement ce que sont les écosystèmes de connaissances et comment en évaluer l'éthique ; suivi de discussions argumentés par des lectures sur le ce sujet. Deuxièmement, une médiation par des travaux dirigés basés sur un [protocole écrit](https://github.com/Humanites-Numeriques-Universite-Paris-8/ACEHN_25-26/blob/main/ProtocolePulsationExistentielle.md) et réalisé concrètement dans l'environnement numérique dédié à ce travail (Omeka S). Troisièmement, une vérification du travail via l'interface de cartographie @fig-diagClassRaisonTrajective accompagné de discussions sur l'interprétation des diagrammes. Enfin, une réflexion sur les améliorations à apporter au protocole et aux outils permettant de le réaliser qui a été formalisée dans GitHub sous la forme d'[issues](https://github.com/samszo/pulsationsExistentielles/issues).
 
-Il résulte de ces expérimentations que nous avons besoin de concevoir et de développer un nouvel outil de modélisation des écosystèmes de connaissances basé sur celui qui existe et en y intégrant les corrections et les améliorations exprimées par les étudiants. Nous espérons mener à bien ce projet d'ici février 2027 pour continuer ces expérimentations avec la nouvelle promotion des étudiants ACEHN. Cet article est aussi l'occasion de mobiliser d'autres personnes qui seraient intéressées par la conception, le développement ou l'utilisation d'un tel outil.
+Il résulte de ces expérimentations que nous avons besoin de concevoir et de développer un nouvel outil de modélisation des écosystèmes de connaissances basé sur celui qui existe et en y intégrant un module spécifique dédié à l'analyse des fluctuations de pouvoirs et en prenant en compte les corrections et les améliorations exprimées par les étudiants. Nous espérons mener à bien ce projet d'ici février 2027 pour continuer ces expérimentations avec la nouvelle promotion des étudiants ACEHN. Cet article est aussi l'occasion de mobiliser d'autres personnes qui seraient intéressées par la conception, le développement ou l'utilisation d'un tel outil.
 
 Quoi qu'en disent certains [@masi], une communication entre les machines et les humains par du texte dans un terminal n'est pas tout ce dont nous avons besoin, même si cette tendance s'affirme dans de nombreux projet comme [fabric](https://github.com/danielmiessler/fabric) en réaction à la tendance des plateformes uniquement graphiques comme [Notebooklm](https://notebooklm.google.com/) ou à la multiplication des interfaces vocales initié par ChatGPT. Le travail de modélisation que nous venons de présenter, illustre bien la nécessité d'utiliser des abstractions graphiques pour comprendre la complexité des connaissances à gérer et la cohérence des multiplies tâches à effectuer. En guise de conclusion, nous insisterons sur l'importance de penser les communications hommes \<-\> machines autrement que par le texte uniquement en présentant une réflexion épistémiques sur les enjeux du passage du texte au diagramme dans le contexte des sciences pilotée par les données.
 
