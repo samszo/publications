@@ -1,0 +1,96 @@
+---
+version: 0.0.1
+bibliography: refMotivations.bib
+csl: ../../assets/csl/apa.csl
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
+---
+
+Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, j’ai l’honneur de vous présenter ma candidature à la promotion au corps des Professeurs des Universités dans le cadre du dispositif de repyramidage.
+
+Depuis 1995 et mon DEA en histoire de l’Art sur John Cage, j’explore les rapports entre sciences humaines et dispositifs numériques en m’intéressant à la génération de connaissances par des machines. C’est dans cette optique, que je rencontre dès 1997 Jean-Pierre Balpe et que débute mes collaborations avec le laboratoire Paragraphe. Après une carrière d’une dizaine d’années pour des grands comptes (SFR, Banque de France, ANPE...) comme ingénieur informatique, chef de projet et architecte de l’information en tant que consultant puis chef d’entreprise, je renoue mes collaborations avec Paragraphe pour retrouver des interlocuteurs avec qui partager mes recherches sur l’intelligence collective. Dans un premier temps conférencier puis chargé de cours et professeur contractuel, j’obtiens en 2009 un contrat doctoral pour mener des recherches sur les langages symboliques pour l’intelligence collective. Suite à cette thèse soutenue en 2012 [@szoniecky2012a] dans laquelle je montre l’importance du langage allégorique dans les processus d’intelligence collective, je mets en pratique ces recherches dans un post doctorat consacré à un dispositif numérique pour diagnostiquer collectivement l’accessibilité des bâtiments et des voiries [@szoniecky2012]. En 2013, je deviens Maître de conférences en Sciences de l’Information et de la Communication dans le département Humanités numériques de l’Université Paris 8.
+
+L’année 2024 a marqué un tournant décisif dans ma carrière avec la soutenance de mon Habilitation à Diriger des Recherches intitulée « Modéliser des écosystèmes de connaissance » [@szoniecky2024]. Ce travail de synthèse a permis de cristalliser vingt ans d'expertise pour proposer une approche épistémologique et technique robuste face aux défis des dispositifs sociaux numériques contemporains. Mon accession au grade de Professeur est aujourd’hui la condition nécessaire pour pérenniser et amplifier les responsabilités de direction et d’encadrement scientifique que j’assume déjà au sein de notre établissement.
+
+## Une recherche ancrée dans l’intelligence collective, la complexité des environnements numériques et l'éthique
+
+Mes travaux de recherche s’articulent autour de la complexité des rapports entre intelligences collectives [@desfrichesdoria2022; @szoniecky2017] et environnements numériques contemporains qu'il s'agisse des IA génératives [@szoniecky2023; @pappa2023] et symboliques [@szoniecky2026], de l'Internet des Objets (IoT) [@szoniecky2020], ou des outils d’éditorialisation [@szoniecky2019] et de cartographie de connaissances [@szoniecky2018]. Face à des dispositifs numériques de plus en plus présents dans nos vies professionnelles et personnelles, j'ai conçu une méthode d'analyse originale visant à donner aux chercheurs et à tous les acteurs de ces écosystèmes, les moyens de piloter l’éthique de leurs activités en évaluant les fluctuations actuelles ou potentielles de leurs pouvoirs de discernement, de raisonnement, de résonance et d’agir. Cette approche, détaillée dans mon HDR [@szoniecky2024], s’appuie sur une métamodélisation des existences informationnelles structurée autour de huit principes fondamentaux : dialogique [@maturana1994], récursif, hologrammatique [@morin1992; @morin1981; @morin1985; @morin1995; @morin2001; @morin2006], cycle sémiotique [@µ2015], plis analogiques [@deleuze1988; @hofstadter2013], raison trajective [@berque2009], degrés de flexibilité [@clément2021] et onto-éthique [@deleuze1968].
+
+Outre les productions scientifiques académiques plus de ??? publications et ??? conférences, mon apport scientifique se distingue par une dimension de « recherche-action » affirmée : mise à disposition en Open Source de ?? logiciels et outils de cartographie sémantique. Ma recherche ne reste pas théorique : elle se concrétise par la conception et le développement d’outils indispensables pour comprendre ces écosystèmes et les piloter au mieux. Par exemple, dans le cadre du service de valorisation de la recherche à Paris 8 où nous menons actuellement une recherche action pour cartographier les expertises des chercheurs à l’aide de technologies intellectives [@juanals2010] afin de développer des intelligences collectives [@lévy2011].
+
+## Un investissement pédagogique massif et tourné vers l'innovation
+
+Avec plus de 3 500 heures de cours dispensées, mon engagement pédagogique est indissociable de ma recherche. J'ai structuré mes enseignements autour de trois axes : technique (Open Source), conceptuel (musculation cérébrale) et collaboratif (intelligence collective) que je développe dans des Modules Innovants Pédagogique (MIP) dans le cadre de CréaTIC, d'ArTeC ou d'une Pédagothèque en psychologie pour l'Université Ouverte des Humanités (UOH). Ces activités pédagogiques s’illustrent aussi par l’accompagnement des étudiants de Master pour la rédaction de leur mémoire (nb. ??) ou leur encadrement dans des stages dans le laboratoire Paragraphe (.nb ?).
+
+Parallèllement, j'assure une visibilité internationale à nos formations à travers des collaborations pérennes. Depuis 2019, j’anime un atelier transnational en collaboration avec Laura Shackelford du Rochester Institute of Technology (RIT). L’objectif est de maîtriser la gestion d’un projet créatif numérique au sein d’une équipe internationale en mettant en œuvre des méthodologies de communication numérique collaborative synchrones et asynchrones. Depuis 2025, je participe à la création du Master européen DTDM (Digital Transformation Design & Management) en collaboration avec des collègues de l’Université Egéenne (https://dtdm.aegean.gr/). Ce Master multidisciplinaire qui s’appuie sur les collaborations menées dans le cadre de ERUA devrait ouvrir à la rentrée 2027 et former les étudiants à la conception de l'innovation sociale à l'ère post-numérique.
+
+## Un engagement institutionnel au service du collectif
+
+Depuis une quinzaine d'années, je m'investit dans la responsabilité des formations du département humanités numériques tout d'abord pour co-gérer avec Gobelins - L'école de l'image la licence Pro Création Développement Numérique en ligne (2010 - 2016) puis la licence Pro Design Web Mobile (2016 - 2019). Entre 2018 et 2024, je suis responsable du Master 2 Analyse et Valorisation des Usages du Numérique (AVUN) puis du master 2 Analyse et Conception des Environnements Humains Numériques (ACEHN). Ces responsabilités, sont pour moi, l'occasion de participer au travail d'équipe indispensable à la qualité d'une entreprise pédagogique qui nécessite de mettre en cohérences les différentes approches d'enseignements, d'accompagner collectivement les évolutions nécessaires à un domaine en perpétuelles mutations et de répondre aux exigences administratives de rédaction des bilans et de suivi des activités. D'autant plus depuis 2024, date à laquelle je suis devenu directeur du département Humanités Numériques et co-responsables de la Mention de Master du même nom.
+
+Outre les responsabilités pédagogiques, je participe à la vie du laboratoire Paragraphe (50 enseignants-chercheurs, 80 doctorants) dont je suis un des directeurs adjoints depuis 2025, en participant principalement à l’Axe Dispositifs Numériques (ADN) tout en cultivant des collaborations avec les autres axes de ce laboratoire notamment lors de publications communes [@szoniecky2016; @szoniecky2017a; @desfrichesdoria2022; @ihadjadène2013; @meunier2017; @meunier2018], de projets de recherche (projet Polemika, projet Pédagothèque), d’organisation d’évènement scientifiques (séminaire Adacemu, 01 Design, H2ptm…) ou pour particper à l'organisation et la rédaction des trois derniers bilans quinquennaux. Je contribue aussi aux relations intenses que ce laboratoire entretient avec les groupes de recherche comme le Lutin, des institutions prestigieuses comme la Bibliothèque Nationale de France, les Archives Nationales, l’INA ou dans la communauté des sciences de l’information et de la communication avec le groupe GENIC, la CPDIRSIC ou la SFIC. Les collaborations dès l’origine à trois Projets d’Investissement d’Avenir (PIA) que sont le laboratoire d’excellence H2H, l’IDEFI CréaTIC et l’EUR ArTec, m’ont fait découvrir des projets importants tout à la fois en terme de gouvernance de la recherche que de possibilité d’expérimentation.
+
+Mon implication dans la vie de l'Université Paris 8 est constante et multiforme. En tant que membre élu de la Commission Recherche et de la Commission Recherche restreinte de l’université (depuis 2026), de la commission de spécialistes en SIC (depuis 2018), du conseil de l'UFR MITSIC (depuis 2023) et du conseil documentaire du SCD (depuis 2016), je participe activement à la définition et au suivi des politiques scientifiques de notre établissement.
+
+## Développer des réseaux de chercheurs nationaux et internationaux
+
+D'après le site gouvernemental Scanr qui recence les activités de recherche des chercheurs français, j'entretient des collaboration avec un réseau d'une trentaine de chercheurs. En fait, pour mon travail d'HDR j'ai compilé plus de 2 000 personnes avec qui j'entretient des relations qui peuvent être professionelles dans le cadre de productions scientifiques communes ou purement intellectuelles quand ces rapports se font uniquement par des lectures. Par exemple, je suis membre fondateur du congrès international Digital Tools & Uses (reconnu par IEEE), de la collection d'ouvrage du même nom (lien ???) et participe à ??? comités scientifiques de conférence ou de revue. Très actif au sein de réseaux scientifiques internationaux comme Arcanes () ou nationaux comme GENIC (Éthique et Numérique lien ???), mes collaborations scientifique prennent aussi la forme de participation à deux projets ANR (Aliento et Biolographes), au montage de trois autres comme responsable de work package (Métro ???, LINF, Episodias) ainsi que la partition au montage de deux projets européens (Barcelonne, Suède).
+
+Surtout, j'entretient avec bon nombre des personnes de ces réseaux des relations amicales qui donnent à nos activités toute leurs saveurs.
+
+Ce sont ces réseaux que je souhaite développer et partager pour participer au rayonnement du laboratoire Paragraphe et de l'université Paris 8. Mon ambition est de faire de Paris 8 un pôle de référence mondial pour l'analyse critique et éthique des écosystèmes numériques.
+
+## L'encadrement au cœur de projets scientifiques innovants
+
+Ce développement des réseaux de recherche passe innévitablement par des activités d'encadrement et par l'implication des jeunes chercheurs qui entretiendront et développeront ces réseaux. Je m'attèle à cette tâche depuis l’obtention de l’HDR en initiant deux nouvelles directions de thèses (Laure Delisle, Philippe Lacassaigne) après 5 co-directions dont 2 ont été soutenus (Gabrielle Godin, Mathieu Andro) et deux sont en cours (Camelia Bencheqroun, Jihène ???). Mon implication auprès des jeunes chercheurs porte aussi sur la place qu'ils occupent dans les événements scientifiques que nous organisons, la participation à 9 jurys de thèses, dont 4 hors établissement, la présence dans ?? comités de suivi de thèse.
+
+Toutefois, le statut de Professeur est indispensable pour exercer pleinement cette mission d'encadrement doctoral au sein du Laboratoire Paragraphe et pour porter les projets ANR ou européens nécessaires au financement de ces recherches. Dans le cadre de ces projets, je souhaite développer des collaborations avec des équipes de chercheurs pour critiquer, préciser et mettre en pratique les principes de métamodélisation des connaissances que j'ai développé dans mon HDR. Je souhaite notamment construire ces collaborations suivant quatre échelles d'explorations scientifiques qui correspondent aux quatre dimensions d'une existence informationnel (physique, actant, concept, rapport) :
+
+-   Échelle locale : vise à collecter et transcrire fidèlement les traces physiques du terrain en concevant des « capteurs sémantiques » [@zacklad2010] sous forme de cartographies interactives et multidimensionnelles [@aït-touati2019], afin de formaliser et modéliser l’activité et les choix des acteurs [@guattari1989].
+
+-   Échelle sociale : vise à modéliser la communauté élargie des acteurs de la connaissance [@rodighiero2021], qu’ils soient humains, numériques ou environnementaux (forêt, fleuve, sociétés animales...), afin d'analyser l'impact de leurs interactions et d'en dégager des mode d'existences spécifiques [@latour2012].
+
+-   Échelle conceptuelle : vise à développer une alternative qualitative à la théorie de l'information de Shannon [@baltz2010], en approfondissant la modélisation des connaissances et leurs cohérences avec les dimensions existentielles à l'aide d'approches formelles [@mugur-schächter2006; @thibault2017; @badiou2018; @petitot2021].
+
+-   Échelle globale : vise à concevoir des technologies intellectives (<https://www.istegroup.com/fr/series/technologies-intellectives/>) pour rendre interopérables et stimuler les connaissances au sein d’un réseau d'acteurs, en transformant des outils spécifiques en solutions génériques adoptées par la communauté.
+
+Sur la base de cette recherche multi-échelles, je propose de travailler six axes d’expérimentations afin de montrer dans quelles directions ces échelles sont explorables et comment les diverses expériences d'exploration trouvent leurs cohérences grâce à un métamodèle commun :
+
+-   Axe Frontières numériques : vise à approfondir le cadre théorique de cette notion à travers ses impacts physiques, ses enjeux sociétaux et ces résonances conceptuels, tout en renforçant les collaborations interdisciplinaires par des cycles de conférences et des publications.
+
+-   Axe Internet des objets : vise à analyser les flux infocommunicationnels des objets connectés, de la domotique aux smart cities, afin de guider les politiques publiques, préconiser des usages éthiques et optimiser leur pilotage environnemental via une plateforme d'intelligence collective.
+
+-   Axe écritures génératives : combine l’exploration expérimentale des IA connexionniste et symbolique, notamment à travers des ateliers de co-conception et une réflexion théorique visant à modéliser les pouvoirs existentiels de l’écriture algorithmique et graphique.
+
+-   Axe design des connaissances : vise à concevoir des médiations humains-machines-environnements basées sur des interactions diagrammatiques afin de faciliter le partage collectif des connaissances et stimuler leurs expérimentations.
+
+-   Axe éthique de la discussion pour l’intelligence collective : vise à fonder une intelligence collective réflexive en formalisant des échanges interopérables qui stimulent l'esprit critique, tout en réhabilitant la subjectivité individuelle et la construction de points de vue spécifiques face aux systèmes de pilotage par les données.
+
+-   Axe puissances existentielles : vise à affiner la modélisation de la complexité des écosystèmes de connaissances en articulant les pouvoirs de discernement, raisonnement, résonance et agir, afin de simuler des trajectoires d'évolution et de réconcilier les approches technoscientifiques formelles avec la pensée du sens propre aux sciences humaines.
+
+Ces axes ne sont pas la liste exhaustive des expérimentations qu’il est possible de mener, de même concernant les échelles d’exploration qui ne se réduisent pas à celles présentées ici. Ces propositions ont pour vocation de faire naître un débat constructif sur les pratiques de métamodélisation dans le séminaire de recherche "Métagraphes" et la revue éponyme en cours de création sur la plateforme EpiScience.
+
+## Mes engagements pour une recherche public au services des biens communs
+
+Engagé dans le développement d'un service public de qualité dédié aux biens communs que sont le partage des connaissances, le développement de l'esprit critique et la stimulation de la réflexivité ; je milite activement pour une science ouverte dont les productions doivent être en accès libre. Dans cette optique, mes productions sont accessibles sur HAL (https://cv.hal.science/samuel-szoniecky). De même concernant les sources des dispositifs numériques que je conçoit (https://github.com/samszo?tab=repositories) et les supports de mes présentations faites en cours ou en conférences (https://samszo.github.io/ConfErrance/)
+
+En tant que professeur des universités, je m'engage à :
+
+-   Développer l'axe « Dispositifs Numériques » du laboratoire Paragraphe en renforçant les recherches sur l'éthique des écosystèmes numériques par métamodélisation des points de vue.
+
+-   Poursuivre la transformation du département Humanités Numériques vers une structure encore plus ouverte à l'international et à l'interdisciplinarité.
+
+-   Encadrer une nouvelle génération de docteurs capables de naviguer entre complexité des technologies intellectives et réflexivité en sciences humaines.
+
+-   Piloter des projets d'envigures au niveau national, européen et mondial.
+
+Ma trajectoire, de l'histoire de l'art à l'ingénierie des écosystèmes numériques puis à la métamodélisation des connaissances, témoigne d'une capacité à construire des ponts entre les savoirs. Je souhaite aujourd’hui mettre cette maturité scientifique au service du rayonnement de l'Université Paris 8.
+
+Je vous remercie de l'attention que vous porterez à ma candidature et reste à votre entière disposition pour tout entretien. Je vous prie d'agréer, Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, l’expression de ma haute considération.
