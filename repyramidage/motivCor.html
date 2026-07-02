@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Szoniecky">
+
+<title>motivcor</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="motivCor_files/libs/clipboard/clipboard.min.js"></script>
+<script src="motivCor_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="motivCor_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="motivCor_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="motivCor_files/libs/quarto-html/popper.min.js"></script>
+<script src="motivCor_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="motivCor_files/libs/quarto-html/anchor.min.js"></script>
+<link href="motivCor_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="motivCor_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="motivCor_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="motivCor_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="motivCor_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Laboratoire Paragraphe
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>[cite_start]Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, j’ai l’honneur de vous présenter ma candidature à la promotion au corps des Professeurs des Universités dans le cadre du dispositif de repyramidage[cite: 1].</p>
+<p>[cite_start]Depuis 1995, date de mon DEA en histoire de l’Art consacré à John Cage, j’explore les rapports entre sciences humaines et dispositifs numériques, en m’intéressant particulièrement à la génération de connaissances par les machines[cite: 2]. [cite_start]C’est dans cette optique que j’ai rencontré Jean-Pierre Balpe en 1997, marquant le début de mes collaborations avec le laboratoire Paragraphe[cite: 3]. [cite_start]Après une carrière d’une dizaine d’années en tant qu’ingénieur informatique, chef de projet et architecte de l’information pour de grands comptes (SFR, Banque de France, ANPE, etc.), j’ai renoué avec la recherche pour approfondir les questions d’intelligence collective[cite: 4]. [cite_start]D’abord chargé de cours, puis professeur contractuel, j’ai obtenu en 2009 un contrat doctoral portant sur les langages symboliques[cite: 5]. [cite_start]Ma thèse, soutenue en 2012 <span class="citation" data-cites="szoniecky2012a">(<a href="#ref-szoniecky2012a" role="doc-biblioref">Szoniecky, 2012</a>)</span>, a démontré l’importance du langage allégorique dans les processus d’intelligence collective, des travaux que j’ai ensuite mis en pratique lors d’un post-doctorat consacré à l’accessibilité urbaine [<span class="citation" data-cites="szoniecky2012">Szoniecky et al. (<a href="#ref-szoniecky2012" role="doc-biblioref">2012</a>)</span>][cite: 6]. [cite_start]En 2013, j’ai été nommé Maître de conférences au département Humanités numériques de l’Université Paris 8[cite: 7].</p>
+<p>[cite_start]L’année 2024 a marqué un tournant décisif avec la soutenance de mon Habilitation à Diriger des Recherches (HDR) intitulée « Modéliser des écosystèmes de connaissance » [<span class="citation" data-cites="szoniecky2024">Szoniecky (<a href="#ref-szoniecky2024" role="doc-biblioref">2024</a>)</span>][cite: 8]. [cite_start]Ce travail de synthèse cristallise vingt ans d’expertise pour proposer une approche épistémologique et technique robuste face aux défis des dispositifs sociaux numériques contemporains[cite: 8]. [cite_start]Mon accession au grade de Professeur est aujourd’hui la condition nécessaire pour pérenniser et amplifier les responsabilités de direction et d’encadrement scientifique que j’assume déjà au sein de notre établissement[cite: 9].</p>
+<section id="cite_startune-recherche-ancrée-dans-lintelligence-collective-la-complexité-et-léthique-cite-10" class="level2">
+<h2 class="anchored" data-anchor-id="cite_startune-recherche-ancrée-dans-lintelligence-collective-la-complexité-et-léthique-cite-10">[cite_start]Une recherche ancrée dans l’intelligence collective, la complexité et l’éthique [cite: 10]</h2>
+<p>Mes travaux s’articulent autour de la complexité des rapports entre intelligences collectives <span class="citation" data-cites="desfrichesdoria2022 szoniecky2017">(<a href="#ref-desfrichesdoria2022" role="doc-biblioref">Desfriches Doria &amp; Szoniecky, 2022</a>; <a href="#ref-szoniecky2017" role="doc-biblioref">Szoniecky &amp; Bouhaï, 2017</a>)</span> et environnements numériques, qu’il s’agisse des IA génératives [<span class="citation" data-cites="szoniecky2023">Szoniecky et al. (<a href="#ref-szoniecky2023" role="doc-biblioref">2023</a>)</span>; [cite_start]<span class="citation" data-cites="pappa2023">Pappa et al. (<a href="#ref-pappa2023" role="doc-biblioref">2023</a>)</span>] et symboliques <span class="citation" data-cites="szoniecky2026">(<a href="#ref-szoniecky2026" role="doc-biblioref">Szoniecky, 2026</a>)</span>, de l’Internet des Objets (IoT) <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky &amp; Toumia, 2020</a>)</span>, ou des outils d’éditorialisation <span class="citation" data-cites="szoniecky2019">(<a href="#ref-szoniecky2019" role="doc-biblioref">Szoniecky, 2019</a>)</span> et de cartographie de connaissances [<span class="citation" data-cites="szoniecky2018">Szoniecky (<a href="#ref-szoniecky2018" role="doc-biblioref">2018</a>)</span>][cite: 10, 11, 12]. [cite_start]J’ai conçu une méthode d’analyse originale permettant de piloter l’éthique des activités numériques en évaluant les fluctuations de leurs pouvoirs de discernement, de raisonnement, de résonance et d’agir[cite: 13]. Cette approche repose sur une métamodélisation structurée autour de huit principes fondamentaux : dialogique <span class="citation" data-cites="maturana1994">(<a href="#ref-maturana1994" role="doc-biblioref">Maturana &amp; Varela, 1994</a>)</span>, récursif, hologrammatique <span class="citation" data-cites="morin1992 morin1981 morin1985 morin1995 morin2001 morin2006">(<a href="#ref-morin1981" role="doc-biblioref">Morin, 1981</a>, <a href="#ref-morin1985" role="doc-biblioref">1985</a>, <a href="#ref-morin1992" role="doc-biblioref">1992</a>, <a href="#ref-morin1995" role="doc-biblioref">1995</a>, <a href="#ref-morin2001" role="doc-biblioref">2001</a>, <a href="#ref-morin2006" role="doc-biblioref">2006</a>)</span>, cycle sémiotique <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span>, plis analogiques [<span class="citation" data-cites="deleuze1988">Deleuze (<a href="#ref-deleuze1988" role="doc-biblioref">1988</a>)</span>; [cite_start]<span class="citation" data-cites="hofstadter2013">Hofstadter &amp; Sander (<a href="#ref-hofstadter2013" role="doc-biblioref">2013</a>)</span>], raison trajective <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span>, degrés de flexibilité <span class="citation" data-cites="clément2021">(<a href="#ref-clément2021" role="doc-biblioref">Clément, 2021</a>)</span> et onto-éthique [<span class="citation" data-cites="deleuze1968">Deleuze (<a href="#ref-deleuze1968" role="doc-biblioref">1968</a>)</span>][cite: 14, 15, 16].</p>
+<p>[cite_start]Outre les productions académiques (nb. ?? publications et ?? conférences), mon apport scientifique se distingue par une dimension de « recherche-action » affirmée : mise à disposition en Open Source de ?? logiciels et outils de cartographie sémantique[cite: 16, 17, 18]. [cite_start]Par exemple, au sein du service de valorisation de la recherche à Paris 8, nous cartographions actuellement les expertises des chercheurs à l’aide de technologies intellectives <span class="citation" data-cites="juanals2010">(<a href="#ref-juanals2010" role="doc-biblioref">Juanals &amp; Noyer, 2010</a>)</span> pour stimuler l’intelligence collective [<span class="citation" data-cites="lévy2011">Lévy (<a href="#ref-lévy2011" role="doc-biblioref">2011</a>)</span>][cite: 19].</p>
+</section>
+<section id="cite_startun-investissement-pédagogique-massif-et-tourné-vers-linnovation-cite-20" class="level2">
+<h2 class="anchored" data-anchor-id="cite_startun-investissement-pédagogique-massif-et-tourné-vers-linnovation-cite-20">[cite_start]Un investissement pédagogique massif et tourné vers l’innovation [cite: 20]</h2>
+<p>[cite_start]Avec plus de 3 500 heures de cours dispensées, mon engagement pédagogique est indissociable de ma recherche[cite: 20]. [cite_start]J’ai structuré mes enseignements autour de trois axes : technique (Open Source), conceptuel et collaboratif, développés notamment via des Modules Innovants Pédagogiques (MIP)[cite: 21]. [cite_start]J’accompagne également de nombreux étudiants en Master (nb. ??) et en stage au sein du laboratoire Paragraphe (nb. ??)[cite: 22].</p>
+<p>[cite_start]À l’international, j’anime depuis 2019 un atelier transnational avec Laura Shackelford du <em>Rochester Institute of Technology</em> (RIT), focalisé sur la gestion de projets créatifs en équipe multiculturelle[cite: 24, 25]. [cite_start]De plus, je participe depuis 2025 à la création du Master européen DTDM (<em>Digital Transformation Design &amp; Management</em>), prévu pour la rentrée 2027, afin de former les étudiants à l’innovation sociale post-numérique[cite: 26, 27].</p>
+</section>
+<section id="cite_startun-engagement-institutionnel-au-service-du-collectif-cite-28" class="level2">
+<h2 class="anchored" data-anchor-id="cite_startun-engagement-institutionnel-au-service-du-collectif-cite-28">[cite_start]Un engagement institutionnel au service du collectif [cite: 28]</h2>
+<p>[cite_start]Depuis une quinzaine d’années, je m’investis dans la responsabilité des formations du département Humanités Numériques, notamment pour les licences professionnelles (2010-2019) et les masters AVUN et ACEHN (2018-2024)[cite: 28, 29, 30]. [cite_start]En 2024, je suis devenu directeur du département et co-responsable de la mention de Master éponyme[cite: 31]. [cite_start]Parallèlement, je participe à la vie du laboratoire Paragraphe dont je suis l’un des directeurs adjoints depuis 2025[cite: 32].</p>
+<p>[cite_start]Mon implication institutionnelle est constante : membre élu de la Commission Recherche, du conseil de l’UFR MITSIC et du conseil documentaire du SCD[cite: 36, 37]. [cite_start]Je contribue également au rayonnement de l’établissement à travers des réseaux nationaux (GENIC, SFIC) et internationaux (Arcanes), ainsi que par le pilotage de work packages dans des projets ANR comme Episodias[cite: 40, 41].</p>
+</section>
+<section id="cite_startlencadrement-au-cœur-de-projets-scientifiques-innovants-cite-44" class="level2">
+<h2 class="anchored" data-anchor-id="cite_startlencadrement-au-cœur-de-projets-scientifiques-innovants-cite-44">[cite_start]L’encadrement au cœur de projets scientifiques innovants [cite: 44]</h2>
+<p>[cite_start]Le statut de Professeur est indispensable pour exercer pleinement ma mission d’encadrement doctoral[cite: 47]. [cite_start]J’ai déjà initié deux directions de thèses et supervisé quatre co-directions[cite: 45]. [cite_start]Mon projet scientifique s’articule autour de quatre échelles d’exploration[cite: 49]:</p>
+<ul>
+<li>[cite_start]<strong>Échelle locale :</strong> collecter les traces du terrain via des « capteurs sémantiques » <span class="citation" data-cites="zacklad2010">(<a href="#ref-zacklad2010" role="doc-biblioref">Zacklad, 2010</a>)</span> et des cartographies interactives [<span class="citation" data-cites="aït-touati2019">Aït-Touati et al. (<a href="#ref-aït-touati2019" role="doc-biblioref">2019</a>)</span>][cite: 49].</li>
+<li>[cite_start]<strong>Échelle sociale :</strong> modéliser la communauté élargie des acteurs de la connaissance <span class="citation" data-cites="rodighiero2021">(<a href="#ref-rodighiero2021" role="doc-biblioref">Rodighiero, 2021</a>)</span> et leurs modes d’existence [<span class="citation" data-cites="latour2012">Latour (<a href="#ref-latour2012" role="doc-biblioref">2012</a>)</span>][cite: 50].</li>
+<li><strong>Échelle conceptuelle :</strong> développer une alternative qualitative à la théorie de l’information <span class="citation" data-cites="baltz2010">(<a href="#ref-baltz2010" role="doc-biblioref">Baltz, 2010</a>)</span> par des approches formelles [<span class="citation" data-cites="mugur-schächter2006">Mugur-Schächter (<a href="#ref-mugur-schächter2006" role="doc-biblioref">2006</a>)</span>; [cite_start]<span class="citation" data-cites="badiou2018">Badiou (<a href="#ref-badiou2018" role="doc-biblioref">2018</a>)</span>][cite: 51].</li>
+<li>[cite_start]<strong>Échelle globale :</strong> concevoir des technologies intellectives pour rendre interopérables les connaissances au sein d’un réseau d’acteurs[cite: 52].</li>
+</ul>
+<p>[cite_start]Ces échelles sont explorées via six axes : Frontières numériques, Internet des objets, écritures génératives, design des connaissances, éthique de la discussion et puissances existentielles[cite: 53, 54, 55, 56, 57, 58].</p>
+</section>
+<section id="cite_startengagements-pour-une-recherche-au-service-des-biens-communs-cite-61" class="level2">
+<h2 class="anchored" data-anchor-id="cite_startengagements-pour-une-recherche-au-service-des-biens-communs-cite-61">[cite_start]Engagements pour une recherche au service des biens communs [cite: 61]</h2>
+<p>[cite_start]Militant pour une science ouverte, l’ensemble de mes productions est accessible sur HAL et mes codes sources sur GitHub[cite: 62, 63, 64]. [cite_start]En tant que professeur, je m’engage à renforcer l’éthique des écosystèmes numériques, à internationaliser davantage notre département et à encadrer une nouvelle génération de docteurs capables de naviguer entre complexité technique et réflexivité en sciences humaines[cite: 64, 65, 66, 67].</p>
+<p>Je vous remercie de l’attention que vous porterez à ma candidature et reste à votre entière disposition.</p>
+<p>[cite_start]Je vous prie d’agréer, Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, l’expression de ma haute considération[cite: 70].</p>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-aït-touati2019" class="csl-entry" role="listitem">
+Aït-Touati, F., Arènes, A., &amp; Grégoire, A. (2019). <em>Terra forma : manuel de cartographies potentielles</em>. Éditions B42.
+</div>
+<div id="ref-badiou2018" class="csl-entry" role="listitem">
+Badiou, A. (2018). <em>L’immanence des vérités</em>.
+</div>
+<div id="ref-baltz2010" class="csl-entry" role="listitem">
+Baltz, C. (2010). <em>Shannon, critiques, dépliages, reconstruction</em> (Europia Production).
+</div>
+<div id="ref-berque2009" class="csl-entry" role="listitem">
+Berque, A. (2009). <em>Ecoumène : Introduction à l’étude des milieux humains</em>. Belin.
+</div>
+<div id="ref-clément2021" class="csl-entry" role="listitem">
+Clément, E. (2021). <em>La flexibilité cognitive: Pierre angulaire de l’apprentissage</em>. ISTE éditions.
+</div>
+<div id="ref-deleuze1968" class="csl-entry" role="listitem">
+Deleuze, G. (1968). <em>Spinoza et le problème de l’expression</em>. Éditions de Minuit.
+</div>
+<div id="ref-deleuze1988" class="csl-entry" role="listitem">
+Deleuze, G. (1988). <em>Le pli</em>. Editions de Minuit.
+</div>
+<div id="ref-desfrichesdoria2022" class="csl-entry" role="listitem">
+Desfriches Doria, O., &amp; Szoniecky, S. (2022). Les enjeux de la culture numérique&nbsp;: des habitus de réception à la réflexivité numérique. <em>Approches Théoriques en Information-Communication (ATIC)</em>, <em>5</em>(2), 5–10. <a href="https://doi.org/10.3917/atic.005.0005">https://doi.org/10.3917/atic.005.0005</a>
+</div>
+<div id="ref-hofstadter2013" class="csl-entry" role="listitem">
+Hofstadter, D., &amp; Sander, E. (2013). <em>L’analogie : Coeur de la pensée</em>. Odile Jacob.
+</div>
+<div id="ref-juanals2010" class="csl-entry" role="listitem">
+Juanals, B., &amp; Noyer, J.-M. (2010). <em>Technologies de l’information et intelligences collectives</em>. Hermes Science Publications.
+</div>
+<div id="ref-latour2012" class="csl-entry" role="listitem">
+Latour, B. (2012). <em>Enquêtes sur les modes d’existence : Une anthropologie des modernes</em>. Editions La Découverte.
+</div>
+<div id="ref-lévy2011" class="csl-entry" role="listitem">
+Lévy, P. (2011). <em>La sphère sémantique : Tome 1, computation, cognition, économie de l’information</em>. Hermes Science Publications.
+</div>
+<div id="ref-maturana1994" class="csl-entry" role="listitem">
+Maturana, H. R., &amp; Varela, F. J. (1994). <em>L’arbre de la connaissance</em>. Editions Addison-Wesley France.
+</div>
+<div id="ref-morin1981" class="csl-entry" role="listitem">
+Morin, E. (1981). <em>La méthode, tome 1</em>. Seuil.
+</div>
+<div id="ref-morin1985" class="csl-entry" role="listitem">
+Morin, E. (1985). <em>La méthode, la vie de la vie, tome 2</em>. Seuil.
+</div>
+<div id="ref-morin1992" class="csl-entry" role="listitem">
+Morin, E. (1992). <em>La méthode, la connaissance de la connaissance, tome 3</em>. Seuil.
+</div>
+<div id="ref-morin1995" class="csl-entry" role="listitem">
+Morin, E. (1995). <em>La méthode, tome 4 : Les idées</em>. Seuil.
+</div>
+<div id="ref-morin2001" class="csl-entry" role="listitem">
+Morin, E. (2001). <em>La méthode, l’humanité de l’humanité, tome 5 : L’identité humaine</em>. Seuil.
+</div>
+<div id="ref-morin2006" class="csl-entry" role="listitem">
+Morin, E. (2006). <em>La méthode : Tome 6, ethique</em>. Points.
+</div>
+<div id="ref-mugur-schächter2006" class="csl-entry" role="listitem">
+Mugur-Schächter, M. (2006). <em>Sur le tissage des connaissances</em>. Hermes Science Publications.
+</div>
+<div id="ref-pappa2023" class="csl-entry" role="listitem">
+Pappa, A., Szoniecky, S., Berenguer, R., Huthwohl, J., Quach, C., &amp; Laborderie, A. (2023, July 5). <em>52nd LIBER Annual Conference</em>. https://doi.org/<a href="https://doi.org/10.36820/LIBER.2023">https://doi.org/10.36820/LIBER.2023</a>
+</div>
+<div id="ref-rodighiero2021" class="csl-entry" role="listitem">
+Rodighiero, D. (2021). <em>Cartographie des affinités: Démocratiser la visualisation des données</em> (Illustrated édition). Métis Presses.
+</div>
+<div id="ref-szoniecky2012a" class="csl-entry" role="listitem">
+Szoniecky, S. (2012). <em>Évaluation et conception d’un langage symbolique pour l’intelligence collective : Vers un langage allégorique pour le web</em> [PhD thesis]. <a href="http://tel.archives-ouvertes.fr/tel-00764457">http://tel.archives-ouvertes.fr/tel-00764457</a>
+</div>
+<div id="ref-szoniecky2018" class="csl-entry" role="listitem">
+Szoniecky, S. (2018). <em>Jeux d’interprétations collectives pour cartographier les influences sapientielles</em> (Editions Universitaires de Lorraine). Presses universitaires de Nancy. <a href="http://www.lcdpu.fr/livre/?GCOI=27000100976800&amp;fa=details">http://www.lcdpu.fr/livre/?GCOI=27000100976800&amp;fa=details</a>
+</div>
+<div id="ref-szoniecky2019" class="csl-entry" role="listitem">
+Szoniecky, S. (2019). Métamorphoses et hybridations d<span>’</span>une archive numérique pour sa valorisation&nbsp;: vers des écosystèmes de connaissances. <em>Journal of Human Mediated Interactions</em>, <em>20</em>(1), 77–104. <a href="http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf">http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf</a>
+</div>
+<div id="ref-szoniecky2024" class="csl-entry" role="listitem">
+Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
+</div>
+<div id="ref-szoniecky2026" class="csl-entry" role="listitem">
+Szoniecky, S. (2026). Du texte au diagramme : modéliser les pouvoirs dans un environnement numérique. <em>Revue Intelligibilité du numérique</em>. <a href="https://intelligibilite-numerique.numerev.com/manifeste">https://intelligibilite-numerique.numerev.com/manifeste</a>
+</div>
+<div id="ref-szoniecky2017" class="csl-entry" role="listitem">
+Szoniecky, S., &amp; Bouhaï, N. (2017). <em>Intelligence collective et archives numériques</em> (Systèmes d’information, web et société). ISTE éditions.
+</div>
+<div id="ref-szoniecky2012" class="csl-entry" role="listitem">
+Szoniecky, S., Folcher, V., Bodin, F., &amp; Zreik, K. (2012). <em>GEVU : Un outil pour territorialiser les usages de la ville</em> (pp. 45–62). Productions Europia.
+</div>
+<div id="ref-szoniecky2023" class="csl-entry" role="listitem">
+Szoniecky, S., Reyes, E., Saleh, I., &amp; Zreik, K. (2023, October 29). <em>13th conference of the international association for visual semiotics</em>.
+</div>
+<div id="ref-szoniecky2020" class="csl-entry" role="listitem">
+Szoniecky, S., &amp; Toumia, A. (2020). Design de connaissances dans l<span>’</span>Internet des Objets : Blockchain et réfrigérateur connecté. <em>Communication management</em>, <em>Vol. 17</em>(1), 39–52. <a href="https://www.cairn.info/revue-communication-et-management-2020-1-page-39.htm">https://www.cairn.info/revue-communication-et-management-2020-1-page-39.htm</a>
+</div>
+<div id="ref-zacklad2010" class="csl-entry" role="listitem">
+Zacklad, M. (2010). <em>Introduction aux appareils de capture sémantique dans les TIC et les SI</em>. Hermes Science Publications.
+</div>
+<div id="ref-µ2015" class="csl-entry" role="listitem">
+µG., Edeline, F., &amp; Klinkenberg, J.-M. (2015). <em>Principia semiotica : Aux sources du sens</em>. Les impressions nouvelles éditions.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

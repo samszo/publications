@@ -1,0 +1,57 @@
+---
+version: 0.0.1
+bibliography: refMotivations.bib
+csl: ../../assets/csl/apa.csl
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
+---
+
+[cite_start]Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, j’ai l’honneur de vous présenter ma candidature à la promotion au corps des Professeurs des Universités dans le cadre du dispositif de repyramidage[cite: 1].
+
+[cite_start]Depuis 1995, date de mon DEA en histoire de l’Art consacré à John Cage, j’explore les rapports entre sciences humaines et dispositifs numériques, en m’intéressant particulièrement à la génération de connaissances par les machines[cite: 2]. [cite_start]C’est dans cette optique que j’ai rencontré Jean-Pierre Balpe en 1997, marquant le début de mes collaborations avec le laboratoire Paragraphe[cite: 3]. [cite_start]Après une carrière d’une dizaine d’années en tant qu’ingénieur informatique, chef de projet et architecte de l’information pour de grands comptes (SFR, Banque de France, ANPE, etc.), j'ai renoué avec la recherche pour approfondir les questions d’intelligence collective[cite: 4]. [cite_start]D’abord chargé de cours, puis professeur contractuel, j’ai obtenu en 2009 un contrat doctoral portant sur les langages symboliques[cite: 5]. [cite_start]Ma thèse, soutenue en 2012 [@szoniecky2012a], a démontré l’importance du langage allégorique dans les processus d’intelligence collective, des travaux que j'ai ensuite mis en pratique lors d'un post-doctorat consacré à l'accessibilité urbaine [@szoniecky2012][cite: 6]. [cite_start]En 2013, j’ai été nommé Maître de conférences au département Humanités numériques de l’Université Paris 8[cite: 7].
+
+[cite_start]L’année 2024 a marqué un tournant décisif avec la soutenance de mon Habilitation à Diriger des Recherches (HDR) intitulée « Modéliser des écosystèmes de connaissance » [@szoniecky2024][cite: 7]. [cite_start]Ce travail de synthèse cristallise vingt ans d'expertise pour proposer une approche épistémologique et technique robuste face aux défis des dispositifs sociaux numériques contemporains[cite: 8]. [cite_start]Mon accession au grade de Professeur est aujourd’hui la condition nécessaire pour pérenniser et amplifier les responsabilités de direction et d’encadrement scientifique que j’assume déjà au sein de notre établissement[cite: 9].
+
+## [cite_start]Une recherche ancrée dans l’intelligence collective, la complexité et l'éthique [cite: 10]
+
+Mes travaux s’articulent autour de la complexité des rapports entre intelligences collectives [@desfrichesdoria2022; [cite_start]@szoniecky2017] et environnements numériques[cite: 10], qu'il s'agisse des IA génératives [@szoniecky2023; [cite_start]@pappa2023] et symboliques [@szoniecky2026], de l'Internet des Objets (IoT) [@szoniecky2020], ou des outils d’éditorialisation [@szoniecky2019] et de cartographie de connaissances [@szoniecky2018][cite: 11, 12]. [cite_start]J'ai conçu une méthode d'analyse originale permettant de piloter l’éthique des activités numériques en évaluant les fluctuations de leurs pouvoirs de discernement, de raisonnement, de résonance et d’agir[cite: 13]. Cette approche repose sur une métamodélisation structurée autour de huit principes fondamentaux : dialogique [@maturana1994], récursif, hologrammatique [@morin1992; @morin1981; @morin1985; @morin1995; @morin2001; @morin2006], cycle sémiotique [@µ2015], plis analogiques [@deleuze1988; [cite_start]@hofstadter2013], raison trajective [@berque2009], degrés de flexibilité [@clément2021] et onto-éthique [@deleuze1968][cite: 14, 15, 16].
+
+[cite_start]Outre les productions académiques (nb. ?? publications et ?? conférences) [cite: 16][cite_start], mon apport scientifique se distingue par une dimension de « recherche-action » affirmée : mise à disposition en Open Source de ?? logiciels et outils de cartographie sémantique[cite: 17, 18]. [cite_start]Par exemple, au sein du service de valorisation de la recherche à Paris 8, nous cartographions actuellement les expertises des chercheurs à l’aide de technologies intellectives [@juanals2010] pour stimuler l'intelligence collective [@lévy2011][cite: 19].
+
+## [cite_start]Un investissement pédagogique massif et tourné vers l'innovation [cite: 20]
+
+[cite_start]Avec plus de 3 500 heures de cours dispensées, mon engagement pédagogique est indissociable de ma recherche[cite: 20]. [cite_start]J'ai structuré mes enseignements autour de trois axes : technique (Open Source), conceptuel et collaboratif, développés notamment via des Modules Innovants Pédagogiques (MIP) dans le cadre de CréaTIC ou d'ArTeC[cite: 21]. [cite_start]J’accompagne également de nombreux étudiants en Master (nb. ??) et en stage au sein du laboratoire Paragraphe (nb. ??)[cite: 22].
+
+[cite_start]À l’international, j’anime depuis 2019 un atelier transnational avec Laura Shackelford du *Rochester Institute of Technology* (RIT) [cite: 23, 24][cite_start], focalisé sur la gestion de projets créatifs en équipe multiculturelle[cite: 25]. [cite_start]De plus, je participe depuis 2025 à la création du Master européen DTDM (*Digital Transformation Design & Management*), prévu pour la rentrée 2027, afin de former les étudiants à l'innovation sociale post-numérique[cite: 26, 27].
+
+## [cite_start]Un engagement institutionnel au service du collectif [cite: 28]
+
+[cite_start]Depuis une quinzaine d'années, je m'investis dans la responsabilité des formations du département Humanités Numériques, notamment pour les licences professionnelles (2010-2019) et les masters AVUN et ACEHN (2018-2024)[cite: 28, 29, 30]. [cite_start]En 2024, je suis devenu directeur du département et co-responsable de la mention de Master éponyme[cite: 31]. [cite_start]Parallèlement, je participe à la vie du laboratoire Paragraphe dont je suis l'un des directeurs adjoints depuis 2025[cite: 32, 33].
+
+[cite_start]Mon implication institutionnelle est constante : membre élu de la Commission Recherche, du conseil de l'UFR MITSIC et du conseil documentaire du SCD[cite: 36, 37]. [cite_start]Je contribue également au rayonnement de l'établissement à travers des réseaux nationaux (GENIC) et internationaux (Arcanes), ainsi que par le pilotage de work packages dans des projets ANR comme Episodias[cite: 41].
+
+## [cite_start]L'encadrement au cœur de projets scientifiques innovants [cite: 44]
+
+[cite_start]Le statut de Professeur est indispensable pour exercer pleinement ma mission d'encadrement doctoral[cite: 47]. [cite_start]J'ai déjà initié deux nouvelles directions de thèses et supervisé plusieurs co-directions[cite: 45, 46]. [cite_start]Mon projet scientifique s'articule autour de quatre échelles d'exploration[cite: 48, 49]:
+
+- [cite_start]**Échelle locale :** collecter les traces du terrain via des « capteurs sémantiques » [@zacklad2010] et des cartographies interactives [@aït-touati2019] afin de formaliser l'activité et les choix des acteurs [@guattari1989][cite: 49].
+- [cite_start]**Échelle sociale :** modéliser la communauté élargie des acteurs de la connaissance [@rodighiero2021] et leurs modes d'existence [@latour2012][cite: 50].
+- **Échelle conceptuelle :** développer une alternative qualitative à la théorie de l'information de Shannon [@baltz2010] par des approches formelles [@mugur-schächter2006; @badiou2018; [cite_start]@petitot2021][cite: 51, 52].
+- [cite_start]**Échelle globale :** concevoir des technologies intellectives pour rendre interopérables les connaissances au sein d’un réseau d'acteurs[cite: 52].
+
+[cite_start]Ces échelles sont explorées via six axes expérimentaux : Frontières numériques [cite: 53][cite_start], Internet des objets [cite: 54][cite_start], écritures génératives [cite: 55][cite_start], design des connaissances [cite: 56][cite_start], éthique de la discussion [cite: 57] [cite_start]et puissances existentielles[cite: 58].
+
+## [cite_start]Engagements pour une recherche au service des biens communs [cite: 61]
+
+[cite_start]Militant pour une science ouverte, l'ensemble de mes productions est accessible sur HAL et mes codes sources sur GitHub[cite: 62, 63, 64]. [cite_start]En tant que professeur, je m'engage à renforcer l'éthique des écosystèmes numériques [cite: 64][cite_start], à internationaliser davantage notre département [cite: 65] [cite_start]et à encadrer une nouvelle génération de docteurs capables de naviguer entre complexité technique et réflexivité en sciences humaines[cite: 66, 67].
+
+[cite_start]Je vous remercie de l'attention que vous porterez à ma candidature et reste à votre entière disposition[cite: 69].
+
+[cite_start]Je vous prie d'agréer, Monsieur le Président, Mesdames et Messieurs les membres du Conseil Académique, l’expression de ma haute considération[cite: 70].

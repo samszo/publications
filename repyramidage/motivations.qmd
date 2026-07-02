@@ -1,7 +1,7 @@
 ---
 version: 0.0.1
 bibliography: refMotivations.bib
-csl: ../../assets/csl/apa.csl
+csl: ../assets/csl/apa.csl
 author:
   - name: Samuel Szoniecky
     orcid: 0000-0002-7643-3342
@@ -41,7 +41,7 @@ Mon implication dans la vie de l'Université Paris 8 est constante et multiforme
 
 ## Développer des réseaux de chercheurs nationaux et internationaux
 
-D'après le site gouvernemental Scanr qui recence les activités de recherche des chercheurs français, j'entretient des collaboration avec un réseau d'une trentaine de chercheurs. En fait, pour mon travail d'HDR j'ai compilé plus de 2 000 personnes avec qui j'entretient des relations qui peuvent être professionelles dans le cadre de productions scientifiques communes ou purement intellectuelles quand ces rapports se font uniquement par des lectures. Par exemple, je suis membre fondateur du congrès international Digital Tools & Uses (reconnu par IEEE), de la collection d'ouvrage du même nom (lien ???) et participe à ??? comités scientifiques de conférence ou de revue. Très actif au sein de réseaux scientifiques internationaux comme Arcanes () ou nationaux comme GENIC (Éthique et Numérique lien ???), mes collaborations scientifique prennent aussi la forme de participation à deux projets ANR (Aliento et Biolographes), au montage de trois autres comme responsable de work package (Métro ???, LINF, Episodias) ainsi que la partition au montage de deux projets européens (Barcelonne, Suède).
+D'après le site gouvernemental Scanr qui recence les activités de recherche des chercheurs français, j'entretient des collaboration avec un réseau d'une trentaine de chercheurs. En fait, pour mon travail d'HDR j'ai compilé plus de 2 000 personnes avec qui j'entretient des relations qui peuvent être professionelles dans le cadre de productions scientifiques communes ou purement intellectuelles quand ces rapports se font uniquement par des lectures. Par exemple, je suis membre fondateur du congrès international Digital Tools & Uses (reconnu par IEEE), co-éditeur de la collection d'ouvrage du même nom (https://digitaluses.info/) et participe à ??? comités scientifiques de conférence ou de revue. Très actif au sein de réseaux scientifiques internationaux comme Arcanes (https://crilcq.arcanes.ca/) ou nationaux comme le Groupe Ethique et Numérique en Information et Communication (https://genic.hypotheses.org/), mes collaborations scientifique prennent aussi la forme de participation à deux projets ANR (Aliento et Biolographes), au montage de trois autres comme responsable de work package : OLIVE, LINF, EPISODIA; ainsi que la partition au montage d'un projets européens : EUPOETRY.
 
 Surtout, j'entretient avec bon nombre des personnes de ces réseaux des relations amicales qui donnent à nos activités toute leurs saveurs.
 
@@ -49,7 +49,7 @@ Ce sont ces réseaux que je souhaite développer et partager pour participer au 
 
 ## L'encadrement au cœur de projets scientifiques innovants
 
-Ce développement des réseaux de recherche passe innévitablement par des activités d'encadrement et par l'implication des jeunes chercheurs qui entretiendront et développeront ces réseaux. Je m'attèle à cette tâche depuis l’obtention de l’HDR en initiant deux nouvelles directions de thèses (Laure Delisle, Philippe Lacassaigne) après 5 co-directions dont 2 ont été soutenus (Gabrielle Godin, Mathieu Andro) et deux sont en cours (Camelia Bencheqroun, Jihène ???). Mon implication auprès des jeunes chercheurs porte aussi sur la place qu'ils occupent dans les événements scientifiques que nous organisons, la participation à 9 jurys de thèses, dont 4 hors établissement, la présence dans ?? comités de suivi de thèse.
+Ce développement des réseaux de recherche passe innévitablement par des activités d'encadrement et par l'implication des jeunes chercheurs qui entretiendront et développeront ces réseaux. Je m'attèle à cette tâche depuis l’obtention de l’HDR en initiant deux nouvelles directions de thèses (Laure Delisle, Philippe Lacassaigne) après 5 co-directions dont 2 ont été soutenus (Gabrielle Godin, Mathieu Andro) et deux sont en cours (Camelia Bencheqroun, Jihène Bessioud). Mon implication auprès des jeunes chercheurs porte aussi sur la place qu'ils occupent dans les événements scientifiques que nous organisons, la participation à 9 jurys de thèses, dont 4 hors établissement, la présence dans ?? comités de suivi de thèse.
 
 Toutefois, le statut de Professeur est indispensable pour exercer pleinement cette mission d'encadrement doctoral au sein du Laboratoire Paragraphe et pour porter les projets ANR ou européens nécessaires au financement de ces recherches. Dans le cadre de ces projets, je souhaite développer des collaborations avec des équipes de chercheurs pour critiquer, préciser et mettre en pratique les principes de métamodélisation des connaissances que j'ai développé dans mon HDR. Je souhaite notamment construire ces collaborations suivant quatre échelles d'explorations scientifiques qui correspondent aux quatre dimensions d'une existence informationnel (physique, actant, concept, rapport) :
 
