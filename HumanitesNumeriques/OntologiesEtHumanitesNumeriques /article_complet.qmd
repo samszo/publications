@@ -1,0 +1,17 @@
+---
+version: 0.0.1
+bibliography: references.bib
+csl: ../../assets/csl/apa.csl
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
+---
+
+Article pour : [Ontologies et humanités numériques](https://journals.openedition.org/revuehn/5330)
+
