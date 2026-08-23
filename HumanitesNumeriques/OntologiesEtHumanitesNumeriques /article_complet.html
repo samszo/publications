@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Szoniecky">
+
+<title>article_complet</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="article_complet_files/libs/clipboard/clipboard.min.js"></script>
+<script src="article_complet_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="article_complet_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="article_complet_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="article_complet_files/libs/quarto-html/popper.min.js"></script>
+<script src="article_complet_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="article_complet_files/libs/quarto-html/anchor.min.js"></script>
+<link href="article_complet_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="article_complet_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="article_complet_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="article_complet_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="article_complet_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Laboratoire Paragraphe
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Article pour : <a href="https://journals.openedition.org/revuehn/5330">Ontologies et humanités numériques</a></p>
+<section id="le-tournant-ontologique-dans-les-humanités-numériques" class="level1">
+<h1>Le Tournant Ontologique dans les Humanités Numériques</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Dans les humanités numériques et plus généralement dans les sciences humaines et sociales, la modélisation des objets d’études avec des ontologies informatiques se pratique depuis plus de quarante ans <span class="citation" data-cites="gruber1995">(<a href="#ref-gruber1995" role="doc-biblioref">Gruber, 1995</a>)</span> et les réflexions sur la formalisation des sciences humaines à partir de modèles mathématiques depuis bien plus longtemps encore <span class="citation" data-cites="petitot1978">(<a href="#ref-petitot1978" role="doc-biblioref">Petitot, 1978</a>)</span>. Dans ce contexte, le défi n’est pas principalement technique mais épistémologique <span class="citation" data-cites="rygiel2026">(<a href="#ref-rygiel2026" role="doc-biblioref">Rygiel, 2026</a>)</span>. D’autant plus à l’ère de l’intelligence artificielle générative, des « Larges Languages Models » (LLM) et des « Agents Discursifs Artificiels » (ADA) <span class="citation" data-cites="lakel">(<a href="#ref-lakel" role="doc-biblioref">Lakel, n.d.</a>)</span> qui font évoluer nos pratiques scientifiques et nous font nous questionner sur les fondements théoriques de celles-ci. C’est pour alimenter les débats sur ces questions épistémologiques que nous souhaitons examiner dans cet article la thèse selon laquelle un « tournant ontologique » s’opère dans les humanités numériques comme ce qui s’observe dans l’anthropologie contemporaine. De même que des auteurs comme Philippe Descola <span class="citation" data-cites="descola2005">(<a href="#ref-descola2005" role="doc-biblioref">Descola, 2005</a>)</span> ou Bruno Latour <span class="citation" data-cites="latour2012">(<a href="#ref-latour2012" role="doc-biblioref">Latour, 2012</a>)</span> ont déconstruit les dualismes naturalistes pour intégrer pleinement les non-humains dans la composition des mondes sociaux, les chercheurs en humanités numériques repensent aujourd’hui le statut ontologique de l’artefact numérique pour lui donner le statut ontologique d’un « existant informationnel » <span class="citation" data-cites="morin1981">(<a href="#ref-morin1981" role="doc-biblioref">Morin, 1981, p. 340</a>)</span> ayant des manières d’être spécifiques dans des écosystèmes de connaissances situés <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>.</p>
+<p>La communauté des chercheures et chercheurs en Humanités Numériques se trouve confrontée à une mutation épistémologique sans précédent. Il ne s’agit plus désormais de concevoir les structures de données comme de simples conteneurs ou des réceptacles passifs de l’archive, mais de les appréhender comme des environnements dynamiques doués d’une agentivité propre. Ce passage d’une vision statique de la trace à une dynamique de l’existence informationnelle marque ce que nous qualifions de « tournant ontologique ». Ce tournant, irrigué par les réflexions sur les trois écologies — environnementale, sociale et mentale — <span class="citation" data-cites="guattari1992">(<a href="#ref-guattari1992" role="doc-biblioref">Guattari, 1992</a>)</span>, nous impose de repenser la matérialité numérique non comme un résidu, mais comme un agencement de rapports en perpétuel devenir. L’ontologie, au sens de l’ingénierie des connaissances, s’affirme ici comme le pivot d’une recherche qui cherche à modéliser les potentialités herméneutiques d’un document face aux point de vue d’actants humains et/ou numérique. En délaissant l’indexation descriptive pour une approche ontologique, nous passons d’une logique de l’inventaire à une logique de la composition. L’enjeu stratégique est de taille : il s’agit de garantir la pérennité des écosystèmes de connaissances en les dotant d’une structure capable de survivre à l’obsolescence des supports par la persistance de leurs rapports constitutifs.</p>
+<p>Ce tournant épistémologique a notamment été initié par les recherches que nous avons menés avec Philippe Bootz dans le domaine de la poésie numérique <span class="citation" data-cites="bootz2008">(<a href="#ref-bootz2008" role="doc-biblioref">Bootz &amp; Szoniecky, 2008</a>)</span>. En nous appuyant sur l’idée deleuzienne d’une corrélation entre éthique et ontologie <span class="citation" data-cites="deleuze1981">(<a href="#ref-deleuze1981" role="doc-biblioref">Deleuze, 1981</a>)</span>, nous avons élaboré un modèle où le document ou l’œuvre n’est plus une donnée inerte, mais un « individu » à part entière. Ce modèle ontologique repose sur une distinction opérante entre l’essence de l’œuvre (le plan du contenu et des concepts), ses parties extensives (le plan de l’expression, qui se modifie à travers les versions et les interactions) et les rapports instanciés par les points de vue des lecteurs, auteurs ou analystes. Cette approche a ouvert la voie à une redéfinition majeure de l’ingénierie des connaissances, postulant qu’il est possible de concevoir des « agents ontologiques » autonomes, voués à l’exploration et l’analyse des corpus documentaires pensé comme un écosystème d’information. Nous détaillerons comment cette impulsion initiale a conduit au développement d’une méthode généralisée de modélisation des « écosystèmes de connaissances » en explicitant le métamodèle onto-éthique qui structure ces milieux à partir d’existences définies par quatre dimensions existentielles corrélées à quatre genres de connaissances, quatre métriques, quatre éléments prétopologiques, quatre analogies.</p>
+<p>Nous souhaitons dans cet article montrer que les activités de recherche en humanités numériques convergent aujourd’hui vers la conception pratique d’« existences informationnelles » qui prennent désormais la forme concrète des « Agents Discursifs Artificiels » (ADA) <span class="citation" data-cites="lakel">(<a href="#ref-lakel" role="doc-biblioref">Lakel, n.d.</a>)</span> explorant des écosystèmes spécifiques suivant un point de vue particulier. Si l’IA connexionniste produit des modèles si complexes qu’ils échappent souvent à la compréhension humaine, son hybridation avec des modélisations symboliques (les ontologies du Web sémantique) permet de structurer une intelligence collective pilotable et interopérable. Nous illustrerons cette dynamique par un cas d’usage récents celui de l’environnement numérique <strong>ExploDeleuze</strong> : un prototype pour l’exploration des cours audios avec l’IA. Au sein de ces écosystèmes, les agents IA ne sont pas de simples outils de calcul, mais des entités partageant un milieu de connaissances défini par un corpus documentaire. En mobilisant le concept de « pulsation existentielle » d’Augustin Berque <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span>, nous modéliserons l’agentivité de ces IA selon quatre pouvoirs fondamentaux :</p>
+<ul>
+<li><p>le pouvoir de discerner : captation d’informations depuis les documents vers les concept au travers de « cribles » <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky, 2020</a>)</span>,</p></li>
+<li><p>le pouvoir de raisonner : élaboration sémiotique par inférences dans une topologie de concepts,</p></li>
+<li><p>le pouvoir de résonance : création de rapports analogiques <span class="citation" data-cites="hofstadter2013">(<a href="#ref-hofstadter2013" role="doc-biblioref">Hofstadter &amp; Sander, 2013</a>)</span> par similitudes expérientielles,</p></li>
+<li><p>le pouvoir d’agir : capacité d’exprimer expression de nouveaux documents numériques.</p></li>
+</ul>
+<p>Ce faisant, notre répondrons aux défis de ce tournant ontologique. D’une part, en représentant les subjectivités et les incertitudes inhérentes aux SHS par une coconstruction de manières d’être à partir d’un métamodèle où la connaissance est comprise comme l’expression de rapports situés entre des acteurs humains, des agents numériques et un environnement documentaire. D’autre part, en pratiquant la traçabilité et l’interopérabilité des données exigée par les principes FAIR et la science ouverte par la modélisation formelle des processus de génération des connaissances et des interactions (Linked Open Data, ontologies formelles). Cet article à pour ambition de répondre aux enjeux des ontologies dans les humanités numériques par nos capacités à orchestrer une symbiose durable entre acteurs, agents et environnement de connaissances. Au terme de cet article, nous nous interrogerons sur les potentialités de représenter le tournant ontologique des humanités numériques sous la forme d’une spirale conique de Pappus dont la double hélice se plie et se déploie dans les environnements documentaires et dans les topologies conceptuelles suivant les activités des actants et la successions des événements.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spiraleConiquePappus.png" class="img-fluid figure-img"></p>
+<figcaption>Spirale Conique de Pappus <span class="citation" data-cites="ferréol2014">(<a href="#ref-ferréol2014" role="doc-biblioref">Ferréol, 2014</a>)</span></figcaption>
+</figure>
+</div>
+<section id="le-fondement-spinoziste-modéliser-lindividu-informationnel" class="level4">
+<h4 class="anchored" data-anchor-id="le-fondement-spinoziste-modéliser-lindividu-informationnel">Le Fondement Spinoziste : Modéliser l’Individu Informationnel</h4>
+<p>Pour dépasser les apories de l’indexation classique, limitée par sa nature taxonomique et statique, nous mobilisons l’ontologie de Baruch Spinoza, relue à travers le prisme deleuzien d’une “éthique qui soit le corrélat d’une ontologie” <span class="citation" data-cites="deleuze1998b">(<a href="#ref-deleuze1998b" role="doc-biblioref">Deleuze, 1998b</a>)</span>. Dans ce cadre, tout individu — qu’il s’agisse d’une œuvre de poésie numérique, d’un document d’archive ou d’un agent logiciel — est défini comme un “degré de puissance” <span class="citation" data-cites="deleuze_sur_1998">(<a href="#ref-deleuze_sur_1998" role="doc-biblioref">Deleuze, 1998a, p. disque=2</a>&amp;plage=2&amp;t=1550,1600)</span> s’exprimant à travers une triple dimension : ses parties extensives, son essence et les rapports qui les unissent <span class="citation" data-cites="spinoza">(<a href="#ref-spinoza" role="doc-biblioref">Spinoza, n.d.</a>)</span>. Cette approche permet de concevoir l’archive non comme un objet mort, mais comme une hécceité capable d’extension par l’incorporation d’éléments extérieurs, tels que les données de lecture ou les contextes de réception. De ce point de vue, une distinction fondamentale doit être opérée entre l’éternité et l’immortalité de l’objet numérique <span class="citation" data-cites="bootz2013">(<a href="#ref-bootz2013" role="doc-biblioref">Bootz &amp; Szoniecky, 2013</a>)</span>. L’immortalité, quête vaine de la conservation matérielle indéfinie, se heurte à la finitude des supports (les parties extensives). À l’inverse, l’éternité réside dans l’essence de l’individu : l’œuvre numérique “meurt” techniquement lorsque le rapport entre ses parties extensives et son essence est rompu (obsolescence logicielle, perte de fichiers), mais son essence demeure une puissance d’existence prête à être réactualisée dans un nouveau rapport. Dans le champ de la poésie numérique, le contact entre le lecteur et l’œuvre s’opère par le biais du “Transitoire Observable” (TO). Le TO constitue la manifestation matérielle issue de l’exécution du code, un flux multimédia qui provoque un “choc” sensoriel chez le sujet. Ce choc engendre ce que Spinoza nomme une “connaissance inadéquate” : une perception des effets sans compréhension des causes. La transition vers une “connaissance adéquate” exige alors de remonter du choc aux rapports de composition, c’est-à-dire de comprendre comment le code (partie extensive) et l’intention (essence) s’agencent pour produire le texte-à-voir. Le tableau suivant, fondé sur le modèle (<em>ibid.</em>), synthétise cette articulation :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 47%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Définition Spinoziste</th>
+<th>Application Documentaire et Humanités Numériques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Parties Extensives</strong></td>
+<td>Infinité de parties extérieures les unes aux autres (code, binaire).</td>
+<td><strong>Plan de l’expression :</strong> Code source, médias bruts, et surtout le <strong>Transitoire Observable (TO)</strong> comme lieu du choc sensoriel.</td>
+</tr>
+<tr class="even">
+<td><strong>Essence</strong></td>
+<td>Degré de puissance singulier constituant l’être intérieur.</td>
+<td><strong>Plan du contenu :</strong> Concepts intrinsèques, “texte-écrit” idéal, inaccessibles directement mais constructibles par l’analyse.</td>
+</tr>
+<tr class="odd">
+<td><strong>Rapport</strong></td>
+<td>Ce qui unit les parties et exprime l’essence dans l’ici et maintenant.</td>
+<td><strong>Point de vue des acteurs :</strong> Versioning, instances de performance, rapports de lecture sémantisés (texte-à-voir/texte-auteur).</td>
+</tr>
+</tbody>
+</table>
+<p>Cette modélisation permet d’envisager l’archive comme une entité vivante : elle n’est plus un dépôt, mais un plan de consistance où les rapports peuvent être reconfigurés sans trahir l’essence de l’œuvre. Cette approche de l’archive modifie radicalement nos rapports aux environnements numériques : le chercheur ne dialogue plus avec une base de données, mais avec une existence informationnelle capable de lui restituer la complexité des rapports constitutifs de la connaissance dans une représentation diagrammatique <span class="citation" data-cites="jedrzejewski2007">(<a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>)</span>.</p>
+</section>
+<section id="le-métamodèle-onto-éthique-modéliser-les-existences-informationnelles" class="level3">
+<h3 class="anchored" data-anchor-id="le-métamodèle-onto-éthique-modéliser-les-existences-informationnelles">Le Métamodèle Onto-Éthique : Modéliser les Existences Informationnelles</h3>
+<p>La métamodélisation représente une nouvelle étape du tournant ontologique des humanités numériques. Il ne s’agit plus de modéliser des objets (l’ontologie de l’œuvre), mais de modéliser les processus de connaissance eux-mêmes (l’ontologie de l’analyste). En nous appuyant sur les travaux que nous avons menés dans notre HDR <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>, nous définissons l’écosystème de connaissances comme un espace de simulation où le chercheur devient un “analyste” opérant au sein d’un environnement métamodélisé. Pour piloter efficacement ces écosystèmes hybrides, il est nécessaire de disposer de métamodèles capables de modéliser la complexité des interactions humains-machines. Nous proposons un métamodèle onto-éthique qui définit quatre dimensions fondamentales :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/modeleExistenceInformationnelle.png" class="img-fluid figure-img"></p>
+<figcaption>Modèle d’existence informationnelle</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Dimension</td>
+<td>Métrique</td>
+<td>Pré-topologie</td>
+<td>Analogie</td>
+</tr>
+<tr class="even">
+<td><strong>Matérielle (Physique)</strong></td>
+<td>Euclidienne</td>
+<td>Extérieur</td>
+<td>Branches (Connaissance des chocs)</td>
+</tr>
+<tr class="odd">
+<td><strong>Conceptuelle (Essence)</strong></td>
+<td>Topologique</td>
+<td>Intérieur</td>
+<td>Racines (Connaissance des essences)</td>
+</tr>
+<tr class="even">
+<td><strong>Sociale (Actant)</strong></td>
+<td>Topographique</td>
+<td>Bord</td>
+<td>Graines (Dynamiques génératives)</td>
+</tr>
+<tr class="odd">
+<td><strong>Temporelle (Rapport)</strong></td>
+<td>Temporelle</td>
+<td>Flux</td>
+<td>Sève (Actualisation des potentiels)</td>
+</tr>
+</tbody>
+</table>
+<p>Ce métamodèle ne se contente pas de classer les données. Il permet de calculer la <strong>complexité ontologique</strong> de l’écosystème <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024, p. 90</a>)</span> en évaluant l’importance des dimensions qui constitue ces existences . Il donne aussi les moyens d’évaluer les <strong>fluctuations éthiques</strong> en calculant les intensités de pouvoirs qui affectent les existences dans leurs rapports à l’environnement <span class="citation" data-cites="szoniecky2026">(<a href="#ref-szoniecky2026" role="doc-biblioref">Szoniecky, 2026a</a>)</span>. L’interopérabilité des données, cruciale pour les principes <strong>FAIR</strong> (<em>Findable, Accessible, Interoperable, Reusable</em>), est ici assurée par l’usage du Web sémantique (RDF/OWL) et des données ouvertes liées (<strong>Linked Open Data</strong>). Comme le souligne <span class="citation" data-cites="beretta2023">(<a href="#ref-beretta2023" role="doc-biblioref">Beretta, 2023</a>)</span>, c’est cette sémantique robuste qui transforme les données massives en graphes de connaissances intelligibles, garantissant la traçabilité et la vérifiabilité des actions de l’agent.</p>
+</section>
+</section>
+<section id="vers-un-écosystème-dagents-discursifs-artificiels-ada" class="level2">
+<h2 class="anchored" data-anchor-id="vers-un-écosystème-dagents-discursifs-artificiels-ada">Vers un Écosystème d’Agents Discursifs Artificiels (ADA)</h2>
+<p>L’épistémologie contemporaine, sous l’impulsion de ce que Tansley et al.&nbsp;(2009) ont qualifié de « quatrième paradigme de la science », se trouve confrontée à une mutation radicale de ses méthodes de découverte. Ce paradigme, fondé sur l’exploration massive de données (<em>data-intensive discovery</em>), impose aux Humanités Numériques une responsabilité stratégique : celle de ne pas se réduire à une simple <em>datafication</em> ou à l’accumulation stérile de traces numériques. L’enjeu réside désormais dans le passage d’une science du signal à une science du sens, nécessitant une modélisation sémantique formelle capable de structurer l’intelligibilité du monde numérique.</p>
+<p>L’irruption des grands modèles de langage (<em>Large Language Models</em> ou LLM) a toutefois révélé une fracture critique. Bien que performants en apparence, ces systèmes souffrent d’une opacité inhérente — la « boîte noire » — et d’une propension structurelle aux hallucinations, conséquences directes d’un fonctionnement purement statistique dénué d’ancrage ontologique. L’évolution contemporaine des systèmes d’information, marquée par l’omniprésence de l’intelligence artificielle, laisse envisager un glissement de la modélisation de contenus vers la création d’existences informationnelles autonomes. Pour préserver la rigueur scientifique, il devient impératif d’évoluer vers les concepts d’<strong>Agent Discursif Artificiel (ADA)</strong> et de <strong>Large Discourse Model (LDM)</strong> <span class="citation" data-cites="lakel2025">(<a href="#ref-lakel2025" role="doc-biblioref">Lakel, 2025</a>)</span>. L’ADA ne se contente pas de traiter des données ; il simule des “rapports de lecture” et incarne des métamodèles d’existences <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>. Là où le LLM classique produit du texte, l’ADA structure un discours fondé sur une intentionnalité ontologique. Il agit comme un médiateur capable d’accéder aux rapports entre l’essence d’un corpus et ses manifestations matérielles. En ce sens, l’ADA est la réalisation technologique du “méta-lecteur” : une entité qui n’observe pas seulement le contenu, mais les processus de sémantisation eux-mêmes. Les caractéristiques distinctives de l’ADA sont les suivantes :</p>
+<ul>
+<li><strong>Agentivité Ontologique :</strong> L’agent n’est pas un outil extérieur, mais une partie extensive de l’écosystème qui génère ses propres rapports de sens.<br>
+</li>
+<li><strong>Simulation de Points de Vue :</strong> L’ADA est capable d’adopter des ontologies d’acteurs spécifiques (historien, sémioticien, lecteur naïf) pour explorer l’archive selon des axes multidimensionnels.<br>
+</li>
+<li><strong>Sémantisation Discursive :</strong> Contrairement à l’indexation automatisée, l’ADA produit une narration sur les données, transformant le “choc” informationnel en une composition de rapports intelligibles.</li>
+</ul>
+<p>Contrairement au LLM, l’ADA est une « existence informationnelle » située, dont l’agentité est encadrée par des formalismes sémiotiques explicites. Cette mutation n’est pas seulement technique ; elle procède d’un tournant ontologique profond, irrigué par l’anthropologie de la nature et la philosophie de l’immanence, visant à redéfinir le statut des actants au sein de nos écosystèmes de connaissances. L’ADA n’est plus un moteur de calcul, mais une entité dont l’identité se construit par ses rôles et ses contacts spécifiques avec les parties extensibles de l’écosystème.</p>
+<section id="ada-onto-éthique-symbiose-entre-symbolique-et-connexionniste" class="level3">
+<h3 class="anchored" data-anchor-id="ada-onto-éthique-symbiose-entre-symbolique-et-connexionniste">ADA Onto-Éthique : Symbiose entre Symbolique et Connexionniste</h3>
+<p>L’émergence d’une intelligence collective durable repose sur l’union symbiotique de deux approches : le <strong>connexionnisme</strong> (IA statistique, volumes de données) et le <strong>symbolique</strong> (contraintes sémantiques, logique humaine). L’ADA Onto-Éthique incarne cette synthèse en intégrant le cycle de la sémiose <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span> dans une dynamique de « pulsations existentielles » <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span>. L’agentité se déploie à travers trois pouvoirs fondamentaux :</p>
+<ol type="1">
+<li><p><strong>Le pouvoir de discerner (Anasémiose) :</strong> C’est la capacité de l’agent à filtrer les données du monde physique (le flux binaire) vers son intériorité conceptuelle. Ce filtrage s’opère via des « cribles » ontologiques <span class="citation" data-cites="szoniecky2020">(<a href="#ref-szoniecky2020" role="doc-biblioref">Szoniecky, 2020</a>)</span> — des grilles d’analyse sémantiques qui préviennent la dérive statistique. La séquence est ici : <em>physique -&gt; crible -&gt; actant -&gt; concept</em>.</p></li>
+<li><p><strong>Le pouvoir de raisonnement et de résonance (Élaboration sémiotique) :</strong> Dans cette phase d’intériorité (<em>intériorité &lt;-&gt; intériorité</em>), l’agent manipule des symboles selon des règles logiques. Il est crucial de distinguer le raisonnement formel de la <strong>résonance</strong>. Si l’ADA simule une résonance par des rapports d’analogie complexes, la véritable <em>Scientia Intuitiva</em> (vision directe des essences) demeure l’horizon de l’actant humain. L’ADA facilite cette résonance en proposant des architectures de sens où l’humain peut exercer son intuition.</p></li>
+<li><p><strong>Le pouvoir d’agir (Catasémiose) :</strong> C’est l’expression de l’intériorité vers l’extérieur, transformant les pensées en nouvelles matérialités (<em>concept -&gt; actant -&gt; crible -&gt; physique</em>).</p></li>
+</ol>
+<p>Le passage du LLM au <strong>Large Discourse Model (LDM)</strong> s’opère précisément ici : l’agent est « bridé » par un crible éthique et ontologique qui l’ancre dans un discours situé. L’ADA Onto-Éthique ne produit plus une réponse probabiliste, mais un acte de langage responsable, dont les sources et la logique sont exposées dans le graphe de connaissances.</p>
+</section>
+</section>
+<section id="explodeleuze-exemple-du-tournant-ontologique-dans-les-humanités-numériques" class="level2">
+<h2 class="anchored" data-anchor-id="explodeleuze-exemple-du-tournant-ontologique-dans-les-humanités-numériques">ExploDeleuze : exemple du Tournant Ontologique dans les Humanités Numériques</h2>
+<p>Le passage de l’archive sonore traditionnelle — en l’occurrence, les enregistrements des séminaires de Gilles Deleuze à l’Université Paris 8 <span class="citation" data-cites="deleuze1997">(<a href="#ref-deleuze1997" role="doc-biblioref">Deleuze, 1997</a>)</span> — vers un écosystème applicatif intégré, composé du module ChaoticumSeminario <span class="citation" data-cites="szoniecky2026a">(<a href="#ref-szoniecky2026a" role="doc-biblioref">Szoniecky, 2026b</a>)</span> et de la Progressive Web App (PWA) Flux Conceptuel <span class="citation" data-cites="explodel">(<a href="#ref-explodel" role="doc-biblioref"><em>exploDeleuze/Mobilapp/Fluxconceptuel at Main · Samszo/exploDeleuze</em>, n.d.</a>)</span>, ne constitue pas une simple translation de support. Il s’agit d’une mutation profonde du régime d’existence du savoir au sein des Humanités Numériques. Comme le souligne Milad Doueihi <span class="citation" data-cites="doueihi2011">(<a href="#ref-doueihi2011" role="doc-biblioref">Doueihi, 2011</a>)</span>, l’humanisme numérique ne réside pas dans la technologie elle-même, mais dans la manière dont elle reconfigure nos catégories de pensée. Ici, l’archive n’est plus un dépôt statique de fichiers audio ; elle devient une « donnée vivante », un objet malléable dont l’ontologie est redéfinie par sa structure logicielle.</p>
+<p>Les Humanités Numériques transforment la nature même du travail savant en déplaçant l’attention de l’objet vers le processus. Dans cet écosystème, le cours de Deleuze cesse d’être une unité monolithique pour devenir un agrégat de fragments, de tokens indexés et de flux sémantiques. La problématique centrale de cette évolution réside dans la dualité structurelle entre le serveur (la gestion relationnelle des données) et le client (l’expérience phénoménologique de l’utilisateur). Cette architecture participe au « tournant ontologique » en ce qu’elle ne se contente pas de représenter l’œuvre, mais lui confère une nouvelle matérialité dynamique. Ce chapitre explore comment l’interopérabilité entre les tables SQL de ChaoticumSeminario et l’interface mobile de Flux Conceptuel redéfinit l’acte d’écoute et de recherche, transformant la parole philosophique en un territoire de curation continue.</p>
+<section id="le-serveur-comme-ontologie-structurante-au-delà-du-modèle-rdf-standard" class="level3">
+<h3 class="anchored" data-anchor-id="le-serveur-comme-ontologie-structurante-au-delà-du-modèle-rdf-standard">Le Serveur comme Ontologie Structurante : Au-delà du Modèle RDF Standard</h3>
+<p>Dans la conception d’un système d’information patrimonial, l’infrastructure serveur n’est jamais un conduit neutre ; elle agit comme une ontologie structurante qui prédétermine les entités de recherche et leurs relations possibles. Lev Manovich <span class="citation" data-cites="manovich2014">(<a href="#ref-manovich2014" role="doc-biblioref">Manovich, 2014</a>)</span> rappelle que le logiciel « prend le commandement » des objets culturels en les soumettant à ses propres logiques de données. Pour le projet ChaoticumSeminario, le choix technique s’est porté sur une architecture hybride au sein d’Omeka-S, dépassant délibérément les limites du modèle RDF (Resource Description Framework).</p>
+<p>Si le modèle RDF, pivot du Web Sémantique prôné par Berners-Lee <span class="citation" data-cites="berners-lee2006">(<a href="#ref-berners-lee2006" role="doc-biblioref">Berners-Lee, 2006</a>)</span>, est idéal pour établir des relations globales entre des ressources, il s’avère souvent trop rigide pour capturer la granularité et la fluidité « rhizomatique » d’un séminaire oral. L’utilisation de tables SQL dédiées pour les transcriptions et les concepts, en marge du cœur d’Omeka-S, marque une volonté de modéliser le « chaos » inhérent à la pensée deleuzienne. Johanna Drucker <span class="citation" data-cites="drucker2020">(<a href="#ref-drucker2020" role="doc-biblioref">Drucker et al., 2020</a>)</span> souligne que les interfaces de données doivent refléter l’ambiguïté des objets humanistes. Ici, la pièce maîtresse technique est la requête pivot timelineConceptAnnexe().</p>
+<p>Cette fonction ne se limite pas à une simple extraction ; elle opère une jointure complexe entre cinq tables SQL (Conférences, Enregistrements, Fragments, Transcriptions et Concepts). Elle « reconstitue » l’objet numérique à partir de fragments atomisés. Techniquement, elle transforme le texte brut en un flux de tokens ASR (Automatic Speech Recognition) horodatés. Chaque mot devient ainsi une entité adressable, possédant sa propre existence temporelle au sein du fragment d’environ 50 secondes. Cette approche transforme la base de données en une véritable « machine à lire » <span class="citation" data-cites="ramsay2011">(<a href="#ref-ramsay2011" role="doc-biblioref">Ramsay, 2011</a>)</span>, où le texte n’est plus une suite de caractères, mais un réseau de métadonnées temporelles.</p>
+<p>Cette structure repose sur trois piliers fondamentaux :</p>
+<ul>
+<li>L’indexation granulaire : Le découpage systématique de la parole en segments temporels précis, permettant une manipulation chirurgicale de la pensée.</li>
+<li>La curation collaborative : Un modèle où la donnée n’est jamais figée, mais exposée à des ajustements constants via des contrôleurs dédiés.</li>
+<li>L’intégration de services tiers : L’ouverture du système à des modèles d’IA (Whisper, Google STT) via des tâches de fond (jobs), assurant une versionnalité de la transcription.</li>
+</ul>
+<p>Cette organisation logicielle crée une base de connaissances prête à être consommée. Cependant, cette structure serveur reste une potentialité abstraite tant qu’elle n’est pas réactualisée par une interface client capable de lui redonner son rythme et sa présence.</p>
+</section>
+<section id="le-client-mobile-flux-conceptuel-lontologie-de-la-présence-et-du-rythme" class="level3">
+<h3 class="anchored" data-anchor-id="le-client-mobile-flux-conceptuel-lontologie-de-la-présence-et-du-rythme">Le Client Mobile “Flux Conceptuel” : L’Ontologie de la Présence et du Rythme</h3>
+<p>Si le serveur structure la donnée, l’interface client, représentée par la PWA Flux Conceptuel, réactualise la parole philosophique dans l’espace-temps du chercheur. Le médium numérique n’est pas seulement un vecteur, mais un cadre de compréhension qui modifie notre rapport au temps. En se connectant au point d’entrée Omeka S, l’application mobile transforme le chercheur en un acteur immergé.</p>
+<p>L’expérience de l’écoute est alors médiée par une fonction qui aligne le texte et la parole. Cette logique est fondamentale : elle réconcilie deux régimes d’existence. D’un côté, les « tokens » bruts (la vision de la machine, une liste de mots isolés et horodatés) ; de l’autre, le « texte » (la vision humaine, ponctuée et syntaxique). En alignant ces deux flux, l’application crée un « lecteur-écouteur » : le texte prend sens au rythme de la voix, fusionnant le document sonore et sa représentation textuelle en un objet unique.</p>
+<p>Cette présence est renforcée par le préchargement de l’application dans un cache persistant qui assure une autonomie technique. L’objet de recherche n’est plus confiné au laboratoire ; il est « territorialisé » dans le quotidien du chercheur. Le tableau suivant analyse comment ces modes d’accès redéfinissent l’interaction avec l’œuvre :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mode d’accès</th>
+<th>Mécanisme technique</th>
+<th>Agence de l’utilisateur</th>
+<th>Dépendance technique</th>
+<th>Impact ontologique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recherche Plein Texte</strong></td>
+<td>cherche?trouve= (SQL MATCH)</td>
+<td>Explorateur sémantique : l’usager déconstruit l’œuvre par concepts.</td>
+<td>Dépendance forte à l’indexation SQL et à l’API.</td>
+<td>L’œuvre devient une base de données conceptuelle.</td>
+</tr>
+<tr class="even">
+<td><strong>Lecture fragmentée</strong></td>
+<td>transcriptions?idConf=</td>
+<td>Auditeur phénoménologue : l’usager suit le flux temporel.</td>
+<td>Dépendance au player.js et à la synchronisation ASR.</td>
+<td>L’œuvre retrouve son rythme originel de séminaire.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contribution active</strong></td>
+<td>signalerAction</td>
+<td>Éditeur collaboratif : l’usager corrige et enrichit l’archive.</td>
+<td>Dépendance au système d’authentification et aux ACL.</td>
+<td>L’archive devient un écosystème ouvert et évolutif.</td>
+</tr>
+</tbody>
+</table>
+<p>Cette interface n’est donc pas un simple masque posé sur les données, mais le lieu même où s’accomplit l’expérience de la pensée, comme le suggère Bruno Latour <span class="citation" data-cites="latour2005">(<a href="#ref-latour2005" role="doc-biblioref">Latour, 2005</a>)</span> à propos de la médiation technique : l’outil ne se contente pas de transmettre, il transforme et compose l’objet qu’il donne à voir.</p>
+</section>
+<section id="la-curation-collaborative-et-lia-vers-une-ontologie-dynamique-et-ouverte" class="level3">
+<h3 class="anchored" data-anchor-id="la-curation-collaborative-et-lia-vers-une-ontologie-dynamique-et-ouverte">La Curation Collaborative et l’IA : Vers une Ontologie Dynamique et Ouverte</h3>
+<p>L’archive numérique, dans ce paradigme, n’est jamais achevée. Elle est un processus en devenir, soutenu par une collaboration entre l’humain et la machine. Le flux de curation mis en place via l’intégration de références à Wikidata illustre cette ouverture vers le monde.</p>
+<p>Lorsqu’un chercheur utilise l’application pour signaler une référence, il engage un processus qui dépasse le cadre du silo technique d’Omeka-S. Le lien avec Wikidata, via l’identifiant QID, permet d’inscrire l’archive de Deleuze dans le graphe universel des connaissances. Comme le prédisait Tim Berners-Lee <span class="citation" data-cites="berners-lee2006">(<a href="#ref-berners-lee2006" role="doc-biblioref">Berners-Lee, 2006</a>)</span>, le Web Sémantique prend vie lorsque les données locales se connectent à des référentiels globaux. L’entité « Deleuze » cesse d’être une simple chaîne de caractères pour devenir un nœud au sein d’un réseau de relations biographiques et bibliographiques infinies.</p>
+<p>La « relance de transcription » (relancerAction) introduit une dimension supplémentaire : l’ontologie de la « versionnalité ». L’archive n’est plus un texte fixé une fois pour toutes, mais une série de couches successives. L’usage de modèles d’IA comme Whisper ou Google STT signifie que la « vérité » du texte est une asymptote vers laquelle on tend. La machine aide à révéler la parole, mais sous la surveillance constante de l’humain. La fonction de correction des transcriptions agit comme un filtre humain, validant les suggestions de l’IA et garantissant que l’expertise humaine reste souveraine.</p>
+<p>Cette collaboration soulève trois enjeux majeurs :</p>
+<ol type="1">
+<li><p>La souveraineté de l’expertise humaine : Bien que l’IA génère les tokens, c’est l’éditeur qui valide les corrections, transformant le processus de publication en une forme de « peer review » continue et collaborative.</p></li>
+<li><p>La traçabilité des sources : Chaque modification est tracée via le standard oa:motivatedBy, assurant que l’histoire de l’archive et ses altérations restent transparentes pour les futurs chercheurs.</p></li>
+<li><p>L’infinitude du réseau face à la finitude de l’outil : L’architecture permet de substituer les modèles d’IA sans compromettre la structure globale, reconnaissant que les outils de traitement sont transitoires tandis que le réseau de connaissances est permanent.</p></li>
+<li><p>Conclusion : La convergence applicative, nouveau paradigme des Humanités Numériques</p></li>
+</ol>
+<p>Le tournant ontologique analysé à travers ChaoticumSeminario et Flux Conceptuel réside dans le passage de l’archive-objet (la cassette, le fichier audio) à l’archive-écosystème. La convergence entre le serveur et le client démontre que l’environnement numérique ne se contente pas de « contenir » la connaissance, mais qu’il la produit activement par ses interactions techniques et ses choix d’architecture.</p>
+<p>Notre pensée évolue en symbiose avec les outils que nous créons. L’intégration future d’ADA Onto-Éthique laisse entrevoir un nouveau mode de dialogue avec l’archive : celui où le chercheur ne se contente plus de chercher des mots-clés, mais interroge directement la pensée modélisée. La matérialité numérique, loin de dématérialiser le savoir, lui offre une nouvelle profondeur, à la fois technique, éthique et philosophique. L’archive deleuzienne devient ainsi un laboratoire vivant, une architecture de l’écoute où la voix du philosophe continue de résonner, augmentée par les flux du réseau.</p>
+</section>
+<section id="du-tournant-ontologique-à-la-spirale-conique-de-pappus-une-nouvelle-géométrie-des-humanités-numériques" class="level3">
+<h3 class="anchored" data-anchor-id="du-tournant-ontologique-à-la-spirale-conique-de-pappus-une-nouvelle-géométrie-des-humanités-numériques">Du Tournant Ontologique à la Spirale Conique de Pappus : Une Nouvelle Géométrie des Humanités Numériques</h3>
+<p>Le champ des humanités numériques traverse actuellement une mutation épistémologique profonde, qualifiée de « tournant ontologique ». Ce paradigme rompt avec la vision représentationnelle héritée du Web 2.0, où le savoir était réduit à une gestion de stocks et de métadonnées statiques. Pour le chercheur en Sciences de l’Information et de la Communication (SIC), l’enjeu n’est plus seulement d’indexer des objets, mais de modéliser des processus d’individuation psychique et collective Stiegler, 2022. Il s’agit de passer d’une informatique de la trace-archive à une intelligence des trajectoires, où le document ne se définit plus par sa position fixe dans un catalogue, mais par sa dynamique au sein d’un « milieu associé » Simondon, 1958.Le paradoxe fondamental de la cognition réside dans sa structure hétérogène : elle est à la fois cyclique — revenant sans cesse sur des concepts sédimentés pour les approfondir — et cumulative, visant une production de nouveauté. Ce mouvement, que l’on pourrait qualifier de « respiration cognitive », appelle une solution géométrique capable de résoudre la tension entre répétition et progression. La spirale conique de Pappus s’impose ici comme l’architecture de référence. Contrairement à la circularité stérile du plan, elle offre une profondeur qui définit la vitesse de sédimentation du savoir. En intégrant la dimension temporelle et l’élévation hiérarchique, elle transforme l’acte de recherche en une ascension topologique au sein de l’espace strié de la connaissance Lefebvre, 2023.</p>
+<section id="la-géométrie-de-la-sédimentation-cognitive-et-documentaire" class="level4">
+<h4 class="anchored" data-anchor-id="la-géométrie-de-la-sédimentation-cognitive-et-documentaire">2. La Géométrie de la Sédimentation Cognitive et Documentaire</h4>
+<p>Dans l’économie des savoirs contemporaine, la modélisation mathématique de l’archivage est une nécessité stratégique pour contrer l’infobésité circulaire. Pour que l’accumulation documentaire ne devienne pas un simple empilement entropique, elle doit être pensée comme un processus de sédimentation structuré. La spirale de Pappus permet de spatialiser cette sédimentation en introduisant une constante <span class="math inline">\(c\)</span> , qui régit la pente du cône et, par extension, la « technicity » du système.Mathématiquement, l’élévation de l’actant dans le savoir est pilotée par la coordonnée verticale <span class="math inline">\(z\)</span> , proportionnelle à l’angle de parcours <span class="math inline">\(\\theta\)</span> :<span class="math display">\[z \= c \\cdot \\theta\]</span>Dans cette équation, la constante <span class="math inline">\(c\)</span> définit la vitesse à laquelle un parcours intellectuel se transforme en strate documentaire. Plus <span class="math inline">\(c\)</span> est élevée, plus l’écart vertical entre les versions est marqué, témoignant d’une hiérarchisation rapide et d’une sédimentation vigoureuse le long de l’axe vertical (l’espace strié). À l’inverse, une constante <span class="math inline">\(c\)</span> faible suggère une maturation lente, proche de la circularité du plan horizontal. Cette abstraction trouve une matérialisation physique rigoureuse dans des dispositifs comme Omeka S. L’élévation sur l’axe <span class="math inline">\(z\)</span> ne reste pas métaphorique : elle est inscrite dans la base de données via des propriétés sémantiques précises :</p>
+<ul>
+<li><strong>Matérialisation de l’élévation :</strong> L’usage systématique de la propriété dcterms:isVersionOf permet de lier chaque nouvelle strate (souvent un récit produit en Markdown) à ses ancêtres, créant un feuilletage documentaire.<br>
+</li>
+<li><strong>Structuration de l’archive :</strong> Le passage d’une phase de « pli » (réflexion bidimensionnelle) à une phase de « déploiement » (montée tridimensionnelle) permet au système de retrouver son volume architectural, évitant la stagnation cognitive Rousseau, 2021.<br>
+</li>
+<li><strong>Vitesse de sédimentation :</strong> La constante <span class="math inline">\(c\)</span> paramètre l’effort nécessaire pour que l’innovation devienne une nouvelle couche pérenne dans l’écosystème.Cette structure garantit que l’élévation de la pensée ne se contente pas de circuler, mais qu’elle se dépose physiquement, créant un patrimoine informationnel dont la profondeur est le reflet direct de l’intensité de l’apprentissage.</li>
+</ul>
+</section>
+<section id="lalgorithme-de-lhybridation-entre-héritage-et-innovation" class="level4">
+<h4 class="anchored" data-anchor-id="lalgorithme-de-lhybridation-entre-héritage-et-innovation">3. L’Algorithme de l’Hybridation : Entre Héritage et Innovation</h4>
+<p>La production de sens au sein des écosystèmes numériques repose sur l’équilibre précaire entre la fidélité aux sources et la singularité de la création. Pour modéliser ce processus, nous mobilisons le concept deleuzien de « différence et répétition » à travers un algorithme d’hybridation vectorielle Gauthier, 2021. Ce mécanisme transforme le document brut en un objet mathématique dynamique, portant en lui son propre code génétique sémantique.Le processus d’hybridation, orchestré par l’agent Mastra, se déploie en quatre étapes techniques essentielles :</p>
+<ol type="1">
+<li><strong>Calcul de l’héritage :</strong> On établit le barycentre vectoriel <span class="math inline">\(V\_{heritage}\)</span> des documents sources. Il représente la « gravité » des connaissances antérieures, le fond pré-individuel sur lequel s’appuie la réflexion.<br>
+</li>
+<li><strong>Calcul de l’innovation :</strong> La trace nouvelle (Markdown) générée par l’agent Mastra est encodée (via le modèle BGE-m3) pour produire le vecteur <span class="math inline">\(V\_{texte}\)</span> .<br>
+</li>
+<li><strong>Synthèse par interpolation :</strong> L’introduction du scalaire <span class="math inline">\(\\alpha\)</span> (le curseur de singularité) permet de pondérer l’équilibre entre les deux forces.<br>
+</li>
+<li><strong>Normalisation L2 :</strong> Pour assurer la cohérence des futurs calculs de similarité au sein de la mémoire topologique, le vecteur hybride doit être ramené à une longueur unitaire.La formule finale de synthèse s’écrit comme suit :<span class="math display">\[V\_{hybride} \= \\alpha V\_{texte} \+ (1 \- \\alpha) V\_{heritage}\]</span> <span class="math display">\[V\_{final} \= \\frac{V\_{hybride}}{|V\_{hybride}|}\]</span>Les conséquences sémantiques de la valeur de <span class="math inline">\(\\alpha\)</span> sont fondamentales pour la topologie du système. Lorsque <span class="math inline">\(\\alpha\)</span> tend vers 1, le système favorise l’innovation pure, permettant au nouveau nœud de s’affranchir de ses racines pour affirmer une singularité forte (indépendance vis-à-vis du LLM). À l’inverse, un <span class="math inline">\(\\alpha\)</span> proche de 0 maintient le document ancré dans sa matrice d’origine, privilégiant la consolidation et la répétition. Ce réglage permet au document final de résonner non seulement par ses mots-clés, mais par écho direct avec ses racines physiques Moreau, 2022.</li>
+</ol>
+</section>
+<section id="lansatz-de-la-subjectivité-quantique-vers-une-trajectoire-idiosyncrasique" class="level4">
+<h4 class="anchored" data-anchor-id="lansatz-de-la-subjectivité-quantique-vers-une-trajectoire-idiosyncrasique">4. L’Ansatz de la Subjectivité Quantique : Vers une Trajectoire Idiosyncrasique</h4>
+<p>Pour transcender le déterminisme algorithmique des systèmes de recommandation traditionnels, il est impératif d’intégrer la subjectivité de l’actant au cœur du dispositif. L’usage d’un Ansatz quantique (circuit paramétré) permet de modéliser les « affects » spinozistes — la puissance d’agir et les inclinaisons naturelles de l’individu Chen, 2023. Cette approche refuse la <em>tabula rasa</em> : chaque acteur commence son parcours situé dans une « rétention tertiaire », c’est-à-dire le stock de connaissances déjà sédimenté.Le processus de construction d’une trajectoire idiosyncrasique suit une logique rigoureuse :</p>
+<ol type="1">
+<li><strong>Initialisation ancrée :</strong> Les paramètres de l’Ansatz ne sont pas aléatoires. Les angles de départ <span class="math inline">\(\\theta\_i\)</span> sont extraits de la réalité sémantique de l’archive (Omeka S) via la formule d’encodage d’amplitude : <span class="math inline">\(\\theta\_i \= 2 \\arcsin(\\sqrt{W\_i})\)</span> .<br>
+</li>
+<li><strong>Encodage des affects :</strong> Par l’application de portes de rotation <span class="math inline">\(R\_y(\\theta)\)</span> , le système encode les propensions singulières de l’acteur. Ces portes représentent mathématiquement le conatus de l’apprenant, sa tendance à activer certains concepts du rhizome plutôt que d’autres.<br>
+</li>
+<li><strong>Association rhizomatique :</strong> Une couche d’intrication, utilisant des portes <span class="math inline">\(CX\)</span> (CNOT), relie les concepts selon les lignes de force de l’archive, mais modulées par les résonances subjectives de l’individu.<br>
+</li>
+<li><strong>Optimisation COBYLA :</strong> À chaque pulsation cognitive, les actions de l’acteur (création de liens, navigation) sont évaluées. L’algorithme d’optimisation variationnelle COBYLA ajuste alors les paramètres <span class="math inline">\(\\theta\)</span> pour affiner la topologie sur mesure de sa pensée Bernard, 2023.Cette boucle rétroactive transforme l’interface en un espace malléable où la trajectoire générée n’est plus une simple ligne statistique, mais une empreinte digitale unique de la démarche intellectuelle. On assiste ici à une véritable transduction : le passage d’une donnée froide à une expérience vécue, inscrite dans la géométrie même de la spirale Dumont, 2024.</li>
+</ol>
+</section>
+<section id="morphologie-de-lapprentissage-lempreinte-digitale-du-savoir" class="level4">
+<h4 class="anchored" data-anchor-id="morphologie-de-lapprentissage-lempreinte-digitale-du-savoir">5. Morphologie de l’Apprentissage : L’Empreinte Digitale du Savoir</h4>
+<p>La visualisation tridimensionnelle de la spirale de Pappus constitue l’ultime outil d’auto-réflexion. Elle permet à l’apprenant de contempler la morphologie de son propre effort intellectuel à travers deux dynamiques majeures : la pulsation (systole/diastole) et la déformation structurelle.Au cœur de cette morphologie se trouve le concept de « Pli » (diastole conceptuelle). Lors de cette phase de résonance pure, le ressort de la spirale s’aplatit sur un plan horizontal 2D. Visuellement, la hiérarchie s’annule : c’est un moment de suspension où l’altitude <span class="math inline">\(z\)</span> devient nulle pour permettre des connexions rhizomatiques libres. À ce stade, le savoir n’est pas encore sédimenté, il est en état de vibration créatrice. Le « Déploiement » (systole topographique) survient ensuite, étirant la spirale vers le haut pour matérialiser la nouvelle strate dans l’archive physique Dubois, 2024.L’analyse de la forme finale permet de dresser une typologie contrastée de l’apprentissage :</p>
+<ul>
+<li><strong>Le Cône à base large (Le saut de l’esprit) :</strong> Cette forme traduit une intuition fulgurante. L’apprenant a réalisé un saut sémantique audacieux, connectant des domaines éloignés sans nécessairement multiplier les consultations documentaires. La largeur de la base est proportionnelle à la distance conceptuelle explorée.<br>
+</li>
+<li><strong>La Spirale en flèche (La consolidation structurée) :</strong> Ici, le sommet se resserre brutalement. C’est la trace d’un déplacement topographique dense mais focalisé. L’apprenant a navigué intensément au sein d’un corpus restreint pour construire une synthèse rigoureuse, privilégiant la profondeur verticale à l’évasement horizontal Vallet, 2024.Cette géométrie des humanités propose ainsi un nouvel horizon pour les interfaces de connaissances : elles ne sont plus des miroirs passifs, mais des paysages organiques témoignant, par leur propre déformation, de la vitalité et de la singularité de la pensée humaine.</li>
+</ul>
+</section>
+<section id="conclusion-vers-une-écologie-politique-de-linformation" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion-vers-une-écologie-politique-de-linformation">Conclusion : Vers une Écologie Politique de l’Information</h4>
+<p>Le passage du modèle à l’existence marque l’entrée des humanités numériques dans une ère de maturité ontologique. Nous avons démontré comment, de la poussière des données archivistiques soumises au choc sensoriel, nous pouvons remonter à une composition savante des écosystèmes via les agents discursifs artificiels. Cette trajectoire n’est pas qu’une prouesse technique ; elle est une nécessité éthique. En nous inscrivant dans la perspective des “trois écologies” <span class="citation" data-cites="guattari1989">(<a href="#ref-guattari1989" role="doc-biblioref">Guattari, 1989</a>)</span>, nous pensons que la métamodélisation est un acte politique. Donner une existence ontologique à un objet numérique, c’est lui conférer une dignité et une place au sein de notre environnement mental et social. L’ontologie spinoziste, par sa distinction entre éternité et immortalité, offre aux Humanités Numériques un cadre robuste pour penser la survie des connaissances dans un monde de flux. Les ADA, loin d’être des substituts à l’intelligence humaine, en sont les extensions nécessaires pour habiter la complexité croissante de nos archives numériques. En définitive, le tournant ontologique nous enseigne que la connaissance n’est pas ce que l’on stocke, mais ce que l’on fait exister par la justesse de nos rapports.</p>
+</section>
+</section>
+</section>
+<section id="vers-une-pensée-diagrammatique-et-une-éthique-de-la-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="vers-une-pensée-diagrammatique-et-une-éthique-de-la-discussion">Vers une Pensée Diagrammatique et une Éthique de la Discussion</h2>
+<p>Le tournant ontologique transforme radicalement la posture du chercheur, qui devient un « jardinier d’écosystèmes vivants »<span class="citation" data-cites="szoniecky2019">(<a href="#ref-szoniecky2019" role="doc-biblioref">Szoniecky &amp; Godin, 2019</a>)</span>. L’objectif n’est plus l’extraction de données, mais la culture d’un milieu où l’IA et l’humain co-évoluent dans une transparence mutuelle.</p>
+<p>Dans cette perspective, la <strong>pensée diagrammatique</strong> prend le pas sur la linéarité du texte. Comme le souligne Jedrzejewski <span class="citation" data-cites="jedrzejewski2007">(<a href="#ref-jedrzejewski2007" role="doc-biblioref">Jedrzejewski, 2007</a>)</span>, le diagramme est un <em>topos</em> — un lieu topologique doué d’une vie organique — qui permet de visualiser les vecteurs de force et les flux de pouvoir. Contrairement au texte des LLM qui peut masquer sa propre vacuité sous une fluidité apparente, le diagramme expose la structure qualitative de la connaissance et oblige l’actant à se positionner de manière authentique.</p>
+<p>L’avènement de la symbiose durable au sein du quatrième paradigme nécessite enfin une <strong>éthique de la discussion</strong> inspirée par <span class="citation" data-cites="habermas2013">(<a href="#ref-habermas2013" role="doc-biblioref">Habermas, 2013</a>)</span>. Dans cet espace partagé, l’ADA n’est plus une machine oraculaire, mais un partenaire de dialogue dont l’agentité est régulée par le bien commun. Le passage du texte au diagramme marque ainsi l’avènement d’une science où la rigueur technique du calcul se soumet à l’exigence éthique de l’intelligibilité collective.</p>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-beretta2023" class="csl-entry" role="listitem">
+Beretta, F. (2023). Données ouvertes liées et recherche historique : un changement de paradigme. <em>Humanités numériques</em>, <em>7</em>. <a href="https://doi.org/10.4000/revuehn.3349">https://doi.org/10.4000/revuehn.3349</a>
+</div>
+<div id="ref-berners-lee2006" class="csl-entry" role="listitem">
+Berners-Lee, T. (2006). <em>Linked data - design issues</em>. <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a>
+</div>
+<div id="ref-berque2009" class="csl-entry" role="listitem">
+Berque, A. (2009). <em>Ecoumène : Introduction à l’étude des milieux humains</em>. Belin.
+</div>
+<div id="ref-bootz2008" class="csl-entry" role="listitem">
+Bootz, P., &amp; Szoniecky, S. (2008). <em>Electronic literature in europe</em>.
+</div>
+<div id="ref-bootz2013" class="csl-entry" role="listitem">
+Bootz, P., &amp; Szoniecky, S. (2013). Vers une ontologie du domaine de la poésie numérique. <em>Revista Cibertextualidades</em>, <em>5</em>, pp.65–96.
+</div>
+<div id="ref-deleuze1981" class="csl-entry" role="listitem">
+Deleuze, G. (1981). <em>La voix de gilles deleuze : 12- 17/03/81 - 1</em>. <a href="http://www2.univ-paris8.fr/deleuze/article.php3?id_article=151">http://www2.univ-paris8.fr/deleuze/article.php3?id_article=151</a>
+</div>
+<div id="ref-deleuze1997" class="csl-entry" role="listitem">
+Deleuze, G. (1997). <em>Cours donnés à l’Université Paris 8-Vincennes-Saint-Denis entre 1979 et 1987</em>.
+</div>
+<div id="ref-deleuze_sur_1998" class="csl-entry" role="listitem">
+Deleuze, G. (1998a). <em>[<span>Sur</span> <span>Spinoza</span>] : Année universitaire 1980-1981 , 02 : <span>Cours</span> du 9 décembre 1980</em>. Bibliothèque nationale de France. <a href="http://gallica.bnf.fr/ark:/12148/bpt6k128290k">http://gallica.bnf.fr/ark:/12148/bpt6k128290k</a>
+</div>
+<div id="ref-deleuze1998b" class="csl-entry" role="listitem">
+Deleuze, G. (1998b). <em>[Sur Spinoza] : année universitaire 1980-1981 , 12 : Cours du 17 mars 1981</em>. <a href="https://files.zotero.net/eyJleHBpcmVzIjoxNzg3MDM5MTE4LCJoYXNoIjoiOTgyYjEyMzU2MzY5YTgxYjA5ZjE4NDdkYjNmNDE0NzYiLCJpdGVtIjoiMTM1OTRcL042SUY0RzhGIiwiZmlsZW5hbWUiOiJTdXItU3Bpbm96YS1jb3VyczEyLTJtMjFzLndhdiIsImNvbnRlbnRUeXBlIjoiYXVkaW9cL3dhdiJ9/1cffcf032ee552bc819605bc16895700d86e8c245f3d34abe616d1508b5b54fc/Sur-Spinoza-cours12-2m21s.wav">https://files.zotero.net/eyJleHBpcmVzIjoxNzg3MDM5MTE4LCJoYXNoIjoiOTgyYjEyMzU2MzY5YTgxYjA5ZjE4NDdkYjNmNDE0NzYiLCJpdGVtIjoiMTM1OTRcL042SUY0RzhGIiwiZmlsZW5hbWUiOiJTdXItU3Bpbm96YS1jb3VyczEyLTJtMjFzLndhdiIsImNvbnRlbnRUeXBlIjoiYXVkaW9cL3dhdiJ9/1cffcf032ee552bc819605bc16895700d86e8c245f3d34abe616d1508b5b54fc/Sur-Spinoza-cours12-2m21s.wav</a>
+</div>
+<div id="ref-descola2005" class="csl-entry" role="listitem">
+Descola, P. (2005). <em>Par-delà nature et culture</em>. NRF : Gallimard.
+</div>
+<div id="ref-doueihi2011" class="csl-entry" role="listitem">
+Doueihi, M. (2011). Un humanisme numérique. <em>Communication &amp; Langages</em>, <em>2011</em>(167), 3. <a href="https://doi.org/10.4074/S033615001101101X">https://doi.org/10.4074/S033615001101101X</a>
+</div>
+<div id="ref-drucker2020" class="csl-entry" role="listitem">
+Drucker, J., Mignon, M., &amp; Bortolotti, M.-M. (2020). <em>Visualisation: L’interprétation modélisante</em> (1er édition). B42.
+</div>
+<div id="ref-explodel" class="csl-entry" role="listitem">
+<em>exploDeleuze/mobilapp/fluxconceptuel at main · samszo/exploDeleuze</em>. (n.d.). <a href="https://github.com/samszo/exploDeleuze/tree/main/mobilapp/fluxconceptuel">https://github.com/samszo/exploDeleuze/tree/main/mobilapp/fluxconceptuel</a>
+</div>
+<div id="ref-ferréol2014" class="csl-entry" role="listitem">
+Ferréol, R. (2014). <em>Spirale conique de pappus</em>. <a href="https://www.mathcurve.com/courbes3d/spiraleconic/pappus.shtml">https://www.mathcurve.com/courbes3d/spiraleconic/pappus.shtml</a>
+</div>
+<div id="ref-gruber1995" class="csl-entry" role="listitem">
+Gruber, T. R. (1995). Toward principles for the design of ontologies used for knowledge sharing? <em>International Journal of Human-Computer Studies</em>, <em>43</em>(5-6), 907–928. <a href="https://doi.org/10.1006/ijhc.1995.1081">https://doi.org/10.1006/ijhc.1995.1081</a>
+</div>
+<div id="ref-guattari1989" class="csl-entry" role="listitem">
+Guattari, F. (1989). <em>Cartographies schizoanalytiques</em>. Galilée.
+</div>
+<div id="ref-guattari1992" class="csl-entry" role="listitem">
+Guattari, F. (1992). <em>Chaosmose</em>. Galilée.
+</div>
+<div id="ref-habermas2013" class="csl-entry" role="listitem">
+Habermas, J. (2013). <em>De l’éthique de la discussion</em>. FLAMMARION.
+</div>
+<div id="ref-hofstadter2013" class="csl-entry" role="listitem">
+Hofstadter, D., &amp; Sander, E. (2013). <em>L’analogie : Coeur de la pensée</em>. Odile Jacob.
+</div>
+<div id="ref-jedrzejewski2007" class="csl-entry" role="listitem">
+Jedrzejewski, F. (2007). <em>Diagrammes et catégories</em> [PhD thesis]. <a href="http://tel.archives-ouvertes.fr/tel-00193292/en/">http://tel.archives-ouvertes.fr/tel-00193292/en/</a>
+</div>
+<div id="ref-lakel" class="csl-entry" role="listitem">
+Lakel, A. (n.d.). <em>Ne dites plus LLM: Larges Discours Models (LDM) et Agent Discursif Artificiel (ADA)?</em>
+</div>
+<div id="ref-lakel2025" class="csl-entry" role="listitem">
+Lakel, A. (2025). <em>Ne dites plus LLM: Larges Discours Models (LDM) et Agent Discursif Artificiel (ADA)?</em> <a href="https://hal.science/hal-05421232v1/">https://hal.science/hal-05421232v1/</a>
+</div>
+<div id="ref-latour2005" class="csl-entry" role="listitem">
+Latour, B. (2005). <em>Reassembling the social: An introduction to actor-network-theory</em>. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780199256044.001.0001">https://doi.org/10.1093/oso/9780199256044.001.0001</a>
+</div>
+<div id="ref-latour2012" class="csl-entry" role="listitem">
+Latour, B. (2012). <em>Enquêtes sur les modes d’existence : Une anthropologie des modernes</em>. Editions La Découverte.
+</div>
+<div id="ref-manovich2014" class="csl-entry" role="listitem">
+Manovich, L. (2014). <em>Software Takes Command</em>. Bloomsbury Academic.
+</div>
+<div id="ref-morin1981" class="csl-entry" role="listitem">
+Morin, E. (1981). <em>La méthode, tome 1</em>. Seuil.
+</div>
+<div id="ref-petitot1978" class="csl-entry" role="listitem">
+Petitot, J. (1978). <em>Sur le modèle historique de Thom-Pomian</em>. 29.
+</div>
+<div id="ref-ramsay2011" class="csl-entry" role="listitem">
+Ramsay, S. (2011). <em>Reading Machines: Toward and Algorithmic Criticism</em>. University of Illinois Press.
+</div>
+<div id="ref-rygiel2026" class="csl-entry" role="listitem">
+Rygiel, P. (2026). <em>L’histoire au révélateur de l’intelligence artificielle. Ce que les grands modèles de langue font aux pratiques historiennes. Version 1.0, preprint</em>. <a href="https://inria.hal.science/hal-05673494">https://inria.hal.science/hal-05673494</a>
+</div>
+<div id="ref-spinoza" class="csl-entry" role="listitem">
+Spinoza, B. (n.d.). <em>Éthique, Ethique démontrée suivant l’ordre géométrique et divisée en cinq parties - Vol. III</em>.
+</div>
+<div id="ref-szoniecky2020" class="csl-entry" role="listitem">
+Szoniecky, S. (2020). Conception d<span>’</span>un crible pour mesurer collectivement les impacts écologiques de l<span>’</span>activité. <em>Les Cahiers du numérique</em>, <em>16</em>(2-3-4), 175–199. <a href="https://doi.org/10.3166/LCN.2020.007">https://doi.org/10.3166/LCN.2020.007</a>
+</div>
+<div id="ref-szoniecky2024" class="csl-entry" role="listitem">
+Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
+</div>
+<div id="ref-szoniecky2026" class="csl-entry" role="listitem">
+Szoniecky, S. (2026a). Du texte au diagramme : modéliser les pouvoirs dans un environnement numérique. <em>Revue Intelligibilité du numérique</em>, <em>N°77</em>. <a href="https://numerev.com/call_for_papers/73/paper_submission/5423">https://numerev.com/call_for_papers/73/paper_submission/5423</a>
+</div>
+<div id="ref-szoniecky2026a" class="csl-entry" role="listitem">
+Szoniecky, S. (2026b). <em>Samszo/omeka-s-module-ChaoticumSeminario</em>. <a href="https://github.com/samszo/Omeka-S-module-ChaoticumSeminario">https://github.com/samszo/Omeka-S-module-ChaoticumSeminario</a>
+</div>
+<div id="ref-szoniecky2019" class="csl-entry" role="listitem">
+Szoniecky, S., &amp; Godin, G. (2019, May 27). <em>87e congrès de l’ACFAS - éditions critiques : Nouveaux outils, nouvelles possibilités</em>. <a href="https://www.acfas.ca/evenements/congres/programme/87/300/313/c">https://www.acfas.ca/evenements/congres/programme/87/300/313/c</a>
+</div>
+<div id="ref-µ2015" class="csl-entry" role="listitem">
+µG., Edeline, F., &amp; Klinkenberg, J.-M. (2015). <em>Principia semiotica : Aux sources du sens</em>. Les impressions nouvelles éditions.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
