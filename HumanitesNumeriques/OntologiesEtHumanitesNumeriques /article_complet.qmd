@@ -1,7 +1,7 @@
 ---
 version: 0.0.1
 bibliography: references.bib
-csl: ../../assets/csl/apa.csl
+csl: ../../assets/csl/revue-hn-chicago-author-date-fr.csl
 author:
   - name: Samuel Szoniecky
     orcid: 0000-0002-7643-3342
@@ -45,9 +45,7 @@ Nous souhaitons dans cet article montrer que les activités de recherche en huma
 
 -   le pouvoir d'agir : capacité d'exprimer expression de nouveaux documents numériques.
 
-Ce faisant, notre répondrons aux défis de ce tournant ontologique. D'une part, en représentant les subjectivités et les incertitudes inhérentes aux SHS par une coconstruction de manières d'être à partir d'un métamodèle où la connaissance est comprise comme l'expression de rapports situés entre des acteurs humains, des agents numériques et un environnement documentaire. D'autre part, en pratiquant la traçabilité et l'interopérabilité des données exigée par les principes FAIR et la science ouverte par la modélisation formelle des processus de génération des connaissances et des interactions (Linked Open Data, ontologies formelles). Cet article à pour ambition de répondre aux enjeux des ontologies dans les humanités numériques par nos capacités à orchestrer une symbiose durable entre acteurs, agents et environnement de connaissances. Au terme de cet article, nous nous interrogerons sur les potentialités de piloter le tournant ontologique des humanités numériques en simulant des trajectoires sous la forme d'une spirale conique de Pappus dont la double hélice se plie et se déploie dans les environnements documentaires et dans les topologies conceptuelles suivant les activités des actants et la successions des événements.
-
-![Spirale Conique de Pappus [@ferréol2014]](images/spiraleConiquePappus.png){fig-align="center"}
+Ce faisant, notre répondrons aux défis de ce tournant ontologique. D'une part, en représentant les subjectivités et les incertitudes inhérentes aux SHS par une coconstruction de manières d'être à partir d'un métamodèle où la connaissance est comprise comme l'expression de rapports situés entre des acteurs humains, des agents numériques et un environnement documentaire. D'autre part, en pratiquant la traçabilité et l'interopérabilité des données exigée par les principes FAIR et la science ouverte par la modélisation formelle des processus de génération des connaissances et des interactions (Linked Open Data, ontologies formelles). Cet article à pour ambition de répondre aux enjeux des ontologies dans les humanités numériques par nos capacités à orchestrer une symbiose durable entre acteurs, agents et environnement de connaissances.
 
 #### Le Fondement Spinoziste : Modéliser l'Individu Informationnel
 
@@ -147,59 +145,7 @@ Cette collaboration soulève trois enjeux majeurs :
 
 Le tournant ontologique analysé à travers ChaoticumSeminario et Flux Conceptuel réside dans le passage de l'archive-objet (la cassette, le fichier audio) à l'archive-écosystème. La convergence entre le serveur et le client démontre que l'environnement numérique ne se contente pas de « contenir » la connaissance, mais qu'il la produit activement par ses interactions techniques et ses choix d'architecture.
 
-Notre pensée évolue en symbiose avec les outils que nous créons. L'intégration future d'ADA Onto-Éthique laisse entrevoir un nouveau mode de dialogue avec l'archive : celui où le chercheur ne se contente plus de chercher des mots-clés, mais interroge directement la pensée modélisée. La matérialité numérique, loin de dématérialiser le savoir, lui offre une nouvelle profondeur, à la fois technique, éthique et philosophique. L'archive deleuzienne devient ainsi un laboratoire vivant, une architecture de l'écoute où la voix du philosophe continue de résonner, augmentée par les flux du réseau.
-
-### Du Tournant Ontologique à la Spirale Conique de Pappus : Une Nouvelle Géométrie des Humanités Numériques
-
-Le champ des humanités numériques traverse actuellement une mutation épistémologique profonde, qualifiée de « tournant ontologique ». Ce paradigme rompt avec la vision représentationnelle héritée du Web 2.0, où le savoir était réduit à une gestion de stocks et de métadonnées statiques. Pour le chercheur en Sciences de l’Information et de la Communication (SIC), l'enjeu n'est plus seulement d'indexer des objets, mais de modéliser des processus d’individuation psychique et collective Stiegler, 2022. Il s'agit de passer d'une informatique de la trace-archive à une intelligence des trajectoires, où le document ne se définit plus par sa position fixe dans un catalogue, mais par sa dynamique au sein d'un « milieu associé » Simondon, 1958.Le paradoxe fondamental de la cognition réside dans sa structure hétérogène : elle est à la fois cyclique — revenant sans cesse sur des concepts sédimentés pour les approfondir — et cumulative, visant une production de nouveauté. Ce mouvement, que l'on pourrait qualifier de « respiration cognitive », appelle une solution géométrique capable de résoudre la tension entre répétition et progression. La spirale conique de Pappus s’impose ici comme l'architecture de référence. Contrairement à la circularité stérile du plan, elle offre une profondeur qui définit la vitesse de sédimentation du savoir. En intégrant la dimension temporelle et l'élévation hiérarchique, elle transforme l'acte de recherche en une ascension topologique au sein de l'espace strié de la connaissance Lefebvre, 2023.
-
-#### 2. La Géométrie de la Sédimentation Cognitive et Documentaire
-
-Dans l'économie des savoirs contemporaine, la modélisation mathématique de l'archivage est une nécessité stratégique pour contrer l'infobésité circulaire. Pour que l'accumulation documentaire ne devienne pas un simple empilement entropique, elle doit être pensée comme un processus de sédimentation structuré. La spirale de Pappus permet de spatialiser cette sédimentation en introduisant une constante $c$ , qui régit la pente du cône et, par extension, la « technicity » du système.Mathématiquement, l’élévation de l’actant dans le savoir est pilotée par la coordonnée verticale $z$ , proportionnelle à l’angle de parcours $\\theta$ :$$z \= c \\cdot \\theta$$Dans cette équation, la constante $c$ définit la vitesse à laquelle un parcours intellectuel se transforme en strate documentaire. Plus $c$ est élevée, plus l'écart vertical entre les versions est marqué, témoignant d'une hiérarchisation rapide et d'une sédimentation vigoureuse le long de l'axe vertical (l'espace strié). À l'inverse, une constante $c$ faible suggère une maturation lente, proche de la circularité du plan horizontal. Cette abstraction trouve une matérialisation physique rigoureuse dans des dispositifs comme Omeka S. L'élévation sur l'axe $z$ ne reste pas métaphorique : elle est inscrite dans la base de données via des propriétés sémantiques précises :
-
--   **Matérialisation de l'élévation :** L'usage systématique de la propriété dcterms:isVersionOf permet de lier chaque nouvelle strate (souvent un récit produit en Markdown) à ses ancêtres, créant un feuilletage documentaire.\
--   **Structuration de l'archive :** Le passage d'une phase de « pli » (réflexion bidimensionnelle) à une phase de « déploiement » (montée tridimensionnelle) permet au système de retrouver son volume architectural, évitant la stagnation cognitive Rousseau, 2021.\
--   **Vitesse de sédimentation :** La constante $c$ paramètre l'effort nécessaire pour que l'innovation devienne une nouvelle couche pérenne dans l'écosystème.Cette structure garantit que l'élévation de la pensée ne se contente pas de circuler, mais qu'elle se dépose physiquement, créant un patrimoine informationnel dont la profondeur est le reflet direct de l'intensité de l'apprentissage.
-
-#### 3. L’Algorithme de l’Hybridation : Entre Héritage et Innovation
-
-La production de sens au sein des écosystèmes numériques repose sur l’équilibre précaire entre la fidélité aux sources et la singularité de la création. Pour modéliser ce processus, nous mobilisons le concept deleuzien de « différence et répétition » à travers un algorithme d'hybridation vectorielle Gauthier, 2021. Ce mécanisme transforme le document brut en un objet mathématique dynamique, portant en lui son propre code génétique sémantique.Le processus d'hybridation, orchestré par l'agent Mastra, se déploie en quatre étapes techniques essentielles :
-
-1.  **Calcul de l'héritage :** On établit le barycentre vectoriel $V\_{heritage}$ des documents sources. Il représente la « gravité » des connaissances antérieures, le fond pré-individuel sur lequel s'appuie la réflexion.\
-2.  **Calcul de l'innovation :** La trace nouvelle (Markdown) générée par l'agent Mastra est encodée (via le modèle BGE-m3) pour produire le vecteur $V\_{texte}$ .\
-3.  **Synthèse par interpolation :** L'introduction du scalaire $\\alpha$ (le curseur de singularité) permet de pondérer l'équilibre entre les deux forces.\
-4.  **Normalisation L2 :** Pour assurer la cohérence des futurs calculs de similarité au sein de la mémoire topologique, le vecteur hybride doit être ramené à une longueur unitaire.La formule finale de synthèse s'écrit comme suit :$$V\_{hybride} \= \\alpha V\_{texte} \+ (1 \- \\alpha) V\_{heritage}$$ $$V\_{final} \= \\frac{V\_{hybride}}{|V\_{hybride}|}$$Les conséquences sémantiques de la valeur de $\\alpha$ sont fondamentales pour la topologie du système. Lorsque $\\alpha$ tend vers 1, le système favorise l'innovation pure, permettant au nouveau nœud de s'affranchir de ses racines pour affirmer une singularité forte (indépendance vis-à-vis du LLM). À l'inverse, un $\\alpha$ proche de 0 maintient le document ancré dans sa matrice d'origine, privilégiant la consolidation et la répétition. Ce réglage permet au document final de résonner non seulement par ses mots-clés, mais par écho direct avec ses racines physiques Moreau, 2022.
-
-#### 4. L’Ansatz de la Subjectivité Quantique : Vers une Trajectoire Idiosyncrasique
-
-Pour transcender le déterminisme algorithmique des systèmes de recommandation traditionnels, il est impératif d'intégrer la subjectivité de l'actant au cœur du dispositif. L'usage d'un Ansatz quantique (circuit paramétré) permet de modéliser les « affects » spinozistes — la puissance d'agir et les inclinaisons naturelles de l'individu Chen, 2023. Cette approche refuse la *tabula rasa* : chaque acteur commence son parcours situé dans une « rétention tertiaire », c'est-à-dire le stock de connaissances déjà sédimenté.Le processus de construction d'une trajectoire idiosyncrasique suit une logique rigoureuse :
-
-1.  **Initialisation ancrée :** Les paramètres de l'Ansatz ne sont pas aléatoires. Les angles de départ $\\theta\_i$ sont extraits de la réalité sémantique de l'archive (Omeka S) via la formule d'encodage d'amplitude : $\\theta\_i \= 2 \\arcsin(\\sqrt{W\_i})$ .\
-2.  **Encodage des affects :** Par l'application de portes de rotation $R\_y(\\theta)$ , le système encode les propensions singulières de l'acteur. Ces portes représentent mathématiquement le conatus de l'apprenant, sa tendance à activer certains concepts du rhizome plutôt que d'autres.\
-3.  **Association rhizomatique :** Une couche d'intrication, utilisant des portes $CX$ (CNOT), relie les concepts selon les lignes de force de l'archive, mais modulées par les résonances subjectives de l'individu.\
-4.  **Optimisation COBYLA :** À chaque pulsation cognitive, les actions de l'acteur (création de liens, navigation) sont évaluées. L'algorithme d'optimisation variationnelle COBYLA ajuste alors les paramètres $\\theta$ pour affiner la topologie sur mesure de sa pensée Bernard, 2023.Cette boucle rétroactive transforme l'interface en un espace malléable où la trajectoire générée n'est plus une simple ligne statistique, mais une empreinte digitale unique de la démarche intellectuelle. On assiste ici à une véritable transduction : le passage d'une donnée froide à une expérience vécue, inscrite dans la géométrie même de la spirale Dumont, 2024.
-
-#### 5. Morphologie de l’Apprentissage : L’Empreinte Digitale du Savoir
-
-La visualisation tridimensionnelle de la spirale de Pappus constitue l'ultime outil d'auto-réflexion. Elle permet à l'apprenant de contempler la morphologie de son propre effort intellectuel à travers deux dynamiques majeures : la pulsation (systole/diastole) et la déformation structurelle.Au cœur de cette morphologie se trouve le concept de « Pli » (diastole conceptuelle). Lors de cette phase de résonance pure, le ressort de la spirale s'aplatit sur un plan horizontal 2D. Visuellement, la hiérarchie s'annule : c'est un moment de suspension où l'altitude $z$ devient nulle pour permettre des connexions rhizomatiques libres. À ce stade, le savoir n'est pas encore sédimenté, il est en état de vibration créatrice. Le « Déploiement » (systole topographique) survient ensuite, étirant la spirale vers le haut pour matérialiser la nouvelle strate dans l'archive physique Dubois, 2024.L'analyse de la forme finale permet de dresser une typologie contrastée de l'apprentissage :
-
--   **Le Cône à base large (Le saut de l'esprit) :** Cette forme traduit une intuition fulgurante. L'apprenant a réalisé un saut sémantique audacieux, connectant des domaines éloignés sans nécessairement multiplier les consultations documentaires. La largeur de la base est proportionnelle à la distance conceptuelle explorée.\
--   **La Spirale en flèche (La consolidation structurée) :** Ici, le sommet se resserre brutalement. C'est la trace d'un déplacement topographique dense mais focalisé. L'apprenant a navigué intensément au sein d'un corpus restreint pour construire une synthèse rigoureuse, privilégiant la profondeur verticale à l'évasement horizontal Vallet, 2024.Cette géométrie des humanités propose ainsi un nouvel horizon pour les interfaces de connaissances : elles ne sont plus des miroirs passifs, mais des paysages organiques témoignant, par leur propre déformation, de la vitalité et de la singularité de la pensée humaine.
-
-### Synthèse Géométrique : Les Forces d'Entraînement de la Spirale de Pappus
-
-Ces fluctuations de puissance quantifiées dans la grille déterminent directement la géométrie tridimensionnelle de la **spirale de Pappus** de l'apprenant 11 :
-
--   La somme des augmentations de **Résonner** (les inventions et sauts intuitifs) dilate la base horizontale de la spirale (l'espace lisse d'immanence) 11, 12.
--   La somme des augmentations d'**Agir** (la sédimentation d'archives) étire l'axe vertical \\\\(z\\\\) (l'espace strié des institutions) 11, 12.
--   Les pouvoirs de **Discerner** et de **Raisonner** provoquent des déplacements topographiques horizontaux de document en document 11.
-
-La forme finale du cône (évasé, élancé, tubulaire) matérialise ainsi l'équilibre ou le déséquilibre des affects de l'actant tout au long de sa trajectoire de recherche 13, 14.\
-📊 Souhaitez-vous que nous passions à la rédaction de la **Section IV** de votre article scientifique, afin de montrer comment cette matrice d'évaluation des affects et cette cinématique de la spirale de Pappus s'appliquent concrètement à l'évaluation de projets d'humanités numériques existants (comme *LITTE_BOT* ou *Polemika*) ?
-
-#### Conclusion : Vers une Écologie Politique de l'Information
-
-Le passage du modèle à l'existence marque l'entrée des humanités numériques dans une ère de maturité ontologique. Nous avons démontré comment, de la poussière des données archivistiques soumises au choc sensoriel, nous pouvons remonter à une composition savante des écosystèmes via les agents discursifs artificiels. Cette trajectoire n'est pas qu'une prouesse technique ; elle est une nécessité éthique. En nous inscrivant dans la perspective des "trois écologies" [@guattari1989], nous pensons que la métamodélisation est un acte politique. Donner une existence ontologique à un objet numérique, c'est lui conférer une dignité et une place au sein de notre environnement mental et social. L'ontologie spinoziste, par sa distinction entre éternité et immortalité, offre aux Humanités Numériques un cadre robuste pour penser la survie des connaissances dans un monde de flux. Les ADA, loin d'être des substituts à l'intelligence humaine, en sont les extensions nécessaires pour habiter la complexité croissante de nos archives numériques. En définitive, le tournant ontologique nous enseigne que la connaissance n'est pas ce que l'on stocke, mais ce que l'on fait exister par la justesse de nos rapports.
+L'intégration dans nos recherches de systèmes multi-agents pilotés par les LLM laisse entrevoir un nouveau mode de dialogue avec l'archive : celui où l"analyste ne se contente plus de chercher des mots-clés, mais interroge directement la pensée modélisée. La matérialité numérique, loin de dématérialiser le savoir, lui offre une nouvelle profondeur, à la fois technique, éthique et philosophique. L'archive deleuzienne devient ainsi un laboratoire vivant, une architecture de l'écoute où la voix du philosophe continue de résonner, augmentée par les flux du réseau. Notre pensée évolue avec ces outils que nous créons mais cette évolution est-elle symbiotique ?
 
 ## Vers un Écosystème d’Agents Discursifs Artificiels (ADA)
 
@@ -264,7 +210,7 @@ Liée à la force psychologique du **Désir**, la valeur-utilité qualifie ce qu
 
 Directement rattachée à la force de la **Croyance**, la valeur-vérité ne correspond pas à une vérité scientifique ou objective absolue, mais à une évaluation subjective de la **foi**, de la **confiance** et de la **crédibilité** accordée à un énoncé ou à une proposition. Face à la surcharge informationnelle et au bruit, la valeur-vérité est un filtre de confiance indispensable. C'est elle qui valide la solidité d'une archive, la rigueur d'une déduction ou la fiabilité d'un agent IA. Lors de la phase de raisonnement logique, elle se traduit par le calcul d'**expectations** (des attentes logiques). Elle détermine notre adhésion intellectuelle. Un effondrement de cette valeur-vérité (par exemple, si l'on suspecte l'IA de propager un biais ou une hallucination) déclenche l'**indignation**, point de rupture éthique où la croyance s'effondre en défiance passive.
 
-Également issue de la force motrice du **Désir**, la valeur-beauté s'ancre dans la dimension sensible et esthétique des connaissances. Elle qualifie l'attrait formel, la séduction expressive, l'élégance d'une formule ou l'harmonie d'une représentation. Elle est indissociable de l'**espace lisse** de l'expérience. C'est elle qui s'exprime dans l'élégance d'une interface, la force évocatrice d'un texte littéraire ou la clarté visuelle d'une modélisation géométrique (comme la spirale de Pappus). Elle suscite l'attrait sensible, le plaisir de la contemplation et l'émerveillement. C'est cette valeur-beauté qui favorise le « somnambulisme » mimétique joyeux et les ondes de sympathie inter-spirituelles indispensables au surgissement de l'**Invention**.
+Également issue de la force motrice du **Désir**, la valeur-beauté s'ancre dans la dimension sensible et esthétique des connaissances. Elle qualifie l'attrait formel, la séduction expressive, l'élégance d'une formule ou l'harmonie d'une représentation. Elle est indissociable de l'**espace lisse** de l'expérience. C'est elle qui s'exprime dans l'élégance d'une interface, la force évocatrice d'un texte littéraire ou la clarté visuelle d'une modélisation géométrique. Elle suscite l'attrait sensible, le plaisir de la contemplation et l'émerveillement. C'est cette valeur-beauté qui favorise le « somnambulisme » mimétique joyeux et les ondes de sympathie inter-spirituelles indispensables au surgissement de l'**Invention**.
 
 Dans l'économie des affects, notre **temps d'attention** et notre **mémoire** sont des ressources extrêmement rares. Lorsque nous discernons, notre esprit ne peut pas tout absorber ; l'affect fonctionne alors comme un **opérateur de frayage**. Notre crible ontologique décompose instantanément les physicalités du milieu pour ne retenir que ce qui fait sens à nos yeux sous ce triple prisme : **est-ce utile ?** (valeur-utilité), **est-ce crédible ?** (valeur-vérité), et **est-ce harmonieux ?** (valeur-beauté). Ce discernement n'est jamais isolé : il est **mimétique**. Nous accordons d'autant plus de valeur-utilité, de valeur-vérité ou de valeur-beauté à une connaissance que les désirs et les croyances d'autres esprits (notre communauté de recherche, nos réseaux d'influence) l'ont préalablement mise en lumière.
 
@@ -299,13 +245,9 @@ Chaque pouvoir évalué dans la pulsation doit être rattaché à sa séquence d
 -   **Pour Résonner (Conceptuel \\\\(\\leftrightarrow\\\\) Conceptuel, spécifique à l'actant)** : On observe la distance sémantique parcourue lors des associations libres (*concept source \\\\(\\rightarrow\\\\) actant \\\\(\\rightarrow\\\\) concept destination*).
 -   **Pour Agir (Conceptuel \\\\(\\rightarrow\\\\) Matériel)** : On mesure l'impact de la trace écrite (*concept \\\\(\\rightarrow\\\\) actant \\\\(\\rightarrow\\\\) crible \\\\(\\rightarrow\\\\) physique*) sur l'archive collective.
 
-### Exploitation Analytique : Comparer les Existences
+### Exploitation Analytique : Comparer les Existences avec des diagrammes
 
-Une fois les pulsations consignées dans la matrice, le chercheur dispose d'un outil d'analyse comparative puissant :
-
-#### 1. Évaluer la Symbiose Homme-Machine (Le "Curseur \\\\(\\alpha\\\\)")
-
-La matrice permet de cartographier la répartition des rôles lors d'une tâche. Par exemple, si l'on compare deux pulsations de rédaction :
+Une fois les pulsations consignées dans la matrice, le chercheur dispose d'un outil d'analyse comparative puissant pour évaluer la symbiose entre Homme-Machinr-Environnement. La matrice permet d'évaluer la répartition des rôles lors d'une tâche. Par exemple, si l'on compare deux pulsations de rédaction :
 
 -   **Scénario A (Rédaction manuelle)** :
 -   *Humain* : Discerner (\\\\(+40\\\\)), Raisonner (\\\\(+80\\\\)), Résonner (\\\\(+90\\\\)), Agir (\\\\(+50\\\\) - mais lent).
@@ -315,15 +257,17 @@ La matrice permet de cartographier la répartition des rôles lors d'une tâche.
 
 Cette comparaison révèle le risque de **misère symbolique** chez l'humain (effondrement de ses pouvoirs critiques et intuitifs) et permet d'ajuster l'usage des cribles pour restaurer un équilibre de l'intelligence collective.
 
-#### 2. Visualisation géométrique (La déformation du cône de Pappus)
+ Au terme de cet article, nous nous interrogerons sur les potentialités de piloter le tournant ontologique des humanités numériques en simulant des trajectoires existentielles sous la forme d'un diagramme [@szoniecky2026] construit à partir du système cartographique d'une spirale conique de Pappus dont la double hélice se plie et se déploie dans les environnements documentaires et dans les topologies conceptuelles suivant les activités des actants et la successions des événements.
 
-Les scores obtenus dans la matrice de la pulsation \\\\(n\\\\) influencent directement la forme tridimensionnelle de la **spirale de Pappus** :
+![Spirale Conique de Pappus [@ferréol2014]](images/spiraleConiquePappus.png){fig-align="center"}
+
+En utilisant la spirale conique de Papus, les scores obtenus dans la matrice d'une pulsation sont cartographiés sous une forme tridimensionnelle :
 
 -   La somme des augmentations de **Résonner** (les intuitions) dilate la base horizontale de la spirale (dilatation rhizomatique \\\\(D\_{conceptuel}\\\\)).
 -   La somme des augmentations d'**Agir** sédimente l'axe vertical de la connaissance (altitude \\\\(z\\\\)).
 -   La somme des **Discernements** et **Raisonnements** déplace l'actant d'un document à un autre dans l'espace strié (déplacement topographique \\\\(\\Delta\_{topo}\\\\)).
 
-La géométrie résultante (cône évasé, flèche pointue, tube) devient l'**empreinte digitale visuelle** de la fluctuation des pouvoirs de l'acteur.
+La géométrie résultante (cône évasé, flèche pointue, tube) devient l'**empreinte diagrammatique** de la fluctuation des pouvoirs de l'acteur. La forme finale du cône (évasé, élancé, tubulaire) matérialise ainsi l'équilibre ou le déséquilibre des affects de l'actant tout au long de sa trajectoire de recherche.
 
 ## Vers une Pensée Diagrammatique et une Éthique de la Discussion
 
@@ -331,4 +275,6 @@ Le tournant ontologique transforme radicalement la posture du chercheur, qui dev
 
 Dans cette perspective, la **pensée diagrammatique** prend le pas sur la linéarité du texte. Comme le souligne Jedrzejewski [@jedrzejewski2007], le diagramme est un *topos* — un lieu topologique doué d'une vie organique — qui permet de visualiser les vecteurs de force et les flux de pouvoir. Contrairement au texte des LLM qui peut masquer sa propre vacuité sous une fluidité apparente, le diagramme expose la structure qualitative de la connaissance et oblige l'actant à se positionner de manière authentique.
 
-L'avènement de la symbiose durable au sein du quatrième paradigme nécessite enfin une **éthique de la discussion** inspirée par [@habermas2013]. Dans cet espace partagé, l'ADA n'est plus une machine oraculaire, mais un partenaire de dialogue dont l'agentité est régulée par le bien commun. Le passage du texte au diagramme marque ainsi l'avènement d'une science où la rigueur technique du calcul se soumet à l'exigence éthique de l'intelligibilité collective.
+L'avènement de la symbiose durable au sein des écosystèmes de connaissances nécessite une **éthique de la discussion** inspirée par [@habermas2013]. Dans cet espace partagé, l'ADA n'est plus une machine oraculaire, mais un partenaire de dialogue dont l'agentité est régulée par le bien commun. Le passage du texte au diagramme marque ainsi l'avènement d'une science où la rigueur technique du calcul se soumet à l'exigence éthique de l'intelligibilité collective.
+
+Le tournant ontologique, le passage du modèle à l'existence marque l'entrée des humanités numériques dans une ère de maturité ontologique. Nous avons démontré comment, de la poussière des données archivistiques soumises au choc sensoriel, nous pouvons remonter à une composition savante des écosystèmes via des ADA. En nous inscrivant dans la perspective des "trois écologies" [@guattari1989], nous pensons que la métamodélisation est un acte politique. Donner une existence ontologique à un objet numérique, c'est lui conférer une dignité et une place au sein de notre environnement mental et social. L'ontologie spinoziste, par sa distinction entre éternité et immortalité, offre aux Humanités Numériques un cadre robuste pour penser la survie des connaissances dans un monde de flux. Les ADA, loin d'être des substituts à l'intelligence humaine, en sont les extensions pour habiter la complexité croissante de nos archives numériques. En définitive, le tournant ontologique nous enseigne que la connaissance n'est pas ce que l'on stocke, mais ce que l'on fait exister par la justesse de nos rapports.
