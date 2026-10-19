@@ -1,41 +1,59 @@
-# Des générateurs chaotiques aux IA génératives : vers une symbiose humains <-> agents
-
-**Auteur** : Samuel Szoniecky  
-**Affiliation** : Laboratoire Paragraphe, Université Paris 8  
-**Cadre** : Colloque international *Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie* (12-13 juin 2025, Université Paris 8 / MSH Paris Nord) / Ouvrage *Le 4ème paradigme en question* [1, 2, 18, 20]  
-**Format** : Article scientifique (~30 000 signes) [20]
-
 ---
+version: 0.0.1
+csl: ../../assets/csl/apa.csl
+bibliography: references.bib
+author:
+  - name: Samuel Szoniecky
+    orcid: 0000-0002-7643-3342
+    email: samuel.szoniecky@univ-paris8.fr
+    affiliations:
+      - name: Laboratoire Paragraphe
+        address: Université Paris 8
+        city: Saint-Denis
+        country: France
+---
+
+# Des générateurs chaotiques aux IA génératives : vers une symbiose humains \<-\> agents
+
+**Auteur** : Samuel Szoniecky\
+**Affiliation** : Laboratoire Paragraphe, Université Paris 8\
+**Cadre** : *Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie* **Format** : Article scientifique (\~30 000 signes) \[20\]
+
+------------------------------------------------------------------------
 
 ## Résumé
-Cet article retrace l'évolution technologique, poétique et épistémologique des systèmes de génération automatique de textes, depuis les algorithmes combinatoires et chaotiques des années 1980-1990 jusqu'aux architectures contemporaines d'intelligence artificielle générative et multi-agents [1, 2, 18]. À travers l'analyse de l'œuvre et de la pensée de Jean-Pierre Balpe, pionnier de l'écriture infinie et des fictions hypermédiales [2, 3], nous examinons le passage d'une génération textuelle déterministe ou combinatoire à une modélisation diagrammatique et écosystémique de la connaissance [20, 25, 28]. En articulant les modèles formels de visualisation de données (Card et al., 1999) [25, 26], les ontologies narratives (Omeka S / *GenStory*) [26], la diagrammation dynamique (Mermaid) [27] et les écosystèmes hybrides (ComfyUI, RAG, agents autonomes) [28], l'article démontre comment la relation auteur-machine se reconfigure en une symbiose dynamique entre acteurs humains, agents computationnels et environnements numériques [20, 28, 29]. Enfin, nous proposons le cadre théorique d'une *ontoéthique* pour évaluer les fluctuations d'agencéité et réguler la co-création dans la « chrysalide computationnelle » [28, 29].
 
-**Mots-clés** : Génération automatique de texte, Jean-Pierre Balpe, IA générative, symbiose homme-machine, (méta-)auctorialité, écosystèmes génératifs, ontologies narratives, ontoéthique [2, 18, 20, 28].
+Cet article retrace l'évolution technologique, poétique et épistémologique des systèmes de génération automatique de textes, depuis les algorithmes combinatoires et chaotiques des années 1980-1990 jusqu'aux architectures contemporaines d'intelligence artificielle générative et multi-agents \[1, 2, 18\]. À travers l'analyse de l'œuvre et de la pensée de Jean-Pierre Balpe, pionnier de l'écriture infinie et des fictions hypermédiales \[2, 3\], nous examinons le passage d'une génération textuelle déterministe ou combinatoire à une modélisation diagrammatique et écosystémique de la connaissance \[20, 25, 28\]. En articulant les modèles formels de visualisation de données (Card et al., 1999) \[25, 26\], les ontologies narratives (Omeka S / *GenStory*) \[26\], la diagrammation dynamique (Mermaid) \[27\] et les écosystèmes hybrides (ComfyUI, RAG, agents autonomes) \[28\], l'article démontre comment la relation auteur-machine se reconfigure en une symbiose dynamique entre acteurs humains, agents computationnels et environnements numériques \[20, 28, 29\]. Enfin, nous proposons le cadre théorique d'une *ontoéthique* pour évaluer les fluctuations d'agencéité et réguler la co-création dans la « chrysalide computationnelle » \[28, 29\].
 
----
+**Mots-clés** : Génération automatique de texte, Jean-Pierre Balpe, IA générative, symbiose homme-machine, (méta-)auctorialité, écosystèmes génératifs, ontologies narratives, ontoéthique \[2, 18, 20, 28\].
+
+------------------------------------------------------------------------
 
 ## 1. Introduction : La trajectoire de l'écriture automatisée et la redéfinition de l'agencéité
 
-### 1.1 Contexte historique et accélération technologique
-L'histoire des technologies d'écriture automatisée est marquée par une accélération sans précédent, faisant passer le traitement du langage naturel de la combinatoire symbolique structurée aux modèles profonds d'intelligence artificielle générative [1, 2, 18]. Dès la fin des années 1970 et durant les décennies 1980-1990, les prémices de la littérature informatique s'appuyaient sur des grammaires formalisées, des bases de données lexicales et des règles logiques strictes [2, 3]. Aujourd'hui, l'émergence des grands modèles de langage (LLM), combinée aux architectures d'apprentissage profond, aux réseaux de diffusion et au suivi de contexte par génération augmentée par récupération (RAG), redéfinit fondamentalement notre rapport au texte et à la création poétique [2, 28].
+L'histoire des technologies d'écriture automatisée est marquée par de nombreuses étapes allant de la combinatoire symbolique structurée [@balpe1996]aux modèles profonds d'intelligence artificielle générative [@roxin2026]. Dès la fin des années 1970 et durant les décennies 1980-1990, la littérature numérique s'appuyaient sur des grammaires formalisées, des bases de données lexicales et des règles logiques strictes [@saleh1992]. Aujourd'hui, l'émergence des grands modèles de langage (LLM), combinée aux architectures d'apprentissage profond, aux réseaux de diffusion, au suivi de contexte par génération augmentée par récupération (RAG) et aux écosystèmes d'agents numériques, redéfinit fondamentalement notre rapport au texte et à la création littéraire.
 
-Cependant, cette accélération technique n'est pas neutre : elle s'inscrit au cœur des transformations de l'économie de l'attention, de l'ergonomie des interfaces (UI/UX) et des structures du capitalisme cognitif [25]. Le flux continu de contenus automatisés interroge la capacité des sujets à discerner, raisonner et intérioriser le sens dans des environnements saturés de signaux calculés [25].
+Ces évolutions techniques et littéraires s'inscrivent dans le contexte des transformations de l'économie de l'attention [@citton2010], des relations humains-machines [@taniguchi], des structures du capitalisme cognitif [@corteel2025] et d'une culture intensive des environnements numérique[@szoniecky2019]. Désormais plongé dans des flux illimités et constants de contenus automatisés, nous nous interrogeons sur nos capacités à discerner, raisonner et intérioriser le sens dans ces environnements saturés de signaux calculés [@szoniecky2024]. Outre les questions de réception [@rodier2024] et de subjectivation [@guattari1989], le questionnement sur la production de contenus alimentant ces flux déjà encombrés devient crucial, à l'heure où la conception de dispositifs numériques devient possible par un simple dialogue en langage naturel. Ces nouveaux pouvoirs auxquels nous sommes confrontés, faut-il les subir ? les rejeter ? les cultiver ?
+
+Retracer les trajectoires de mes collaborations avec Jean-Pierre Balpe, permettra d'alimenter les débats sur ces questions éthiques en montrant comment nos pouvoirs évoluent dans des environnements numériques chaotiques et quels décisions ils nous faut prendre pour préserver, diminuer ou augmenter ces pouvoirs.
 
 ### 1.2 Jean-Pierre Balpe : Figure pionnière du (méta-)auteur
-Dans cette généalogie, l'œuvre et la trajectoire théorique de Jean-Pierre Balpe occupent une place matricielle unique [2, 3]. Poète, enseignant, chercheur et ancien directeur du département Hypermédia ainsi que co-directeur du CIREN et du CITU à l'Université Paris 8, Balpe explore depuis près d'un demi-siècle le potentiel créatif et épistémologique de l'informatique [3]. Membre précoce de l'Atelier de Littérature Assistée par la Mathématique et les Ordinateurs (ALAMO) de l'Oulipo en 1981, concepteur de la section « Labyrinthe du langage » lors de l'exposition historique *Les Immatériaux* en 1985 au Centre Pompidou, il a constamment déplacé les frontières de l'écrit [3].
 
-Avec des logiciels innovants comme *Roman* (1987), des fictions hypertexte interactives (*Trajectoires*, *La Disparition du Général Proust*), le roman hybride *La Toile* (1999), et l'occupation des réseaux sociaux à travers des hétéronymes et avatars comme Rachel Charlus, Antoine Elstir ou Maurice Roman dans « Un Monde incertain », Balpe a incarné la posture du *(méta-)auteur* [2, 3, 4]. Le méta-auteur ne rédige plus directement des textes uniques et figés ; il conçoit des architectures informatiques, des grammaires génératives, des dictionnaires annotés et des univers de règles capables d'engendrer une écriture infinie [2, 3, 24].
+Dans cette généalogie, l'œuvre et la trajectoire théorique de Jean-Pierre Balpe occupent une place matricielle unique \[2, 3\]. Poète, enseignant, chercheur et ancien directeur du département Hypermédia ainsi que co-directeur du CIREN et du CITU à l'Université Paris 8, Balpe explore depuis près d'un demi-siècle le potentiel créatif et épistémologique de l'informatique \[3\]. Membre précoce de l'Atelier de Littérature Assistée par la Mathématique et les Ordinateurs (ALAMO) de l'Oulipo en 1981, concepteur de la section « Labyrinthe du langage » lors de l'exposition historique *Les Immatériaux* en 1985 au Centre Pompidou, il a constamment déplacé les frontières de l'écrit \[3\].
 
-### 1.3 Problématique : De la machine générative à la symbiose humain <-> agents
-Aujourd'hui, l'affrontement ou la juxtaposition des générateurs symboliques balpiens et des IA génératives contemporaines (illustrés notamment par les « combats » poétiques entre ChatGPT et le générateur de Balpe sur YouTube) marque une rupture paradigmatique [2, 4]. On ne fait plus seulement face à un automate textuel exécutant une grammaire close, mais à un ensemble d'agents computationnels autonomes capables d'interagir entre eux et avec des utilisateurs humains au sein d'écosystèmes numériques récursifs [20, 28].
+Avec des logiciels innovants comme *Roman* (1987), des fictions hypertexte interactives (*Trajectoires*, *La Disparition du Général Proust*), le roman hybride *La Toile* (1999), et l'occupation des réseaux sociaux à travers des hétéronymes et avatars comme Rachel Charlus, Antoine Elstir ou Maurice Roman dans « Un Monde incertain », Balpe a incarné la posture du *(méta-)auteur* \[2, 3, 4\]. Le méta-auteur ne rédige plus directement des textes uniques et figés ; il conçoit des architectures informatiques, des grammaires génératives, des dictionnaires annotés et des univers de règles capables d'engendrer une écriture infinie \[2, 3, 24\].
 
-Dès lors, la question centrale de cette étude est la suivante : *Comment la transition des générateurs textuels combinatoires et chaotiques vers les architectures d'IA génératives reconfigure-t-elle la relation entre créateur et machine en une symbiose dynamique articulant acteurs humains, agents computationnels et environnements numériques ?* [20, 28, 29]
+### 1.3 Problématique : De la machine générative à la symbiose humain \<-\> agents
 
----
+Aujourd'hui, l'affrontement ou la juxtaposition des générateurs symboliques balpiens et des IA génératives contemporaines (illustrés notamment par les « combats » poétiques entre ChatGPT et le générateur de Balpe sur YouTube) marque une rupture paradigmatique \[2, 4\]. On ne fait plus seulement face à un automate textuel exécutant une grammaire close, mais à un ensemble d'agents computationnels autonomes capables d'interagir entre eux et avec des utilisateurs humains au sein d'écosystèmes numériques récursifs \[20, 28\].
+
+Dès lors, la question centrale de cette étude est la suivante : *Comment la transition des générateurs textuels combinatoires et chaotiques vers les architectures d'IA génératives reconfigure-t-elle la relation entre créateur et machine en une symbiose dynamique articulant acteurs humains, agents computationnels et environnements numériques ?* \[20, 28, 29\]
+
+------------------------------------------------------------------------
 
 ## 2. Archéologie des générateurs chaotiques : De la combinatoire aux environnements de création
 
-```
+```         
 +-------------------------------------------------------------------------+
 |                  ÉVOLUTION DES INTERFACES ET MOTEURS                    |
 |                                                                         |
@@ -53,40 +71,57 @@ Dès lors, la question centrale de cette étude est la suivante : *Comment la tr
 ```
 
 ### 2.1 Les origines symboliques : Expérimentations et combinatoires textuelles
-Les premiers travaux de modélisation de l'écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte [3, 19]. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard [19]. Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » [19]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire [19].
+
+Les premiers travaux de modélisation de l'écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte \[3, 19\]. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard \[19\]. Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » \[19\]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire \[19\].
 
 ### 2.2 Détournement créatif des outils bureautiques : L'expérience VBA et Word 97
-Parallèlement aux logiciels dédiés, l'exploration de la génération dynamique s'est portée sur le détournement des logiciels grand public de bureautique [22]. À la fin des années 1990, l'utilisation de Microsoft Visual Basic for Applications (VBA) au sein de Microsoft Word 97 a permis de transformer un simple traitement de texte en un moteur de création plastique et poétique [22]. Par l'exécution de scripts automatisés, les lignes de code VBA engendraient des compositions visuelles complexes, formant des nuages de motifs colorés et symétriques évoquant des structures de papillons [22]. Cette démarche démontrait que le code sous-jacent à l'outil utilitaire pouvait être subverti pour devenir une matrice d'art génératif [22].
+
+Parallèlement aux logiciels dédiés, l'exploration de la génération dynamique s'est portée sur le détournement des logiciels grand public de bureautique \[22\]. À la fin des années 1990, l'utilisation de Microsoft Visual Basic for Applications (VBA) au sein de Microsoft Word 97 a permis de transformer un simple traitement de texte en un moteur de création plastique et poétique \[22\]. Par l'exécution de scripts automatisés, les lignes de code VBA engendraient des compositions visuelles complexes, formant des nuages de motifs colorés et symétriques évoquant des structures de papillons \[22\]. Cette démarche démontrait que le code sous-jacent à l'outil utilitaire pouvait être subverti pour devenir une matrice d'art génératif \[22\].
 
 ### 2.3 L'architecture logicielle du générateur de texte de Jean-Pierre Balpe
-Au cours des années 2000, le générateur automatique de textes développé par Samuel Szoniecky pour Jean-Pierre Balpe a concrétisé l'aboutissement d'une intelligence artificielle symbolique d'une ampleur inégalée [2, 24]. L'architecture technique de ce système repose sur un découpage modulaire en trois paires composantes fonctionnelles [24] :
 
-1. **Le socle de données sous Zend Framework (ZF)** : Ce module back-end assure la gestion de la base de données relationnelle du générateur (tables d'auteurs, règles, dictionnaires) et fournit une interface de programmation (API) permettant d'exporter les règles et de modéliser les processus ergologiques [24].
-2. **L'interface d'administration sous Adobe Flex/Flash (Fx)** : Destinée au méta-auteur, cette application riche permet l'importation de fichiers CSV, la gestion fine des dictionnaires syntaxiques et lexicaux, la configuration des structures d'œuvres, la réalisation de tests génératifs en temps réel et la gestion des droits utilisateurs [24].
-3. **Le moteur de publication sous SPIP** : Ce composant de front-end prend en charge la compilation dynamique et la diffusion web des œuvres poétiques générées, telles que les séries de *Contre-Haïkus*, publiées automatiquement sur le site de l'auteur [2, 24].
+Au cours des années 2000, le générateur automatique de textes développé par Samuel Szoniecky pour Jean-Pierre Balpe a concrétisé l'aboutissement d'une intelligence artificielle symbolique d'une ampleur inégalée \[2, 24\]. L'architecture technique de ce système repose sur un découpage modulaire en trois paires composantes fonctionnelles \[24\] :
 
-Ce système d'IA symbolique incorpore des millions de données linguistiques accumulées depuis les années 1990, associées à une grammaire générative affinée manuellement au fil des expérimentations [2].
+1.  **Le socle de données sous Zend Framework (ZF)** : Ce module back-end assure la gestion de la base de données relationnelle du générateur (tables d'auteurs, règles, dictionnaires) et fournit une interface de programmation (API) permettant d'exporter les règles et de modéliser les processus ergologiques \[24\].
+2.  **L'interface d'administration sous Adobe Flex/Flash (Fx)** : Destinée au méta-auteur, cette application riche permet l'importation de fichiers CSV, la gestion fine des dictionnaires syntaxiques et lexicaux, la configuration des structures d'œuvres, la réalisation de tests génératifs en temps réel et la gestion des droits utilisateurs \[24\].
+3.  **Le moteur de publication sous SPIP** : Ce composant de front-end prend en charge la compilation dynamique et la diffusion web des œuvres poétiques générées, telles que les séries de *Contre-Haïkus*, publiées automatiquement sur le site de l'auteur \[2, 24\].
+
+Ce système d'IA symbolique incorpore des millions de données linguistiques accumulées depuis les années 1990, associées à une grammaire générative affinée manuellement au fil des expérimentations \[2\].
 
 ### 2.4 Générateurs chaotiques, multimédia et conférences automatisées (*ConfErrance*)
-L'écriture infinie s'est ensuite étendue au multimédia et au flux vidéo interactif, comme dans *FICTION (fictions)*, où les panneaux vidéo facettés et kaléidoscopiques déconstruisent la linéarité du récit [3, 23]. 
 
-Cette dynamique culmine dans le dispositif *ConfErrance*, un générateur de présentations et de conférences scientifiques piloté par des « secrets chaotiques » [29]. Dans cet environnement, la conférence devient un flux temporellement calculé où des fragments de séminaires, des fiches Zotero et des citations théoriques s'assemblent dynamiquement [29]. Le moteur intègre une métaphore biologique et épistémologique majeure : celle du papillon, de son programme génétique et de sa métamorphose au sein de la chrysalide [29]. Le texte signale que le papillon, prisonnier de son contexte et de son code génétique, subit une autodestruction contrôlée par son système immunologique au moment de la chrysalide ; mais de cette destruction émerge un être à la fois identique et métamorphosé (« le même mais autres ») [29]. Cette métaphore illustre parfaitement le fonctionnement des machines génératives chaotiques : une déconstruction des structures établies pour permettre l'émergence de nouvelles formes de sens [29].
+L'écriture infinie s'est ensuite étendue au multimédia et au flux vidéo interactif, comme dans *FICTION (fictions)*, où les panneaux vidéo facettés et kaléidoscopiques déconstruisent la linéarité du récit \[3, 23\].
 
----
+Cette dynamique culmine dans le dispositif *ConfErrance*, un générateur de présentations et de conférences scientifiques piloté par des « secrets chaotiques » \[29\]. Dans cet environnement, la conférence devient un flux temporellement calculé où des fragments de séminaires, des fiches Zotero et des citations théoriques s'assemblent dynamiquement \[29\]. Le moteur intègre une métaphore biologique et épistémologique majeure : celle du papillon, de son programme génétique et de sa métamorphose au sein de la chrysalide \[29\]. Le texte signale que le papillon, prisonnier de son contexte et de son code génétique, subit une autodestruction contrôlée par son système immunologique au moment de la chrysalide ; mais de cette destruction émerge un être à la fois identique et métamorphosé (« le même mais autres ») \[29\]. Cette métaphore illustre parfaitement le fonctionnement des machines génératives chaotiques : une déconstruction des structures établies pour permettre l'émergence de nouvelles formes de sens \[29\].
+
+2.  5 La promesse des IA symboliques
+
+    Réponse de [**mistral.ai**](https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fmistral%2Eai&urlhash=d71j&mt=LZV7ae2Gm16z-pStv0wdN8zIqv8R_dzNt5CWoV1Lj3zVs4Uj4UC1nIgIVjxUj9qInuY_fJHQ3kr5VfGlV2MlYBU6zqkHYLPBk6BPiL9R57JOjldlky6UBrE&isSdui=true) à 16h53 - Question très actuelle — et pas neutre dans votre cas, puisque Prospéro est précisément un héritier assumé de l'IA symbolique, avec ses dictionnaires, ses balises et son refus du tout-automatique. Voici ce qui me semble digne d'être sauvé de ce paradigme :\
+    1. La représentation explicite du sens\
+    Les systèmes symboliques rendent leurs catégories lisibles : un dictionnaire, une règle, une balise sont inspectables, discutables, contestables. Face aux modèles statistiques opaques, cette explicabilité reste une exigence épistémologique irremplaçable — surtout en sciences sociales, où l'analyse doit pouvoir être vérifiée et débattue par des pairs.\
+    2. Le chercheur dans la boucle\
+    L'IA symbolique classique n'était pas autonome : elle était un instrument entre les mains d'un interprète. Le codage appartient au chercheur, les hypothèses restent les siennes. C'est l'inverse du mouvement actuel qui vise à substituer l'automate au jugement. Sauver ce « refus du tout-automatique », c'est préserver la responsabilité interprétative.\
+    3. Le raisonnement déductif et la traçabilité\
+    Capacité à dériver des conclusions à partir de règles posées, et à retracer pourquoi une conclusion a été produite. Les LLM ne raisonnent pas, ils génèrent ; le symbolique, même fragile, garantit une chaîne de justification. C'est ce que les hybridations actuelles (neuro-symbolique, RAG, tool use) redécouvrent.\
+    4. La mémoire structurée et cumulative\
+    Les dictionnaires incrémentaux, enrichis d'application en application, constituent un capital de connaissances thésaurisé et réutilisable — une mémoire collective du domaine, là où l'apprentissage statistique fige son savoir dans des poids inexploitables.\
+    5. La gestion de la polysémie et du contexte\
+    Le traitement symbolique fin permet de qualifier des registres argumentatifs (dénonciation, preuve, ironie…) qu'aucun comptage lexical ne capte. L'ironie, l'ambiguïté, l'équivocité restent des zones où les approches purement statistiques échouent encore.\
+    6. Une éthique de l'outil\
+    Chartes d'usage, interdits explicites (surveillance des personnes, falsification des sources), responsabilité de l'utilisateur : la culture symbolique avait intégré une réflexion normative que l'IA connexionniste a largement découverte après coup.\
+    En résumé : ce qu'il faut sauver, ce n'est pas la technique (LISP, systèmes experts dépassés), mais le programme épistémologique — des outils hybrides où l'automatisation statistique sert un travail d'interprétation qui reste explicitable, cumulatif et responsable. C'est, me semble-t-il, exactement le pari de la « version 3 » de Prospéro. <https://lnkd.in/p/eNVdkx8G>
+
+------------------------------------------------------------------------
 
 ## 3. Du texte au diagramme : Modélisation sémantique et chaîne de visualisation
 
 ### 3.1 La chaîne de visualisation de données (Card et al., 1999) réinvestie
-Pour comprendre le passage du texte brut aux formes visuelles et interactives, il est nécessaire d'adosser l'écriture générative à la théorie de la visualisation d'informations [25, 26]. Le modèle classique formulé par Card, Mackinlay et Shneiderman (1999) décrit un pipeline de transformation en quatre étapes majeures [25] :
-Raw Data -> Data Transformations -> Data Tables -> Visual Mappings -> Visual Structures -> View Transformations -> Views -> Interaction -> Human Task
 
-Dans le cadre des écritures génératives, ce pipeline est détourné [25, 26] :
-* Les **données brutes** (*Raw Data*) correspondent aux corpus de textes, aux dictionnaires et aux fragments d'archives [26].
-* Les **tables de données** (*Data Tables*) organisent ces fragments selon des catégories syntaxiques et sémantiques [26].
-* Les **structures visuelles** (*Visual Structures*) traduisent les relations logiques en réseaux, graphes et diagrammes [26, 27].
-* Les **vues** (*Views*) offrent aux utilisateurs des interfaces d'exploration dynamique, leur permettant d'interagir avec le récit et de reconfigurer le parcours génératif [25, 27].
+Pour comprendre le passage du texte brut aux formes visuelles et interactives, il est nécessaire d'adosser l'écriture générative à la théorie de la visualisation d'informations \[25, 26\]. Le modèle classique formulé par Card, Mackinlay et Shneiderman (1999) décrit un pipeline de transformation en quatre étapes majeures \[25\] : Raw Data -\> Data Transformations -\> Data Tables -\> Visual Mappings -\> Visual Structures -\> View Transformations -\> Views -\> Interaction -\> Human Task
 
-```
+Dans le cadre des écritures génératives, ce pipeline est détourné \[25, 26\] : \* Les **données brutes** (*Raw Data*) correspondent aux corpus de textes, aux dictionnaires et aux fragments d'archives \[26\]. \* Les **tables de données** (*Data Tables*) organisent ces fragments selon des catégories syntaxiques et sémantiques \[26\]. \* Les **structures visuelles** (*Visual Structures*) traduisent les relations logiques en réseaux, graphes et diagrammes \[26, 27\]. \* Les **vues** (*Views*) offrent aux utilisateurs des interfaces d'exploration dynamique, leur permettant d'interagir avec le récit et de reconfigurer le parcours génératif \[25, 27\].
+
+```         
 +-------------------------------------------------------------------------+
 |                  PIPELINE DE VISUALISATION (Card et al.)                |
 |                                                                         |
@@ -99,35 +134,26 @@ Dans le cadre des écritures génératives, ce pipeline est détourné [25, 26] 
 ```
 
 ### 3.2 Ontologies narratives et structuration du sens : *GenStory* et Omeka S
-La modélisation de l'écriture implique une formalisation ontologique stricte afin que la machine puisse interpréter et manipulés les structures narratives [26]. En s'appuyant sur la plateforme de gestion de contenu sémantique Omeka S, le vocabulaire ontologique *GenStory* définit un ensemble de classes fondamentales destinées à décrire les univers de fiction [26] :
-* `genstory:actor` : Les agents et personnages agissant dans le récit [26].
-* `genstory:affect` : Les états émotionnels et motivations qualifiant les acteurs [26].
-* `genstory:event` : Les événements et actions déclenchant les transformations narratologiques [26].
-* `genstory:object` : Les objets matériels ou symboliques manipulés au cours de l'action [26].
-* `genstory:place` : Les ancrages spatiaux de la narration [26].
-* `genstory:scenario` : Les trames logiques et enchaînements de séquences [26].
-* `genstory:story` : L'assemblage cohérent constituant le récit [26].
-* `genstory:world` : L'univers global regroupant règles, ontologies et décors [26].
 
-Grâce à cette structuration, un récit n'est plus une suite figée de paragraphes, mais une base de connaissances graphe interrogeable et calculable [26].
+La modélisation de l'écriture implique une formalisation ontologique stricte afin que la machine puisse interpréter et manipulés les structures narratives \[26\]. En s'appuyant sur la plateforme de gestion de contenu sémantique Omeka S, le vocabulaire ontologique *GenStory* définit un ensemble de classes fondamentales destinées à décrire les univers de fiction \[26\] : \* `genstory:actor` : Les agents et personnages agissant dans le récit \[26\]. \* `genstory:affect` : Les états émotionnels et motivations qualifiant les acteurs \[26\]. \* `genstory:event` : Les événements et actions déclenchant les transformations narratologiques \[26\]. \* `genstory:object` : Les objets matériels ou symboliques manipulés au cours de l'action \[26\]. \* `genstory:place` : Les ancrages spatiaux de la narration \[26\]. \* `genstory:scenario` : Les trames logiques et enchaînements de séquences \[26\]. \* `genstory:story` : L'assemblage cohérent constituant le récit \[26\]. \* `genstory:world` : L'univers global regroupant règles, ontologies et décors \[26\].
+
+Grâce à cette structuration, un récit n'est plus une suite figée de paragraphes, mais une base de connaissances graphe interrogeable et calculable \[26\].
 
 ### 3.3 Diagrammation dynamique et scénarisation automatisée
-Une fois formalisées, ces données narratives sont traduites en diagrammes dynamiques [27]. À l'aide de langages de description textuelle de graphes comme Mermaid.js, les scénarios générés automatiquement s'affichent sous forme de diagrammes de flux (*flowcharts*) [27]. Par exemple, une séquence classique telle que la poursuite entre Tom et Jerry est modélisée par une succession de nœuds logiques (`Start` -> `Decision` -> `Option A / Option B`), où chaque choix d'action redirige vers une branche visuelle et narrative spécifique [27]. L'écriture devient ainsi une cartographie dynamique d'états et de transitions [27].
+
+Une fois formalisées, ces données narratives sont traduites en diagrammes dynamiques \[27\]. À l'aide de langages de description textuelle de graphes comme Mermaid.js, les scénarios générés automatiquement s'affichent sous forme de diagrammes de flux (*flowcharts*) \[27\]. Par exemple, une séquence classique telle que la poursuite entre Tom et Jerry est modélisée par une succession de nœuds logiques (`Start` -\> `Decision` -\> `Option A / Option B`), où chaque choix d'action redirige vers une branche visuelle et narrative spécifique \[27\]. L'écriture devient ainsi une cartographie dynamique d'états et de transitions \[27\].
 
 ### 3.4 Enjeux ergonomiques, économiques et cognitifs
-Ce passage du texte au diagramme s'inscrit directement dans les débats contemporains relatifs au design des connaissances et aux « Pulsations Existentielles » [25]. Le schéma des Pulsations Existentielles modélise le sujet humain à travers quatre pôles d'activité cognitive et affective [25] :
-1. **Agir** : L'expérience pratique et l'intervention sur le milieu [25].
-2. **Discerner** : La capacité à filtrer les signaux à travers des cribles de perception [25].
-3. **Raisonner** : L'élaboration logique et la conceptualisation [25].
-4. **Intériorité** : La dimension réflexive, éthique et intime du sujet [25].
 
-En automatisant la production de signes, les environnements numériques capturent l'attention et modifient l'ergonomie cognitive [25]. Le design des connaissances doit ainsi veiller à ne pas aliéner l'intériorité humaine au profit du capitalisme cognitif, mais à concevoir des interfaces qui renforcent la faculté de discernement du lecteur-utilisateur [25].
+Ce passage du texte au diagramme s'inscrit directement dans les débats contemporains relatifs au design des connaissances et aux « Pulsations Existentielles » \[25\]. Le schéma des Pulsations Existentielles modélise le sujet humain à travers quatre pôles d'activité cognitive et affective \[25\] : 1. **Agir** : L'expérience pratique et l'intervention sur le milieu \[25\]. 2. **Discerner** : La capacité à filtrer les signaux à travers des cribles de perception \[25\]. 3. **Raisonner** : L'élaboration logique et la conceptualisation \[25\]. 4. **Intériorité** : La dimension réflexive, éthique et intime du sujet \[25\].
 
----
+En automatisant la production de signes, les environnements numériques capturent l'attention et modifient l'ergonomie cognitive \[25\]. Le design des connaissances doit ainsi veiller à ne pas aliéner l'intériorité humaine au profit du capitalisme cognitif, mais à concevoir des interfaces qui renforcent la faculté de discernement du lecteur-utilisateur \[25\].
 
-## 4. L'écosystème génératif moderne : Orchestrer la collaboration humain <-> agents
+------------------------------------------------------------------------
 
-```
+## 4. L'écosystème génératif moderne : Orchestrer la collaboration humain \<-\> agents
+
+```         
 +-------------------------------------------------------------------------+
 |                  ÉCOSYSTÈME GÉNÉRATIF HYBRIDE (captureBalpe2025_8)      |
 |                                                                         |
@@ -143,31 +169,22 @@ En automatisant la production de signes, les environnements numériques capturen
 ```
 
 ### 4.1 Architecture des écosystèmes génératifs hybrides
-L'écosystème génératif contemporain ne repose plus sur un logiciel isolé, mais sur l'interconnexion de briques technologiques hétérogènes [28]. L'architecture d'un tel écosystème hybride associe [28] :
-* **Le générateur symbolique balpien** : Fournissant les structures grammaticales, les règles logiques et les bases lexicales contrôlées [2, 24, 28].
-* **Les générateurs visuels et multimédias (ex. ComfyUI)** : Pilotant la transformation dynamique d'images et de flux vidéo par nœuds algorithmiques [28].
-* **Les architectures d'agents et Chatbots (RAG)** : Offrant des capacités d'interaction en langage naturel, d'exploration de corpus d'archives et d'adaptation contextuelle [28].
-* **La plateforme de connaissances Omeka S** : Assurant la pérennité, la gestion des documents, des métadonnées et des vocabulaires ontologiques [26, 28].
+
+L'écosystème génératif contemporain ne repose plus sur un logiciel isolé, mais sur l'interconnexion de briques technologiques hétérogènes \[28\]. L'architecture d'un tel écosystème hybride associe \[28\] : \* **Le générateur symbolique balpien** : Fournissant les structures grammaticales, les règles logiques et les bases lexicales contrôlées \[2, 24, 28\]. \* **Les générateurs visuels et multimédias (ex. ComfyUI)** : Pilotant la transformation dynamique d'images et de flux vidéo par nœuds algorithmiques \[28\]. \* **Les architectures d'agents et Chatbots (RAG)** : Offrant des capacités d'interaction en langage naturel, d'exploration de corpus d'archives et d'adaptation contextuelle \[28\]. \* **La plateforme de connaissances Omeka S** : Assurant la pérennité, la gestion des documents, des métadonnées et des vocabulaires ontologiques \[26, 28\].
 
 ### 4.2 Principes théoriques pour la modélisation symbiotique
-L'interaction harmonieuse entre ces briques matérielles et logicielles nécessite un cadre conceptuel solide [28]. Le modèle théorique articulé par Samuel Szoniecky définit huit principes directeurs [28] :
-1. **Ontoéthique** : Réflexion sur l'être des objets numériques et la responsabilité morale engagée dans la création d'agents autonomes [28].
-2. **Récursivité** : Capacité du système à réinjecter ses propres sorties comme entrées pour générer de nouvelles couches de complexité [28].
-3. **Raison trajective** : Concept emprunté à Augustin Berque pour décrire le mouvement aller-retour incessant entre la pensée humaine, l'outil et l'environnement [28].
-4. **Dialogique** : Maintien d'une dualité productive entre logique symbolique (règles) et logique connexionniste (probabilités) sans chercher à les réduire l'une à l'autre [28].
-5. **Cycle de la sémiose** : Modélisation de la circulation continuous des signes entre le concepteur, l'agent et le destinataire [28].
-6. **Degrés de flexibilité** : Marge de liberté et de variabilité laissée aux agents au sein des contraintes du programme [28].
-7. **Hologrammatique** : Principe selon lequel chaque composant de l'écosystème porte en lui la logique globale de l'ensemble [28].
-8. **Plis analogiques** : Mécanismes de correspondance et de traduction métaphorique entre des domaines de connaissances hétérogènes [28].
+
+L'interaction harmonieuse entre ces briques matérielles et logicielles nécessite un cadre conceptuel solide \[28\]. Le modèle théorique articulé par Samuel Szoniecky définit huit principes directeurs \[28\] : 1. **Ontoéthique** : Réflexion sur l'être des objets numériques et la responsabilité morale engagée dans la création d'agents autonomes \[28\]. 2. **Récursivité** : Capacité du système à réinjecter ses propres sorties comme entrées pour générer de nouvelles couches de complexité \[28\]. 3. **Raison trajective** : Concept emprunté à Augustin Berque pour décrire le mouvement aller-retour incessant entre la pensée humaine, l'outil et l'environnement \[28\]. 4. **Dialogique** : Maintien d'une dualité productive entre logique symbolique (règles) et logique connexionniste (probabilités) sans chercher à les réduire l'une à l'autre \[28\]. 5. **Cycle de la sémiose** : Modélisation de la circulation continuous des signes entre le concepteur, l'agent et le destinataire \[28\]. 6. **Degrés de flexibilité** : Marge de liberté et de variabilité laissée aux agents au sein des contraintes du programme \[28\]. 7. **Hologrammatique** : Principe selon lequel chaque composant de l'écosystème porte en lui la logique globale de l'ensemble \[28\]. 8. **Plis analogiques** : Mécanismes de correspondance et de traduction métaphorique entre des domaines de connaissances hétérogènes \[28\].
 
 ### 4.3 L'article scientifique comme artefact computationnel
-Cette approche écosystémique s'applique également à la rédaction scientifique [20]. À travers l'utilisation de formats de publication computationnels tels que Quarto et Markdown (`article_complet.qmd`), l'article scientifique devient un artefact dynamique [20]. Le document intègre dans un fichier unique les métadonnées YAML (auteurs, affiliations, ORCID, bibliographie CSL/BibTeX), le texte rédigé, le code exécutable et les instructions de génération diagrammatique [20]. Préparé pour l'ouvrage *Le 4ème paradigme en question*, l'article fait corps avec son propre objet d'étude : il démontre la possibilité d'une écriture scientifique calculable et reproductible [20].
 
----
+Cette approche écosystémique s'applique également à la rédaction scientifique \[20\]. À travers l'utilisation de formats de publication computationnels tels que Quarto et Markdown (`article_complet.qmd`), l'article scientifique devient un artefact dynamique \[20\]. Le document intègre dans un fichier unique les métadonnées YAML (auteurs, affiliations, ORCID, bibliographie CSL/BibTeX), le texte rédigé, le code exécutable et les instructions de génération diagrammatique \[20\]. Préparé pour l'ouvrage *Le 4ème paradigme en question*, l'article fait corps avec son propre objet d'étude : il démontre la possibilité d'une écriture scientifique calculable et reproductible \[20\].
+
+------------------------------------------------------------------------
 
 ## 5. Analyser les fluctuations de puissance : Évaluer et mesurer la symbiose
 
-```
+```         
 +-------------------------------------------------------------------------+
 |                  TENSION ET SYMBIOSE DANS LA CHRYSALIDE                 |
 |                                                                         |
@@ -180,55 +197,51 @@ Cette approche écosystémique s'applique également à la rédaction scientifiq
 +-------------------------------------------------------------------------+
 ```
 
-### 5.1 Définition de la symbiose humain <-> agents
-La symbiose humain <-> agents ne doit pas être confondue avec une simple automatisation ou une délégation passive [20, 28, 29]. Elle désigne une relation d'interdépendance mutuelle, de rétroaction créative et de co-évolution [28, 29]. L'acteur humain apporte la réflexivité, l'intentionnalité poétique, le cadre éthique et la sensibilité affective ; l'agent computationnel apporte la puissance de calcul combinatoire, la vitesse d'exploration d'espaces des possibles et la capacité à révéler des structures émergentes invisibles à l'œil humain [2, 25, 28].
+### 5.1 Définition de la symbiose humain \<-\> agents
+
+La symbiose humain \<-\> agents ne doit pas être confondue avec une simple automatisation ou une délégation passive \[20, 28, 29\]. Elle désigne une relation d'interdépendance mutuelle, de rétroaction créative et de co-évolution \[28, 29\]. L'acteur humain apporte la réflexivité, l'intentionnalité poétique, le cadre éthique et la sensibilité affective ; l'agent computationnel apporte la puissance de calcul combinatoire, la vitesse d'exploration d'espaces des possibles et la capacité à révéler des structures émergentes invisibles à l'œil humain \[2, 25, 28\].
 
 ### 5.2 Évaluation des fluctuations d'agencéité et le paradoxe de la chrysalide
-Au sein du système symbiotique, l'agencéité (le pouvoir d'agir) n'est pas fixe : elle fluctue constamment entre l'humain et l'agent [28, 29]. Cette dynamique se manifeste de manière exemplaire dans la métaphore du papillon et de la chrysalide [29] :
-* Dans un premier temps, la machine semble enfermer la création dans la rigidité d'un code ou d'un algorithme [29].
-* Cependant, au moment de la métamorphose au sein de la « chrysalide computationnelle », le système provoque la déconstruction de ses propres structures (similaire à la réponse immunologique qui dissout les tissus de la chenille) [29].
-* De cette déconstruction émerge une forme nouvelle, imprévue mais fidèle aux potentiels du programme initial [29].
 
-Mesurer la symbiose revient à analyser ces fluctuations d'agencéité : veiller à ce que l'autonomie de l'agent ne détruise pas l'intention de l'auteur, mais agisse comme un catalyseur de métamorphose poétique [28, 29].
+Au sein du système symbiotique, l'agencéité (le pouvoir d'agir) n'est pas fixe : elle fluctue constamment entre l'humain et l'agent \[28, 29\]. Cette dynamique se manifeste de manière exemplaire dans la métaphore du papillon et de la chrysalide \[29\] : \* Dans un premier temps, la machine semble enfermer la création dans la rigidité d'un code ou d'un algorithme \[29\]. \* Cependant, au moment de la métamorphose au sein de la « chrysalide computationnelle », le système provoque la déconstruction de ses propres structures (similaire à la réponse immunologique qui dissout les tissus de la chenille) \[29\]. \* De cette déconstruction émerge une forme nouvelle, imprévue mais fidèle aux potentiels du programme initial \[29\].
+
+Mesurer la symbiose revient à analyser ces fluctuations d'agencéité : veiller à ce que l'autonomie de l'agent ne détruise pas l'intention de l'auteur, mais agisse comme un catalyseur de métamorphose poétique \[28, 29\].
 
 ### 5.3 Métamorphoses de l'auctorialité : Méta-auteur symbolique vs Agents connexionnistes
-La confrontation entre l'approche balpienne et les modèles génératifs récents met en lumière deux conceptions de l'auctorialité [2, 3, 28] :
-1. **Le méta-auteur symbolique (Balpe)** : Il conserve un contrôle absolu sur les règles de grammaire et la composition des dictionnaires. L'infini produit est la conséquence logique d'un système entièrement pensé par l'esprit humain [2, 3, 24].
-2. **Le système multi-agents connexionniste (IA générative)** : L'auctorialité y est distribuée de façon statistique et probabiliste à partir de gigantesques corpus d'apprentissage. L'humain intervient alors comme inciteur (*prompt engineer*), curateur ou orchestrateur de flux [2, 28].
 
-La symbiose humain <-> agents réussie réside dans l'hybridation de ces deux modèles : injecter la rigueur conceptuelle de l'IA symbolique balpienne au cœur de la flexibilité des agents connexionnistes [2, 28].
+La confrontation entre l'approche balpienne et les modèles génératifs récents met en lumière deux conceptions de l'auctorialité \[2, 3, 28\] : 1. **Le méta-auteur symbolique (Balpe)** : Il conserve un contrôle absolu sur les règles de grammaire et la composition des dictionnaires. L'infini produit est la conséquence logique d'un système entièrement pensé par l'esprit humain \[2, 3, 24\]. 2. **Le système multi-agents connexionniste (IA générative)** : L'auctorialité y est distribuée de façon statistique et probabiliste à partir de gigantesques corpus d'apprentissage. L'humain intervient alors comme inciteur (*prompt engineer*), curateur ou orchestrateur de flux \[2, 28\].
 
----
+La symbiose humain \<-\> agents réussie réside dans l'hybridation de ces deux modèles : injecter la rigueur conceptuelle de l'IA symbolique balpienne au cœur de la flexibilité des agents connexionnistes \[2, 28\].
+
+------------------------------------------------------------------------
 
 ## 6. Conclusion et perspectives : Vers une ontoéthique de la co-création
 
 ### 6.1 Bilan : Le legs de l'écriture infinie de Jean-Pierre Balpe
-Au terme de ce parcours allant des générateurs chaotiques aux architectures génératives contemporaines, l'œuvre et la pensée de Jean-Pierre Balpe apparaissent d'une prescience remarquable [2, 3, 18]. Bien avant l'avènement des IA génératives grand public, Balpe avait anticipé la déterritorialisation de l'auteur, la prolifération des identités fictionnelles sur les réseaux et la nécessité d'une réflexion théorique sur la production informatique de sens [2, 3, 4]. Son travail montre que la véritable question littéraire et philosophique posée par l'ordinateur n'est pas celle du remplacement de l'humain, mais celle de l'exploration de mondes possibles infiniment ouverts [2, 3, 12].
+
+Au terme de ce parcours allant des générateurs chaotiques aux architectures génératives contemporaines, l'œuvre et la pensée de Jean-Pierre Balpe apparaissent d'une prescience remarquable \[2, 3, 18\]. Bien avant l'avènement des IA génératives grand public, Balpe avait anticipé la déterritorialisation de l'auteur, la prolifération des identités fictionnelles sur les réseaux et la nécessité d'une réflexion théorique sur la production informatique de sens \[2, 3, 4\]. Son travail montre que la véritable question littéraire et philosophique posée par l'ordinateur n'est pas celle du remplacement de l'humain, mais celle de l'exploration de mondes possibles infiniment ouverts \[2, 3, 12\].
 
 ### 6.2 Repères pour une ontoéthique générative
-Afin d'accompagner le développement des futurs écosystèmes génératifs, nous proposons trois piliers fondamentaux d'une *ontoéthique de la co-création* [28] :
-1. **La transparence des agencéités** : Rendre explicites les rôles respectifs des algorithmes, des données d'entraînement et des interventions humaines dans la genèse des œuvres [20, 28].
-2. **La préservation de la récursivité critique** : Garantir que l'utilisateur humain conserve la possibilité de contester, modifier et reconfigurer les règles du système génératif à tout moment [25, 28].
-3. **La soutenabilité attentionnelle** : Concevoir des interfaces diagrammatiques et poétiques qui stimulent la pensée réflexive plutôt que d'épuiser l'attention dans un flux machinal passif [25].
+
+Afin d'accompagner le développement des futurs écosystèmes génératifs, nous proposons trois piliers fondamentaux d'une *ontoéthique de la co-création* \[28\] : 1. **La transparence des agencéités** : Rendre explicites les rôles respectifs des algorithmes, des données d'entraînement et des interventions humaines dans la genèse des œuvres \[20, 28\]. 2. **La préservation de la récursivité critique** : Garantir que l'utilisateur humain conserve la possibilité de contester, modifier et reconfigurer les règles du système génératif à tout moment \[25, 28\]. 3. **La soutenabilité attentionnelle** : Concevoir des interfaces diagrammatiques et poétiques qui stimulent la pensée réflexive plutôt que d'épuiser l'attention dans un flux machinal passif \[25\].
 
 ### 6.3 Perspectives de recherche au Laboratoire Paragraphe
-Cette recherche ouvre plusieurs chantiers méthodologiques et appliqués au sein du Laboratoire Paragraphe de l'Université Paris 8 [1, 18, 28] :
-* Le développement d'interfaces de visualisation intégrant nativement Omeka S, ComfyUI et des modèles RAG pour l'archivage et la réactivation des œuvres numériques historiques [26, 28].
-* L'expérimentation de nouveaux dispositifs de scénographie et de performances génératives hybrides combinant poésie générée, voix synthétiques et métamorphoses visuelles en temps réel [3, 23, 29].
 
----
+Cette recherche ouvre plusieurs chantiers méthodologiques et appliqués au sein du Laboratoire Paragraphe de l'Université Paris 8 \[1, 18, 28\] : \* Le développement d'interfaces de visualisation intégrant nativement Omeka S, ComfyUI et des modèles RAG pour l'archivage et la réactivation des œuvres numériques historiques \[26, 28\]. \* L'expérimentation de nouveaux dispositifs de scénographie et de performances génératives hybrides combinant poésie générée, voix synthétiques et métamorphoses visuelles en temps réel \[3, 23, 29\].
+
+------------------------------------------------------------------------
 
 ## Bibliographie sélective
 
-* **Balpe, Jean-Pierre.** (1986). *Initiation à la génération de textes en langue naturelle : exemples de programmes en Basic*. Paris : Eyrolles [12].
-* **Balpe, Jean-Pierre.** (1990). *Hyperdocuments : hypertextes, hypermédias*. Paris : Eyrolles [12].
-* **Balpe, Jean-Pierre.** (1999). *La toile*. Paris : Éditions Cylibris [12].
-* **Balpe, Jean-Pierre.** (2000). *Production de sens et informatique*. Université de tous les savoirs (UTLS) [2, 12].
-* **Balpe, Jean-Pierre.** (2001). « Le livre est tout le problème... ». *Document numérique*, 5(1-2), 9-15 [2, 13].
-* **Balpe, Jean-Pierre.** (2021). « Pour une littérature anoptique ». *Hybrid*, n°7 [2, 13].
-* **Card, Stuart K., Mackinlay, J. D., & Shneiderman, B.** (1999). *Readings in Information Visualization: Using Vision to Think*. Morgan Kaufmann [25].
-* **Reyes, Everardo, Szoniecky, Samuel, & Balpe, Jean-Pierre.** (2016). "Generative Stein Poems". *Extended Proceedings of the 27th ACM conference on Hypertext and Hypermedia (Hypertext'16)* [16].
-* **Saemmer, Alexandra.** (2023). « Écrire avec les modèles de l'esprit encodés dans les dispositifs numériques ». *Sens public* [17].
-* **Szoniecky, Samuel.** (2020). *Ecosystèmes d'information et design des connaissances*. Paris : Hermès Science - Lavoisier.
-* **Szoniecky, Samuel, Hachour, Hakim, & Bouhaï, Nasreddine.** (2011). « Générateur hypertextuel pour l'interprétation des médias sociaux dans une topologie sémantique ». *Les Cahiers du numérique*, 7(3-4), 93-121 [17].
-* **Szoniecky, Samuel.** (2025). *Des générateurs chaotiques aux IA génératives*. ConfErrance / Colloque international Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie, Université Paris 8 [1, 18].
+-   **Balpe, Jean-Pierre.** (1986). *Initiation à la génération de textes en langue naturelle : exemples de programmes en Basic*. Paris : Eyrolles \[12\].
+-   **Balpe, Jean-Pierre.** (1990). *Hyperdocuments : hypertextes, hypermédias*. Paris : Eyrolles \[12\].
+-   **Balpe, Jean-Pierre.** (1999). *La toile*. Paris : Éditions Cylibris \[12\].
+-   **Balpe, Jean-Pierre.** (2000). *Production de sens et informatique*. Université de tous les savoirs (UTLS) \[2, 12\].
+-   **Balpe, Jean-Pierre.** (2001). « Le livre est tout le problème... ». *Document numérique*, 5(1-2), 9-15 \[2, 13\].
+-   **Balpe, Jean-Pierre.** (2021). « Pour une littérature anoptique ». *Hybrid*, n°7 \[2, 13\].
+-   **Card, Stuart K., Mackinlay, J. D., & Shneiderman, B.** (1999). *Readings in Information Visualization: Using Vision to Think*. Morgan Kaufmann \[25\].
+-   **Reyes, Everardo, Szoniecky, Samuel, & Balpe, Jean-Pierre.** (2016). "Generative Stein Poems". *Extended Proceedings of the 27th ACM conference on Hypertext and Hypermedia (Hypertext'16)* \[16\].
+-   **Saemmer, Alexandra.** (2023). « Écrire avec les modèles de l'esprit encodés dans les dispositifs numériques ». *Sens public* \[17\].
+-   **Szoniecky, Samuel.** (2020). *Ecosystèmes d'information et design des connaissances*. Paris : Hermès Science - Lavoisier.
+-   **Szoniecky, Samuel, Hachour, Hakim, & Bouhaï, Nasreddine.** (2011). « Générateur hypertextuel pour l'interprétation des médias sociaux dans une topologie sémantique ». *Les Cahiers du numérique*, 7(3-4), 93-121 \[17\].
+-   **Szoniecky, Samuel.** (2025). *Des générateurs chaotiques aux IA génératives*. ConfErrance / Colloque international Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie, Université Paris 8 \[1, 18\].
