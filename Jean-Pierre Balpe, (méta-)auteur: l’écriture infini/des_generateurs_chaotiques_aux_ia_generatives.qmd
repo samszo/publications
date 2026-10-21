@@ -29,50 +29,64 @@ Cet article retrace l'évolution technologique, poétique et épistémologique d
 
 ------------------------------------------------------------------------
 
-## 1. Introduction : La trajectoire de l'écriture automatisée et la redéfinition de l'agencéité
+## La trajectoire de l'écriture automatisée
 
-L'histoire des technologies d'écriture automatisée est marquée par de nombreuses étapes allant de la combinatoire symbolique structurée [@balpe1996]aux modèles profonds d'intelligence artificielle générative [@roxin2026]. Dès la fin des années 1970 et durant les décennies 1980-1990, la littérature numérique s'appuyaient sur des grammaires formalisées, des bases de données lexicales et des règles logiques strictes [@saleh1992]. Aujourd'hui, l'émergence des grands modèles de langage (LLM), combinée aux architectures d'apprentissage profond, aux réseaux de diffusion, au suivi de contexte par génération augmentée par récupération (RAG) et aux écosystèmes d'agents numériques, redéfinit fondamentalement notre rapport au texte et à la création littéraire.
+L'histoire des technologies d'écriture automatisée est marquée par de nombreuses étapes allant de la combinatoire symbolique structurée [@balpe1996] aux modèles profonds d'intelligence artificielle générative [@roxin2026]. Dès la fin des années 1970 et durant les décennies 1980-1990, la littérature numérique s'appuyaient sur des grammaires formalisées, des bases de données lexicales et des règles logiques strictes [@saleh1992]. Aujourd'hui, notre rapport au texte et à la création littéraire sont redéfinies fondamentalement par l'émergence des grands modèles de langage (LLM), combinée aux architectures d'apprentissage profond, aux réseaux de diffusion, au suivi de contexte par génération augmentée par récupération (RAG) et aux écosystèmes d'agents numériques.
 
-Ces évolutions techniques et littéraires s'inscrivent dans le contexte des transformations de l'économie de l'attention [@citton2010], des relations humains-machines [@taniguchi], des structures du capitalisme cognitif [@corteel2025] et d'une culture intensive des environnements numérique[@szoniecky2019]. Désormais plongé dans des flux illimités et constants de contenus automatisés, nous nous interrogeons sur nos capacités à discerner, raisonner et intérioriser le sens dans ces environnements saturés de signaux calculés [@szoniecky2024]. Outre les questions de réception [@rodier2024] et de subjectivation [@guattari1989], le questionnement sur la production de contenus alimentant ces flux déjà encombrés devient crucial, à l'heure où la conception de dispositifs numériques devient possible par un simple dialogue en langage naturel. Ces nouveaux pouvoirs auxquels nous sommes confrontés, faut-il les subir ? les rejeter ? les cultiver ?
+Dans cette généalogie, l'œuvre et la trajectoire de Jean-Pierre Balpe occupent une place importante. Poète, enseignant, chercheur et ancien directeur du laboratoire Paragraphe et du département Hypermédia ainsi que co-directeur du CIREN et du CITU à l'Université Paris 8, Balpe explore depuis près d'un demi-siècle le potentiel créatif et épistémologique de l'informatique. Membre précoce de l'Atelier de Littérature Assistée par la Mathématique et les Ordinateurs (ALAMO) de l'Oulipo en 1981, concepteur de la section « Labyrinthe du langage » lors de l'exposition historique *Les Immatériaux* en 1985 au Centre Pompidou, il a constamment déplacé les frontières de l'écrit.
 
-Retracer les trajectoires de mes collaborations avec Jean-Pierre Balpe, permettra d'alimenter les débats sur ces questions éthiques en montrant comment nos pouvoirs évoluent dans des environnements numériques chaotiques et quels décisions ils nous faut prendre pour préserver, diminuer ou augmenter ces pouvoirs.
+Avec des logiciels innovants comme *Roman* (1987), des fictions hypertexte interactives (*Trajectoires*, *La Disparition du Général Proust*), le roman hybride *La Toile* (1999), et l'occupation des réseaux sociaux à travers des hétéronymes et avatars comme Rachel Charlus, Antoine Elstir ou Maurice Roman dans « Un Monde incertain », Balpe a incarné la posture du *(méta-)auteur*. Le méta-auteur ne rédige plus directement des textes uniques et figés ; il conçoit des architectures informatiques, des grammaires génératives, des dictionnaires annotés et des univers de règles capables d'engendrer une écriture infinie.
 
-### 1.2 Jean-Pierre Balpe : Figure pionnière du (méta-)auteur
+Ces évolutions techniques et littéraires s'inscrivent dans le contexte des transformations de l'économie de l'attention [@citton2010], des relations humains-machines [@taniguchi], des structures du capitalisme cognitif [@corteel2025] et d'une culture intensive des environnements numérique [@szoniecky2019]. Désormais plongé dans des flux illimités et constants de contenus automatisés, nous nous interrogeons sur nos capacités à discerner, raisonner et intérioriser le sens dans ces environnements saturés de signaux calculés [@szoniecky2024]. Outre les questions de réception [@rodier2024] et de subjectivation [@guattari1989], nous nous interrogeons sur la nécessité de produire des contenus alimentant ces flux déjà encombrés. A l'heure où la conception de dispositifs numériques devient possible par un simple dialogue en langage naturel avec des intelligences artificielles, comment se positionner [@cassou-noguès2019] et s'orienter [@latour2017] face à ces nouveaux pouvoirs auxquels nous sommes confrontés : faut-il les subir ? les rejeter ? les cultiver ?
 
-Dans cette généalogie, l'œuvre et la trajectoire théorique de Jean-Pierre Balpe occupent une place matricielle unique \[2, 3\]. Poète, enseignant, chercheur et ancien directeur du département Hypermédia ainsi que co-directeur du CIREN et du CITU à l'Université Paris 8, Balpe explore depuis près d'un demi-siècle le potentiel créatif et épistémologique de l'informatique \[3\]. Membre précoce de l'Atelier de Littérature Assistée par la Mathématique et les Ordinateurs (ALAMO) de l'Oulipo en 1981, concepteur de la section « Labyrinthe du langage » lors de l'exposition historique *Les Immatériaux* en 1985 au Centre Pompidou, il a constamment déplacé les frontières de l'écrit \[3\].
-
-Avec des logiciels innovants comme *Roman* (1987), des fictions hypertexte interactives (*Trajectoires*, *La Disparition du Général Proust*), le roman hybride *La Toile* (1999), et l'occupation des réseaux sociaux à travers des hétéronymes et avatars comme Rachel Charlus, Antoine Elstir ou Maurice Roman dans « Un Monde incertain », Balpe a incarné la posture du *(méta-)auteur* \[2, 3, 4\]. Le méta-auteur ne rédige plus directement des textes uniques et figés ; il conçoit des architectures informatiques, des grammaires génératives, des dictionnaires annotés et des univers de règles capables d'engendrer une écriture infinie \[2, 3, 24\].
-
-### 1.3 Problématique : De la machine générative à la symbiose humain \<-\> agents
-
-Aujourd'hui, l'affrontement ou la juxtaposition des générateurs symboliques balpiens et des IA génératives contemporaines (illustrés notamment par les « combats » poétiques entre ChatGPT et le générateur de Balpe sur YouTube) marque une rupture paradigmatique \[2, 4\]. On ne fait plus seulement face à un automate textuel exécutant une grammaire close, mais à un ensemble d'agents computationnels autonomes capables d'interagir entre eux et avec des utilisateurs humains au sein d'écosystèmes numériques récursifs \[20, 28\].
-
-Dès lors, la question centrale de cette étude est la suivante : *Comment la transition des générateurs textuels combinatoires et chaotiques vers les architectures d'IA génératives reconfigure-t-elle la relation entre créateur et machine en une symbiose dynamique articulant acteurs humains, agents computationnels et environnements numériques ?* \[20, 28, 29\]
-
-------------------------------------------------------------------------
-
-## 2. Archéologie des générateurs chaotiques : De la combinatoire aux environnements de création
+Afin d'alimenter les débats sur ces questions éthiques, nous montreront comment nos pouvoirs évoluent dans des environnements numériques chaotiques et quels décisions ils nous faut prendre pour préserver, supprimer, diminuer ou augmenter ces pouvoirs. Pour ce faire, nous tracerons des trajectoires à partir des collaborations que j'ai eu avec Jean-Pierre Balpe depuis les années 1990 jusqu'aujourd'hui :
 
 ```         
 +-------------------------------------------------------------------------+
-|                  ÉVOLUTION DES INTERFACES ET MOTEURS                    |
+|                  Collaborations entre J-P Balpe et S. Szoniecky                    |
 |                                                                         |
-| [1996] PhilosHard : Source HyperCard (Kant, Balibar, Textes personnels)  |
+| [1995] PhilosHard : application HyperCard pour la génération de textes philosophiques |
 |                         |                                               |
 |                         v                                               |
-| [1997] Word 97 / VBA : Exploitation bureautique -> Motifs papillons     |
+| [1997] Le jardin cognitif : cultiver les connaissances communes     |
 |                         |                                               |
 |                         v                                               |
-| [2000s] Moteur Balpien : Zend Framework (BDD) + Flex (Fx) + SPIP        |
+| [1998] Chaoticum Papillonae : Word 97 / VBA pour la génération de papillons     |
 |                         |                                               |
 |                         v                                               |
-| [2020s] ConfErrance : Générateur de conférences & Secrets chaotiques    |
+| [2000] Fictions - fiction : Atelier de création littéraire à la maison Pop        |
+|                         |                                               |
+|                         v                                               |
+| [2006] Moteurs Balpiens : Zend Framework (BDD) + Flex (Fx) + SPIP        |
+|                         |                                               |
+|                         v                                               |
+| [2020] Module de Générateur : Omeka S et le Linked Open Data    |
+|                         |                                               |
+|                         v                                               |
+| [2020] Générateur Web : un nouveau moteur en Javascript     |
+|                         |                                               |
+|                         v                                               |
+| [2020] Gen Story : atelier pour la création de fictions génératives     |
+|                         |                                               |
+|                         v                                               |
+| [2026] Chaoticum Seminario : Générateur de conférences & Secrets chaotiques    |
+|                         |                                               |
+|                         v                                               |
+| [2027] ANR LINF : Vers des écosystèmes de curiosités    |
 +-------------------------------------------------------------------------+
 ```
 
+Nous détaillerons ce parcours en analysant en quoi ces collaborations ont fait évoluer nos pouvoirs de discernement, de raisonnement, de résonance et d'agir. Nous utiliserons une méthode d'enquête basée sur une analyse auto-réflexive des évolutions de nos manières d'être à partir d'une modélisation onto-éthique [@szoniecky2026] des pulsations existentielles [@berque2009] dans les étapes clefs définies dans le tableau ci-dessus.
+
+------------------------------------------------------------------------
+
+## 2. Archéologie des pouvoirs existentiels : De la combinatoire aux environnements de création
+
 ### 2.1 Les origines symboliques : Expérimentations et combinatoires textuelles
 
-Les premiers travaux de modélisation de l'écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte \[3, 19\]. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard \[19\]. Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » \[19\]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire \[19\].
+Les premiers travaux de modélisation de l'écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.
+
+Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » \[19\]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire \[19\].
 
 ### 2.2 Détournement créatif des outils bureautiques : L'expérience VBA et Word 97
 
@@ -97,19 +111,20 @@ Cette dynamique culmine dans le dispositif *ConfErrance*, un générateur de pr�
 2.  5 La promesse des IA symboliques
 
     Réponse de [**mistral.ai**](https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fmistral%2Eai&urlhash=d71j&mt=LZV7ae2Gm16z-pStv0wdN8zIqv8R_dzNt5CWoV1Lj3zVs4Uj4UC1nIgIVjxUj9qInuY_fJHQ3kr5VfGlV2MlYBU6zqkHYLPBk6BPiL9R57JOjldlky6UBrE&isSdui=true) à 16h53 - Question très actuelle — et pas neutre dans votre cas, puisque Prospéro est précisément un héritier assumé de l'IA symbolique, avec ses dictionnaires, ses balises et son refus du tout-automatique. Voici ce qui me semble digne d'être sauvé de ce paradigme :\
-    1. La représentation explicite du sens\
-    Les systèmes symboliques rendent leurs catégories lisibles : un dictionnaire, une règle, une balise sont inspectables, discutables, contestables. Face aux modèles statistiques opaques, cette explicabilité reste une exigence épistémologique irremplaçable — surtout en sciences sociales, où l'analyse doit pouvoir être vérifiée et débattue par des pairs.\
-    2. Le chercheur dans la boucle\
-    L'IA symbolique classique n'était pas autonome : elle était un instrument entre les mains d'un interprète. Le codage appartient au chercheur, les hypothèses restent les siennes. C'est l'inverse du mouvement actuel qui vise à substituer l'automate au jugement. Sauver ce « refus du tout-automatique », c'est préserver la responsabilité interprétative.\
-    3. Le raisonnement déductif et la traçabilité\
-    Capacité à dériver des conclusions à partir de règles posées, et à retracer pourquoi une conclusion a été produite. Les LLM ne raisonnent pas, ils génèrent ; le symbolique, même fragile, garantit une chaîne de justification. C'est ce que les hybridations actuelles (neuro-symbolique, RAG, tool use) redécouvrent.\
-    4. La mémoire structurée et cumulative\
-    Les dictionnaires incrémentaux, enrichis d'application en application, constituent un capital de connaissances thésaurisé et réutilisable — une mémoire collective du domaine, là où l'apprentissage statistique fige son savoir dans des poids inexploitables.\
-    5. La gestion de la polysémie et du contexte\
-    Le traitement symbolique fin permet de qualifier des registres argumentatifs (dénonciation, preuve, ironie…) qu'aucun comptage lexical ne capte. L'ironie, l'ambiguïté, l'équivocité restent des zones où les approches purement statistiques échouent encore.\
-    6. Une éthique de l'outil\
-    Chartes d'usage, interdits explicites (surveillance des personnes, falsification des sources), responsabilité de l'utilisateur : la culture symbolique avait intégré une réflexion normative que l'IA connexionniste a largement découverte après coup.\
-    En résumé : ce qu'il faut sauver, ce n'est pas la technique (LISP, systèmes experts dépassés), mais le programme épistémologique — des outils hybrides où l'automatisation statistique sert un travail d'interprétation qui reste explicitable, cumulatif et responsable. C'est, me semble-t-il, exactement le pari de la « version 3 » de Prospéro. <https://lnkd.in/p/eNVdkx8G>
+
+    1.  La représentation explicite du sens\
+        Les systèmes symboliques rendent leurs catégories lisibles : un dictionnaire, une règle, une balise sont inspectables, discutables, contestables. Face aux modèles statistiques opaques, cette explicabilité reste une exigence épistémologique irremplaçable — surtout en sciences sociales, où l'analyse doit pouvoir être vérifiée et débattue par des pairs.\
+    2.  Le chercheur dans la boucle\
+        L'IA symbolique classique n'était pas autonome : elle était un instrument entre les mains d'un interprète. Le codage appartient au chercheur, les hypothèses restent les siennes. C'est l'inverse du mouvement actuel qui vise à substituer l'automate au jugement. Sauver ce « refus du tout-automatique », c'est préserver la responsabilité interprétative.\
+    3.  Le raisonnement déductif et la traçabilité\
+        Capacité à dériver des conclusions à partir de règles posées, et à retracer pourquoi une conclusion a été produite. Les LLM ne raisonnent pas, ils génèrent ; le symbolique, même fragile, garantit une chaîne de justification. C'est ce que les hybridations actuelles (neuro-symbolique, RAG, tool use) redécouvrent.\
+    4.  La mémoire structurée et cumulative\
+        Les dictionnaires incrémentaux, enrichis d'application en application, constituent un capital de connaissances thésaurisé et réutilisable — une mémoire collective du domaine, là où l'apprentissage statistique fige son savoir dans des poids inexploitables.\
+    5.  La gestion de la polysémie et du contexte\
+        Le traitement symbolique fin permet de qualifier des registres argumentatifs (dénonciation, preuve, ironie…) qu'aucun comptage lexical ne capte. L'ironie, l'ambiguïté, l'équivocité restent des zones où les approches purement statistiques échouent encore.\
+    6.  Une éthique de l'outil\
+        Chartes d'usage, interdits explicites (surveillance des personnes, falsification des sources), responsabilité de l'utilisateur : la culture symbolique avait intégré une réflexion normative que l'IA connexionniste a largement découverte après coup.\
+        En résumé : ce qu'il faut sauver, ce n'est pas la technique (LISP, systèmes experts dépassés), mais le programme épistémologique — des outils hybrides où l'automatisation statistique sert un travail d'interprétation qui reste explicitable, cumulatif et responsable. C'est, me semble-t-il, exactement le pari de la « version 3 » de Prospéro. <https://lnkd.in/p/eNVdkx8G>
 
 ------------------------------------------------------------------------
 
