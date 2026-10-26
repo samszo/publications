@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Szoniecky">
+
+<title>des_generateurs_chaotiques_aux_ia_generatives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/clipboard/clipboard.min.js"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/popper.min.js"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/anchor.min.js"></script>
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Laboratoire Paragraphe
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="des-générateurs-chaotiques-aux-ia-génératives-vers-une-symbiose-humains---agents" class="level1">
+<h1>Des générateurs chaotiques aux IA génératives : vers une symbiose humains &lt;-&gt; agents</h1>
+<p><strong>Auteur</strong> : Samuel Szoniecky<br>
+<strong>Affiliation</strong> : Laboratoire Paragraphe, Université Paris 8<br>
+<strong>Cadre</strong> : <em>Jean-Pierre Balpe, (méta-)auteur : l’écriture infinie</em> <strong>Format</strong> : Article scientifique (~30 000 signes) [20]</p>
+<hr>
+<section id="résumé" class="level2">
+<h2 class="anchored" data-anchor-id="résumé">Résumé</h2>
+<p>Cet article retrace l’évolution technologique, poétique et épistémologique des systèmes de génération automatique de textes, depuis les algorithmes combinatoires et chaotiques des années 1980-1990 jusqu’aux architectures contemporaines d’intelligence artificielle générative et multi-agents [1, 2, 18]. À travers l’analyse de l’œuvre et de la pensée de Jean-Pierre Balpe, pionnier de l’écriture infinie et des fictions hypermédiales [2, 3], nous examinons le passage d’une génération textuelle déterministe ou combinatoire à une modélisation diagrammatique et écosystémique de la connaissance [20, 25, 28]. En articulant les modèles formels de visualisation de données (Card et al., 1999) [25, 26], les ontologies narratives (Omeka S / <em>GenStory</em>) [26], la diagrammation dynamique (Mermaid) [27] et les écosystèmes hybrides (ComfyUI, RAG, agents autonomes) [28], l’article démontre comment la relation auteur-machine se reconfigure en une symbiose dynamique entre acteurs humains, agents computationnels et environnements numériques [20, 28, 29]. Enfin, nous proposons le cadre théorique d’une <em>ontoéthique</em> pour évaluer les fluctuations d’agencéité et réguler la co-création dans la « chrysalide computationnelle » [28, 29].</p>
+<p><strong>Mots-clés</strong> : Génération automatique de texte, Jean-Pierre Balpe, IA générative, symbiose homme-machine, (méta-)auctorialité, écosystèmes génératifs, ontologies narratives, ontoéthique [2, 18, 20, 28].</p>
+<hr>
+</section>
+<section id="la-trajectoire-de-lécriture-automatisée" class="level2">
+<h2 class="anchored" data-anchor-id="la-trajectoire-de-lécriture-automatisée">La trajectoire de l’écriture automatisée</h2>
+<p>L’histoire des technologies d’écriture automatisée est marquée par de nombreuses étapes allant de la combinatoire symbolique structurée <span class="citation" data-cites="balpe1996">(<a href="#ref-balpe1996" role="doc-biblioref">Balpe et al., 1996</a>)</span> aux modèles profonds d’intelligence artificielle générative <span class="citation" data-cites="roxin2026">(<a href="#ref-roxin2026" role="doc-biblioref">Roxin &amp; Bersini, 2026</a>)</span>. Dès la fin des années 1970 et durant les décennies 1980-1990, la littérature numérique s’appuyaient sur des grammaires formalisées, des bases de données lexicales et des règles logiques strictes <span class="citation" data-cites="saleh1992">(<a href="#ref-saleh1992" role="doc-biblioref">Saleh, 1992</a>)</span>. Aujourd’hui, notre rapport au texte et à la création littéraire sont redéfinies fondamentalement par l’émergence des grands modèles de langage (LLM), combinée aux architectures d’apprentissage profond, aux réseaux de diffusion, au suivi de contexte par génération augmentée par récupération (RAG) et aux écosystèmes d’agents numériques.</p>
+<p>Dans cette généalogie, l’œuvre et la trajectoire de Jean-Pierre Balpe occupent une place importante. Poète, enseignant, chercheur et ancien directeur du laboratoire Paragraphe et du département Hypermédia ainsi que co-directeur du CIREN et du CITU à l’Université Paris 8, Balpe explore depuis près d’un demi-siècle le potentiel créatif et épistémologique de l’informatique. Membre précoce de l’Atelier de Littérature Assistée par la Mathématique et les Ordinateurs (ALAMO) de l’Oulipo en 1981, concepteur de la section « Labyrinthe du langage » lors de l’exposition historique <em>Les Immatériaux</em> en 1985 au Centre Pompidou, il a constamment déplacé les frontières de l’écrit.</p>
+<p>Avec des logiciels innovants comme <em>Roman</em> (1987), des fictions hypertexte interactives (<em>Trajectoires</em>, <em>La Disparition du Général Proust</em>), le roman hybride <em>La Toile</em> (1999), et l’occupation des réseaux sociaux à travers des hétéronymes et avatars comme Rachel Charlus, Antoine Elstir ou Maurice Roman dans « Un Monde incertain », Balpe a incarné la posture du <em>(méta-)auteur</em>. Le méta-auteur ne rédige plus directement des textes uniques et figés ; il conçoit des architectures informatiques, des grammaires génératives, des dictionnaires annotés et des univers de règles capables d’engendrer une écriture infinie.</p>
+<p>Ces évolutions techniques et littéraires s’inscrivent dans le contexte des transformations de l’économie de l’attention <span class="citation" data-cites="citton2010">(<a href="#ref-citton2010" role="doc-biblioref">Citton, 2010</a>)</span>, des relations humains-machines <span class="citation" data-cites="taniguchi">(<a href="#ref-taniguchi" role="doc-biblioref">Taniguchi et al., n.d.</a>)</span>, des structures du capitalisme cognitif <span class="citation" data-cites="corteel2025">(<a href="#ref-corteel2025" role="doc-biblioref">Corteel, 2025</a>)</span> et d’une culture intensive des environnements numérique <span class="citation" data-cites="szoniecky2019">(<a href="#ref-szoniecky2019" role="doc-biblioref">Szoniecky, 2019</a>)</span>. Désormais plongé dans des flux illimités et constants de contenus automatisés, nous nous interrogeons sur nos capacités à discerner, raisonner et intérioriser le sens dans ces environnements saturés de signaux calculés <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>. Outre les questions de réception <span class="citation" data-cites="rodier2024">(<a href="#ref-rodier2024" role="doc-biblioref">Rodier, 2024</a>)</span> et de subjectivation <span class="citation" data-cites="guattari1989">(<a href="#ref-guattari1989" role="doc-biblioref">Guattari, 1989</a>)</span>, nous nous interrogeons sur la nécessité de produire des contenus alimentant ces flux déjà encombrés. A l’heure où la conception de dispositifs numériques devient possible par un simple dialogue en langage naturel avec des intelligences artificielles, comment se positionner <span class="citation" data-cites="cassou-noguès2019">(<a href="#ref-cassou-noguès2019" role="doc-biblioref">Cassou-Noguès, 2019</a>)</span> et s’orienter <span class="citation" data-cites="latour2017">(<a href="#ref-latour2017" role="doc-biblioref">Latour, 2017</a>)</span> face à ces nouveaux pouvoirs auxquels nous sommes confrontés : faut-il les subir ? les rejeter ? les cultiver ?</p>
+<p>Afin d’alimenter les débats sur ces questions éthiques, nous montreront comment nos pouvoirs évoluent dans des environnements numériques chaotiques et quels décisions ils nous faut prendre pour préserver, supprimer, diminuer ou augmenter ces pouvoirs. Pour ce faire, nous tracerons des trajectoires à partir des collaborations que j’ai eu avec Jean-Pierre Balpe depuis les années 1990 jusqu’aujourd’hui :</p>
+<pre><code>+-------------------------------------------------------------------------+
+|                  Collaborations entre J-P Balpe et S. Szoniecky                    |
+|                                                                         |
+| [1995] PhilosHard : application HyperCard pour la génération de textes philosophiques |
+|                         |                                               |
+|                         v                                               |
+| [1997] Le jardin cognitif : cultiver les connaissances communes     |
+|                         |                                               |
+|                         v                                               |
+| [1998] Chaoticum Papillonae : Word 97 / VBA pour la génération de papillons     |
+|                         |                                               |
+|                         v                                               |
+| [2000] Fictions - fiction : Atelier de création littéraire à la maison Pop        |
+|                         |                                               |
+|                         v                                               |
+| [2006] Moteurs Balpiens : Zend Framework (BDD) + Flex (Fx) + SPIP        |
+|                         |                                               |
+|                         v                                               |
+| [2020] Module de Générateur : Omeka S et le Linked Open Data    |
+|                         |                                               |
+|                         v                                               |
+| [2020] Générateur Web : un nouveau moteur en Javascript     |
+|                         |                                               |
+|                         v                                               |
+| [2020] Gen Story : atelier pour la création de fictions génératives     |
+|                         |                                               |
+|                         v                                               |
+| [2026] Chaoticum Seminario : Générateur de conférences &amp; Secrets chaotiques    |
+|                         |                                               |
+|                         v                                               |
+| [2027] ANR LINF : Vers des écosystèmes de curiosités    |
++-------------------------------------------------------------------------+</code></pre>
+<p>Nous détaillerons ce parcours en analysant en quoi ces collaborations ont fait évoluer nos pouvoirs de discernement, de raisonnement, de résonance et d’agir. Nous utiliserons une méthode d’enquête basée sur une analyse auto-réflexive des évolutions de nos manières d’être à partir d’une modélisation onto-éthique <span class="citation" data-cites="szoniecky2026">(<a href="#ref-szoniecky2026" role="doc-biblioref">Szoniecky, 2026</a>)</span> des pulsations existentielles <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span> dans les étapes clefs définies dans le tableau ci-dessus.</p>
+<hr>
+</section>
+<section id="archéologie-des-pouvoirs-existentiels-de-la-combinatoire-aux-environnements-de-création" class="level2">
+<h2 class="anchored" data-anchor-id="archéologie-des-pouvoirs-existentiels-de-la-combinatoire-aux-environnements-de-création">2. Archéologie des pouvoirs existentiels : De la combinatoire aux environnements de création</h2>
+<section id="les-origines-symboliques-expérimentations-et-combinatoires-textuelles" class="level3">
+<h3 class="anchored" data-anchor-id="les-origines-symboliques-expérimentations-et-combinatoires-textuelles">2.1 Les origines symboliques : Expérimentations et combinatoires textuelles</h3>
+<p>Les premiers travaux de modélisation de l’écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte. L’interface <em>PhilosHard</em> (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.</p>
+<p>Pensée comme un « pur objet de pratique », l’interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la <em>Critique de la raison pure</em> de Kant au sein du cours d’Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » [19]. L’outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d’indexation documentaire [19].</p>
+</section>
+<section id="détournement-créatif-des-outils-bureautiques-lexpérience-vba-et-word-97" class="level3">
+<h3 class="anchored" data-anchor-id="détournement-créatif-des-outils-bureautiques-lexpérience-vba-et-word-97">2.2 Détournement créatif des outils bureautiques : L’expérience VBA et Word 97</h3>
+<p>Parallèlement aux logiciels dédiés, l’exploration de la génération dynamique s’est portée sur le détournement des logiciels grand public de bureautique [22]. À la fin des années 1990, l’utilisation de Microsoft Visual Basic for Applications (VBA) au sein de Microsoft Word 97 a permis de transformer un simple traitement de texte en un moteur de création plastique et poétique [22]. Par l’exécution de scripts automatisés, les lignes de code VBA engendraient des compositions visuelles complexes, formant des nuages de motifs colorés et symétriques évoquant des structures de papillons [22]. Cette démarche démontrait que le code sous-jacent à l’outil utilitaire pouvait être subverti pour devenir une matrice d’art génératif [22].</p>
+</section>
+<section id="larchitecture-logicielle-du-générateur-de-texte-de-jean-pierre-balpe" class="level3">
+<h3 class="anchored" data-anchor-id="larchitecture-logicielle-du-générateur-de-texte-de-jean-pierre-balpe">2.3 L’architecture logicielle du générateur de texte de Jean-Pierre Balpe</h3>
+<p>Au cours des années 2000, le générateur automatique de textes développé par Samuel Szoniecky pour Jean-Pierre Balpe a concrétisé l’aboutissement d’une intelligence artificielle symbolique d’une ampleur inégalée [2, 24]. L’architecture technique de ce système repose sur un découpage modulaire en trois paires composantes fonctionnelles [24] :</p>
+<ol type="1">
+<li><strong>Le socle de données sous Zend Framework (ZF)</strong> : Ce module back-end assure la gestion de la base de données relationnelle du générateur (tables d’auteurs, règles, dictionnaires) et fournit une interface de programmation (API) permettant d’exporter les règles et de modéliser les processus ergologiques [24].</li>
+<li><strong>L’interface d’administration sous Adobe Flex/Flash (Fx)</strong> : Destinée au méta-auteur, cette application riche permet l’importation de fichiers CSV, la gestion fine des dictionnaires syntaxiques et lexicaux, la configuration des structures d’œuvres, la réalisation de tests génératifs en temps réel et la gestion des droits utilisateurs [24].</li>
+<li><strong>Le moteur de publication sous SPIP</strong> : Ce composant de front-end prend en charge la compilation dynamique et la diffusion web des œuvres poétiques générées, telles que les séries de <em>Contre-Haïkus</em>, publiées automatiquement sur le site de l’auteur [2, 24].</li>
+</ol>
+<p>Ce système d’IA symbolique incorpore des millions de données linguistiques accumulées depuis les années 1990, associées à une grammaire générative affinée manuellement au fil des expérimentations [2].</p>
+</section>
+<section id="générateurs-chaotiques-multimédia-et-conférences-automatisées-conferrance" class="level3">
+<h3 class="anchored" data-anchor-id="générateurs-chaotiques-multimédia-et-conférences-automatisées-conferrance">2.4 Générateurs chaotiques, multimédia et conférences automatisées (<em>ConfErrance</em>)</h3>
+<p>L’écriture infinie s’est ensuite étendue au multimédia et au flux vidéo interactif, comme dans <em>FICTION (fictions)</em>, où les panneaux vidéo facettés et kaléidoscopiques déconstruisent la linéarité du récit [3, 23].</p>
+<p>Cette dynamique culmine dans le dispositif <em>ConfErrance</em>, un générateur de présentations et de conférences scientifiques piloté par des « secrets chaotiques » [29]. Dans cet environnement, la conférence devient un flux temporellement calculé où des fragments de séminaires, des fiches Zotero et des citations théoriques s’assemblent dynamiquement [29]. Le moteur intègre une métaphore biologique et épistémologique majeure : celle du papillon, de son programme génétique et de sa métamorphose au sein de la chrysalide [29]. Le texte signale que le papillon, prisonnier de son contexte et de son code génétique, subit une autodestruction contrôlée par son système immunologique au moment de la chrysalide ; mais de cette destruction émerge un être à la fois identique et métamorphosé (« le même mais autres ») [29]. Cette métaphore illustre parfaitement le fonctionnement des machines génératives chaotiques : une déconstruction des structures établies pour permettre l’émergence de nouvelles formes de sens [29].</p>
+<ol start="2" type="1">
+<li><p>5 La promesse des IA symboliques</p>
+<p>Réponse de <a href="https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fmistral%2Eai&amp;urlhash=d71j&amp;mt=LZV7ae2Gm16z-pStv0wdN8zIqv8R_dzNt5CWoV1Lj3zVs4Uj4UC1nIgIVjxUj9qInuY_fJHQ3kr5VfGlV2MlYBU6zqkHYLPBk6BPiL9R57JOjldlky6UBrE&amp;isSdui=true"><strong>mistral.ai</strong></a> à 16h53 - Question très actuelle — et pas neutre dans votre cas, puisque Prospéro est précisément un héritier assumé de l’IA symbolique, avec ses dictionnaires, ses balises et son refus du tout-automatique. Voici ce qui me semble digne d’être sauvé de ce paradigme :<br>
+</p>
+<ol type="1">
+<li>La représentation explicite du sens<br>
+Les systèmes symboliques rendent leurs catégories lisibles : un dictionnaire, une règle, une balise sont inspectables, discutables, contestables. Face aux modèles statistiques opaques, cette explicabilité reste une exigence épistémologique irremplaçable — surtout en sciences sociales, où l’analyse doit pouvoir être vérifiée et débattue par des pairs.<br>
+</li>
+<li>Le chercheur dans la boucle<br>
+L’IA symbolique classique n’était pas autonome : elle était un instrument entre les mains d’un interprète. Le codage appartient au chercheur, les hypothèses restent les siennes. C’est l’inverse du mouvement actuel qui vise à substituer l’automate au jugement. Sauver ce « refus du tout-automatique », c’est préserver la responsabilité interprétative.<br>
+</li>
+<li>Le raisonnement déductif et la traçabilité<br>
+Capacité à dériver des conclusions à partir de règles posées, et à retracer pourquoi une conclusion a été produite. Les LLM ne raisonnent pas, ils génèrent ; le symbolique, même fragile, garantit une chaîne de justification. C’est ce que les hybridations actuelles (neuro-symbolique, RAG, tool use) redécouvrent.<br>
+</li>
+<li>La mémoire structurée et cumulative<br>
+Les dictionnaires incrémentaux, enrichis d’application en application, constituent un capital de connaissances thésaurisé et réutilisable — une mémoire collective du domaine, là où l’apprentissage statistique fige son savoir dans des poids inexploitables.<br>
+</li>
+<li>La gestion de la polysémie et du contexte<br>
+Le traitement symbolique fin permet de qualifier des registres argumentatifs (dénonciation, preuve, ironie…) qu’aucun comptage lexical ne capte. L’ironie, l’ambiguïté, l’équivocité restent des zones où les approches purement statistiques échouent encore.<br>
+</li>
+<li>Une éthique de l’outil<br>
+Chartes d’usage, interdits explicites (surveillance des personnes, falsification des sources), responsabilité de l’utilisateur : la culture symbolique avait intégré une réflexion normative que l’IA connexionniste a largement découverte après coup.<br>
+En résumé : ce qu’il faut sauver, ce n’est pas la technique (LISP, systèmes experts dépassés), mais le programme épistémologique — des outils hybrides où l’automatisation statistique sert un travail d’interprétation qui reste explicitable, cumulatif et responsable. C’est, me semble-t-il, exactement le pari de la « version 3 » de Prospéro. <a href="https://lnkd.in/p/eNVdkx8G" class="uri">https://lnkd.in/p/eNVdkx8G</a></li>
+</ol></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="du-texte-au-diagramme-modélisation-sémantique-et-chaîne-de-visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="du-texte-au-diagramme-modélisation-sémantique-et-chaîne-de-visualisation">3. Du texte au diagramme : Modélisation sémantique et chaîne de visualisation</h2>
+<section id="la-chaîne-de-visualisation-de-données-card-et-al.-1999-réinvestie" class="level3">
+<h3 class="anchored" data-anchor-id="la-chaîne-de-visualisation-de-données-card-et-al.-1999-réinvestie">3.1 La chaîne de visualisation de données (Card et al., 1999) réinvestie</h3>
+<p>Pour comprendre le passage du texte brut aux formes visuelles et interactives, il est nécessaire d’adosser l’écriture générative à la théorie de la visualisation d’informations [25, 26]. Le modèle classique formulé par Card, Mackinlay et Shneiderman (1999) décrit un pipeline de transformation en quatre étapes majeures [25] : Raw Data -&gt; Data Transformations -&gt; Data Tables -&gt; Visual Mappings -&gt; Visual Structures -&gt; View Transformations -&gt; Views -&gt; Interaction -&gt; Human Task</p>
+<p>Dans le cadre des écritures génératives, ce pipeline est détourné [25, 26] : * Les <strong>données brutes</strong> (<em>Raw Data</em>) correspondent aux corpus de textes, aux dictionnaires et aux fragments d’archives [26]. * Les <strong>tables de données</strong> (<em>Data Tables</em>) organisent ces fragments selon des catégories syntaxiques et sémantiques [26]. * Les <strong>structures visuelles</strong> (<em>Visual Structures</em>) traduisent les relations logiques en réseaux, graphes et diagrammes [26, 27]. * Les <strong>vues</strong> (<em>Views</em>) offrent aux utilisateurs des interfaces d’exploration dynamique, leur permettant d’interagir avec le récit et de reconfigurer le parcours génératif [25, 27].</p>
+<pre><code>+-------------------------------------------------------------------------+
+|                  PIPELINE DE VISUALISATION (Card et al.)                |
+|                                                                         |
+| Raw Data -------&gt; Data Tables -------&gt; Visual Structures -------&gt; Views  |
+| (Corpus)          (Omeka S)            (Mermaid / Graph)        (UI/UX) |
+|    ^                   |                        |                   |   |
+|    +-------------------+------------------------+-------------------+   |
+|                         Human Interaction / Task                        |
++-------------------------------------------------------------------------+</code></pre>
+</section>
+<section id="ontologies-narratives-et-structuration-du-sens-genstory-et-omeka-s" class="level3">
+<h3 class="anchored" data-anchor-id="ontologies-narratives-et-structuration-du-sens-genstory-et-omeka-s">3.2 Ontologies narratives et structuration du sens : <em>GenStory</em> et Omeka S</h3>
+<p>La modélisation de l’écriture implique une formalisation ontologique stricte afin que la machine puisse interpréter et manipulés les structures narratives [26]. En s’appuyant sur la plateforme de gestion de contenu sémantique Omeka S, le vocabulaire ontologique <em>GenStory</em> définit un ensemble de classes fondamentales destinées à décrire les univers de fiction [26] : * <code>genstory:actor</code> : Les agents et personnages agissant dans le récit [26]. * <code>genstory:affect</code> : Les états émotionnels et motivations qualifiant les acteurs [26]. * <code>genstory:event</code> : Les événements et actions déclenchant les transformations narratologiques [26]. * <code>genstory:object</code> : Les objets matériels ou symboliques manipulés au cours de l’action [26]. * <code>genstory:place</code> : Les ancrages spatiaux de la narration [26]. * <code>genstory:scenario</code> : Les trames logiques et enchaînements de séquences [26]. * <code>genstory:story</code> : L’assemblage cohérent constituant le récit [26]. * <code>genstory:world</code> : L’univers global regroupant règles, ontologies et décors [26].</p>
+<p>Grâce à cette structuration, un récit n’est plus une suite figée de paragraphes, mais une base de connaissances graphe interrogeable et calculable [26].</p>
+</section>
+<section id="diagrammation-dynamique-et-scénarisation-automatisée" class="level3">
+<h3 class="anchored" data-anchor-id="diagrammation-dynamique-et-scénarisation-automatisée">3.3 Diagrammation dynamique et scénarisation automatisée</h3>
+<p>Une fois formalisées, ces données narratives sont traduites en diagrammes dynamiques [27]. À l’aide de langages de description textuelle de graphes comme Mermaid.js, les scénarios générés automatiquement s’affichent sous forme de diagrammes de flux (<em>flowcharts</em>) [27]. Par exemple, une séquence classique telle que la poursuite entre Tom et Jerry est modélisée par une succession de nœuds logiques (<code>Start</code> -&gt; <code>Decision</code> -&gt; <code>Option A / Option B</code>), où chaque choix d’action redirige vers une branche visuelle et narrative spécifique [27]. L’écriture devient ainsi une cartographie dynamique d’états et de transitions [27].</p>
+</section>
+<section id="enjeux-ergonomiques-économiques-et-cognitifs" class="level3">
+<h3 class="anchored" data-anchor-id="enjeux-ergonomiques-économiques-et-cognitifs">3.4 Enjeux ergonomiques, économiques et cognitifs</h3>
+<p>Ce passage du texte au diagramme s’inscrit directement dans les débats contemporains relatifs au design des connaissances et aux « Pulsations Existentielles » [25]. Le schéma des Pulsations Existentielles modélise le sujet humain à travers quatre pôles d’activité cognitive et affective [25] : 1. <strong>Agir</strong> : L’expérience pratique et l’intervention sur le milieu [25]. 2. <strong>Discerner</strong> : La capacité à filtrer les signaux à travers des cribles de perception [25]. 3. <strong>Raisonner</strong> : L’élaboration logique et la conceptualisation [25]. 4. <strong>Intériorité</strong> : La dimension réflexive, éthique et intime du sujet [25].</p>
+<p>En automatisant la production de signes, les environnements numériques capturent l’attention et modifient l’ergonomie cognitive [25]. Le design des connaissances doit ainsi veiller à ne pas aliéner l’intériorité humaine au profit du capitalisme cognitif, mais à concevoir des interfaces qui renforcent la faculté de discernement du lecteur-utilisateur [25].</p>
+<hr>
+</section>
+</section>
+<section id="lécosystème-génératif-moderne-orchestrer-la-collaboration-humain---agents" class="level2">
+<h2 class="anchored" data-anchor-id="lécosystème-génératif-moderne-orchestrer-la-collaboration-humain---agents">4. L’écosystème génératif moderne : Orchestrer la collaboration humain &lt;-&gt; agents</h2>
+<pre><code>+-------------------------------------------------------------------------+
+|                  ÉCOSYSTÈME GÉNÉRATIF HYBRIDE (captureBalpe2025_8)      |
+|                                                                         |
+|  [ComfyUI] ------------+                                                |
+|  (Vidéos, Images)      |                                                |
+|                        +-----&gt; [PRINCIPES DE MODÉLISATION] &lt;---+        |
+|  [Chatbots / RAG] -----+       - Ontoéthique                   |        |
+|  (Agents autonomes)    |       - Récursivité                   +--[Omeka S]
+|                        |       - Raison trajective             |  (Vocabulaire)
+|  [Générateur Balpe] ---+       - Cycle de la sémiose           |        |
+|  (Dictionnaires/Règles)        - Dialogique / Hologrammatique  |        |
++-------------------------------------------------------------------------+</code></pre>
+<section id="architecture-des-écosystèmes-génératifs-hybrides" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-des-écosystèmes-génératifs-hybrides">4.1 Architecture des écosystèmes génératifs hybrides</h3>
+<p>L’écosystème génératif contemporain ne repose plus sur un logiciel isolé, mais sur l’interconnexion de briques technologiques hétérogènes [28]. L’architecture d’un tel écosystème hybride associe [28] : * <strong>Le générateur symbolique balpien</strong> : Fournissant les structures grammaticales, les règles logiques et les bases lexicales contrôlées [2, 24, 28]. * <strong>Les générateurs visuels et multimédias (ex. ComfyUI)</strong> : Pilotant la transformation dynamique d’images et de flux vidéo par nœuds algorithmiques [28]. * <strong>Les architectures d’agents et Chatbots (RAG)</strong> : Offrant des capacités d’interaction en langage naturel, d’exploration de corpus d’archives et d’adaptation contextuelle [28]. * <strong>La plateforme de connaissances Omeka S</strong> : Assurant la pérennité, la gestion des documents, des métadonnées et des vocabulaires ontologiques [26, 28].</p>
+</section>
+<section id="principes-théoriques-pour-la-modélisation-symbiotique" class="level3">
+<h3 class="anchored" data-anchor-id="principes-théoriques-pour-la-modélisation-symbiotique">4.2 Principes théoriques pour la modélisation symbiotique</h3>
+<p>L’interaction harmonieuse entre ces briques matérielles et logicielles nécessite un cadre conceptuel solide [28]. Le modèle théorique articulé par Samuel Szoniecky définit huit principes directeurs [28] : 1. <strong>Ontoéthique</strong> : Réflexion sur l’être des objets numériques et la responsabilité morale engagée dans la création d’agents autonomes [28]. 2. <strong>Récursivité</strong> : Capacité du système à réinjecter ses propres sorties comme entrées pour générer de nouvelles couches de complexité [28]. 3. <strong>Raison trajective</strong> : Concept emprunté à Augustin Berque pour décrire le mouvement aller-retour incessant entre la pensée humaine, l’outil et l’environnement [28]. 4. <strong>Dialogique</strong> : Maintien d’une dualité productive entre logique symbolique (règles) et logique connexionniste (probabilités) sans chercher à les réduire l’une à l’autre [28]. 5. <strong>Cycle de la sémiose</strong> : Modélisation de la circulation continuous des signes entre le concepteur, l’agent et le destinataire [28]. 6. <strong>Degrés de flexibilité</strong> : Marge de liberté et de variabilité laissée aux agents au sein des contraintes du programme [28]. 7. <strong>Hologrammatique</strong> : Principe selon lequel chaque composant de l’écosystème porte en lui la logique globale de l’ensemble [28]. 8. <strong>Plis analogiques</strong> : Mécanismes de correspondance et de traduction métaphorique entre des domaines de connaissances hétérogènes [28].</p>
+</section>
+<section id="larticle-scientifique-comme-artefact-computationnel" class="level3">
+<h3 class="anchored" data-anchor-id="larticle-scientifique-comme-artefact-computationnel">4.3 L’article scientifique comme artefact computationnel</h3>
+<p>Cette approche écosystémique s’applique également à la rédaction scientifique [20]. À travers l’utilisation de formats de publication computationnels tels que Quarto et Markdown (<code>article_complet.qmd</code>), l’article scientifique devient un artefact dynamique [20]. Le document intègre dans un fichier unique les métadonnées YAML (auteurs, affiliations, ORCID, bibliographie CSL/BibTeX), le texte rédigé, le code exécutable et les instructions de génération diagrammatique [20]. Préparé pour l’ouvrage <em>Le 4ème paradigme en question</em>, l’article fait corps avec son propre objet d’étude : il démontre la possibilité d’une écriture scientifique calculable et reproductible [20].</p>
+<hr>
+</section>
+</section>
+<section id="analyser-les-fluctuations-de-puissance-évaluer-et-mesurer-la-symbiose" class="level2">
+<h2 class="anchored" data-anchor-id="analyser-les-fluctuations-de-puissance-évaluer-et-mesurer-la-symbiose">5. Analyser les fluctuations de puissance : Évaluer et mesurer la symbiose</h2>
+<pre><code>+-------------------------------------------------------------------------+
+|                  TENSION ET SYMBIOSE DANS LA CHRYSALIDE                 |
+|                                                                         |
+|    Humain (Méta-auteur) &lt;=====================&gt; Agent Computationnel    |
+|    - Intention poétique                        - Grammaire &amp; Algorithme |
+|    - Sens &amp; Valeurs                            - Calcul &amp; Probabilités  |
+|                                                                         |
+|                          CHRYSALIDE COMPUTATIONNELLE                    |
+|             [Autodestruction immunologique -&gt; Métamorphose]             |
++-------------------------------------------------------------------------+</code></pre>
+<section id="définition-de-la-symbiose-humain---agents" class="level3">
+<h3 class="anchored" data-anchor-id="définition-de-la-symbiose-humain---agents">5.1 Définition de la symbiose humain &lt;-&gt; agents</h3>
+<p>La symbiose humain &lt;-&gt; agents ne doit pas être confondue avec une simple automatisation ou une délégation passive [20, 28, 29]. Elle désigne une relation d’interdépendance mutuelle, de rétroaction créative et de co-évolution [28, 29]. L’acteur humain apporte la réflexivité, l’intentionnalité poétique, le cadre éthique et la sensibilité affective ; l’agent computationnel apporte la puissance de calcul combinatoire, la vitesse d’exploration d’espaces des possibles et la capacité à révéler des structures émergentes invisibles à l’œil humain [2, 25, 28].</p>
+</section>
+<section id="évaluation-des-fluctuations-dagencéité-et-le-paradoxe-de-la-chrysalide" class="level3">
+<h3 class="anchored" data-anchor-id="évaluation-des-fluctuations-dagencéité-et-le-paradoxe-de-la-chrysalide">5.2 Évaluation des fluctuations d’agencéité et le paradoxe de la chrysalide</h3>
+<p>Au sein du système symbiotique, l’agencéité (le pouvoir d’agir) n’est pas fixe : elle fluctue constamment entre l’humain et l’agent [28, 29]. Cette dynamique se manifeste de manière exemplaire dans la métaphore du papillon et de la chrysalide [29] : * Dans un premier temps, la machine semble enfermer la création dans la rigidité d’un code ou d’un algorithme [29]. * Cependant, au moment de la métamorphose au sein de la « chrysalide computationnelle », le système provoque la déconstruction de ses propres structures (similaire à la réponse immunologique qui dissout les tissus de la chenille) [29]. * De cette déconstruction émerge une forme nouvelle, imprévue mais fidèle aux potentiels du programme initial [29].</p>
+<p>Mesurer la symbiose revient à analyser ces fluctuations d’agencéité : veiller à ce que l’autonomie de l’agent ne détruise pas l’intention de l’auteur, mais agisse comme un catalyseur de métamorphose poétique [28, 29].</p>
+</section>
+<section id="métamorphoses-de-lauctorialité-méta-auteur-symbolique-vs-agents-connexionnistes" class="level3">
+<h3 class="anchored" data-anchor-id="métamorphoses-de-lauctorialité-méta-auteur-symbolique-vs-agents-connexionnistes">5.3 Métamorphoses de l’auctorialité : Méta-auteur symbolique vs Agents connexionnistes</h3>
+<p>La confrontation entre l’approche balpienne et les modèles génératifs récents met en lumière deux conceptions de l’auctorialité [2, 3, 28] : 1. <strong>Le méta-auteur symbolique (Balpe)</strong> : Il conserve un contrôle absolu sur les règles de grammaire et la composition des dictionnaires. L’infini produit est la conséquence logique d’un système entièrement pensé par l’esprit humain [2, 3, 24]. 2. <strong>Le système multi-agents connexionniste (IA générative)</strong> : L’auctorialité y est distribuée de façon statistique et probabiliste à partir de gigantesques corpus d’apprentissage. L’humain intervient alors comme inciteur (<em>prompt engineer</em>), curateur ou orchestrateur de flux [2, 28].</p>
+<p>La symbiose humain &lt;-&gt; agents réussie réside dans l’hybridation de ces deux modèles : injecter la rigueur conceptuelle de l’IA symbolique balpienne au cœur de la flexibilité des agents connexionnistes [2, 28].</p>
+<hr>
+</section>
+</section>
+<section id="conclusion-et-perspectives-vers-une-ontoéthique-de-la-co-création" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-et-perspectives-vers-une-ontoéthique-de-la-co-création">6. Conclusion et perspectives : Vers une ontoéthique de la co-création</h2>
+<section id="bilan-le-legs-de-lécriture-infinie-de-jean-pierre-balpe" class="level3">
+<h3 class="anchored" data-anchor-id="bilan-le-legs-de-lécriture-infinie-de-jean-pierre-balpe">6.1 Bilan : Le legs de l’écriture infinie de Jean-Pierre Balpe</h3>
+<p>Au terme de ce parcours allant des générateurs chaotiques aux architectures génératives contemporaines, l’œuvre et la pensée de Jean-Pierre Balpe apparaissent d’une prescience remarquable [2, 3, 18]. Bien avant l’avènement des IA génératives grand public, Balpe avait anticipé la déterritorialisation de l’auteur, la prolifération des identités fictionnelles sur les réseaux et la nécessité d’une réflexion théorique sur la production informatique de sens [2, 3, 4]. Son travail montre que la véritable question littéraire et philosophique posée par l’ordinateur n’est pas celle du remplacement de l’humain, mais celle de l’exploration de mondes possibles infiniment ouverts [2, 3, 12].</p>
+</section>
+<section id="repères-pour-une-ontoéthique-générative" class="level3">
+<h3 class="anchored" data-anchor-id="repères-pour-une-ontoéthique-générative">6.2 Repères pour une ontoéthique générative</h3>
+<p>Afin d’accompagner le développement des futurs écosystèmes génératifs, nous proposons trois piliers fondamentaux d’une <em>ontoéthique de la co-création</em> [28] : 1. <strong>La transparence des agencéités</strong> : Rendre explicites les rôles respectifs des algorithmes, des données d’entraînement et des interventions humaines dans la genèse des œuvres [20, 28]. 2. <strong>La préservation de la récursivité critique</strong> : Garantir que l’utilisateur humain conserve la possibilité de contester, modifier et reconfigurer les règles du système génératif à tout moment [25, 28]. 3. <strong>La soutenabilité attentionnelle</strong> : Concevoir des interfaces diagrammatiques et poétiques qui stimulent la pensée réflexive plutôt que d’épuiser l’attention dans un flux machinal passif [25].</p>
+</section>
+<section id="perspectives-de-recherche-au-laboratoire-paragraphe" class="level3">
+<h3 class="anchored" data-anchor-id="perspectives-de-recherche-au-laboratoire-paragraphe">6.3 Perspectives de recherche au Laboratoire Paragraphe</h3>
+<p>Cette recherche ouvre plusieurs chantiers méthodologiques et appliqués au sein du Laboratoire Paragraphe de l’Université Paris 8 [1, 18, 28] : * Le développement d’interfaces de visualisation intégrant nativement Omeka S, ComfyUI et des modèles RAG pour l’archivage et la réactivation des œuvres numériques historiques [26, 28]. * L’expérimentation de nouveaux dispositifs de scénographie et de performances génératives hybrides combinant poésie générée, voix synthétiques et métamorphoses visuelles en temps réel [3, 23, 29].</p>
+<hr>
+</section>
+</section>
+<section id="bibliographie-sélective" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie-sélective">Bibliographie sélective</h2>
+<ul>
+<li><strong>Balpe, Jean-Pierre.</strong> (1986). <em>Initiation à la génération de textes en langue naturelle : exemples de programmes en Basic</em>. Paris : Eyrolles [12].</li>
+<li><strong>Balpe, Jean-Pierre.</strong> (1990). <em>Hyperdocuments : hypertextes, hypermédias</em>. Paris : Eyrolles [12].</li>
+<li><strong>Balpe, Jean-Pierre.</strong> (1999). <em>La toile</em>. Paris : Éditions Cylibris [12].</li>
+<li><strong>Balpe, Jean-Pierre.</strong> (2000). <em>Production de sens et informatique</em>. Université de tous les savoirs (UTLS) [2, 12].</li>
+<li><strong>Balpe, Jean-Pierre.</strong> (2001). « Le livre est tout le problème… ». <em>Document numérique</em>, 5(1-2), 9-15 [2, 13].</li>
+<li><strong>Balpe, Jean-Pierre.</strong> (2021). « Pour une littérature anoptique ». <em>Hybrid</em>, n°7 [2, 13].</li>
+<li><strong>Card, Stuart K., Mackinlay, J. D., &amp; Shneiderman, B.</strong> (1999). <em>Readings in Information Visualization: Using Vision to Think</em>. Morgan Kaufmann [25].</li>
+<li><strong>Reyes, Everardo, Szoniecky, Samuel, &amp; Balpe, Jean-Pierre.</strong> (2016). “Generative Stein Poems”. <em>Extended Proceedings of the 27th ACM conference on Hypertext and Hypermedia (Hypertext’16)</em> [16].</li>
+<li><strong>Saemmer, Alexandra.</strong> (2023). « Écrire avec les modèles de l’esprit encodés dans les dispositifs numériques ». <em>Sens public</em> [17].</li>
+<li><strong>Szoniecky, Samuel.</strong> (2020). <em>Ecosystèmes d’information et design des connaissances</em>. Paris : Hermès Science - Lavoisier.</li>
+<li><strong>Szoniecky, Samuel, Hachour, Hakim, &amp; Bouhaï, Nasreddine.</strong> (2011). « Générateur hypertextuel pour l’interprétation des médias sociaux dans une topologie sémantique ». <em>Les Cahiers du numérique</em>, 7(3-4), 93-121 [17].</li>
+<li><strong>Szoniecky, Samuel.</strong> (2025). <em>Des générateurs chaotiques aux IA génératives</em>. ConfErrance / Colloque international Jean-Pierre Balpe, (méta-)auteur : l’écriture infinie, Université Paris 8 [1, 18].</li>
+</ul>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-balpe1996" class="csl-entry" role="listitem">
+Balpe, J.-P., Saleh, I., &amp; Lelu, A. (1996). <em>Techniques avancées pour l’hypertexte</em>. Hermès.
+</div>
+<div id="ref-berque2009" class="csl-entry" role="listitem">
+Berque, A. (2009). Conclusion. Raison trajective et dépassement de la modernité. <em>Alpha</em>, 397–402. <a href="https://shs.cairn.info/ecoumene--9782701151779-page-397">https://shs.cairn.info/ecoumene--9782701151779-page-397</a>
+</div>
+<div id="ref-cassou-noguès2019" class="csl-entry" role="listitem">
+Cassou-Noguès, P. (2019). Le modèle de la carte : Wittgenstein, Deleuze et les neurosciences. <em>Revue de métaphysique et de morale</em>, <em>104</em>(4), 351–361. <a href="https://doi.org/10.3917/rmm.194.0351">https://doi.org/10.3917/rmm.194.0351</a>
+</div>
+<div id="ref-citton2010" class="csl-entry" role="listitem">
+Citton, Y. (2010). <em>L’avenir des humanités : Economie de la connaissance ou cultures de l’interprétation ?</em> Editions La Découverte.
+</div>
+<div id="ref-corteel2025" class="csl-entry" role="listitem">
+Corteel, M. (2025). 6. Le capitalisme cognitif avancé. <em>Poche / Sciences humaines et sociales</em>, 167–195. <a href="https://shs.cairn.info/article/DEC_CORTE_2025_01_0167">https://shs.cairn.info/article/DEC_CORTE_2025_01_0167</a>
+</div>
+<div id="ref-guattari1989" class="csl-entry" role="listitem">
+Guattari, F. (1989). <em>Cartographies schizoanalytiques</em>. Galilée.
+</div>
+<div id="ref-latour2017" class="csl-entry" role="listitem">
+Latour, B. (2017). <em>Où atterrir ?: Comment s’orienter en politique</em>. La Découverte.
+</div>
+<div id="ref-rodier2024" class="csl-entry" role="listitem">
+Rodier, C. (2024). Pour une esthétique de la réception en histoire des idées politiques. <em>Sillages critiques</em>, <em>36</em>. <a href="https://doi.org/10.4000/120mi">https://doi.org/10.4000/120mi</a>
+</div>
+<div id="ref-roxin2026" class="csl-entry" role="listitem">
+Roxin, I., &amp; Bersini, H. (2026). <em>IA générative : espace latent, mécanismes et illusions cognitives</em>. Fyp éditions. <a href="https://bibliotheques.paris.fr/Default/doc/SYRACUSE/1495383/ia-generative-espace-latent-mecanismes-et-illusions-cognitives">https://bibliotheques.paris.fr/Default/doc/SYRACUSE/1495383/ia-generative-espace-latent-mecanismes-et-illusions-cognitives</a>
+</div>
+<div id="ref-saleh1992" class="csl-entry" role="listitem">
+Saleh, I. (1992). <em>Les Bases de données avancées</em>. Hermes Sciences Publicat.
+</div>
+<div id="ref-szoniecky2019" class="csl-entry" role="listitem">
+Szoniecky, S. (2019). Métamorphoses et hybridations d<span>’</span>une archive numérique pour sa valorisation&nbsp;: vers des écosystèmes de connaissances. <em>Journal of Human Mediated Interactions</em>, <em>20</em>(1), 77–104. <a href="http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf">http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf</a>
+</div>
+<div id="ref-szoniecky2024" class="csl-entry" role="listitem">
+Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
+</div>
+<div id="ref-szoniecky2026" class="csl-entry" role="listitem">
+Szoniecky, S. (2026). Du texte au diagramme : modéliser les pouvoirs dans un environnement numérique. <em>Revue Intelligibilité du numérique</em>, <em>N°77</em>. <a href="https://numerev.com/call_for_papers/73/paper_submission/5423">https://numerev.com/call_for_papers/73/paper_submission/5423</a>
+</div>
+<div id="ref-taniguchi" class="csl-entry" role="listitem">
+Taniguchi, T., Hayashi, Y., Hirose, M., Oka, M., Suzuki, K., Witkowski, O., &amp; Tang, A. (n.d.). <em>Symbiotic Alignment via Collective Predictive Coding: A Theoretical Framework for Co-Creative Human<span></span>AI Ecosystems</em>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

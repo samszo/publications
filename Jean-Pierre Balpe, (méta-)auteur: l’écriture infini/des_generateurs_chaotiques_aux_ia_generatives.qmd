@@ -1,6 +1,6 @@
 ---
 version: 0.0.1
-csl: ../../assets/csl/apa.csl
+csl: ../assets/csl/apa.csl
 bibliography: references.bib
 author:
   - name: Samuel Szoniecky
@@ -80,11 +80,11 @@ Nous détaillerons ce parcours en analysant en quoi ces collaborations ont fait 
 
 ------------------------------------------------------------------------
 
-## 2. Archéologie des pouvoirs existentiels : De la combinatoire aux environnements de création
+## 2. Archéologie des collaborations avec JP Balpe : De la combinatoire aux environnements de création
 
 ### 2.1 Les origines symboliques : Expérimentations et combinatoires textuelles
 
-Les premiers travaux de modélisation de l'écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.
+Les premiers travaux d'écriture automatisée que j'ai menés reposaient sur les recherches effectuées lors d'un DEA d'Histoire de l'Art sur John Cage, au cours desquelles j'ai étudié les méthodes aléatoires mises en place par cet artiste pour produire de la musique, des textes, des expositions, des événements. Entre septembre 1995 et et s'inscrivaient dans un contexte très particulier.  de la bibliothèque de l'université de Nanterre Paris X où je travaillais dans le cadre d'un service civile pour l'accompagnement des personnes déficiantes. aire de celuaty sur la structuration de sources hétérogènes et sur la quantification du texte. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.
 
 Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » \[19\]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire \[19\].
 
