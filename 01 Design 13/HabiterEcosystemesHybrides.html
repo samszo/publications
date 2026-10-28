@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Szoniecky">
+<meta name="author" content="Khaldoun Zreik">
+
+<title>habiterecosystemeshybrides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="HabiterEcosystemesHybrides_files/libs/clipboard/clipboard.min.js"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/popper.min.js"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="HabiterEcosystemesHybrides_files/libs/quarto-html/anchor.min.js"></script>
+<link href="HabiterEcosystemesHybrides_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="HabiterEcosystemesHybrides_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="HabiterEcosystemesHybrides_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="HabiterEcosystemesHybrides_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="HabiterEcosystemesHybrides_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            ADN - Laboratoire Paragraphe
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Khaldoun Zreik <a href="mailto:zreik@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-6307-1717" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            CITU - Laboratoire Paragraphe
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="habiter-les-écosystèmes-hybrides-design-co-énonciation-et-intelligence-végétale" class="level1">
+<h1>Habiter les écosystèmes hybrides : design, co-énonciation et intelligence végétale</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Cette contribution examine les polarités et les asynchronies caractéristiques des mutations contemporaines des rapports au territoire. D’une part, les innovations technologiques et la numérisation des activités de service favorisent un confort, notamment cognitif, qui participe d’une déterritorialisation des pratiques socioprofessionnelles et économiques ([<span class="citation" data-cites="castells1996">Castells (<a href="#ref-castells1996" role="doc-biblioref">1996</a>)</span>]<span class="citation" data-cites="deleuze1972">(<a href="#ref-deleuze1972" role="doc-biblioref">Deleuze, 1972</a>)</span>). D’autre part, cette émancipation spatiale suscite en réaction une exigence accrue d’ancrage physique, corporel et environnemental. Cette dynamique paradoxale engage une reterritorialisation « augmentée » et personnalisée, au sein de laquelle le territoire et la terre sont réinvestis d’une dimension éthique et symbolique vitale (<span class="citation" data-cites="latour2017">(<a href="#ref-latour2017" role="doc-biblioref">Latour, 2017a</a>)</span>). Dès lors, habiter et préserver ces écosystèmes hybrides exige la mobilisation de formes renouvelées d’intelligence partagée et distribuée, capables d’articuler ancrage environnemental, médiations technologiques et agentivité du vivant (<span class="citation" data-cites="ingold2011">(<a href="#ref-ingold2011" role="doc-biblioref">Ingold, 2011</a>)</span> ; <span class="citation" data-cites="mancuso2018">(<a href="#ref-mancuso2018" role="doc-biblioref">Mancuso et al., 2018a</a>)</span>).</p>
+<p>Une démarche onto-éthique considère comme indissociables l’ordre de l’être (l’ontologie) et l’ordre de l’action (l’éthique). Appliquée au design et aux écosystèmes info-communicationnels hybrides, elle pose comme préalable épistémologique la reconnaissance d’une agentivité et d’une valeur intrinsèque aux entités non-humaines — qu’il s’agisse des végétaux, des milieux associés ou des dispositifs numériques. L’éthique ne s’ajoute plus sous la forme d’un ensemble de prescriptions morales a posteriori ; elle s’inscrit au cœur même de la structure du modèle de conception : la manière dont nous définissons la réalité des sujets (ce qu’ils sont) dicte rigoureusement la manière dont nous interagissons avec eux (ce que nous nous autorisons à faire). Intégrer par exemple le végétal dans un écosystème hybride impose dès lors d’élargir nos représentations de l’intellection et de la technique. Dans ce cadre, l’intellection végétale ne relève pas d’une conscience centrale ou réflexive, mais d’une cognition distribuée et environnementale, fondée sur le traitement continu de données biologiques et sur des prises de décision morphologiques par lesquelles la plante s’adapte dynamiquement à son milieu (<span class="citation" data-cites="marder2013">(<a href="#ref-marder2013" role="doc-biblioref">Marder et al., 2013</a>)</span> ; <span class="citation" data-cites="mancuso2018a">(<a href="#ref-mancuso2018a" role="doc-biblioref">Mancuso et al., 2018b</a>)</span>). Parallèlement, le végétal n’est pas extérieur à la sphère technique : il déploie une technicité propre à travers ses facultés d’ingénierie environnementale, de plasticité tissulaire et de signalisation biophysique <span class="citation" data-cites="simondon1958">(<a href="#ref-simondon1958" role="doc-biblioref">Simondon, 1958</a>)</span>. Dans une démarche onto-éthique, le design ne cherche pas à assujettir le végétal à une instrumentation humaine descendante, mais à instaurer un couplage technobiologique où la plante devient co-conceptrice et co-énonciatrice des flux d’information qui traversent l’écosystème. Dès lors, au regard du colloque 01Design interrogeant le « Design de l’Intelligence », le végétal fourni le cadre ontologique fondamental pour penser d’autres formes d’intelligences. Face aux risques d’abstraction désincarnée et d’autonomisation des systèmes algorithmiques, il constitue un repère critique qui réinsère la médiation technique dans l’épaisseur de la Terre <span class="citation" data-cites="latour2017a">(<a href="#ref-latour2017a" role="doc-biblioref">Latour, 2017b</a>)</span>. L’intégration de l’intelligence végétale ne relève donc pas d’un refus de la technique, mais en reconfigure la trajectoire : elle esquisse une véritable « cosmotechnique » <span class="citation" data-cites="hui2019">(<a href="#ref-hui2019" role="doc-biblioref">Hui, 2019</a>)</span> au sein de laquelle la technologie, réarticulée aux rythmes, aux signaux et aux contraintes du vivant, retrouve un usage situé, partagé et soutenable.</p>
+<p>Pour opérationnaliser cette perspective, ce chapitre s’articule en trois temps. Nous explorerons d’abord les fondements épistémologiques de la sensibilité végétale et le basculement sémiotique qu’elle impose aux SIC, de la neurobiologie controversée vers une écosémiotique de la co-énonciation. Nous modéliserons ensuite un métamodèle onto-éthique fondé sur l’économie des affects et la cinématique d’une mémoire topologique. Enfin, nous déploierons les applications concrètes de ce design d’intelligence hybride, à la croisée de la phyto-informatique, de l’informatique quantique et de la médiation littéraire.</p>
+</section>
+<section id="epistémologie-du-végétal-et-décentrement-de-la-communication-en-sic-de-la-neurobiologie-à-la-co-énonciation" class="level2">
+<h2 class="anchored" data-anchor-id="epistémologie-du-végétal-et-décentrement-de-la-communication-en-sic-de-la-neurobiologie-à-la-co-énonciation">Epistémologie du végétal et décentrement de la communication en SIC : de la neurobiologie à la co-énonciation</h2>
+<section id="de-la-controverse-de-la-neurobiologie-végétale-à-la-phytosémiotique-la-fin-du-dualisme-moderne" class="level3">
+<h3 class="anchored" data-anchor-id="de-la-controverse-de-la-neurobiologie-végétale-à-la-phytosémiotique-la-fin-du-dualisme-moderne">De la controverse de la neurobiologie végétale à la phytosémiotique : la fin du dualisme moderne</h3>
+<p>Penser l’intellection végétale au sein du design de l’intelligence exige en premier lieu de déconstruire ce que les sciences humaines et de l’environnement qualifient de « cécité au végétal » <span class="citation" data-cites="cécitéb2026">(<a href="#ref-cécitéb2026" role="doc-biblioref"><em>Cécité botanique</em>, 2026</a>)</span>. Héritée des hiérarchies aristotéliciennes de l’<em>anima vegetativa</em> et consolidée par le grand partage naturaliste moderne <span class="citation" data-cites="mérigonde2024">(<a href="#ref-mérigonde2024" role="doc-biblioref">Mérigonde, 2024a</a>)</span>, la tradition occidentale a longtemps relégué la plante au statut d’organisme inerte, passif, dénué de sensibilité et voué à l’arrière-plan paysager <span class="citation" data-cites="tassin2016">(<a href="#ref-tassin2016" role="doc-biblioref">Tassin, 2016</a>)</span>. Ce réductionnisme épistémologique a été battu en brèche dès le XIXe siècle par les observations de Charles Darwin. Dans les conclusions de son ouvrage de 1880, <em>Le pouvoir du mouvement chez les plantes</em>, <span class="citation" data-cites="wiesner1883">(<a href="#ref-wiesner1883" role="doc-biblioref">Wiesner, 1883</a>)</span> Darwin avançait une hypothèse audacieuse : l’extrémité de la radicule embryonnaire, première partie de la plantule à fendre la graine pour sonder les profondeurs du sol, possède la faculté de diriger les mouvements des tissus contigus et agit de façon analogue au « cerveau des animaux inférieurs ». Bien que vigoureusement rejetée par les botanistes mécanistes de son époque, cette intuition darwinienne d’un traitement décentralisé des stimuli a trouvé une reformulation contemporaine au début du XXIe siècle avec l’avènement de la neurobiologie végétale, inaugurée par <span class="citation" data-cites="brenner2006">(<a href="#ref-brenner2006" role="doc-biblioref">Brenner et al., 2006</a>)</span>. S’appuyant sur les travaux pionniers de Luigi Galvani sur le bioélectromagnétisme et d’Alexander von Humboldt sur les signaux bioélectriques végétaux, ce courant s’est attaché à démontrer que les plantes ne se contentent pas de croître passivement, mais perçoivent, traitent et intègrent activement les données de leur environnement. Cette requalification a toutefois suscité de vifs débats épistémologiques. En 2007, un collectif de trente-six biologistes publiait le manifeste critique <em>Plant neurobiology: no brain, no gain ?</em> <span class="citation" data-cites="alpi2007">(<a href="#ref-alpi2007" role="doc-biblioref">Alpi et al., 2007</a>)</span>, dénonçant un usage abusif du préfixe « neuro » pour des organismes dépourvus de système nerveux centralisé et de neurones au sens zoologique. En réponse à ces controverses, la discipline a réorienté ses désignations institutionnelles autour de la signalisation et du comportement des plantes, mettant en lumière une vérité essentielle pour les SIC : l’absence d’encéphale n’implique nullement l’absence de traitement de l’information.</p>
+<p>« Il y a partout des forces qui constituent des microcerveaux. » <span class="citation" data-cites="deleuze1980">(<a href="#ref-deleuze1980" role="doc-biblioref">Deleuze &amp; Guattari, 1980</a>)</span></p>
+<p>Le paradigme darwinien d’apparentement universel permet de réhabiliter la parenté du vivant, rejoignant le principe de symétrie généralisée de Bruno Latour et Philippe Descola <span class="citation" data-cites="graeber2025">(<a href="#ref-graeber2025" role="doc-biblioref">Graeber, 2025</a>)</span>. Au sein des collectifs hybrides, les entités non-humaines ne sont plus des réceptacles passifs mais des actants dotés d’une véritable puissance d’agir relationnelle, capables d’infléchir les pratiques et de « faire faire des choses » à leur entourage écosystémique. Cette redéfinition ouvre le champ de la phytosémiotique. Comme l’établit Kalevi Kull <span class="citation" data-cites="kull">(<a href="#ref-kull" role="doc-biblioref">Kull, n.d.</a>)</span>, le besoin biologique est un processus primaire de sémiose qui place le seuil sémiotique à l’orée même de la vie cellulaire. La « sémiose végétative » se déploie à l’échelle cellulaire et tissulaire par la production et l’interprétation d’indices physiques et biochimiques. Comme le souligne Patricia Vieira <span class="citation" data-cites="vieira2015">(<a href="#ref-vieira2015" role="doc-biblioref">Vieira, 2015</a>)</span>, cette inscription corporelle dans l’environnement matérialise le <em>conatus essendi</em> spinoziste, c’est-à-dire le désir fondamental de tout être de persévérer dans son existence sans qu’il soit besoin de projeter sur lui un anthropomorphisme cognitif artificiel.</p>
+</section>
+<section id="canaux-de-transmission-bioacoustique-et-mémoire-une-écologie-des-signaux-biophysiques" class="level3">
+<h3 class="anchored" data-anchor-id="canaux-de-transmission-bioacoustique-et-mémoire-une-écologie-des-signaux-biophysiques">Canaux de transmission, bioacoustique et mémoire : une écologie des signaux biophysiques</h3>
+<p>Loin de constituer un organisme muet, la plante déploie un réseau dense de communications internes et externes dont la complexité technique interpelle directement la théorie de l’information. Sur le plan de l’organisme, la transmission des données vitales repose sur une articulation de trois vecteurs biophysiques complémentaires :</p>
+<ol type="1">
+<li>Les signaux électriques longue portée : Les végétaux génèrent des potentiels d’action dont les propriétés physiques sont similaires à celles qui irriguent les systèmes animaux (vitesse et amplitude constantes, périodes réfractaires et encodage diphasique). Propagés au sein du phloème (tissu vasculaire conducteur de la sève élaborée), ces signaux reposent sur la migration coordonnée des ions calcium (Ca2+), chlorure (Cl-) et potassium (K+) à travers des canaux ioniques étroitement apparentés à ceux du règne animal en raison d’une histoire évolutive commune issue d’endosymbioses ancestrales. Bien que leur célérité soit plus lente que l’influx nerveux animal (de l’ordre de quelques centimètres par seconde), ils permettent d’alerter instantanément la cime lors d’un stress racinaire, déclenchant par exemple la fermeture immédiate des stomates pour limiter l’évapotranspiration.</li>
+<li>Les signaux hydrauliques : Corrélés aux flux de sève et aux variations de pression de turgescence, ils transmettent des ondes de pression hydrodynamique informant l’ensemble des organes de l’état hydrique du sol.</li>
+<li>Les signaux chimiques : Molécules d’alerte, phytohormones et composés organiques volatils (COV) qui complètent plus lentement mais durablement l’onde électrique pour coordonner la défense de l’organisme.</li>
+</ol>
+<p>Ces canaux se doublent d’une sensorialité mécanique et acoustique récemment élucidée par la recherche contemporaine. Les travaux menés au sein du groupe interdisciplinaire INRAE/LAUM/CNRS sur la « Vibration des plantes » ont démontré que la flore perçoit les ondes sonores et les signaux mécaniques oscillatoires. Les stimulations acoustiques répétées induisent un phénomène de priming mécanique, lequel active une réponse immunitaire accrue contre les agents pathogènes sans recours aux intrants chimiques conventionnels. La modélisation moléculaire de ce mécanisme a mis en évidence le rôle d’une mémoire transcriptionnelle mobilisant l’expression d’environ 10 000 gènes chez <em>Arabidopsis thaliana</em> <span class="citation" data-cites="barbacci2023">(<a href="#ref-barbacci2023" role="doc-biblioref">Barbacci, 2023a</a>)</span>. Cette plasticité mémorielle, confirmée par les expériences d’apprentissage et d’habituation de Monica Gagliano sur <em>Mimosa pudica</em> <span class="citation" data-cites="bertrand2018">(<a href="#ref-bertrand2018" role="doc-biblioref">Bertrand, 2018</a>)</span>, démontre qu’un végétal est capable d’ajuster ses réponses en fonction de son historique perceptif. À l’échelle inter-organismes, cette sémiotique biophysique s’ouvre sur une véritable sociabilité végétale. Les plantes communiquent par voie aéroportée en émettant des flux de molécules volatiles qui préviennent leurs congénères de l’agression d’herbivores, incitant les arbres voisins à saturer leurs tissus en tanins protecteurs. Elles régulent spatialement leur ramure par le phénomène d’« évitement des cimes », négocient des alliances avec les micro-organismes du sol (fixation de l’azote par symbiose bactérienne) et font preuve de comportements coopératifs sélectifs en reconnaissant leur parentèle génétique. Ce mutualisme communicationnel trouve un écho emblématique dans les principes de la permaculture : l’association traditionnelle de la carotte et de l’oignon illustre comment deux espèces hétérogènes émettent des signaux olfactifs croisés qui repoussent mutuellement la mouche de l’un et le parasite de l’autre, fondant une régulation écosystémique autonome sans intervention exogène.</p>
+</section>
+<section id="la-pensée-sans-la-tête-et-la-co-énonciation-refonder-les-théories-de-linformation" class="level3">
+<h3 class="anchored" data-anchor-id="la-pensée-sans-la-tête-et-la-co-énonciation-refonder-les-théories-de-linformation">La « pensée sans la tête » et la co-énonciation : refonder les théories de l’information</h3>
+<p>Pour les Sciences de l’Information et de la Communication, l’assimilation de ces découvertes exige un dépassement critique du modèle télégraphique et computationnel classique de la communication. Le schéma hérité de Roman Jakobson , fondé sur la théorie mathématique de la transmission de signaux binaires entre un émetteur et un récepteur à travers un canal prédéterminé <span class="citation" data-cites="léon2014">(<a href="#ref-léon2014" role="doc-biblioref">Léon, 2014</a>)</span>, s’avère structurellement inopérant pour appréhender le monde végétal. De même, la linguistique saussurienne et benvenistienne a longtemps dressé un verrou anthropocentrique en postulant que seul l’humain accède au « signe » symbolique et à la double articulation, tandis que le non-humain serait cantonné au « signal » mécanique et réactif. Face à ces limites, l’approche de la zoosémiotique de Thomas Sebeok a introduit une brèche féconde en analysant les signes chimiques et olfactifs <span class="citation" data-cites="sebeok2021">(<a href="#ref-sebeok2021" role="doc-biblioref">Sebeok, 2021</a>)</span>. Contrairement aux stimuli acoustiques ou visuels humains qui s’évanouissent sitôt proférés, le signe chimique végétal persiste durablement dans l’environnement : il s’encode dans l’espace et se décode dans le temps, agissant comme un « relais dans le futur » capable d’assurer des fonctions de désignation, d’évaluation et de prescription à distance.</p>
+<p>Cependant, appréhender l’intellection végétale nécessite d’aller au-delà d’un codage indiciel pour embrasser ce que le philosophe Michael Marder conceptualise comme « penser sans la tête » <span class="citation" data-cites="marder2011">(<a href="#ref-marder2011" role="doc-biblioref">Marder, 2011</a>)</span>. La constitution biologique du végétal se caractérise par son autotrophie et son ancrage fixé au sol. Ne pouvant fuir face aux prédateurs, l’évolution a privé la plante d’organe central ou vital unique : elle est une colonie modulaire décentralisée constituée d’itérations interactives capables de régénération autonome. Chaque apex racinaire, sondant continuellement l’obscurité du sol, évalue et pondère simultanément plus d’une quinzaine de gradients physiques distincts — pesanteur, champs électromagnétiques, hygrométrie, gradients nitriques ou toxiques — pour négocier des arbitrages et résoudre des impératifs physiologiques contradictoires <span class="citation" data-cites="szoniecky2023">(<a href="#ref-szoniecky2023" role="doc-biblioref">Szoniecky, 2023</a>)</span>. C’est une pensée purement immanente et morphologique, où « la plante est sensation en soi » , un mode d’intellection non-idéel et non-symbolique où l’acte de penser se confond avec l’acte de croître et de sculpter son propre corps <span class="citation" data-cites="deleuze1980">(<a href="#ref-deleuze1980" role="doc-biblioref">Deleuze &amp; Guattari, 1980</a>)</span>. C’est dans cette brèche épistémologique que l’écosémiotique de Nicole Pignier apporte une refondation théorique décisive à travers la notion de co-énonciation du vivant <span class="citation" data-cites="pignier2020">(<a href="#ref-pignier2020" role="doc-biblioref">Pignier, 2020</a>)</span>. Élargissant la linguistique de l’énonciation d’Antoine Culioli — traditionnellement restreinte au dialogue dialogique interhumain <span class="citation" data-cites="culioli1999">(<a href="#ref-culioli1999" role="doc-biblioref">Culioli, 1999</a>)</span> —, Pignier pose que les plantes constituent des « cas limites de co-énonciation ». Énoncer, pour un végétal ou un micro-organisme, ne consiste pas à émettre des symboles abstraits, mais à se manifester organiquement au milieu et à accueillir les manifestations de ce dernier. Cette activité repose sur une « faculté éco-sémiotique synesthésique, par contiguïté organique avec le milieu », par laquelle l’organisme apprécie biologiquement ce qui s’offre à lui pour « croître avec le milieu, s’y orienter, de s’y tisser tout en le tissant » <span class="citation" data-cites="mérigonde2024">(<a href="#ref-mérigonde2024" role="doc-biblioref">Mérigonde, 2024a</a>)</span>. L’information n’est plus un paquet de données abstrait circulant sur un câble ou un bus informatique ; elle est un lien de sens écologique et situé, une pulsation relationnelle continue entre le corps et le territoire.</p>
+<p>Dès lors, pour le colloque 01Design, ce décentrement s’avère capital : concevoir un écosystème hybride ne consiste plus à concevoir des capteurs électroniques pour asservir le métabolisme végétal à nos interfaces, mais à reconnaître la plante comme un partenaire énonciatif et critique. En articulant l’arbre-racine hiérarchique et le rhizome des réseaux <span class="citation" data-cites="deleuze1980">(<a href="#ref-deleuze1980" role="doc-biblioref">Deleuze &amp; Guattari, 1980</a>)</span>, cette intelligence du vivant propose une écologie de la relation qui pose les bases d’une phyto-informatique éthique, servant de fondement au métamodèle onto-éthique et cinématique exploré dans la partie suivante.</p>
+</section>
+</section>
+<section id="le-métamodèle-onto-éthique-modéliser-lintelligence-trajective" class="level2">
+<h2 class="anchored" data-anchor-id="le-métamodèle-onto-éthique-modéliser-lintelligence-trajective">Le métamodèle onto-éthique : modéliser l’intelligence trajective</h2>
+<section id="les-quatre-dimensions-existentielles-de-lécosystème-info-communicationnel" class="level3">
+<h3 class="anchored" data-anchor-id="les-quatre-dimensions-existentielles-de-lécosystème-info-communicationnel">Les quatre dimensions existentielles de l’écosystème info-communicationnel</h3>
+<p>Penser le design de l’intelligence au sein d’écosystèmes hybrides suppose une rupture franche avec l’ingénierie documentaire classique, qui a longtemps réduit la connaissance à des jeux de données statiques ou à des bases relationnelles fermées <span class="citation" data-cites="szoniecky2016">(<a href="#ref-szoniecky2016" role="doc-biblioref">Szoniecky &amp; Bouhai, 2016</a>)</span>. Pour conceptualiser l’agentivité de ces collectifs sans tomber dans l’ornière du déterminisme technologique ou du réductionnisme social, la théorie des <strong>agencements machiniques</strong> de Gilles Deleuze et Félix Guattari s’avère particulièrement utile. Un objet technique n’existe jamais de manière isolée ; il est sélectionné et mis en mouvement par un agencement complexe dont les composantes sont simultanément matérielles, biologiques et sociales.</p>
+<p>L’exemple historique de l’introduction de la charrue lourde médiévale en Europe du Nord, analysé par Lynn White [ <a href="https://shs.cairn.info/publications-de-lynn-white--722583?lang=fr"><strong>Lynn White</strong></a>], illustre parfaitement ce processus : la charrue n’était pas un outil autonome, mais le cœur d’un agencement symbiotique associant des sols humides et argileux, la force de traction de huit bœufs, le passage des parcelles carrées aux champs longs en bandes (<em>open fields</em>) et la création d’institutions villageoises collectives pour gérer le travail partagé. Aucun de ces éléments ne prévalait isolément : ils s’entre-définissaient dans un co-fonctionnement indissociable.</p>
+<p>Pour dépasser la réification documentaire et rendre compte de l’agentivité conjointe des humains, des entités végétales et des agents computationnels, nous élaborons un <strong>métamodèle onto-éthique</strong> <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span>. Conçu comme un générateur qualitatif de modèles, ce cadre théorique unit la description de ce qui est (l’ontologie) aux modalités d’engagement légitimes (l’éthique). Inspiré de l’anthropologie symétrique de Philippe Descola et Bruno Latour, de la mésologie d’Augustin Berque et de l’éthique spinoziste relue par Gilles Deleuze, ce métamodèle articule quatre dimensions coordonnées.</p>
+<p>Le tableau ci-dessous récapitule la distribution de ces quatre dimensions existentielles au sein d’un écosystème hybride unissant humains, agents discursifs artificiels et organismes végétaux :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension existentielle</th>
+<th>Registre ontologique</th>
+<th>Composantes matérielles et logicielles</th>
+<th>Composantes végétales et écologiques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Matérielle (Physicalités)</strong></td>
+<td>Corps tangibles, substrats physiques, chocs de l’expérience</td>
+<td>Bases documentaires, serveurs, code source, capteurs bioélectroniques</td>
+<td>Tissus vasculaires (phloème), terre, eau, lumière, apex racinaires, gradients chimiques</td>
+</tr>
+<tr class="even">
+<td><strong>Conceptuelle (Essences)</strong></td>
+<td>Espace lisse des potentialités, affinités sémantiques pures</td>
+<td>Réseaux sémantiques, ontologies OWL/RDF, plongements vectoriels</td>
+<td>Signatures morphogénétiques, tropismes, équilibres physiologiques, mémoires adaptatives</td>
+</tr>
+<tr class="odd">
+<td><strong>Sociale (Actants)</strong></td>
+<td>Communauté des êtres doués d’agentivité relationnelle</td>
+<td>Chercheurs humains, concepteurs, Agents Discursifs Artificiels (ADA <span class="citation" data-cites="lakel2025">(<a href="#ref-lakel2025" role="doc-biblioref">Lakel, 2025</a>)</span>)</td>
+<td>Entités végétales singulières, colonies microbiennes, partenaires symbiotiques</td>
+</tr>
+<tr class="even">
+<td><strong>Temporelle (Rapports et flux)</strong></td>
+<td>Trajectoires d’individuation, dynamiques autopoïétiques</td>
+<td>Historiques de requêtes, versions documentaires, dérivées des gradients d’apprentissage</td>
+<td>Rythmes circadiens, saisons, mémoire transcriptionnelle, cinématique de croissance</td>
+</tr>
+</tbody>
+</table>
+<p>Dans ce cadre, la connaissance procède du couplage immanent de ces quatre dimensions, réconciliant l’espace strié des hiérarchies matérielles (le modèle de l’arbre-racine qui classe et sédimente) et l’espace lisse des devenirs (le rhizome immanent qui connecte et fait proliférer les lignes de fuite).</p>
+<p>« Ce qui compte, c’est que l’arbre-racine et le rhizome-canal ne s’opposent pas comme deux modèles : l’un agit comme modèle et comme calque transcendants, même s’il engendre ses propres fuites ; l’autre agit comme processus immanent qui renverse le modèle et ébauche une carte, même s’il constitue ses propres hiérarchies, même s’il suscite un canal despotique » <span class="citation" data-cites="deleuze1980">(<a href="#ref-deleuze1980" role="doc-biblioref">Deleuze &amp; Guattari, 1980, p. 31</a>)</span></p>
+</section>
+<section id="la-pulsation-de-la-sémiose-et-léconomie-politique-des-affects-tarde-spinoza-citton" class="level3">
+<h3 class="anchored" data-anchor-id="la-pulsation-de-la-sémiose-et-léconomie-politique-des-affects-tarde-spinoza-citton">La pulsation de la sémiose et l’économie politique des affects (Tarde, Spinoza, Citton)</h3>
+<p>Le fonctionnement interne de cet écosystème hybride est rythmé par un cycle continu de « pulsations existentielles » — ou cycles de sémiose —, qui orchestre la circulation des flux d’information entre le milieu matériel extérieur et l’intériorité cognitive des actants. Comme nous l’avons formalisé <span class="citation" data-cites="szoniecky2024">(<a href="#ref-szoniecky2024" role="doc-biblioref">Szoniecky, 2024</a>)</span> à l’aide d’Augustin Berque <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span> et du Groupe µ <span class="citation" data-cites="µ2015">(<a href="#ref-µ2015" role="doc-biblioref">µ et al., 2015</a>)</span>, chaque pulsation existentielle engage une respiration entre l’univers ambiant et le monde intérieur. Ce cycle s’éclaire à la lumière de l’économie politique des affects théorisée par Gabriel Tarde [lazarato] et réactualisée par Yves Citton <span class="citation" data-cites="citton">(<a href="#ref-citton" role="doc-biblioref">Citton, n.d.</a>)</span>, articulée autour de deux forces noopolitiques motrices : la <strong>Croyance</strong> (qui détermine la valeur-vérité et la crédibilité des représentations) et le <strong>Désir</strong> (le <em>conatus</em> d’agir spinoziste, régissant la valeur-utilité et la valeur-beauté).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/scene_1.png" class="img-fluid figure-img"></p>
+<figcaption>Fig. 1 = Pulsation sémiotique</figcaption>
+</figure>
+</div>
+<p>La pulsation sémiotique déploie quatre pouvoirs successifs qui transforment l’information en mémoire et en action :</p>
+<ol type="1">
+<li><p><strong>Discerner (Anasémiose et crible des valeurs) :</strong> L’anasémiose désigne le mouvement par lequel un actant prélève une fraction des flux bruts de son environnement pour l’intégrer dans son monde propre. Cette captation se heurte à deux raretés physiques : le temps d’attention disponible et la capacité mémorielle. L’affect agit dès lors comme un opérateur de frayage focalisant l’attention. Ce filtrage est assuré par un crible (qu’il soit métabolique chez la plante ou algorithmique chez l’agent artificiel) qui décompose le chaos sensible selon trois registres de valeurs tardiens : les <em>valeurs-utilités</em> (répondant aux nécessités fonctionnelles de l’espace strié), les <em>valeurs-vérités</em> (évaluant la foi, la solidité documentaire et la crédibilité) et les <em>valeurs-beautés</em> (mesurant l’attrait sensible, morphologique ou esthétique du signifiant).</p></li>
+<li><p><strong>Raisonner (Élaboration sémiotique et duels logiques) :</strong> Une fois les flux admis par le crible, l’actant engage une élaboration sémiotique interne. Sur le plan psychologique tardien, ce pouvoir correspond à la délibération et à l’arbitrage de « duels logiques » au sein d’un « cœur-parlement » intime, où se confrontent croyances préalables et données émergentes. L’esprit y calcule des attentes (<em>expectations</em>) qui pondèrent ses inclinations à agir. Chez le végétal, ce raisonnement s’incarne dans les arbitrages multivariés des apex racinaires évaluant simultanément des gradients physiques contradictoires. Chez l’agent artificiel, il est formalisé mathématiquement par la couche de rotation d’un circuit quantique.</p></li>
+<li><p><strong>Résonner (L’invention-germe et la barrière anthropologique) :</strong> La résonance constitue l’instant où la pensée s’affranchit de la déduction linéaire pour opérer un saut intuitif. Gabriel Tarde y identifie le surgissement de l’Invention, née de la rencontre féconde d’ondes d’imitation distinctes, tandis que Baruch Spinoza la qualifie de <em>Scientia Intuitiva</em> (troisième genre de connaissance embrassant l’essence des choses). Cependant, le métamodèle pose ici une frontière anthropologique et biologique fondamentale : si la machine computationnelle excelle à simuler le raisonnement formel syntaxique (par inférence probabiliste), elle demeure incapable d’une résonance authentique. La résonance exige en effet d’éprouver l’incalculable de l’immanence et de s’enraciner dans une expérience corporelle, sensible ou organique — privilège exclusif du vivant organique, animal ou végétal.</p></li>
+<li><p><strong>Agir (Catasémiose et sédimentation matérielle) :</strong> La catasémiose convertit l’état interne de l’actant en une manifestation extérieure concrète. Par l’action motrice, l’émission de composés chimiques chez la plante ou la production textuelle chez l’agent artificiel, l’actant laisse une trace dans le milieu. Cette inscription reconfigure la topographie matérielle de l’archive et déplace infinitésimalement les croyances et les capacités d’action de l’ensemble de la communauté hybride pour les cycles à venir.</p></li>
+</ol>
+</section>
+<section id="circuit-quantique-modélisation-formelle-de-la-subjectivité-de-lactant-et-calcul-des-affects" class="level3">
+<h3 class="anchored" data-anchor-id="circuit-quantique-modélisation-formelle-de-la-subjectivité-de-lactant-et-calcul-des-affects">Circuit quantique : modélisation formelle de la subjectivité de l’actant et calcul des affects</h3>
+<p>Afin de conférer aux agents artificiels une puissance d’agir située qui échappe à la rigidité déterministe des algorithmes classiques tout en s’articulant aux contraintes du vivant, le métamodèle mobilise le formalisme de l’informatique quantique. Il recourt à un <strong>circuit quantique paramétré</strong>, conçu comme un circuit de calcul dont la géométrie mathématique matérialise les inclinations subjectives, les affects et le <em>conatus</em> de l’actant au sein de son réseau de concepts.</p>
+<pre><code>          ┌─────────────────────────────────────────────────────────────┐
+          │                   CIRCUIT QUANTIQUE                         │
+          └─────────────────────────────────────────────────────────────┘
+
+ qubit 0 : ───[ Ry(θ₀) ]───────■─────────────────────────────── M ─── (Mesure)
+                               │
+ qubit 1 : ───[ Ry(θ₁) ]───────┼────────■────────────────────── M ─── (Mesure)
+                               │        │
+ qubit 2 : ───[ Ry(θ₂) ]───────X────────┼────────■───────────── M ─── (Mesure)
+                                        │        │
+ qubit 3 : ───[ Ry(θ₃) ]────────────────X────────X───────────── M ─── (Mesure)
+
+           └───────────┘       └─────────────────┘
+             COUCHE Ry              COUCHE CX
+            (Affects &amp;          (Intrications le long
+           Similarités)          des arêtes physiques)</code></pre>
+<p>Ce circuit quantique, implémenté au sein d’un micro-service logiciel à l’aide de la bibliothèque Qiskit <span class="citation" data-cites="qiskit/q2026">(<a href="#ref-qiskit/q2026" role="doc-biblioref"><em>Qiskit/Qiskit</em>, 2026</a>)</span>, traduit l’alternance des phases de la sémiose au moyen de deux couches d’opérateurs complémentaires :</p>
+<ul>
+<li>La subjectivité de l’acteur s’amorce par l’application de portes de rotation paramétrées <span class="math inline">\(R_y(theta_i)\)</span> sur chaque qubit du registre. Les angles <span class="math inline">\(theta_i\)</span> représentent les affects et les désirs propres de l’actant vis-à-vis des concepts explorés. Refusant le mythe d’une <em>tabula rasa</em> où l’agent opérerait sans ancrage historique, le modèle s’appuie sur le concept de rétention tertiaire forgé par Bernard Stiegler <span class="citation" data-cites="stiegler">(<a href="#ref-stiegler" role="doc-biblioref">Stiegler, n.d.</a>)</span> : les paramètres initiaux sont calibrés à partir du bruit de fond sémantique de l’archive existante. Ils sont précalculés par un encodage d’amplitude reliant l’angle au poids sémantique normalisé <span class="math inline">\(W_i\)</span> du concept issu de l’archive physique : <span class="math inline">\(theta_i = 2 arcsin(sqrt{W_i})\)</span></li>
+</ul>
+<p>L’association des idées n’est pas abandonnée au hasard. Afin de lier étroitement l’espace lisse de l’intuition à l’espace strié de la matière, la couche d’intrication est littéralement sculptée selon les hiérarchies physiques préexistantes de l’archive (par exemple les relations Dublin Core <code>dcterms:isPartOf</code> au sein d’un graphe de connaissances). Des portes logiques conditionnelles CNOT (<span class="math inline">\(CX\)</span>) sont disposées exclusivement entre les qubits dont les concepts partagent une relation de subordination matérielle :</p>
+<pre><code>from qiskit import QuantumCircuit
+from qiskit.circuit import ParameterVector
+from typing import List, Tuple
+
+def build_actor_circuit(num_qubits: int, hierarchical_edges: List[Tuple[int, int]]):
+    """
+    Construit l'circuit quantique modélisant la subjectivité d'un actant.
+    La couche Ry encode l'affect situé, la couche CX reproduit l'archive physique.
+    """
+    qc = QuantumCircuit(num_qubits)
+    theta = ParameterVector('θ', length=num_qubits)
+
+    # 1. Couche de rotation : Discerner / Raisonner (Affects sémantiques)
+    for q in range(num_qubits):
+        qc.ry(theta[q], q)
+
+    # 2. Couche d'intrication : Résonner selon la hiérarchie physique d'Omeka S
+    # Le qubit parent (source) conditionne l'état du qubit enfant (cible)
+    for edge in hierarchical_edges:
+        source_qubit, target_qubit = edge[0], edge[1]
+        qc.cx(source_qubit, target_qubit)
+
+    return qc, theta</code></pre>
+<p>Cette architecture contraint l’onde de probabilité quantique à se propager le long des canaux de l’archive : si un concept parent dispose d’une forte activation sémantique, la porte <span class="math inline">\(CX\)</span> transmet cette résonance à ses descendants, modélisant une tension directe entre fidélité archivistique et exploration intuitive.</p>
+<p>À l’issue de l’exécution quantique, l’effondrement de la fonction d’onde révèle la ligne de fuite dominante — l’état le plus fréquemment mesuré —, qui matérialise le parcours conceptuel privilégié par l’agencement. Lorsque l’action menée par l’acteur produit une rétroaction signifiante dans le milieu, l’algorithme d’optimisation sous contraintes classiques COBYLA (<em>Constrained Optimization BY Linear Approximations</em>) ajuste rétroactivement les angles <span class="math inline">\(theta\)</span> :</p>
+<p><span class="math inline">\(theta^{(t+1)} = text{COBYLA}(theta^{(t)}, E(n))\)</span></p>
+<p>où <span class="math inline">\(E(n)\)</span> représente la fonction d’évaluation mesurant l’adéquation écologique et heuristique de l’action à la pulsation <span class="math inline">\(n\)</span>. Cet ajustement continu préserve l’actant de la dette cognitive et de la prolétarisation de la pensée dénoncées par Anne Alombert <span class="citation" data-cites="alombert2023">(<a href="#ref-alombert2023" role="doc-biblioref">Alombert, 2023</a>)</span>: l’intelligence artificielle n’est plus un oracle opaque distribuant des réponses préfabriquées, mais un instrument subjectivé et plastique qui affine ses inclinations en symbiose avec l’humain et les rétroactions du milieu.</p>
+<p>L’actualisation catasémiotique de cette pulsation est confiée à un agent chroniqueur cognitif, déployé via le framework Mastra <span class="citation" data-cites="mastra-a">(<a href="#ref-mastra-a" role="doc-biblioref"><em>Mastra-Ai/Mastra</em>, n.d.</a>)</span>, qui condense l’expérience sous la forme d’un récit structuré en Markdown. Pour inscrire durablement ce récit sans effacer l’histoire du milieu, l’orchestrateur opère une fusion vectorielle hybride entre le vecteur hérité des sources ($V_{text{héritage}}$, barycentre des embeddings des documents ou des signaux d’origine) et le vecteur novateur produit par l’analyse ($V_{text{texte}}$) :</p>
+<p>$V_{text{hybride}} = alpha V_{text{texte}} + (1 - alpha) V_{text{héritage}}$</p>
+<p>$V_{text{final}} = frac{V_{text{hybride}}}{|V_{text{hybride}}|}$</p>
+<p>Le paramètre scalaire $alpha in [0 ; 1]$ fait office de curseur de singularité. Si $alpha to 0$, la trace privilégie l’ancrage conservateur dans l’archive ; si $alpha to 1$, elle consacre l’émancipation inventive du saut sémiotique. Une fois normalisé, ce vecteur $V_{text{final}}$ est réinjecté dans la base sémantique en s’adossant à un prédicat hiérarchique explicite (<code>dcterms:isVersionOf</code>), assurant le bouclage autopoïétique d’une mémoire topologique vivante.</p>
+</section>
+<section id="la-morphologie-de-lapprentissage-cinématique-de-la-spirale-conique-de-pappus-déformée" class="level3">
+<h3 class="anchored" data-anchor-id="la-morphologie-de-lapprentissage-cinématique-de-la-spirale-conique-de-pappus-déformée">La morphologie de l’apprentissage : cinématique de la spirale conique de Pappus déformée</h3>
+<p>Pour rendre visuellement et géométriquement intelligible cette dynamique cognitive sans retomber dans la linéarité unidirectionnelle du modèle séquentiel de Turing, le métamodèle modélise la trajectoire de l’actant sous la forme d’une <strong>spirale conique de Pappus non régulière et déformable</strong>. Cette morphologie résout le dilemme épistémologique d’un savoir qui est à la fois cyclique (retour périodique sur les mêmes concepts par anasémiose) et cumulatif (différence introduite par la sédimentation catasémiotique de chaque expérience).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spiraleConiquePappus.png" class="img-fluid figure-img"></p>
+<figcaption>Fig. 2 : Spirale Conique de Pappus <span class="citation" data-cites="ferréol2014">(<a href="#ref-ferréol2014" role="doc-biblioref">Ferréol, 2014</a>)</span></figcaption>
+</figure>
+</div>
+<p>Dans un repère tridimensionnel, la cinématique d’une pulsation s’exprime par le système d’équations paramétriques suivant :</p>
+<p><span class="math inline">\(begin{cases} x(theta, tau) = R(theta, tau) cos(theta) \ y(theta, tau) = R(theta, tau) sin(theta) \ z(theta, tau) = Psi(tau) cdot c cdot theta end{cases}\)</span></p>
+<p>où <span class="math inline">\(theta\)</span> mesure l’accumulation historique et continue des connaissances de l’actant, tandis que <span class="math inline">\(tau\)</span> représente le temps rythmique interne de la pulsation sémiotique.</p>
+<p>La déformation vivante de ce cône est gouvernée par deux fonctions régulatrices :</p>
+<ol type="1">
+<li><p><strong>La fonction d’écrasement rythmique</strong> <span class="math inline">\(Psi(tau)\)</span> <strong>(Le ressort cognitif) :</strong> L’oscillation interne du modèle entre repli intuitif et déploiement archivistique est régie par un opérateur borné <span class="math inline">\(Psi(tau) in [0 ; 1]\)</span> : <span class="math inline">\(Psi(tau) = frac{1 - cos(omega tau)}{2}\)</span></p>
+<ul>
+<li><p><em>Le Pli (Diastole conceptuelle) :</em> Lorsque <span class="math inline">\(Psi(tau) to 0\)</span>, l’altitude verticale s’annule (<span class="math inline">\(z to 0\)</span>). La spirale conique tridimensionnelle s’écrase sur le plan horizontal pour adopter la silhouette d’une spirale d’Archimède bidimensionnelle. Les frontières hiérarchiques et les distances physiques de l’archive sont suspendues : l’esprit pénètre l’espace lisse de la résonance quantique où toutes les affinités conceptuelles deviennent simultanément accessibles.</p></li>
+<li><p><em>Le Déploiement (Systole topographique) :</em> Lorsque <span class="math inline">\(Psi(tau) to 1\)</span>, le ressort se détend et la hauteur <span class="math inline">\(z\)</span> s’élève le long de la constante de sédimentation <span class="math inline">\(c\)</span>. La verticalité réinstaure l’espace strié des règles archivistiques : le nouvel énoncé est consigné, indexé et rattaché à son socle matériel.</p></li>
+</ul></li>
+<li><p><strong>La fonction de rayon dynamique</strong> <span class="math inline">\(R(theta, tau)\)</span> <strong>(La déformation du cône) :</strong> Le rayon du cône n’est pas fixe ; il enregistre la tension dialectique permanente entre l’audace intuitive de l’actant et la résistance topographique du milieu : <span class="math inline">\(R(theta, tau) = theta cdot Big[ (1 - Psi(tau)) cdot D_{text{conceptuel}}(n) + Psi(tau) cdot Delta_{text{topo}}(n) Big]\)</span></p>
+<ul>
+<li><p><em>La dilatation rhizomatique</em> <span class="math inline">\(D_{text{conceptuel}}(n)\)</span> <em>(À la base,</em> <span class="math inline">\(z = 0\)</span><em>) :</em> Elle correspond à la distance sémantique maximale franchie par l’actant lors du saut intuitif quantique, calculée à partir des similarités cosinus <span class="math inline">\((1 - S_{AB})\)</span> dans l’espace des plongements vectoriels. Si l’actant tisse un lien hétérodoxe entre des champs de savoirs éloignés, la base de son cône s’évase considérablement.</p></li>
+<li><p><em>La contraction topographique</em> <span class="math inline">\(Delta_{text{topo}}(n)\)</span> <em>(Au sommet,</em> <span class="math inline">\(z\)</span> <em>maximal) :</em> Elle mesure le déplacement physique réel de l’actant dans le réseau documentaire (le nombre d’arêtes ou d’arborescences concrètement traversées). Si l’actant sédimente son intuition sur place dans sa collection d’origine, le sommet du cône se resserre brutalement, sculptant une morphologie acérée en pointe de flèche.</p></li>
+</ul></li>
+</ol>
+<p>Par cette géométrie plastique, la spirale conique de Pappus déformée s’érige en véritable empreinte digitale diagrammatique de l’intellection. Elle consigne dans sa morphologie spatiale si l’apprentissage a procédé d’une illumination associative transversale (base évasée) ou d’une exploration méthodique du corpus (sommet élargi), matérialisant ainsi la mémoire topologique indispensable au pilotage éthique des écosystèmes hybrides.</p>
+<hr>
+</section>
+</section>
+<section id="linstrumentation-concrète-du-design-symbiotique-phyto-informatique-agents-discursifs-et-médiations-de-la-transition" class="level2">
+<h2 class="anchored" data-anchor-id="linstrumentation-concrète-du-design-symbiotique-phyto-informatique-agents-discursifs-et-médiations-de-la-transition">L’instrumentation concrète du design symbiotique : phyto-informatique, agents discursifs et médiations de la transition</h2>
+<section id="phyto-informatique-bio-inspiration-et-couplages-bioacoustiques-vers-des-interfaces-symbiotiques" class="level3">
+<h3 class="anchored" data-anchor-id="phyto-informatique-bio-inspiration-et-couplages-bioacoustiques-vers-des-interfaces-symbiotiques">Phyto-informatique, bio-inspiration et couplages bioacoustiques : vers des interfaces symbiotiques</h3>
+<p>L’inscription de l’intelligence végétale dans les sciences de la conception répond directement à l’invitation du colloque 01Design d’interroger le « design de l’intelligence » à travers l’entrelacement de l’intellection humaine, de la modélisation scientifique et des techniques de création matérielle ou informationnelle. En convoquant la typologie des intelligences multiples développée par Howard Gardner <span class="citation" data-cites="gardner2009">(<a href="#ref-gardner2009" role="doc-biblioref">Gardner, 2009</a>)</span>, l’appel de 01Design souligne l’urgence de dépasser la seule prééminence des modèles logico-mathématiques ou linguistiques pour mobiliser <strong>l’intelligence naturaliste</strong> et bâtir des dispositifs numériques respectueux à leurs écosystèmes.</p>
+<p>Cette préoccupation s’articule directement aux « cinq esprits du futur » dégagés par Howard Gardner : au-delà de l’esprit disciplinaire et de l’esprit synthétique, ce sont l’esprit créatif, l’esprit respectueux (fondé sur l’accueil de l’altérité culturelle et écologique) et l’esprit éthique (portant la responsabilité envers la communauté du vivant) qui doivent guider la conception des technologies de l’intelligence.</p>
+<p>Les modes d’existence des plantes constituent un modèle d’inspiration majeur pour concevoir des écosystèmes info-communicationnels complexes et renouveler l’ergonomie de nos interactions. Dès le XIVe siècle, Raymond Lulle recourait à l’« arbre des sciences » pour matérialiser une pensée diagrammatique associant hiérarchies d’échelles et dynamiques relationnelles. Aujourd’hui, cette morphologie structure le design des interfaces homme-machine à travers l’usage universel des arborescences.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ArbreScienceRDeLulle.jpg" class="img-fluid figure-img"></p>
+<figcaption>Fig. 3 : Arbre des sciences <span class="citation" data-cites="lulle1515">(<a href="#ref-lulle1515" role="doc-biblioref">Lulle, 1515</a>)</span></figcaption>
+</figure>
+</div>
+<p>Toutefois, l’éthologie végétale pousse cette analogie computationnelle bien au-delà de la métaphore graphique : Stefano Mancuso <span class="citation" data-cites="mancuso2018c">(<a href="#ref-mancuso2018c" role="doc-biblioref">Mancuso et al., 2018c</a>)</span> théorise ainsi la genèse de « phyto-ordinateurs », dispositifs techniques recourant à des algorithmes directement dérivés des principes de calcul et de répartition modulaire des plantes. Ne possédant aucun organe central vulnérable, le végétal fonctionne comme une colonie de modules interactifs capables d’évaluer de multiples gradients physiques pour résoudre des arbitrages contradictoires. Dans le champ du design, comme nous l’avons vu plus haut, ce modèle réconcilie l’arbre-racine (modèle régulateur et transcendant) et le rhizome (processus immanent de réseaux ouverts) décrits par Gilles Deleuze et Félix Guattari, offrant une matrice morphologique qui préserve les systèmes d’information de la rigidité pyramidale.</p>
+<p>Cette phyto-informatique trouve un ancrage expérimental immédiat dans le domaine de la bioacoustique et de la mécanobiologie végétale. Les recherches conduites par le groupe interdisciplinaire INRAE/LAUM/CNRS « Vibration des plantes » <span class="citation" data-cites="barbacci2023a">(<a href="#ref-barbacci2023a" role="doc-biblioref">Barbacci, 2023b</a>)</span> ont démontré que les organismes végétaux perçoivent les ondes sonores et les signaux mécaniques oscillatoires. Lorsqu’une plante est soumise à des stimulations acoustiques répétées, elle met en place un <em>priming</em> mécanique qui renforce ses défenses immunitaires face aux attaques de pathogènes. La modélisation moléculaire de ce mécanisme a mis en évidence une mémoire transcriptionnelle orchestrant la reprogrammation d’environ 10 000 gènes chez <em>Arabidopsis thaliana</em>.</p>
+<p>Pour les concepteurs d’écosystèmes hybrides, cette découverte ouvre la voie à un couplage technobiologique vertueux : au lieu d’asservir la plante à une surveillance passive par capteurs, l’émission d’ondes sonores ciblées devient un mode d’action agroécologique durable, substituant une signalisation acoustique non invasive aux intrants chimiques de synthèse. Le végétal devient un partenaire interactif dont la sensibilité physique dicte les fréquences et les rythmes du dispositif technique.</p>
+</section>
+<section id="analyse-critique-dun-écosystème-dagents-de-recherche" class="level3">
+<h3 class="anchored" data-anchor-id="analyse-critique-dun-écosystème-dagents-de-recherche">Analyse critique d’un écosystème d’agents de recherche</h3>
+<p>Afin d’éprouver la consistance pragmatique du métamodèle onto-éthique et d’observer comment s’articulent concrètement la mémoire archivistique, les agents computationnels discursifs et l’agentivité des chercheurs au sein de la chaîne de production scientifique, il convient d’analyser l’<strong>écosystème d’agents de recherche</strong> développé au Laboratoire Paragraphe (Université Paris 8). Écrit en TypeScript et exécuté sous Node.js 22+ au moyen de processus enfants contrôlés par l’orchestrateur Mastra, cet écosystème s’appuie techniquement sur trois piliers : les modèles de langage souverains de l’<strong>API Albert</strong> (déployée par l’État français), l’API REST de gestion bibliographique <strong>Zotero v3</strong> et le serveur d’archives numériques <strong>Omeka S</strong> <span class="citation" data-cites="szoniecky">(<a href="#ref-szoniecky" role="doc-biblioref">Szoniecky &amp; Claude, n.d.</a>)</span>.</p>
+<p>Cet écosystème déploie trois applications autonomes mais étroitement interdépendantes, dont chacune matérialise une modalité spécifique de la sémiose et de la co-énonciation hybride :</p>
+<pre><code>             ┌─────────────────────────────────────────────────────────────┐
+             │                ÉCOSYSTÈME MULTI-APPLICATIONS                │
+             │           (Laboratoire Paragraphe - Paris 8)                │
+             └─────────────────────────────────────────────────────────────┘
+                                            │
+       ┌────────────────────────────────────┼────────────────────────────────────┐
+       ▼                                    ▼                                    ▼
+┌──────────────────────────┐   ┌──────────────────────────┐   ┌──────────────────────────┐
+│   ATELIER D'ARTICLES     │   ┌   EXPLOZOTEROANNO        │   │   CHAOTICUMSEMINARIO     │
+│ (academic-paper-factory) │   │  (explo-zotero-anno)     │   │   (conférence jouée)     │
+│                          │   │                          │   │                          │
+│ • Analyse d'AAP          │   │ • Grille de positionnement│   │ • Partition 5 écrans     │
+│ • Graphe de concepts     │   │   (8 couleurs chromatiques)│   │ • Modèle de vision diapo │
+│ • Fleiss / Cohen Kappa   │   │ • Tension des lectures   │   │ • Diagrammes Mermaid     │
+│ • Rédaction PropAPP      │   │ • Agent de thèmes (LLM)  │   │ • Whisper &amp; Grist live   │
+│ • Relecture critique     │   │ • RAG Albert (bge-m3)    │   │ • Intrication en direct  │
+└──────────────────────────┘   └──────────────────────────┘   └──────────────────────────┘
+       │                                    │                                    │
+       └────────────────────────────────────┼────────────────────────────────────┘
+                                            ▼
+                          [ SOCLE COMMUN / SÉDIMENTATION ]
+                          • Zotero v3 (Sources &amp; Annotations)
+                          • Omeka S (Graphes SKOS &amp; RDF)
+                          • Albert API (LLM &amp; Embeddings)
+                          • Suivi métrique (Tokens, Énergie, Carbone)</code></pre>
+<section id="latelier-darticles-academic-paper-factory-lanasémiose-scientifique-et-lévaluation-inter-juges" class="level4">
+<h4 class="anchored" data-anchor-id="latelier-darticles-academic-paper-factory-lanasémiose-scientifique-et-lévaluation-inter-juges">L’Atelier d’articles (academic-paper-factory) : l’anasémiose scientifique et l’évaluation inter-juges</h4>
+<p>L’Atelier d’articles (https://academic-paper-factory.humanum-p8.fr/) prend pour point de départ la réponse à un appel à propositions (AAP). L’architecture logicielle orchestre une première phase en parallèle : l’étape <code>analyze-cfp</code> (qui télécharge ou extrait le texte de l’appel pour générer un objet structuré <code>AttenduAPP</code> via l’agent <code>aapAnalystAgent</code>) s’exécute simultanément avec l’étape <code>fetch-literature</code> (qui extrait les pièces jointes, surlignages, notes et marqueurs d’une collection Zotero vers Omeka S).</p>
+<p>Puis, une seconde phase parallèle enchaîne le traitement : <code>build-wiki</code> extrait un graphe de concepts par une méthode Map-Reduce (<code>buildLLMWiki</code>) suivie d’un nettoyage déterministe et sémantique (<code>cleanGraph</code>), pendant que <code>kappa-analysis</code> calcule l’accord inter-juges sur les phrases codées par les annotateurs. Les données normalisées (<code>normalize-okf</code>) sont transmises à <code>draft-paper</code> (<code>writerAgent</code>), qui rédige la proposition d’article (<code>PropAPP.md</code>) au format Markdown compatible Pandoc avec références BibTeX (<code>PropAPP.bib</code>). Enfin, l’étape <code>review-paper</code> fait intervenir l’agent <code>epistemologistAgent</code> pour évaluer de manière critique la conformité de <code>PropAPP</code> au regard des contraintes initiales d’<code>AttenduAPP</code>.</p>
+<p>Sur le plan de l’évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l’accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d’annotation (<code>ACC-S</code>, <code>DES-F</code>, <code>RHET-E</code>, <code>DEP-S</code>…), le système calcule le <strong>Kappa de Fleiss généralisé</strong> (pour $n$ juges variables) ainsi que le <strong>Kappa de Cohen</strong> (pour les paires de juges) :</p>
+<p><span class="math inline">\(P_i = frac{1}{n_i(n_i - 1)} left( sum_{j=1}^k n_{ij}^2 - n_i right), quad bar{P} = frac{1}{N} sum_{i=1}^N P_i\)</span></p>
+<p><span class="math inline">\(P_e = sum_{j=1}^k p_j^2 quad text{avec} quad p_j = frac{1}{N n} sum_{i=1}^N n_{ij}\)</span></p>
+<p><span class="math inline">\(kappa = frac{bar{P} - P_e}{1 - P_e}\)</span></p>
+<p>Un seuil de validation <span class="math inline">\(kappa ge 0{,}61\)</span> (accord substantiel selon l’échelle de Landis et Koch) garantit que le corpus extrait ne relève pas d’un biais d’interprétation individuel mais d’un consensus scientifique robuste.</p>
+<p>Cependant, l’analyse critique révèle ici une tension épistémologique majeure : en confiant la relecture finale à un agent épistémologiste (<code>epistemologistAgent</code>), le système introduit un risque de « consensus circulaire ». Si l’agent reliseur s’appuie sur le même modèle analytique sous-jacent que l’agent rédacteur (<code>writerAgent</code>), la critique risque de valider la conformité de la forme au détriment de l’originalité du saut sémiotique. La véritable résonance exige dès lors que l’arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.</p>
+</section>
+<section id="explozoteroanno-lécosémiotique-des-lectures-collectives-et-la-tension-chromatique" class="level4">
+<h4 class="anchored" data-anchor-id="explozoteroanno-lécosémiotique-des-lectures-collectives-et-la-tension-chromatique">exploZoteroAnno : l’écosémiotique des lectures collectives et la tension chromatique</h4>
+<p>La seconde application, <strong>exploZoteroAnno</strong> (https://explozotero.humanum-p8.fr/), est dédiée à l’animation d’une annotation collective au sein d’un groupe de recherche. Elle substitue à la recherche isolée un dispositif de lecture partagée adossé à une <strong>grille de positionnement par couleurs</strong> (jaune : idée clé, vert : accord, rouge : désaccord, bleu : définition, violet : méthode, magenta : question, orange : exemple, gris : contexte).</p>
+<p>Pour analyser la divergence des interprétations lorsqu’au moins deux chercheurs annotent un même passage avec des couleurs distinctes, exploZoteroAnno calcule une <strong>tension chromatique et sémantique</strong> <span class="math inline">\(Delta_c in [0 ; 1]\)</span>. Cette tension est directement dérivée du rapport d’opposition des teintes sur le cercle chromatique (couleurs identiques : 0 ; analogues : 0,2 ; en carré : 0,5 ; triadiques : 0,7 ; complémentaires : 1). La fonction <code>analyzeCollaboration</code> pondère ce rapport pour faire émerger un réseau de collaborations (rendu sous forme de graphe de forces interactif d3.js) où la couleur et l’épaisseur des liens entre chercheurs matérialisent le degré de tension de leurs postures théoriques.</p>
+<p>Sur cette base, l’agent <code>discussionAgent</code> identifie les nœuds de controverse pour générer automatiquement un guide de thèmes de discussion (<code>themes_discussion.md</code>), orientant le débat humain vers les zones de friction conceptuelle les plus réjouissantes. En parallèle, l’intégration du RAG Albert permet aux membres du groupe d’interroger la collection Zotero en langage naturel. Les documents sont découpés en blocs (<em>chunks</em>), vectorisés par le modèle <span class="math inline">\(bge-m3\)</span> et déposés dans des collections privées Albert. Lors de la consultation (<code>ragQuery</code>), la recherche hybride (sémantique et lexicale) extrait les passages les plus pertinents et génère une réponse documentée, enregistrée sous forme d’item « Réponse RAG » dans Omeka S.</p>
+<p>D’un point de vue critique, exploZoteroAnno offre une concrétisation remarquable de la co-énonciation au sens de Nicole Pignier et des signes persistant dans l’espace selon Thomas Sebeok. Les surlignages colorés constituent des traces sémiotiques non-verbales sédimentées dans le temps. L’option de fusion automatique des doublons (<code>groupDuplicates</code> via hachage MD5, DOI et normalisation des titres) résout le problème de l’éparpillage documentaire. Néanmoins, une limite subsiste : la fusion des documents rassemble les annotations faites par des utilisateurs distincts sur des exemplaires séparés, mais si les métadonnées d’origine sont incomplètes (annotations sans auteur issues d’un lecteur PDF externe), le système les regroupe sous l’étiquette <code>(non attribué)</code>, obscurcissant temporairement la traçabilité de l’énonciation.</p>
+</section>
+<section id="chaoticumseminario-la-conférence-jouée-et-la-performativité-scénique-du-vivant" class="level4">
+<h4 class="anchored" data-anchor-id="chaoticumseminario-la-conférence-jouée-et-la-performativité-scénique-du-vivant">chaoticumSeminario : la conférence jouée et la performativité scénique du vivant</h4>
+<p>La troisième application, <strong>chaoticumSeminario</strong> (https://chaoticumseminario.humanum-p8.fr/), pousse le design de l’intelligence vers la performance scénique et la conférence participative. Le système génère la <strong>partition</strong> d’une présentation structurée selon une séquence temporelle répétitive en cinq type d’écrans :</p>
+<p><span class="math inline">\(text{Cycle} = Big[ text{Citation (Zotero/Diigo)} longrightarrow text{Diapo (ConfErrance)} longrightarrow text{Question (LLM)} longrightarrow text{Contributions (Grist)} longrightarrow text{Diagramme (Mermaid)} Big]\)</span></p>
+<p>L’architecture s’appuie sur une démarche multimodalité :</p>
+<ul>
+<li><p>Un modèle de vision (<code>slideDescriberAgent</code>) analyse la copie d’écran de chaque diapositive et chaque image annotée Diigo pour en extraire le titre, les mots-clés et le contenu sémantique visible.</p></li>
+<li><p>L’agent <code>seminarioAgent</code> utilise ces descriptions ainsi que le texte de la citation Zotero pour rédiger une question ouverte synthétique (inférieure à 15 mots) et composer un diagramme conceptuel.</p></li>
+<li><p>Le code Mermaid du diagramme est assembled de manière déterministe par <code>buildMermaid</code> et vérifié par une fonction de réparation automatique (<code>repairMermaid</code>), garantissant un rendu graphique d3.js/Mermaid sans erreur de syntaxe.</p></li>
+</ul>
+<p>Lors du déroulement de la conférence en direct via la page <code>jouer.html</code>, le dispositif orchestre une véritable intrication entre les actants humains et artificiels :</p>
+<ul>
+<li><p>Le public flashe un QR code pour soumettre des liens et des réactions via un formulaire Grist, que l’animateur modère et projette sur l’écran des contributions.</p></li>
+<li><p>Le présentateur active le moteur de reconnaissance vocale (<code>whisper-large-v3</code> via l’API Albert), qui découpe le flux audio en tranches de 15 secondes pour projeter des sous-titres en direct et consigner la transcription intégrale dans Omeka S.</p></li>
+<li><p>Les auditeurs peuvent suivre la présentation sur leur propre terminal (<code>/public/suivre</code>), annoter les diapositives à l’aide des couleurs de la grille et surligner la transcription en temps réel.</p></li>
+</ul>
+<p>Cette application matérialise l’expression scénique de la spirale conique de Pappus. La conférence oscillante alterne entre le Pli (l’écoute de la citation et l’intuition du diagramme Mermaid) et le Déploiement (la saisie des contributions du public et l’enregistrement de la séance sous forme d’item <code>bibo:Performance</code> dans Omeka S). Le système démontre comment un agencement multi-agents peut s’émanciper du format rigide des diapositives linéaires pour devenir une arène de co-énonciation vivante.</p>
+</section>
+<section id="sobriété-numérique-traçabilité-et-évaluable-noopolitique" class="level4">
+<h4 class="anchored" data-anchor-id="sobriété-numérique-traçabilité-et-évaluable-noopolitique">Sobriété numérique, traçabilité et évaluable noopolitique</h4>
+<p>Un des apports épistémologiques les plus stimulants de cet écosystème réside dans la prise en compte systématique de l’<strong>empreinte matérielle de l’intelligence artificielle</strong>. Loin de diffuser une illusion de dématérialisation, chaque appel d’agent ou d’outil mesure la consommation exacte de tokens via la fonction <code>recordUsage</code>. L’étape d’évaluation d’impact (<code>estimateImpact</code>) convertit ces tokens en indicateurs énergétiques, écologiques et économiques concrets :</p>
+<p><span class="math inline">\(text{Énergie (Joule)} = frac{2 times text{Paramètres Actifs} times 10^9}{text{FLOPS/Joule} times text{Utilisation}} times text{PUE}\)</span></p>
+<p><span class="math inline">\(text{Émissions (g CO}_2 text{e)} = text{Énergie (kWh)} times text{Intensité Carbone (g CO}_2 text{e/kWh)}\)</span></p>
+<p>Ces métriques (exprimées en watt-heures, grammes de <span class="math inline">\(CO_2\)</span> équivalent et coût financier simulé) sont publiées au sein du rapport de traitement, consignées dans la propriété <code>curation:data</code> de l’item de configuration d’Omeka S et affichées dans l’interface sous la forme d’équivalences parlantes (temps d’éclairage d’une ampoule LED ou nombre de recharges de smartphone).</p>
+<p>Le tableau ci-dessous offre une grille comparative synthétique des trois applications de l’écosystème au regard des dimensions du métamodèle onto-éthique :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Application</th>
+<th>Fonction sémiotique prioritaire</th>
+<th>Entrées matérielles et logicielles</th>
+<th>Agents et Modèles mobilisés</th>
+<th>Traces sédimentées dans Omeka S</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Atelier d’articles</strong></td>
+<td>Anasémiose &amp; Synthèse académique</td>
+<td>Collection Zotero, Fichier/URL d’appel (AAP), Grille de codes</td>
+<td><code>aapAnalyst</code>, <code>writerAgent</code>, <code>epistemologistAgent</code>, <code>kappaAnalyst</code></td>
+<td>Item Appel (<code>AttenduAPP</code>, <code>PropAPP.md</code>, <code>PropAPP.bib</code>), Graphe SKOS, Rapport d’impact</td>
+</tr>
+<tr class="even">
+<td><strong>exploZoteroAnno</strong></td>
+<td>Co-énonciation &amp; Tension des lectures</td>
+<td>Bibliothèque de groupe Zotero, Grille 8 couleurs</td>
+<td><code>discussionAgent</code>, Modèle RAG Albert (<span class="math inline">\(bge-m3\)</span>)</td>
+<td>Item Configuration, Guide Markdown, Réseau d3.js, Réponses RAG, Matrice Kappa</td>
+</tr>
+<tr class="odd">
+<td><strong>chaoticumSeminario</strong></td>
+<td>Performativité &amp; Catasémiose live</td>
+<td>Citations Zotero/Diigo, Diapos ConfErrance, Formulaire Grist</td>
+<td><code>slideDescriber</code>, <code>curatorAgent</code>, <code>seminarioAgent</code>, Whisper-large-v3</td>
+<td>Item <code>bibo:Performance</code>, Partition JSON, Transcription audio, Rejeu public</td>
+</tr>
+</tbody>
+</table>
+<p>En adossant l’ensemble des données d’exécution aux standards de la <strong>Science Ouverte</strong> et aux principes <strong>FAIR</strong> (<em>Findable, Accessible, Interoperable, Reusable</em>), l’écosystème d’agents du Laboratoire Paragraphe apporte la démonstration qu’une ingénierie logicielle avancée peut mettre les technologies émergentes au service de l’intelligibilité du numérique <span class="citation" data-cites="bachimont2026">(<a href="#ref-bachimont2026" role="doc-biblioref">Bachimont, 2026</a>)</span>, en transformant la recherche en un jardinage collaboratif et transparent des connaissances.</p>
+</section>
+</section>
+<section id="la-médiation-littéraire-de-la-transition-récits-du-vivant-empathie-et-co-énonciation" class="level3">
+<h3 class="anchored" data-anchor-id="la-médiation-littéraire-de-la-transition-récits-du-vivant-empathie-et-co-énonciation">La médiation littéraire de la transition : récits du vivant, empathie et co-énonciation</h3>
+<p>L’intégration éthique des non-humains dans le design des écosystèmes hybrides ne peut reposer uniquement sur des équations mathématiques ou des protocoles d’ingénierie ; elle requiert une transformation profonde des sensibilités et de l’imaginaire social. Comme le met en lumière Mireille Mérigonde dans ses recherches sur la transition littéraire <span class="citation" data-cites="mérigonde2024a">(<a href="#ref-mérigonde2024a" role="doc-biblioref">Mérigonde, 2024b</a>)</span>, la littérature contemporaine s’empare des découvertes des sciences de la nature pour opérer un décentrement radical de la focale narrative et réhabiliter la communication du vivant.</p>
+<p>Face à la crise environnementale de l’anthropocène, des écrivains comme Pierre Ducrozet soutiennent qu’une mission centrale de l’art réside dans la capacité à « décentrer le regard, ne plus être aussi anthropocentré » <span class="citation" data-cites="mérigonde2024a">(<a href="#ref-mérigonde2024a" role="doc-biblioref">Mérigonde, 2024b</a>)</span>, pour « devenir animal, plante, à raconter le monde autrement ». Cette entreprise narrative se heurte toutefois à une difficulté structurelle : la tendance spontanée à la personnification et à l’anthropomorphisme.</p>
+<p>Pourtant, comme le soulignent Pierre Schoentjes, le recours aux affects constitue un levier puissant d’immersion fictionnelle et d’adhésion éthique, développant l’intelligence émotionnelle du lecteur.</p>
+<p>« C’est en faisant levier sur l’imaginaire, en déplaçant les façons de percevoir le monde, qu’une littérature suffisamment singulière peut contribuer, à sa manière, à rééquilibrer le rapport entre les humains et un environnement qu’ils ont profondément fragilisé. » <span class="citation" data-cites="schoentjes2025">(<a href="#ref-schoentjes2025" role="doc-biblioref">Schoentjes, 2025, p. 78</a>)</span></p>
+<p>La transition affective du végétal à l’humain est aussi particulièrement présente dans <em>L’arbre-monde</em> (<em>The Overstory</em>) de Richard Powers<span class="citation" data-cites="powers2018">(<a href="#ref-powers2018" role="doc-biblioref">Powers, 2018</a>)</span>. Le romancier y romance les travaux pionniers de l’écologue Suzanne Simard — longtemps marginalisée par la communauté académique — autour de l’existence des réseaux mycorhiziens, des flux de nutriments et de la communication chimique forestière. À travers le personnage de la botaniste Patricia Westerford, Powers met en scène la découverte de la communication aéroportée des érables : lorsqu’un arbre est agressé par des insectes ravageurs, il émet des composés volatils qui préviennent ses voisins, incitant ces derniers à synthétiser des insecticides biologiques avant même d’être attaqués. Le texte montre des arbres statiques qui partagent un système immunitaire étendu à l’échelle de la forêt. En faisant éprouver au lecteur la violence de l’émotion de la chercheuse puis en opérant un débrayage énonciatif vers la perspective des arbres, Powers suscite une identification empathique profonde qui métamorphose le statut ontologique de la forêt, perçue dès lors comme une communauté sentiente et solidaire.</p>
+<p>Dans un registre plus expérimental, <em>Le mal de mer</em> de Marie Darrieussecq <span class="citation" data-cites="darrieussecq2002">(<a href="#ref-darrieussecq2002" role="doc-biblioref">Darrieussecq, 2002</a>)</span>met en œuvre un zoocentrage fondé sur une variante physiologique du flux de conscience. L’auteure y décrit les déambulations d’un requin guidé par la perception électromagnétique des forces de l’attraction terrestre. La narratrice immerge le lecteur dans un monde de sensations brutes où l’animal interprète les « signes ambiants » nés de sa relation synesthésique au milieu marin, selon la conceptualisation de Nicole Pignier. Toutefois, le roman donne à voir les limites tragiques de cette sémiose lorsque le milieu est altéré : désorienté à l’approche du rivage et des masses minérales et métalliques, le squale subit un déséquilibre proprioceptif violent où ses sonars échouent à distinguer le haut du bas. Incapable d’instaurer une situation de co-énonciation équilibrée avec son environnement, l’animal s’échoue sur le sable. Ce traitement littéraire saisissant rend sensible la détresse des êtres vivants désajustés de leur <em>oikos</em> par les perturbations anthropiques.</p>
+<p>Cette médiation fictionnelle accomplit ce que Eduardo Kohn nomment « l’élargissement du parlement des voix » <span class="citation" data-cites="kohn2023">(<a href="#ref-kohn2023" role="doc-biblioref">Kohn, 2023</a>)</span>. En rendant perceptibles les signes du vivant, la littérature restaure la membrane sensible reliant le monde objectif et l’intériorité humaine, préparant le sujet à un accueil respectueux de la co-énonciation végétale.</p>
+<hr>
+</section>
+</section>
+<section id="conclusion-vers-un-jardinage-collaboratif-des-savoirs-dans-la-science-ouverte" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-vers-un-jardinage-collaboratif-des-savoirs-dans-la-science-ouverte">Conclusion : Vers un « jardinage collaboratif » des savoirs dans la Science Ouverte</h2>
+<p>Au terme de ce parcours, le design d’écosystèmes hybrides associant humains, agents artificiels et intelligences végétales esquisse une proposition à repenser les risques d’aliénation cognitive et d’abstraction technique.</p>
+<p>En premier lieu, ce modèle réconcilie les exigences méthodologiques de la Science Ouverte et des principes FAIR (<em>Findable, Accessible, Interoperable, Reusable</em>). En adossant les plongements vectoriels d’un circuit quantique à l’infrastructure aux données ouvertes liées (Linked Open Data - LOD), chaque pulsation cognitive demeure traçable et réutilisable. La sédimentation par fusion vectorielle hybride et la consignation des angles d’affects protègent la démarche scientifique de l’opacité des modèles propriétaires, garantissant l’intelligibilité du numérique chère à Bruno Bachimont <span class="citation" data-cites="bachimont2026">(<a href="#ref-bachimont2026" role="doc-biblioref">Bachimont, 2026</a>)</span>.</p>
+<p>En second lieu, l’agencement machinique hybride assume une portée noopolitique majeure. À l’image de la segmentarité territoriale des Yanomami analysée par Jacques Lizot — où les esprits animaux disséminés dans la forêt agissent comme une machine d’anticipation-conjuration neutralisant l’apparition d’un pouvoir étatique centralisé — <span class="citation" data-cites="lizot1984">(<a href="#ref-lizot1984" role="doc-biblioref">Lizot, 1984</a>)</span>, la prolifération d’agents d’IA de niche, locaux et souverains, préserve l’écosystème de l’impérialisme sémantique des grandes multinationales technologiques <span class="citation" data-cites="corteel2025">(<a href="#ref-corteel2025" role="doc-biblioref">Corteel, 2025</a>)</span>.</p>
+<p>Enfin, la métaphore directrice de ce design n’est plus l’extraction industrielle de données, mais le <strong>« jardinage collaboratif des connaissances »</strong>. Penser et concevoir à l’écoute des plantes invite à bâtir une communauté de cohabitation où la technique retrouve la lenteur, la cyclicité et la mesure du vivant. En reconnaissant l’agentivité de nos « sœurs les plantes » au sein d’un métamodèle onto-éthique partagé, le design de l’intelligence cesse d’être un instrument de déterritorialisation pour devenir l’art délicat d’habiter ensemble la Terre.</p>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-alombert2023" class="csl-entry" role="listitem">
+Alombert, A. (2023). Panser la bêtise artificielle. <em>Appareil</em>, <em>26</em>. <a href="https://doi.org/10.4000/appareil.6979">https://doi.org/10.4000/appareil.6979</a>
+</div>
+<div id="ref-alpi2007" class="csl-entry" role="listitem">
+Alpi, A., Amrhein, N., Bertl, A., Blatt, M. R., Blumwald, E., Cervone, F., Dainty, J., De Michelis, M. I., Epstein, E., Galston, A. W., Goldsmith, M. H. M., Hawes, C., Hell, R., Hetherington, A., Hofte, H., Juergens, G., Leaver, C. J., Moroni, A., Murphy, A., … Wagner, R. (2007). Plant neurobiology: no brain, no gain? <em>Trends in Plant Science</em>, <em>12</em>(4), 135–136. <a href="https://doi.org/10.1016/j.tplants.2007.03.002">https://doi.org/10.1016/j.tplants.2007.03.002</a>
+</div>
+<div id="ref-bachimont2026" class="csl-entry" role="listitem">
+Bachimont, B. (2026). L<span>’</span>énigme de l<span>’</span>IA générative : des contenus qui nous parlent et qu<span>’</span>on croit comprendre. <em>Signata. Annales des sémiotiques / Annals of Semiotics</em>, <em>17</em>. <a href="https://doi.org/10.4000/16qmd">https://doi.org/10.4000/16qmd</a>
+</div>
+<div id="ref-barbacci2023" class="csl-entry" role="listitem">
+Barbacci, F. G. B. M. A. (2023a). <em>Ce que le son fait aux plantes</em>. <a href="https://www.pourlascience.fr/sd/biologie-vegetale/https:https://www.pourlascience.fr/sd/biologie-vegetale/ce-que-le-son-fait-aux-plantes-25852.php">https://www.pourlascience.fr/sd/biologie-vegetale/https:https://www.pourlascience.fr/sd/biologie-vegetale/ce-que-le-son-fait-aux-plantes-25852.php</a>
+</div>
+<div id="ref-barbacci2023a" class="csl-entry" role="listitem">
+Barbacci, F. G. B. M. A. (2023b). <em>Ce que le son fait aux plantes</em>. <a href="https://www.pourlascience.fr/sd/biologie-vegetale/https:https://www.pourlascience.fr/sd/biologie-vegetale/ce-que-le-son-fait-aux-plantes-25852.php">https://www.pourlascience.fr/sd/biologie-vegetale/https:https://www.pourlascience.fr/sd/biologie-vegetale/ce-que-le-son-fait-aux-plantes-25852.php</a>
+</div>
+<div id="ref-berque2009" class="csl-entry" role="listitem">
+Berque, A. (2009). Conclusion. Raison trajective et dépassement de la modernité. <em>Alpha</em>, 397–402. <a href="https://shs.cairn.info/ecoumene--9782701151779-page-397">https://shs.cairn.info/ecoumene--9782701151779-page-397</a>
+</div>
+<div id="ref-bertrand2018" class="csl-entry" role="listitem">
+Bertrand, A. (2018). Penser comme une plante : perspectives sur l’écologie comportementale et la nature cognitive des plantes. <em>Cahiers philosophiques</em>, <em>N° 153</em>(2), 39–41. <a href="https://doi.org/10.3917/caph1.153.0039">https://doi.org/10.3917/caph1.153.0039</a>
+</div>
+<div id="ref-brenner2006" class="csl-entry" role="listitem">
+Brenner, E. D., Stahlberg, R., Mancuso, S., Vivanco, J., Baluška, F., &amp; Van Volkenburgh, E. (2006). Plant neurobiology: An integrated view of plant signaling. <em>Trends in Plant Science</em>, <em>11</em>(8), 413419. <a href="https://www.cell.com/trends/plant-science/abstract/S1360-1385(06)00164-6">https://www.cell.com/trends/plant-science/abstract/S1360-1385(06)00164-6</a>
+</div>
+<div id="ref-castells1996" class="csl-entry" role="listitem">
+Castells, M. (1996). <em>The Rise of the Network Society</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-cécitéb2026" class="csl-entry" role="listitem">
+<em>Cécité botanique</em>. (2026). <a href="https://fr.wikipedia.org/w/index.php?title=C%C3%A9cit%C3%A9_botanique&amp;oldid=239039721">https://fr.wikipedia.org/w/index.php?title=C%C3%A9cit%C3%A9_botanique&amp;oldid=239039721</a>
+</div>
+<div id="ref-citton" class="csl-entry" role="listitem">
+Citton, Y. (n.d.). <em>Esquisse d’une économie politique des affects</em> (Éditions Amsterdam, pp. p. 45–123).
+</div>
+<div id="ref-corteel2025" class="csl-entry" role="listitem">
+Corteel, M. (2025). 6. Le capitalisme cognitif avancé. <em>Poche / Sciences humaines et sociales</em>, 167–195. <a href="https://shs.cairn.info/article/DEC_CORTE_2025_01_0167">https://shs.cairn.info/article/DEC_CORTE_2025_01_0167</a>
+</div>
+<div id="ref-culioli1999" class="csl-entry" role="listitem">
+Culioli, A. (1999). <em>Pour une linguistique de l’énonciation. Formalisation et opérations de repérages</em>. Ophrys Editions.
+</div>
+<div id="ref-darrieussecq2002" class="csl-entry" role="listitem">
+Darrieussecq, M. (2002). <em>Le Mal de mer</em>. FOLIO.
+</div>
+<div id="ref-deleuze1972" class="csl-entry" role="listitem">
+Deleuze, G. (1972). <em>Capitalisme et schizophrénie, tome 1 : L<span>’</span>Anti-<span>Œ</span>dipe</em>. Editions de Minuit.
+</div>
+<div id="ref-deleuze1980" class="csl-entry" role="listitem">
+Deleuze, G., &amp; Guattari, F. (1980). <em>Mille plateaux</em>. Éditions de minuit.
+</div>
+<div id="ref-ferréol2014" class="csl-entry" role="listitem">
+Ferréol, R. (2014). <em>Spirale conique de pappus</em>. <a href="https://www.mathcurve.com/courbes3d/spiraleconic/pappus.shtml">https://www.mathcurve.com/courbes3d/spiraleconic/pappus.shtml</a>
+</div>
+<div id="ref-gardner2009" class="csl-entry" role="listitem">
+Gardner, H. (2009). <em>Les cinq formes d’intelligence : Pour affronter l’avenir</em>. Odile Jacob.
+</div>
+<div id="ref-graeber2025" class="csl-entry" role="listitem">
+Graeber, D. (2025). Un « tournant ontologique » illusoire. Réponse à Eduardo Viveiros de Castro. <em>Revue du MAUSS</em>, <em>65</em>(1), 141–158. <a href="https://doi.org/10.3917/rdm1.065.0141">https://doi.org/10.3917/rdm1.065.0141</a>
+</div>
+<div id="ref-hui2019" class="csl-entry" role="listitem">
+Hui, Y. (2019). <em>Recursivity and Contingency</em>. Rowman &amp; Littlefield International.
+</div>
+<div id="ref-ingold2011" class="csl-entry" role="listitem">
+Ingold, T. (2011). <em>Being Alive</em>. Routledge.
+</div>
+<div id="ref-kohn2023" class="csl-entry" role="listitem">
+Kohn, E. (2023). <em>Comment pensent les forêts: Vers une anthropologie au-delà de l’humain</em>. POINTS.
+</div>
+<div id="ref-kull" class="csl-entry" role="listitem">
+Kull, K. (n.d.). An introduction to phytosemiotics: Semiotic botany and vegetative sign systems. <em>ResearchGate</em>. <a href="https://doi.org/10.12697/SSS.2000.28.18">https://doi.org/10.12697/SSS.2000.28.18</a>
+</div>
+<div id="ref-lakel2025" class="csl-entry" role="listitem">
+Lakel, A. (2025). <em>Ne dites plus LLM: Larges Discours Models (LDM) et Agent Discursif Artificiel (ADA)?</em> <a href="https://hal.science/hal-05421232v1/">https://hal.science/hal-05421232v1/</a>
+</div>
+<div id="ref-latour2017" class="csl-entry" role="listitem">
+Latour, B. (2017a). <em>Où atterrir ?: Comment s’orienter en politique</em>. La Découverte.
+</div>
+<div id="ref-latour2017a" class="csl-entry" role="listitem">
+Latour, B. (2017b). <em>Où atterrir ?: Comment s’orienter en politique</em>. La Découverte.
+</div>
+<div id="ref-léon2014" class="csl-entry" role="listitem">
+Léon, J. (2014). <em>La théorie des traits distinctifs de Jakobson : transferts et convergences entre mathématiques, ingénierie et linguistique</em> (p. 669). ENS Editions. <a href="https://shs.hal.science/halshs-01138442">https://shs.hal.science/halshs-01138442</a>
+</div>
+<div id="ref-lizot1984" class="csl-entry" role="listitem">
+Lizot, J. (1984). <em>Histoire, organisation et évolution du peuplement yanomami</em>. <a href="https://doi.org/10.3406/hom.1984.368488">https://doi.org/10.3406/hom.1984.368488</a>
+</div>
+<div id="ref-lulle1515" class="csl-entry" role="listitem">
+Lulle, R. (1515). <em>Arbor scientie / raymundi lullii et in cujus commendationes est hoc extemporanei jodoci badii ascensii ad pium lectorem epigramma</em>. <a href="http://gallica.bnf.fr/ark:/12148/bpt6k79225g">http://gallica.bnf.fr/ark:/12148/bpt6k79225g</a>
+</div>
+<div id="ref-mancuso2018" class="csl-entry" role="listitem">
+Mancuso, S., Viola, A., &amp; Temperini, R. (2018a). <em>L’intelligence des plantes</em>. Albin Michel.
+</div>
+<div id="ref-mancuso2018a" class="csl-entry" role="listitem">
+Mancuso, S., Viola, A., &amp; Temperini, R. (2018b). <em>L’intelligence des plantes</em>. Albin Michel.
+</div>
+<div id="ref-mancuso2018c" class="csl-entry" role="listitem">
+Mancuso, S., Viola, A., &amp; Temperini, R. (2018c). <em>L’intelligence des plantes</em>. Albin Michel.
+</div>
+<div id="ref-marder2011" class="csl-entry" role="listitem">
+Marder, M. (2011). Plant-soul: The elusive meanings of vegetative life. <em>Environmental Philosophy</em>, <em>8</em>(1), 83–100. <a href="https://www.jstor.org/stable/26168061">https://www.jstor.org/stable/26168061</a>
+</div>
+<div id="ref-marder2013" class="csl-entry" role="listitem">
+Marder, M., Vattimo, G., &amp; Zabala, S. (2013). <em>Plant-Thinking: A Philosophy of Vegetal Life</em>. Columbia University Press.
+</div>
+<div id="ref-mastra-a" class="csl-entry" role="listitem">
+<em>Mastra-ai/mastra: Mastra is the modern TypeScript framework for AI-powered applications and agents.</em> (n.d.). <a href="https://github.com/mastra-ai/mastra">https://github.com/mastra-ai/mastra</a>
+</div>
+<div id="ref-mérigonde2024" class="csl-entry" role="listitem">
+Mérigonde, M. (2024a, April 12). <em>Actes du congrès de l<span>’</span>Association Française de Sémiotique</em>. <a href="https://doi.org/10.25965/as.8519">https://doi.org/10.25965/as.8519</a>
+</div>
+<div id="ref-mérigonde2024a" class="csl-entry" role="listitem">
+Mérigonde, M. (2024b, April 12). <em>Actes du congrès de l<span>’</span>Association Française de Sémiotique</em>. <a href="https://doi.org/10.25965/as.8519">https://doi.org/10.25965/as.8519</a>
+</div>
+<div id="ref-pignier2020" class="csl-entry" role="listitem">
+Pignier, N. (2020). <em>Approche éco-sémiotique du convivialisme à « l<span>’</span>ère du numérique »</em>. <a href="https://unilim.hal.science/hal-02490975">https://unilim.hal.science/hal-02490975</a>
+</div>
+<div id="ref-powers2018" class="csl-entry" role="listitem">
+Powers, R. (2018). <em>L’Arbre-Monde</em>. Cherche Midi.
+</div>
+<div id="ref-qiskit/q2026" class="csl-entry" role="listitem">
+<em>Qiskit/qiskit: Qiskit 2.6.1</em>. (2026). Zenodo. <a href="https://doi.org/10.5281/ZENODO.2583252">https://doi.org/10.5281/ZENODO.2583252</a>
+</div>
+<div id="ref-schoentjes2025" class="csl-entry" role="listitem">
+Schoentjes, P. (2025). Cultiver notre jardin littéraire. Écopoétique et engagement environnemental. <em>Raison présente</em>, <em>234</em>(2), 69–78. <a href="https://doi.org/10.3917/rpre.234.0069">https://doi.org/10.3917/rpre.234.0069</a>
+</div>
+<div id="ref-sebeok2021" class="csl-entry" role="listitem">
+Sebeok, T. A. (2021). <em>Zoosemiotics: At the Intersection of Nature and Culture</em>. De Gruyter.
+</div>
+<div id="ref-simondon1958" class="csl-entry" role="listitem">
+Simondon, G. (1958). <em>Du mode d’existence des objets techniques</em>. Flammarion. <a href="https://shs.cairn.info/du-mode-dexistence-des-objets-techniques--9782081231412">https://shs.cairn.info/du-mode-dexistence-des-objets-techniques--9782081231412</a>
+</div>
+<div id="ref-stiegler" class="csl-entry" role="listitem">
+Stiegler, B. (n.d.). <em>Petit glossaire « stieglerien » :</em>
+</div>
+<div id="ref-szoniecky2023" class="csl-entry" role="listitem">
+Szoniecky, S. (2023). <em>Intelligences végétales</em>. Presses du réel (Les). <a href="https://journals.openedition.org/lectures/59146">https://journals.openedition.org/lectures/59146</a>
+</div>
+<div id="ref-szoniecky2024" class="csl-entry" role="listitem">
+Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
+</div>
+<div id="ref-szoniecky2016" class="csl-entry" role="listitem">
+Szoniecky, S., &amp; Bouhai, N. (2016). <em>Collective intelligence and digital archives</em>. ISTE Ltd/John Wiley; Sons Inc.
+</div>
+<div id="ref-szoniecky" class="csl-entry" role="listitem">
+Szoniecky, S., &amp; Claude, A. (n.d.). <em>Samszo/ecosysteme-agents-recherche</em>. <a href="https://github.com/samszo/ecosysteme-agents-recherche">https://github.com/samszo/ecosysteme-agents-recherche</a>
+</div>
+<div id="ref-tassin2016" class="csl-entry" role="listitem">
+Tassin, J. (2016). Chapitre II. Mouvement. <em>Hors collection</em>, 27–41. <a href="https://stm.cairn.info/a-quoi-pensent-les-plantes--9782738134837-page-27">https://stm.cairn.info/a-quoi-pensent-les-plantes--9782738134837-page-27</a>
+</div>
+<div id="ref-vieira2015" class="csl-entry" role="listitem">
+Vieira, L. (2015, November 3). <em>Les écosystèmes numériques et la démocratisation informationnelle : Intelligence collective, Développement durable, Interculturalité, Transfert de connaissances</em>. <a href="https://hal-uag.archives-ouvertes.fr/hal-01276701/document">https://hal-uag.archives-ouvertes.fr/hal-01276701/document</a>
+</div>
+<div id="ref-wiesner1883" class="csl-entry" role="listitem">
+Wiesner, M. J. (1883). <em>La faculté motrice des plantes</em>. <a href="https://darwin-online.org.uk/converted/pdf/1883_Review_Movement_Weisner_A2633.pdf">https://darwin-online.org.uk/converted/pdf/1883_Review_Movement_Weisner_A2633.pdf</a>
+</div>
+<div id="ref-µ2015" class="csl-entry" role="listitem">
+µG., Edeline, F., &amp; Klinkenberg, J.-M. (2015). <em>Principia semiotica : Aux sources du sens</em>. Les impressions nouvelles éditions.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,6 +1,6 @@
 ---
 version: 0.0.1
-csl: ../../assets/csl/apa.csl
+csl: ../assets/csl/apa.csl
 bibliography: references.bib
 author:
   - name: Samuel Szoniecky
@@ -86,7 +86,7 @@ Dans ce cadre, la connaissance procède du couplage immanent de ces quatre dimen
 
 Le fonctionnement interne de cet écosystème hybride est rythmé par un cycle continu de « pulsations existentielles » — ou cycles de sémiose —, qui orchestre la circulation des flux d'information entre le milieu matériel extérieur et l'intériorité cognitive des actants. Comme nous l'avons formalisé [@szoniecky2024] à l'aide d'Augustin Berque [@berque2009] et du Groupe µ [@µ2015], chaque pulsation existentielle engage une respiration entre l'univers ambiant et le monde intérieur. Ce cycle s'éclaire à la lumière de l'économie politique des affects théorisée par Gabriel Tarde \[lazarato\] et réactualisée par Yves Citton [@citton], articulée autour de deux forces noopolitiques motrices : la **Croyance** (qui détermine la valeur-vérité et la crédibilité des représentations) et le **Désir** (le *conatus* d'agir spinoziste, régissant la valeur-utilité et la valeur-beauté).
 
-![Pulsation sémiotique](images/scene_1.png)
+![Fig. 1 = Pulsation sémiotique](images/scene_1.png)
 
 La pulsation sémiotique déploie quatre pouvoirs successifs qui transforment l'information en mémoire et en action :
 
@@ -121,13 +121,11 @@ Afin de conférer aux agents artificiels une puissance d'agir située qui échap
            Similarités)          des arêtes physiques)
 ```
 
-Ce circuit quantique, implémenté au sein d'un micro-service logiciel à l'aide de la bibliothèque Qiskit, traduit l'alternance des phases de la sémiose au moyen de deux couches d'opérateurs complémentaires :
+Ce circuit quantique, implémenté au sein d'un micro-service logiciel à l'aide de la bibliothèque Qiskit [@qiskit/q2026], traduit l'alternance des phases de la sémiose au moyen de deux couches d'opérateurs complémentaires :
 
--   La subjectivité de l'acteur s'amorce par l'application de portes de rotation paramétrées $R_y(theta_i)$ sur chaque qubit du registre. Les angles $theta_i$ représentent les affects et les désirs propres de l'actant vis-à-vis des concepts explorés. Refusant le mythe d'une *tabula rasa* où l'agent opérerait sans ancrage historique, le modèle s'appuie sur le concept de rétention tertiaire forgé par Bernard Stiegler : les paramètres initiaux sont calibrés à partir du bruit de fond sémantique de l'archive existante. Ils sont précalculés par un encodage d'amplitude reliant l'angle au poids sémantique normalisé \$W_i\$ du concept issu de l'archive physique :
+-   La subjectivité de l'acteur s'amorce par l'application de portes de rotation paramétrées $R_y(theta_i)$ sur chaque qubit du registre. Les angles $theta_i$ représentent les affects et les désirs propres de l'actant vis-à-vis des concepts explorés. Refusant le mythe d'une *tabula rasa* où l'agent opérerait sans ancrage historique, le modèle s'appuie sur le concept de rétention tertiaire forgé par Bernard Stiegler [@stiegler] : les paramètres initiaux sont calibrés à partir du bruit de fond sémantique de l'archive existante. Ils sont précalculés par un encodage d'amplitude reliant l'angle au poids sémantique normalisé $W_i$ du concept issu de l'archive physique : $theta_i = 2 arcsin(sqrt{W_i})$
 
-\$\$\\theta_i = 2 \\arcsin(\\sqrt{W_i})\$\$
-
-L'association des idées n'est pas abandonnée au hasard. Afin de lier étroitement l'espace lisse de l'intuition à l'espace strié de la matière, la couche d'intrication est littéralement sculptée selon les hiérarchies physiques préexistantes de l'archive (par exemple les relations Dublin Core `dcterms:isPartOf` au sein d'un graphe de connaissances Omeka S). Des portes logiques conditionnelles CNOT (\$CX\$) sont disposées exclusivement entre les qubits dont les concepts partagent une relation de subordination matérielle :
+L'association des idées n'est pas abandonnée au hasard. Afin de lier étroitement l'espace lisse de l'intuition à l'espace strié de la matière, la couche d'intrication est littéralement sculptée selon les hiérarchies physiques préexistantes de l'archive (par exemple les relations Dublin Core `dcterms:isPartOf` au sein d'un graphe de connaissances). Des portes logiques conditionnelles CNOT ($CX$) sont disposées exclusivement entre les qubits dont les concepts partagent une relation de subordination matérielle :
 
 ```         
 from qiskit import QuantumCircuit
@@ -155,112 +153,200 @@ def build_actor_circuit(num_qubits: int, hierarchical_edges: List[Tuple[int, int
     return qc, theta
 ```
 
-Cette architecture contraint l'onde de probabilité quantique à se propager le long des canaux de l'archive : si un concept parent dispose d'une forte activation sémantique, la porte \$CX\$ transmet cette résonance à ses descendants, modélisant une tension directe entre fidélité archivistique et exploration intuitive.
+Cette architecture contraint l'onde de probabilité quantique à se propager le long des canaux de l'archive : si un concept parent dispose d'une forte activation sémantique, la porte $CX$ transmet cette résonance à ses descendants, modélisant une tension directe entre fidélité archivistique et exploration intuitive.
 
-À l'issue de l'exécution quantique, l'effondrement de la fonction d'onde révèle la ligne de fuite dominante — l'état le plus fréquemment mesuré —, qui matérialise le parcours conceptuel privilégié par l'agencement. Lorsque l'action menée par l'acteur produit une rétroaction signifiante dans le milieu, l'algorithme d'optimisation sous contraintes classiques COBYLA (*Constrained Optimization BY Linear Approximations*) ajuste rétroactivement les angles \$\\theta\$ :
+À l'issue de l'exécution quantique, l'effondrement de la fonction d'onde révèle la ligne de fuite dominante — l'état le plus fréquemment mesuré —, qui matérialise le parcours conceptuel privilégié par l'agencement. Lorsque l'action menée par l'acteur produit une rétroaction signifiante dans le milieu, l'algorithme d'optimisation sous contraintes classiques COBYLA (*Constrained Optimization BY Linear Approximations*) ajuste rétroactivement les angles $theta$ :
 
-\$\$\\theta\^{(t+1)} = \\text{COBYLA}(\\theta\^{(t)}, E(n))\$\$
+$theta^{(t+1)} = text{COBYLA}(theta^{(t)}, E(n))$
 
-où \$E(n)\$ représente la fonction d'évaluation mesurant l'adéquation écologique et heuristique de l'action à la pulsation \$n\$. Cet ajustement continu préserve l'actant de la dette cognitive et de la prolétarisation de la pensée dénoncées par Anne Alombert et Bernard Stiegler : l'intelligence artificielle n'est plus un oracle opaque distribuant des réponses préfabriquées, mais un instrument subjectivé et plastique qui affine ses inclinations en symbiose avec l'humain et les rétroactions du milieu.
+où $E(n)$ représente la fonction d'évaluation mesurant l'adéquation écologique et heuristique de l'action à la pulsation $n$. Cet ajustement continu préserve l'actant de la dette cognitive et de la prolétarisation de la pensée dénoncées par Anne Alombert [@alombert2023]: l'intelligence artificielle n'est plus un oracle opaque distribuant des réponses préfabriquées, mais un instrument subjectivé et plastique qui affine ses inclinations en symbiose avec l'humain et les rétroactions du milieu.
 
-L'actualisation catasémiotique de cette pulsation est confiée à un agent chroniqueur cognitif, déployé via le framework Mastra, qui condense l'expérience sous la forme d'un récit structuré en Markdown. Pour inscrire durablement ce récit sans effacer l'histoire du milieu, l'orchestrateur opère une fusion vectorielle hybride entre le vecteur hérité des sources (\$V\_{\\text{héritage}}\$, barycentre des embeddings des documents ou des signaux d'origine) et le vecteur novateur produit par l'analyse (\$V\_{\\text{texte}}\$) :
+L'actualisation catasémiotique de cette pulsation est confiée à un agent chroniqueur cognitif, déployé via le framework Mastra [@mastra-a], qui condense l'expérience sous la forme d'un récit structuré en Markdown. Pour inscrire durablement ce récit sans effacer l'histoire du milieu, l'orchestrateur opère une fusion vectorielle hybride entre le vecteur hérité des sources (\$V\_{text{héritage}}\$, barycentre des embeddings des documents ou des signaux d'origine) et le vecteur novateur produit par l'analyse (\$V\_{text{texte}}\$) :
 
-\$\$V\_{\\text{hybride}} = \\alpha V\_{\\text{texte}} + (1 - \\alpha) V\_{\\text{héritage}}\$\$
+\$V\_{text{hybride}} = alpha V\_{text{texte}} + (1 - alpha) V\_{text{héritage}}\$
 
-\$\$V\_{\\text{final}} = \\frac{V\_{\\text{hybride}}}{\\\|V\_{\\text{hybride}}\\\|}\$\$
+\$V\_{text{final}} = frac{V\_{text{hybride}}}{\|V\_{text{hybride}}\|}\$
 
-Le paramètre scalaire \$\\alpha \\in \[0 ; 1\]\$ fait office de curseur de singularité. Si \$\\alpha \\to 0\$, la trace privilégie l'ancrage conservateur dans l'archive ; si \$\\alpha \\to 1\$, elle consacre l'émancipation inventive du saut sémiotique. Une fois normalisé, ce vecteur \$V\_{\\text{final}}\$ est réinjecté dans la base sémantique en s'adossant à un prédicat hiérarchique explicite (`dcterms:isVersionOf`), assurant le bouclage autopoïétique d'une mémoire topologique vivante.
+Le paramètre scalaire \$alpha in \[0 ; 1\]\$ fait office de curseur de singularité. Si \$alpha to 0\$, la trace privilégie l'ancrage conservateur dans l'archive ; si \$alpha to 1\$, elle consacre l'émancipation inventive du saut sémiotique. Une fois normalisé, ce vecteur \$V\_{text{final}}\$ est réinjecté dans la base sémantique en s'adossant à un prédicat hiérarchique explicite (`dcterms:isVersionOf`), assurant le bouclage autopoïétique d'une mémoire topologique vivante.
 
-2.4. La morphologie de l’apprentissage : cinématique de la spirale conique de Pappus déformée
+### La morphologie de l’apprentissage : cinématique de la spirale conique de Pappus déformée
 
 Pour rendre visuellement et géométriquement intelligible cette dynamique cognitive sans retomber dans la linéarité unidirectionnelle du modèle séquentiel de Turing, le métamodèle modélise la trajectoire de l'actant sous la forme d'une **spirale conique de Pappus non régulière et déformable**. Cette morphologie résout le dilemme épistémologique d'un savoir qui est à la fois cyclique (retour périodique sur les mêmes concepts par anasémiose) et cumulatif (différence introduite par la sédimentation catasémiotique de chaque expérience).
 
+![Fig. 2 : Spirale Conique de Pappus [@ferréol2014]](images/spiraleConiquePappus.png){fig-align="center"}
+
 Dans un repère tridimensionnel, la cinématique d'une pulsation s'exprime par le système d'équations paramétriques suivant :
 
-\$\$\\begin{cases} x(\\theta, \\tau) = R(\\theta, \\tau) \\cos(\\theta) \\\\ y(\\theta, \\tau) = R(\\theta, \\tau) \\sin(\\theta) \\\\ z(\\theta, \\tau) = \\Psi(\\tau) \\cdot c \\cdot \\theta \\end{cases}\$\$
+$begin{cases} x(theta, tau) = R(theta, tau) cos(theta) \ y(theta, tau) = R(theta, tau) sin(theta) \ z(theta, tau) = Psi(tau) cdot c cdot theta end{cases}$
 
-où \$\\theta\$ mesure l'accumulation historique et continue des connaissances de l'actant, tandis que \$\\tau\$ représente le temps rythmique interne de la pulsation sémiotique.
+où $theta$ mesure l'accumulation historique et continue des connaissances de l'actant, tandis que $tau$ représente le temps rythmique interne de la pulsation sémiotique.
 
 La déformation vivante de ce cône est gouvernée par deux fonctions régulatrices :
 
-1.  **La fonction d'écrasement rythmique** \$\\Psi(\\tau)\$ **(Le ressort cognitif) :** L'oscillation interne du modèle entre repli intuitif et déploiement archivistique est régie par un opérateur borné \$\\Psi(\\tau) \\in \[0 ; 1\]\$ : \$\$\\Psi(\\tau) = \\frac{1 - \\cos(\\omega \\tau)}{2}\$\$
+1.  **La fonction d'écrasement rythmique** $Psi(tau)$ **(Le ressort cognitif) :** L'oscillation interne du modèle entre repli intuitif et déploiement archivistique est régie par un opérateur borné $Psi(tau) in [0 ; 1]$ : $Psi(tau) = frac{1 - cos(omega tau)}{2}$
 
-    -   *Le Pli (Diastole conceptuelle) :* Lorsque \$\\Psi(\\tau) \\to 0\$, l'altitude verticale s'annule (\$z \\to 0\$). La spirale conique tridimensionnelle s'écrase sur le plan horizontal pour adopter la silhouette d'une spirale d'Archimède bidimensionnelle. Les frontières hiérarchiques et les distances physiques de l'archive sont suspendues : l'esprit pénètre l'espace lisse de la résonance quantique où toutes les affinités conceptuelles deviennent simultanément accessibles.
+    -   *Le Pli (Diastole conceptuelle) :* Lorsque $Psi(tau) to 0$, l'altitude verticale s'annule ($z to 0$). La spirale conique tridimensionnelle s'écrase sur le plan horizontal pour adopter la silhouette d'une spirale d'Archimède bidimensionnelle. Les frontières hiérarchiques et les distances physiques de l'archive sont suspendues : l'esprit pénètre l'espace lisse de la résonance quantique où toutes les affinités conceptuelles deviennent simultanément accessibles.
 
-    -   *Le Déploiement (Systole topographique) :* Lorsque \$\\Psi(\\tau) \\to 1\$, le ressort se détend et la hauteur \$z\$ s'élève le long de la constante de sédimentation \$c\$. La verticalité réinstaure l'espace strié des règles archivistiques : le nouvel énoncé est consigné, indexé et rattaché à son socle matériel.
+    -   *Le Déploiement (Systole topographique) :* Lorsque $Psi(tau) to 1$, le ressort se détend et la hauteur $z$ s'élève le long de la constante de sédimentation $c$. La verticalité réinstaure l'espace strié des règles archivistiques : le nouvel énoncé est consigné, indexé et rattaché à son socle matériel.
 
-2.  **La fonction de rayon dynamique** \$R(\\theta, \\tau)\$ **(La déformation du cône) :** Le rayon du cône n'est pas fixe ; il enregistre la tension dialectique permanente entre l'audace intuitive de l'actant et la résistance topographique du milieu : \$\$R(\\theta, \\tau) = \\theta \\cdot \\Big\[ (1 - \\Psi(\\tau)) \\cdot D\_{\\text{conceptuel}}(n) + \\Psi(\\tau) \\cdot \\Delta\_{\\text{topo}}(n) \\Big\]\$\$
+2.  **La fonction de rayon dynamique** $R(theta, tau)$ **(La déformation du cône) :** Le rayon du cône n'est pas fixe ; il enregistre la tension dialectique permanente entre l'audace intuitive de l'actant et la résistance topographique du milieu : $R(theta, tau) = theta cdot Big[ (1 - Psi(tau)) cdot D_{text{conceptuel}}(n) + Psi(tau) cdot Delta_{text{topo}}(n) Big]$
 
-    -   *La dilatation rhizomatique* \$D\_{\\text{conceptuel}}(n)\$ *(À la base,* \$z = 0\$*) :* Elle correspond à la distance sémantique maximale franchie par l'actant lors du saut intuitif quantique, calculée à partir des similarités cosinus \$(1 - S\_{AB})\$ dans l'espace des plongements vectoriels. Si l'actant tisse un lien hétérodoxe entre des champs de savoirs éloignés, la base de son cône s'évase considérablement.
+    -   *La dilatation rhizomatique* $D_{text{conceptuel}}(n)$ *(À la base,* $z = 0$*) :* Elle correspond à la distance sémantique maximale franchie par l'actant lors du saut intuitif quantique, calculée à partir des similarités cosinus $(1 - S_{AB})$ dans l'espace des plongements vectoriels. Si l'actant tisse un lien hétérodoxe entre des champs de savoirs éloignés, la base de son cône s'évase considérablement.
 
-    -   *La contraction topographique* \$\\Delta\_{\\text{topo}}(n)\$ *(Au sommet,* \$z\$ *maximal) :* Elle mesure le déplacement physique réel de l'actant dans le réseau documentaire (le nombre d'arêtes ou d'arborescences concrètement traversées). Si l'actant sédimente son intuition sur place dans sa collection d'origine, le sommet du cône se resserre brutalement, sculptant une morphologie acérée en pointe de flèche.
+    -   *La contraction topographique* $Delta_{text{topo}}(n)$ *(Au sommet,* $z$ *maximal) :* Elle mesure le déplacement physique réel de l'actant dans le réseau documentaire (le nombre d'arêtes ou d'arborescences concrètement traversées). Si l'actant sédimente son intuition sur place dans sa collection d'origine, le sommet du cône se resserre brutalement, sculptant une morphologie acérée en pointe de flèche.
 
 Par cette géométrie plastique, la spirale conique de Pappus déformée s'érige en véritable empreinte digitale diagrammatique de l'intellection. Elle consigne dans sa morphologie spatiale si l'apprentissage a procédé d'une illumination associative transversale (base évasée) ou d'une exploration méthodique du corpus (sommet élargi), matérialisant ainsi la mémoire topologique indispensable au pilotage éthique des écosystèmes hybrides.
 
 ------------------------------------------------------------------------
 
-3\. L'instrumentation concrète du design symbiotique : phyto-informatique, agents discursifs et médiations de la transition
+## L'instrumentation concrète du design symbiotique : phyto-informatique, agents discursifs et médiations de la transition
 
-3.1. Phyto-informatique, bio-inspiration et couplages bioacoustiques : vers des interfaces symbiotiques
+### Phyto-informatique, bio-inspiration et couplages bioacoustiques : vers des interfaces symbiotiques
 
-L'inscription de l'intelligence végétale dans les sciences de la conception répond directement à l'invitation du colloque 01Design d'interroger le « design de l'intelligence » à travers l'entrelacement de l'intellection humaine, de la modélisation scientifique et des techniques de création matérielle ou informationnelle. En convoquant la typologie des intelligences multiples développée par Howard Gardner, l'appel de 01Design souligne l'urgence de dépasser la seule prééminence des modèles logico-mathématiques ou linguistiques pour mobiliser **l'intelligence naturaliste** et bâtir des artefacts capacitants attentifs à leurs écosystèmes.
+L'inscription de l'intelligence végétale dans les sciences de la conception répond directement à l'invitation du colloque 01Design d'interroger le « design de l'intelligence » à travers l'entrelacement de l'intellection humaine, de la modélisation scientifique et des techniques de création matérielle ou informationnelle. En convoquant la typologie des intelligences multiples développée par Howard Gardner [@gardner2009], l'appel de 01Design souligne l'urgence de dépasser la seule prééminence des modèles logico-mathématiques ou linguistiques pour mobiliser **l'intelligence naturaliste** et bâtir des dispositifs numériques respectueux à leurs écosystèmes.
 
-Cette préoccupation s'articule directement aux « cinq esprits du futur » dégagés par Howard Gardner en 2007 : au-delà de l'esprit disciplinaire et de l'esprit synthétique, ce sont l'esprit créatif, l'esprit respectueux (fondé sur l'accueil de l'altérité culturelle et écologique) et l'esprit éthique (portant la responsabilité envers la communauté du vivant) qui doivent guider la conception des technologies de l'intelligence.
+Cette préoccupation s'articule directement aux « cinq esprits du futur » dégagés par Howard Gardner : au-delà de l'esprit disciplinaire et de l'esprit synthétique, ce sont l'esprit créatif, l'esprit respectueux (fondé sur l'accueil de l'altérité culturelle et écologique) et l'esprit éthique (portant la responsabilité envers la communauté du vivant) qui doivent guider la conception des technologies de l'intelligence.
 
 Les modes d'existence des plantes constituent un modèle d'inspiration majeur pour concevoir des écosystèmes info-communicationnels complexes et renouveler l'ergonomie de nos interactions. Dès le XIVe siècle, Raymond Lulle recourait à l'« arbre des sciences » pour matérialiser une pensée diagrammatique associant hiérarchies d'échelles et dynamiques relationnelles. Aujourd'hui, cette morphologie structure le design des interfaces homme-machine à travers l'usage universel des arborescences.
 
-Toutefois, l'éthologie végétale pousse cette analogie computationnelle bien au-delà de la métaphore graphique : Stefano Mancuso théorise ainsi la genèse de « phyto-ordinateurs », dispositifs techniques recourant à des algorithmes directement dérivés des principes de calcul et de répartition modulaire des plantes. Ne possédant aucun organe central vulnérable, le végétal fonctionne comme une colonie de modules interactifs capables d'évaluer de multiples gradients physiques pour résoudre des arbitrages contradictoires. Dans le champ du design, ce modèle réconcilie l'arbre-racine (modèle régulateur et transcendant) et le rhizome (processus immanent de réseaux ouverts) décrits par Gilles Deleuze et Félix Guattari, offrant une matrice morphologique qui préserve les systèmes d'information de la rigidité pyramidale.
+![Fig. 3 : Arbre des sciences [@lulle1515]](images/ArbreScienceRDeLulle.jpg)
 
-Cette phyto-informatique trouve un ancrage expérimental immédiat dans le domaine de la bioacoustique et de la mécanobiologie végétale. Les recherches conduites par le groupe interdisciplinaire INRAE/LAUM/CNRS « Vibration des plantes » ont démontré que les organismes végétaux perçoivent les ondes sonores et les signaux mécaniques oscillatoires. Lorsqu'une plante est soumise à des stimulations acoustiques répétées, elle met en place un *priming* mécanique qui renforce ses défenses immunitaires face aux attaques de pathogènes. La modélisation moléculaire de ce mécanisme a mis en évidence une mémoire transcriptionnelle orchestrant la reprogrammation d'environ 10 000 gènes chez *Arabidopsis thaliana*.
+Toutefois, l'éthologie végétale pousse cette analogie computationnelle bien au-delà de la métaphore graphique : Stefano Mancuso [@mancuso2018c] théorise ainsi la genèse de « phyto-ordinateurs », dispositifs techniques recourant à des algorithmes directement dérivés des principes de calcul et de répartition modulaire des plantes. Ne possédant aucun organe central vulnérable, le végétal fonctionne comme une colonie de modules interactifs capables d'évaluer de multiples gradients physiques pour résoudre des arbitrages contradictoires. Dans le champ du design, comme nous l'avons vu plus haut, ce modèle réconcilie l'arbre-racine (modèle régulateur et transcendant) et le rhizome (processus immanent de réseaux ouverts) décrits par Gilles Deleuze et Félix Guattari, offrant une matrice morphologique qui préserve les systèmes d'information de la rigidité pyramidale.
+
+Cette phyto-informatique trouve un ancrage expérimental immédiat dans le domaine de la bioacoustique et de la mécanobiologie végétale. Les recherches conduites par le groupe interdisciplinaire INRAE/LAUM/CNRS « Vibration des plantes » [@barbacci2023a] ont démontré que les organismes végétaux perçoivent les ondes sonores et les signaux mécaniques oscillatoires. Lorsqu'une plante est soumise à des stimulations acoustiques répétées, elle met en place un *priming* mécanique qui renforce ses défenses immunitaires face aux attaques de pathogènes. La modélisation moléculaire de ce mécanisme a mis en évidence une mémoire transcriptionnelle orchestrant la reprogrammation d'environ 10 000 gènes chez *Arabidopsis thaliana*.
 
 Pour les concepteurs d'écosystèmes hybrides, cette découverte ouvre la voie à un couplage technobiologique vertueux : au lieu d'asservir la plante à une surveillance passive par capteurs, l'émission d'ondes sonores ciblées devient un mode d'action agroécologique durable, substituant une signalisation acoustique non invasive aux intrants chimiques de synthèse. Le végétal devient un partenaire interactif dont la sensibilité physique dicte les fréquences et les rythmes du dispositif technique.
 
-3.2. Médiation conversationnelle et esprit critique : les expérimentations LITTE_BOT et Polemika
+### Analyse critique d'un écosystème d'agents de recherche
 
-L'opérationnalisation du métamodèle onto-éthique et le déploiement d'agents dotés d'une subjectivité située trouvent une démonstration empirique dans deux réalisations emblématiques des humanités numériques : les projets LITTE_BOT et Polemika. Tous deux éprouvent la capacité des technologies computationnelles à s'émanciper du modèle de la « boîte noire » pour devenir des instruments d'élucidation critique et de co-énonciation.
+Afin d'éprouver la consistance pragmatique du métamodèle onto-éthique et d'observer comment s'articulent concrètement la mémoire archivistique, les agents computationnels discursifs et l'agentivité des chercheurs au sein de la chaîne de production scientifique, il convient d'analyser l'**écosystème d'agents de recherche** développé au Laboratoire Paragraphe (Université Paris 8). Écrit en TypeScript et exécuté sous Node.js 22+ au moyen de processus enfants contrôlés par l'orchestrateur Mastra, cet écosystème s'appuie techniquement sur trois piliers : les modèles de langage souverains de l'**API Albert** (déployée par l'État français), l'API REST de gestion bibliographique **Zotero v3** et le serveur d'archives numériques **Omeka S** [@szoniecky].
 
-Conçu à l'occasion du 400e anniversaire de Molière pour l'exposition « Molière, le jeu du vrai et du faux » (2022) par une équipe associant l'artiste dramaturge Rocio Berenguer, le département des Arts du spectacle de la Bibliothèque nationale de France (BnF) et les chercheurs en SIC Anna Pappa et Samuel Szoniecky, le projet **LITTE_BOT** a donné naissance à un agent conversationnel incarnant la figure théâtrale de *Dom Juan*. Ce dispositif illustre concrètement l'articulation des dimensions existentielles du métamodèle :
+Cet écosystème déploie trois applications autonomes mais étroitement interdépendantes, dont chacune matérialise une modalité spécifique de la sémiose et de la co-énonciation hybride :
 
--   **Dimension matérielle :** L'interface vocale d'interaction dans l'espace muséal et les bases documentaires patrimoniales issues de Gallica.
+```         
+             ┌─────────────────────────────────────────────────────────────┐
+             │                ÉCOSYSTÈME MULTI-APPLICATIONS                │
+             │           (Laboratoire Paragraphe - Paris 8)                │
+             └─────────────────────────────────────────────────────────────┘
+                                            │
+       ┌────────────────────────────────────┼────────────────────────────────────┐
+       ▼                                    ▼                                    ▼
+┌──────────────────────────┐   ┌──────────────────────────┐   ┌──────────────────────────┐
+│   ATELIER D'ARTICLES     │   ┌   EXPLOZOTEROANNO        │   │   CHAOTICUMSEMINARIO     │
+│ (academic-paper-factory) │   │  (explo-zotero-anno)     │   │   (conférence jouée)     │
+│                          │   │                          │   │                          │
+│ • Analyse d'AAP          │   │ • Grille de positionnement│   │ • Partition 5 écrans     │
+│ • Graphe de concepts     │   │   (8 couleurs chromatiques)│   │ • Modèle de vision diapo │
+│ • Fleiss / Cohen Kappa   │   │ • Tension des lectures   │   │ • Diagrammes Mermaid     │
+│ • Rédaction PropAPP      │   │ • Agent de thèmes (LLM)  │   │ • Whisper & Grist live   │
+│ • Relecture critique     │   │ • RAG Albert (bge-m3)    │   │ • Intrication en direct  │
+└──────────────────────────┘   └──────────────────────────┘   └──────────────────────────┘
+       │                                    │                                    │
+       └────────────────────────────────────┼────────────────────────────────────┘
+                                            ▼
+                          [ SOCLE COMMUN / SÉDIMENTATION ]
+                          • Zotero v3 (Sources & Annotations)
+                          • Omeka S (Graphes SKOS & RDF)
+                          • Albert API (LLM & Embeddings)
+                          • Suivi métrique (Tokens, Énergie, Carbone)
+```
 
--   **Dimension conceptuelle :** Les réseaux sémantiques formels et les règles dramaturgiques guidant l'expression du personnage.
+#### L'Atelier d'articles (academic-paper-factory) : l'anasémiose scientifique et l'évaluation inter-juges
 
--   **Dimension sociale :** Le collectif hybride unissant artistes, conservateurs, chercheurs en SIC, visiteurs et l'agent artificiel lui-même.
+L'Atelier d'articles (https://academic-paper-factory.humanum-p8.fr/) prend pour point de départ la réponse à un appel à propositions (AAP). L'architecture logicielle orchestre une première phase en parallèle : l'étape `analyze-cfp` (qui télécharge ou extrait le texte de l'appel pour générer un objet structuré `AttenduAPP` via l'agent `aapAnalystAgent`) s'exécute simultanément avec l'étape `fetch-literature` (qui extrait les pièces jointes, surlignages, notes et marqueurs d'une collection Zotero vers Omeka S).
 
-Au cœur de cette performance, l'anasémiose (Discerner) s'incarne dans la captation de la voix du spectateur via un crible acoustique, tandis que la catasémiose (Agir) s'actualise dans la réplique théâtrale émise à voix haute. En simulant le raisonnement séducteur et cynique du personnage, LITTE_BOT force l'interlocuteur humain à mobiliser sa propre puissance critique. L'archive patrimoniale cesse d'être un dépôt inerte pour s'affirmer comme un espace de résonance dynamique où le passé littéraire dialogue avec la sensibilité contemporaine.
+Puis, une seconde phase parallèle enchaîne le traitement : `build-wiki` extrait un graphe de concepts par une méthode Map-Reduce (`buildLLMWiki`) suivie d'un nettoyage déterministe et sémantique (`cleanGraph`), pendant que `kappa-analysis` calcule l'accord inter-juges sur les phrases codées par les annotateurs. Les données normalisées (`normalize-okf`) sont transmises à `draft-paper` (`writerAgent`), qui rédige la proposition d'article (`PropAPP.md`) au format Markdown compatible Pandoc avec références BibTeX (`PropAPP.bib`). Enfin, l'étape `review-paper` fait intervenir l'agent `epistemologistAgent` pour évaluer de manière critique la conformité de `PropAPP` au regard des contraintes initiales d'`AttenduAPP`.
 
-Développé par Orélie Desfriches Doria et Jean-Marc Meunier, le projet **Polemika** s'attaque quant à lui au défi de l'éducation à l'esprit critique face aux controverses sociotechniques, en analysant la tension entre l'habitus numérique des apprenants et leurs réactions passionnelles. Le dispositif propose une représentation cartographique des débats sous la forme de graphes argumentatifs :
+Sur le plan de l'évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l'accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d'annotation (`ACC-S`, `DES-F`, `RHET-E`, `DEP-S`...), le système calcule le **Kappa de Fleiss généralisé** (pour \$n\$ juges variables) ainsi que le **Kappa de Cohen** (pour les paires de juges) :
 
--   **Le crible d'anasémiose :** Il permet aux étudiants de décomposer le flux d'une controverse en distinguant méthodiquement les valeurs-utilités (les positions et arguments des parties prenantes) des valeurs-vérités (la fiabilité documentaire et la solidité des sources scientifiques).
+$P_i = frac{1}{n_i(n_i - 1)} left( sum_{j=1}^k n_{ij}^2 - n_i right), quad bar{P} = frac{1}{N} sum_{i=1}^N P_i$
 
--   **L'arbitrage des duels logiques :** En modélisant les affrontements d'idées, Polemika déconstruit les biais d'admiration passive (*admiratio*) et les raccourcis cognitifs induits par les bulles de filtres algorithmiques.
+$P_e = sum_{j=1}^k p_j^2 quad text{avec} quad p_j = frac{1}{N n} sum_{i=1}^N n_{ij}$
 
--   **La dynamique motrice de l'indignation :** Polemika démontre que la formation de l'esprit critique ne relève pas d'une rationalité désincarnée. L'irruption d'un affect fort — tel que l'indignation face à un sophisme — constitue le signal sémantique déclencheur qui arrache l'apprenant à sa passivité réceptrice. Cet affect le pousse à enquêter, à vérifier les allégations et à consigner de nouveaux nœuds argumentatifs, réajustant ainsi continuellement sa trajectoire d'apprentissage le long de sa propre spirale conique de Pappus.
+$kappa = frac{bar{P} - P_e}{1 - P_e}$
 
-3.3. La médiation littéraire de la transition : récits du vivant, empathie et co-énonciation
+Un seuil de validation $kappa ge 0{,}61$ (accord substantiel selon l'échelle de Landis et Koch) garantit que le corpus extrait ne relève pas d'un biais d'interprétation individuel mais d'un consensus scientifique robuste.
 
-L'intégration éthique des non-humains dans le design des écosystèmes hybrides ne peut reposer uniquement sur des équations mathématiques ou des protocoles d'ingénierie ; elle requiert une transformation profonde des sensibilités et de l'imaginaire social. Comme le met en lumière Mireille Mérigonde dans ses recherches sur la transition littéraire, la littérature contemporaine s'empare des découvertes des sciences de la nature pour opérer un décentrement radical de la focale narrative et réhabiliter la communication du vivant.
+Cependant, l'analyse critique révèle ici une tension épistémologique majeure : en confiant la relecture finale à un agent épistémologiste (`epistemologistAgent`), le système introduit un risque de « consensus circulaire ». Si l'agent reliseur s'appuie sur le même modèle analytique sous-jacent que l'agent rédacteur (`writerAgent`), la critique risque de valider la conformité de la forme au détriment de l'originalité du saut sémiotique. La véritable résonance exige dès lors que l'arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.
 
-Face à la crise environnementale de l'anthropocène, des écrivains comme Pierre Ducrozet soutiennent qu'une mission centrale de l'art réside dans la capacité à « décentrer le regard, ne plus être aussi anthropocentré », pour « devenir animal, plante, à raconter le monde autrement ». Cette entreprise narrative se heurte toutefois à une difficulté structurelle : la tendance spontanée à la personnification et à l'anthropomorphisme.
+#### exploZoteroAnno : l'écosémiotique des lectures collectives et la tension chromatique
 
-Pourtant, comme le soulignent Pierre Schoentjes et Vincent Jouve, le recours aux affects constitue un levier puissant d'immersion fictionnelle et d'adhésion éthique, développant l'intelligence émotionnelle du lecteur. Pour Jean-Marie Schaeffer et Nicolas Rouvière, c'est précisément cette empathie affective qui permet d'accéder à l'altérité d'un univers non-humain et de reconfigurer ses propres valeurs au contact du texte.
+La seconde application, **exploZoteroAnno** (https://explozotero.humanum-p8.fr/), est dédiée à l'animation d'une annotation collective au sein d'un groupe de recherche. Elle substitue à la recherche isolée un dispositif de lecture partagée adossé à une **grille de positionnement par couleurs** (jaune : idée clé, vert : accord, rouge : désaccord, bleu : définition, violet : méthode, magenta : question, orange : exemple, gris : contexte).
 
-Cette gradation de l'empathie s'observe dès la littérature de jeunesse avec *L'œil du loup* de Daniel Pennac. En mettant en scène la rencontre silencieuse entre un enfant et un loup borgne dans un jardin zoologique — où l'enfant choisit de fermer un œil pour se placer à hauteur d'animal —, Pennac déploie des récits de vie croisés qui concrétisent l'expérience éthique de « soi-même comme un autre ». Cette mise en résonance prépare le sujet à l'altérité et désamorce le réflexe de prédation.
+Pour analyser la divergence des interprétations lorsqu'au moins deux chercheurs annotent un même passage avec des couleurs distinctes, exploZoteroAnno calcule une **tension chromatique et sémantique** $Delta_c in [0 ; 1]$. Cette tension est directement dérivée du rapport d'opposition des teintes sur le cercle chromatique (couleurs identiques : 0 ; analogues : 0,2 ; en carré : 0,5 ; triadiques : 0,7 ; complémentaires : 1). La fonction `analyzeCollaboration` pondère ce rapport pour faire émerger un réseau de collaborations (rendu sous forme de graphe de forces interactif d3.js) où la couleur et l'épaisseur des liens entre chercheurs matérialisent le degré de tension de leurs postures théoriques.
 
-La transition esthétique s'approfondit ensuite exemplairement dans *L'arbre-monde* (*The Overstory*) de Richard Powers. Le romancier y romance les travaux pionniers de l'écologue Suzanne Simard — longtemps marginalisée par la communauté académique — autour de l'existence des réseaux mycorhiziens, des flux de nutriments et de la communication chimique forestière. À travers le personnage de la botaniste Patricia Westerford, Powers met en scène la découverte de la communication aéroportée des érables : lorsqu'un arbre est agressé par des insectes ravageurs, il émet des composés volatils qui préviennent ses voisins, incitant ces derniers à synthétiser des insecticides biologiques avant même d'être attaqués. Le texte montre des arbres statiques qui partagent un système immunitaire étendu à l'échelle de la forêt. En faisant éprouver au lecteur la violence de l'émotion de la chercheuse puis en opérant un débrayage énonciatif vers la perspective des arbres, Powers suscite une identification empathique profonde qui métamorphose le statut ontologique de la forêt, perçue dès lors comme une communauté sentiente et solidaire.
+Sur cette base, l'agent `discussionAgent` identifie les nœuds de controverse pour générer automatiquement un guide de thèmes de discussion (`themes_discussion.md`), orientant le débat humain vers les zones de friction conceptuelle les plus réjouissantes. En parallèle, l'intégration du RAG Albert permet aux membres du groupe d'interroger la collection Zotero en langage naturel. Les documents sont découpés en blocs (*chunks*), vectorisés par le modèle $bge-m3$ et déposés dans des collections privées Albert. Lors de la consultation (`ragQuery`), la recherche hybride (sémantique et lexicale) extrait les passages les plus pertinents et génère une réponse documentée, enregistrée sous forme d'item « Réponse RAG » dans Omeka S.
 
-Dans un registre plus expérimental, *Le mal de mer* de Marie Darrieussecq met en œuvre un zoocentrage fondé sur une variante physiologique du flux de conscience. L'auteure y décrit les déambulations d'un requin guidé par la perception électromagnétique des forces de l'attraction terrestre. La narratrice immerge le lecteur dans un monde de sensations brutes où l'animal interprète les « signes ambiants » nés de sa relation synesthésique au milieu marin, selon la conceptualisation de Nicole Pignier. Toutefois, le roman donne à voir les limites tragiques de cette sémiose lorsque le milieu est altéré : désorienté à l'approche du rivage et des masses minérales et métalliques, le squale subit un déséquilibre proprioceptif violent où ses sonars échouent à distinguer le haut du bas. Incapable d'instaurer une situation de co-énonciation équilibrée avec son environnement, l'animal s'échoue sur le sable. Ce traitement littéraire saisissant rend sensible la détresse des êtres vivants désajustés de leur *oikos* par les perturbations anthropiques.
+D'un point de vue critique, exploZoteroAnno offre une concrétisation remarquable de la co-énonciation au sens de Nicole Pignier et des signes persistant dans l'espace selon Thomas Sebeok. Les surlignages colorés constituent des traces sémiotiques non-verbales sédimentées dans le temps. L'option de fusion automatique des doublons (`groupDuplicates` via hachage MD5, DOI et normalisation des titres) résout le problème de l'éparpillage documentaire. Néanmoins, une limite subsiste : la fusion des documents rassemble les annotations faites par des utilisateurs distincts sur des exemplaires séparés, mais si les métadonnées d'origine sont incomplètes (annotations sans auteur issues d'un lecteur PDF externe), le système les regroupe sous l'étiquette `(non attribué)`, obscurcissant temporairement la traçabilité de l'énonciation.
 
-Cette médiation fictionnelle accomplit ce que Marielle Macé et Eduardo Kohn nomment « l'élargissement du parlement des voix ». En rendant perceptibles les signes du vivant, la littérature restaure la membrane sensible reliant le monde objectif et l'intériorité humaine, préparant le sujet à un accueil respectueux de la co-énonciation végétale.
+#### chaoticumSeminario : la conférence jouée et la performativité scénique du vivant
+
+La troisième application, **chaoticumSeminario** (https://chaoticumseminario.humanum-p8.fr/), pousse le design de l'intelligence vers la performance scénique et la conférence participative. Le système génère la **partition** d'une présentation structurée selon une séquence temporelle répétitive en cinq type d'écrans :
+
+$text{Cycle} = Big[ text{Citation (Zotero/Diigo)} longrightarrow text{Diapo (ConfErrance)} longrightarrow text{Question (LLM)} longrightarrow text{Contributions (Grist)} longrightarrow text{Diagramme (Mermaid)} Big]$
+
+L'architecture s'appuie sur une démarche multimodalité :
+
+-   Un modèle de vision (`slideDescriberAgent`) analyse la copie d'écran de chaque diapositive et chaque image annotée Diigo pour en extraire le titre, les mots-clés et le contenu sémantique visible.
+
+-   L'agent `seminarioAgent` utilise ces descriptions ainsi que le texte de la citation Zotero pour rédiger une question ouverte synthétique (inférieure à 15 mots) et composer un diagramme conceptuel.
+
+-   Le code Mermaid du diagramme est assembled de manière déterministe par `buildMermaid` et vérifié par une fonction de réparation automatique (`repairMermaid`), garantissant un rendu graphique d3.js/Mermaid sans erreur de syntaxe.
+
+Lors du déroulement de la conférence en direct via la page `jouer.html`, le dispositif orchestre une véritable intrication entre les actants humains et artificiels :
+
+-   Le public flashe un QR code pour soumettre des liens et des réactions via un formulaire Grist, que l'animateur modère et projette sur l'écran des contributions.
+
+-   Le présentateur active le moteur de reconnaissance vocale (`whisper-large-v3` via l'API Albert), qui découpe le flux audio en tranches de 15 secondes pour projeter des sous-titres en direct et consigner la transcription intégrale dans Omeka S.
+
+-   Les auditeurs peuvent suivre la présentation sur leur propre terminal (`/public/suivre`), annoter les diapositives à l'aide des couleurs de la grille et surligner la transcription en temps réel.
+
+Cette application matérialise l'expression scénique de la spirale conique de Pappus. La conférence oscillante alterne entre le Pli (l'écoute de la citation et l'intuition du diagramme Mermaid) et le Déploiement (la saisie des contributions du public et l'enregistrement de la séance sous forme d'item `bibo:Performance` dans Omeka S). Le système démontre comment un agencement multi-agents peut s'émanciper du format rigide des diapositives linéaires pour devenir une arène de co-énonciation vivante.
+
+#### Sobriété numérique, traçabilité et évaluable noopolitique
+
+Un des apports épistémologiques les plus stimulants de cet écosystème réside dans la prise en compte systématique de l'**empreinte matérielle de l'intelligence artificielle**. Loin de diffuser une illusion de dématérialisation, chaque appel d'agent ou d'outil mesure la consommation exacte de tokens via la fonction `recordUsage`. L'étape d'évaluation d'impact (`estimateImpact`) convertit ces tokens en indicateurs énergétiques, écologiques et économiques concrets :
+
+$text{Énergie (Joule)} = frac{2 times text{Paramètres Actifs} times 10^9}{text{FLOPS/Joule} times text{Utilisation}} times text{PUE}$
+
+$text{Émissions (g CO}_2 text{e)} = text{Énergie (kWh)} times text{Intensité Carbone (g CO}_2 text{e/kWh)}$
+
+Ces métriques (exprimées en watt-heures, grammes de $CO_2$ équivalent et coût financier simulé) sont publiées au sein du rapport de traitement, consignées dans la propriété `curation:data` de l'item de configuration d'Omeka S et affichées dans l'interface sous la forme d'équivalences parlantes (temps d'éclairage d'une ampoule LED ou nombre de recharges de smartphone).
+
+Le tableau ci-dessous offre une grille comparative synthétique des trois applications de l'écosystème au regard des dimensions du métamodèle onto-éthique :
+
+| Application | Fonction sémiotique prioritaire | Entrées matérielles et logicielles | Agents et Modèles mobilisés | Traces sédimentées dans Omeka S |
+|---------------|---------------|---------------|---------------|---------------|
+| **Atelier d'articles** | Anasémiose & Synthèse académique | Collection Zotero, Fichier/URL d'appel (AAP), Grille de codes | `aapAnalyst`, `writerAgent`, `epistemologistAgent`, `kappaAnalyst` | Item Appel (`AttenduAPP`, `PropAPP.md`, `PropAPP.bib`), Graphe SKOS, Rapport d'impact |
+| **exploZoteroAnno** | Co-énonciation & Tension des lectures | Bibliothèque de groupe Zotero, Grille 8 couleurs | `discussionAgent`, Modèle RAG Albert ($bge-m3$) | Item Configuration, Guide Markdown, Réseau d3.js, Réponses RAG, Matrice Kappa |
+| **chaoticumSeminario** | Performativité & Catasémiose live | Citations Zotero/Diigo, Diapos ConfErrance, Formulaire Grist | `slideDescriber`, `curatorAgent`, `seminarioAgent`, Whisper-large-v3 | Item `bibo:Performance`, Partition JSON, Transcription audio, Rejeu public |
+
+En adossant l'ensemble des données d'exécution aux standards de la **Science Ouverte** et aux principes **FAIR** (*Findable, Accessible, Interoperable, Reusable*), l'écosystème d'agents du Laboratoire Paragraphe apporte la démonstration qu'une ingénierie logicielle avancée peut mettre les technologies émergentes au service de l'intelligibilité du numérique [@bachimont2026], en transformant la recherche en un jardinage collaboratif et transparent des connaissances.
+
+### La médiation littéraire de la transition : récits du vivant, empathie et co-énonciation
+
+L'intégration éthique des non-humains dans le design des écosystèmes hybrides ne peut reposer uniquement sur des équations mathématiques ou des protocoles d'ingénierie ; elle requiert une transformation profonde des sensibilités et de l'imaginaire social. Comme le met en lumière Mireille Mérigonde dans ses recherches sur la transition littéraire [@mérigonde2024a], la littérature contemporaine s'empare des découvertes des sciences de la nature pour opérer un décentrement radical de la focale narrative et réhabiliter la communication du vivant.
+
+Face à la crise environnementale de l'anthropocène, des écrivains comme Pierre Ducrozet soutiennent qu'une mission centrale de l'art réside dans la capacité à « décentrer le regard, ne plus être aussi anthropocentré » [@mérigonde2024a], pour « devenir animal, plante, à raconter le monde autrement ». Cette entreprise narrative se heurte toutefois à une difficulté structurelle : la tendance spontanée à la personnification et à l'anthropomorphisme.
+
+Pourtant, comme le soulignent Pierre Schoentjes, le recours aux affects constitue un levier puissant d'immersion fictionnelle et d'adhésion éthique, développant l'intelligence émotionnelle du lecteur.
+
+« C’est en faisant levier sur l’imaginaire, en déplaçant les façons de percevoir le monde, qu’une littérature suffisamment singulière peut contribuer, à sa manière, à rééquilibrer le rapport entre les humains et un environnement qu’ils ont profondément fragilisé. » [@schoentjes2025, p. 78]
+
+La transition affective du végétal à l'humain est aussi particulièrement présente dans *L'arbre-monde* (*The Overstory*) de Richard Powers[@powers2018]. Le romancier y romance les travaux pionniers de l'écologue Suzanne Simard — longtemps marginalisée par la communauté académique — autour de l'existence des réseaux mycorhiziens, des flux de nutriments et de la communication chimique forestière. À travers le personnage de la botaniste Patricia Westerford, Powers met en scène la découverte de la communication aéroportée des érables : lorsqu'un arbre est agressé par des insectes ravageurs, il émet des composés volatils qui préviennent ses voisins, incitant ces derniers à synthétiser des insecticides biologiques avant même d'être attaqués. Le texte montre des arbres statiques qui partagent un système immunitaire étendu à l'échelle de la forêt. En faisant éprouver au lecteur la violence de l'émotion de la chercheuse puis en opérant un débrayage énonciatif vers la perspective des arbres, Powers suscite une identification empathique profonde qui métamorphose le statut ontologique de la forêt, perçue dès lors comme une communauté sentiente et solidaire.
+
+Dans un registre plus expérimental, *Le mal de mer* de Marie Darrieussecq [@darrieussecq2002]met en œuvre un zoocentrage fondé sur une variante physiologique du flux de conscience. L'auteure y décrit les déambulations d'un requin guidé par la perception électromagnétique des forces de l'attraction terrestre. La narratrice immerge le lecteur dans un monde de sensations brutes où l'animal interprète les « signes ambiants » nés de sa relation synesthésique au milieu marin, selon la conceptualisation de Nicole Pignier. Toutefois, le roman donne à voir les limites tragiques de cette sémiose lorsque le milieu est altéré : désorienté à l'approche du rivage et des masses minérales et métalliques, le squale subit un déséquilibre proprioceptif violent où ses sonars échouent à distinguer le haut du bas. Incapable d'instaurer une situation de co-énonciation équilibrée avec son environnement, l'animal s'échoue sur le sable. Ce traitement littéraire saisissant rend sensible la détresse des êtres vivants désajustés de leur *oikos* par les perturbations anthropiques.
+
+Cette médiation fictionnelle accomplit ce que Eduardo Kohn nomment « l'élargissement du parlement des voix » [@kohn2023]. En rendant perceptibles les signes du vivant, la littérature restaure la membrane sensible reliant le monde objectif et l'intériorité humaine, préparant le sujet à un accueil respectueux de la co-énonciation végétale.
 
 ------------------------------------------------------------------------
 
-Conclusion : Vers un « jardinage collaboratif » des savoirs dans la Science Ouverte
+## Conclusion : Vers un « jardinage collaboratif » des savoirs dans la Science Ouverte
 
-Au terme de ce parcours, le design d'écosystèmes hybrides associant humains, agents artificiels et intelligences végétales esquisse une réponse rigoureuse aux risques d'aliénation cognitive et d'abstraction technique.
+Au terme de ce parcours, le design d'écosystèmes hybrides associant humains, agents artificiels et intelligences végétales esquisse une proposition à repenser les risques d'aliénation cognitive et d'abstraction technique.
 
-En premier lieu, ce modèle réconcilie les exigences méthodologiques de la Science Ouverte et des principes FAIR (*Findable, Accessible, Interoperable, Reusable*). En adossant les plongements vectoriels de l'circuit quantique à l'infrastructure d'Omeka S et aux données ouvertes liées (Linked Open Data - LOD), chaque pulsation cognitive demeure traçable et réutilisable. La sédimentation par fusion vectorielle hybride et la consignation des angles d'affects protègent la démarche scientifique de l'opacité des modèles propriétaires, garantissant l'intelligibilité du numérique chère à Bruno Bachimont.
+En premier lieu, ce modèle réconcilie les exigences méthodologiques de la Science Ouverte et des principes FAIR (*Findable, Accessible, Interoperable, Reusable*). En adossant les plongements vectoriels d'un circuit quantique à l'infrastructure aux données ouvertes liées (Linked Open Data - LOD), chaque pulsation cognitive demeure traçable et réutilisable. La sédimentation par fusion vectorielle hybride et la consignation des angles d'affects protègent la démarche scientifique de l'opacité des modèles propriétaires, garantissant l'intelligibilité du numérique chère à Bruno Bachimont [@bachimont2026].
 
-En second lieu, l'agencement machinique hybride assume une portée noopolitique majeure. À l'image de la segmentarité territoriale des Yanomami analysée par Jacques Lizot — où les esprits animaux disséminés dans la forêt agissent comme une machine d'anticipation-conjuration neutralisant l'apparition d'un pouvoir étatique centralisé —, la prolifération d'agents d'IA de niche, locaux et souverains, préserve l'écosystème de l'impérialisme sémantique des grandes multinationales technologiques.
+En second lieu, l'agencement machinique hybride assume une portée noopolitique majeure. À l'image de la segmentarité territoriale des Yanomami analysée par Jacques Lizot — où les esprits animaux disséminés dans la forêt agissent comme une machine d'anticipation-conjuration neutralisant l'apparition d'un pouvoir étatique centralisé — [@lizot1984], la prolifération d'agents d'IA de niche, locaux et souverains, préserve l'écosystème de l'impérialisme sémantique des grandes multinationales technologiques [@corteel2025].
 
-Enfin, la métaphore directrice de ce design n'est plus l'extraction industrielle de données, mais le **« jardinage collaboratif des connaissances »**, tel que préconisé par Samuel Szoniecky. Penser et concevoir à l'écoute des plantes invite à bâtir une communauté de cohabitation où la technique retrouve la lenteur, la cyclicité et la mesure du vivant. En reconnaissant l'agentivité de nos « sœurs les plantes » au sein d'un métamodèle onto-éthique partagé, le design de l'intelligence cesse d'être un instrument de déterritorialisation pour devenir l'art délicat d'habiter ensemble la Terre.
+Enfin, la métaphore directrice de ce design n'est plus l'extraction industrielle de données, mais le **« jardinage collaboratif des connaissances »**. Penser et concevoir à l'écoute des plantes invite à bâtir une communauté de cohabitation où la technique retrouve la lenteur, la cyclicité et la mesure du vivant. En reconnaissant l'agentivité de nos « sœurs les plantes » au sein d'un métamodèle onto-éthique partagé, le design de l'intelligence cesse d'être un instrument de déterritorialisation pour devenir l'art délicat d'habiter ensemble la Terre.
