@@ -26,17 +26,21 @@ website:
       openSidebar: true
 ---
 
-# Habiter les écosystèmes hybrides : design, co-énonciation et intelligence végétale
+# Habiter les écosystèmes hybrides : design des intelligences collectives, artificielles et environnementales
 
 ## Introduction
 
-Cette contribution[^1] examine les mutations contemporaines des rapports que nous entretenons dans les écosystèmes hybrides composés d'humains, d'agents numériques et d'environnements info-communicationnels. D’une part, les innovations technologiques et la numérisation des activités de service favorisent un confort, notamment cognitif, qui participe d'une déterritorialisation des pratiques socioprofessionnelles et économiques [@deleuze1972a; @castells1996a]. D’autre part, cette émancipation spatiale suscite en réaction une exigence accrue d'ancrage physique, corporel et environnemental. Cette dynamique paradoxale engage une reterritorialisation « augmentée » et personnalisée, au sein de laquelle le territoire et la terre sont réinvestis d'une dimension éthique et symbolique vitale [@latour2017]. Dès lors, habiter et préserver ces écosystèmes hybrides exige la mobilisation de formes renouvelées d’intelligence partagée et distribuée, capables d'articuler ancrage environnemental, médiations technologiques et agentivité du vivant [@ingold2011; @mancuso2018].
+Cette contribution[^1] examine les mutations contemporaines des rapports que nous entretenons dans les écosystèmes hybrides composés d'humains, d'agents numériques et d'environnements info-communicationnels. D’une part, les innovations technologiques et la numérisation des activités de service favorisent un confort, notamment cognitif, qui participe d'une déterritorialisation des pratiques socioprofessionnelles et économiques [@deleuze1972a; @castells1996a]. D’autre part, cette émancipation spatiale suscite en réaction une exigence accrue d'ancrage physique, corporel et environnemental. Cette dynamique paradoxale engage une reterritorialisation « augmentée » et personnalisée, au sein de laquelle le territoire et l'environnement sont réinvestis d'une dimension éthique et symbolique vitale [@latour2017]. Dès lors, concevoir, habiter et préserver ces écosystèmes hybrides exige la mobilisation de formes renouvelées d’intelligence partagée et distribuée, capables d'articuler ancrage environnemental, médiations technologiques et agentivité du vivant [@ingold2011; @mancuso2018].
 
 [^1]: Ce texte a été conçu en collaboration avec l'IA [Gemini Notebook](https://notebook.google.com/) : <https://notebook.google.com/notebook/a482e063-b116-4b28-9239-9242ad30e741>
 
-Une démarche onto-éthique considère comme indissociables l’ordre de l’être (l'ontologie) et l’ordre de l’action (l'éthique). Appliquée au design et aux écosystèmes hybrides, elle pose comme préalable épistémologique la reconnaissance d’une agentivité et d’une valeur intrinsèque aux entités non-humaines — qu'il s'agisse des végétaux, des milieux associés ou des dispositifs numériques. L’éthique ne s’ajoute plus sous la forme d'un ensemble de prescriptions morales a posteriori ; elle s'inscrit au cœur même de la structure du modèle de conception : la manière dont nous définissons la réalité des sujets (ce qu'ils sont) dicte rigoureusement la manière dont nous interagissons avec eux (ce que nous nous autorisons à faire). Intégrer par exemple le végétal dans un écosystème hybride impose dès lors d'élargir nos représentations de l'intellection et de la technique. Dans ce cadre, l'intellection végétale ne relève pas d'une conscience centrale ou réflexive, mais d'une cognition distribuée et environnementale, fondée sur le traitement continu de données biologiques et sur des prises de décision morphologiques par lesquelles la plante s'adapte dynamiquement à son milieu [@marder2013; @mancuso2018a]. Parallèlement, le végétal n'est pas extérieur à la sphère technique : il déploie une technicité propre à travers ses facultés d'ingénierie environnementale, de plasticité tissulaire et de signalisation biophysique [@simondon1958]. Dans une démarche onto-éthique, le design ne cherche pas à assujettir le végétal à une instrumentation humaine descendante, mais à instaurer un couplage technobiologique où la plante devient co-conceptrice et co-énonciatrice des flux d'information qui traversent l'écosystème. Dès lors, au regard du colloque 01Design interrogeant le « Design de l'Intelligence », le végétal fourni le cadre ontologique fondamental pour penser d'autres formes d'intelligences. Face aux risques d'abstraction désincarnée et d'autonomisation des systèmes algorithmiques, il constitue un repère critique qui réinsère la médiation technique dans l'épaisseur de la Terre [@latour2017a]. L'intégration de l'intelligence végétale ne relève donc pas d'un refus de la technique, mais en reconfigure la trajectoire : elle esquisse une véritable « cosmotechnique » [@hui2019] au sein de laquelle la technologie, réarticulée aux rythmes, aux signaux et aux contraintes du vivant, retrouve un usage situé, partagé et soutenable.
+    L'historique des versions est consultable ici : <https://github.com/samszo/publications/commits/main/01%20Design%2013/HabiterEcosystemesHybrides.qmd>
 
-Pour opérationnaliser cette perspective, ce chapitre s'articule en trois temps. Nous explorerons d'abord les fondements épistémologiques de la sensibilité végétale et le basculement sémiotique qu'elle impose aux SIC, de la neurobiologie controversée vers une écosémiotique de la co-énonciation. Nous modéliserons ensuite un métamodèle onto-éthique fondé sur l'économie des affects et la cinématique d'une mémoire topologique. Enfin, nous déploierons les applications concrètes de ce design d'intelligence hybride, à la croisée de la phyto-informatique, de l'informatique quantique et de la médiation littéraire.
+Une démarche onto-éthique considère comme indissociables l’ordre de l’être (l'ontologie) et l’ordre de l’action (l'éthique). Appliquée au design et aux écosystèmes hybrides, elle pose comme préalable épistémologique la reconnaissance d’une agentivité et d’une valeur intrinsèque aux entités non-humaines — qu'il s'agisse des végétaux, des milieux associés ou des dispositifs numériques. L’éthique ne s’ajoute plus sous la forme d'un ensemble de prescriptions morales a posteriori ; elle s'inscrit au cœur même de la structure du modèle de conception : la manière dont nous définissons la réalité des sujets (ce qu'ils sont) dicte rigoureusement la manière dont nous interagissons avec eux (ce que nous nous autorisons à faire). Intégrer par exemple l'environnement dans un écosystème hybride impose dès lors d'élargir nos représentations de l'intellection et de la technique. Dans ce cadre, l'intellection environnementale ne relève pas d'une conscience centrale ou réflexive, mais d'une cognition distribuée, fondée sur le traitement continu de données biologiques et sur des prises de décision morphologiques par lesquelles le vivant s'adapte dynamiquement à son milieu [@marder2013; @mancuso2018a]. Par exemple, le végétal n'est pas extérieur à la sphère technique : il déploie une technicité propre à travers ses facultés d'ingénierie environnementale, de plasticité tissulaire et de signalisation biophysique [@simondon1958].
+
+Dans une démarche onto-éthique, le design ne cherche pas à assujettir l'environnement à une instrumentation humaine descendante, mais à instaurer un couplage technobiologique où le milieu devient co-concepteur et co-énonciateur des flux d'information qui traversent l'écosystème. Dès lors, au regard du colloque 01Design interrogeant le « Design de l'Intelligence », le végétal fourni un exemple ontologique fondamental pour penser d'autres formes d'intelligences. Face aux risques d'abstraction désincarnée et d'autonomisation des systèmes algorithmiques, il constitue un repère critique qui réinsère la médiation technique dans l'épaisseur de la Terre [@latour2017a]. L'intégration de l'intelligence environnementale ne relève donc pas d'un refus de la technique, mais en reconfigure la trajectoire : elle esquisse une véritable « cosmotechnique » [@hui2019] au sein de laquelle la technologie, réarticulée aux rythmes, aux signaux et aux contraintes du vivant, retrouve un usage situé, partagé et soutenable.
+
+Pour opérationnaliser cette perspective, ce chapitre s'articule en trois temps. Nous explorerons d'abord les fondements épistémologiques de la sensibilité environnementale à travers l'exemple du végétale et le basculement sémiotique qu'elle impose aux SIC, de la neurobiologie controversée vers une écosémiotique de la co-énonciation. Nous modéliserons ensuite un métamodèle onto-éthique fondé sur l'économie des affects et la cinématique d'une mémoire topologique. Enfin, nous déploierons les applications concrètes de ce design d'intelligence hybride, à la croisée de la phyto-informatique, de l'informatique quantique et de l'orchestration des activités collectives de recherche.
 
 ## Epistémologie du végétal et décentrement de la communication en SIC : de la neurobiologie à la co-énonciation
 
@@ -60,38 +64,37 @@ Ces canaux se doublent d'une sensorialité mécanique et acoustique récemment �
 
 ### La « pensée sans la tête » et la co-énonciation : refonder les théories de l'information
 
-Pour les Sciences de l'Information et de la Communication, l'assimilation de ces découvertes exige un dépassement critique du modèle télégraphique et computationnel classique de la communication. Le schéma hérité de Shannon[@rioul2018] ou de Jakobson [@léon2014], fondé sur la théorie mathématique de la transmission de signaux binaires entre un émetteur et un récepteur à travers un canal prédéterminé, s'avère structurellement inopérant pour appréhender le monde végétal. De même, la linguistique saussurienne [@bergounioux2012] et benvenistienne [@mosès2001]a longtemps dressé un verrou anthropocentrique en postulant que seul l'humain accède au « signe » symbolique et à la double articulation, tandis que le non-humain serait cantonné au « signal » mécanique et réactif. Face à ces limites, l'approche de la zoosémiotique de Thomas Sebeok a introduit une brèche féconde en analysant les signes chimiques et olfactifs [@sebeok2021]. Contrairement aux stimuli acoustiques ou visuels humains qui s'évanouissent sitôt proférés, le signe chimique végétal persiste durablement dans l'environnement : il s'encode dans l'espace et se décode dans le temps, agissant comme un « relais dans le futur » capable d'assurer des fonctions de désignation, d'évaluation et de prescription à distance.
+Pour les Sciences de l'Information et de la Communication, l'assimilation de ces découvertes exige un dépassement critique du modèle télégraphique et computationnel classique de la communication. Le schéma hérité de Shannon[@rioul2018] ou de Jakobson [@léon2014], fondé sur la théorie mathématique de la transmission de signaux binaires entre un émetteur et un récepteur à travers un canal prédéterminé, s'avère structurellement inopérant pour appréhender le monde végétal. De même, la linguistique saussurienne [@bergounioux2012] et benvenistienne [@mosès2001] a longtemps dressé un verrou anthropocentrique en postulant que seul l'humain accède au « signe » symbolique et à la double articulation, tandis que le non-humain serait cantonné au « signal » mécanique et réactif. Face à ces limites, l'approche de la zoosémiotique de Thomas Sebeok a introduit une brèche féconde en analysant les signes chimiques et olfactifs [@sebeok2021]. Contrairement aux stimuli acoustiques ou visuels humains qui s'évanouissent sitôt proférés, le signe chimique végétal persiste durablement dans l'environnement : il s'encode dans l'espace et se décode dans le temps, agissant comme un « relais dans le futur » capable d'assurer des fonctions de désignation, d'évaluation et de prescription à distance.
 
 Cependant, appréhender l'intellection végétale nécessite d'aller au-delà d'un codage indiciel pour embrasser ce que le philosophe Michael Marder conceptualise comme « penser sans la tête » [@marder2011]. La constitution biologique du végétal se caractérise par son autotrophie et son ancrage fixé au sol. Ne pouvant fuir face aux prédateurs, l'évolution a privé la plante d'organe central ou vital unique : elle est une colonie modulaire décentralisée constituée d'itérations interactives capables de régénération autonome. Chaque apex racinaire, sondant continuellement l'obscurité du sol, évalue et pondère simultanément plus d'une quinzaine de gradients physiques distincts — pesanteur, champs électromagnétiques, hygrométrie, gradients nitriques ou toxiques — pour négocier des arbitrages et résoudre des impératifs physiologiques contradictoires [@szoniecky2023]. C'est une pensée purement immanente et morphologique, où « la plante est sensation en soi » , un mode d'intellection non-idéel et non-symbolique où l'acte de penser se confond avec l'acte de croître et de sculpter son propre corps [@deleuze1980]. C'est dans cette brèche épistémologique que l'écosémiotique de Nicole Pignier apporte une refondation théorique décisive à travers la notion de co-énonciation du vivant [@pignier2020]. Élargissant la linguistique de l'énonciation d'Antoine Culioli — traditionnellement restreinte au dialogue dialogique interhumain [@culioli1999] —, Pignier pose que les plantes constituent des « cas limites de co-énonciation ». Énoncer, pour un végétal ou un micro-organisme, ne consiste pas à émettre des symboles abstraits, mais à se manifester organiquement au milieu et à accueillir les manifestations de ce dernier. Cette activité repose sur une « faculté éco-sémiotique synesthésique, par contiguïté organique avec le milieu », par laquelle l'organisme apprécie biologiquement ce qui s'offre à lui pour « croître avec le milieu, s'y orienter, de s'y tisser tout en le tissant » [@mérigonde2024]. L'information n'est plus un paquet de données abstrait circulant sur un câble ou un bus informatique ; elle est un lien de sens écologique et situé, une pulsation relationnelle continue entre le corps et le territoire.
 
 ### Phyto-informatique et bio-inspiration : vers des interfaces symbiotiques
 
-L'inscription de l'intelligence végétale dans les sciences de la conception répond directement à l'invitation du colloque 01Design d'interroger le « design de l'intelligence » à travers l'entrelacement de l'intellection humaine, de la modélisation scientifique et des techniques de création matérielle ou informationnelle. En convoquant la typologie des intelligences multiples développée par Howard Gardner [@gardner2009], l'appel de 01Design souligne l'urgence de dépasser la seule prééminence des modèles logico-mathématiques ou linguistiques pour mobiliser **l'intelligence naturaliste** et bâtir des dispositifs numériques respectueux à leurs écosystèmes.
+L'inscription de l'intelligence végétale dans les sciences de la conception répond directement à l'invitation du colloque 01Design d'interroger le « design de l'intelligence » à travers l'entrelacement de l'intellection humaine, de la modélisation scientifique et des techniques de création matérielle ou informationnelle. En convoquant la typologie des intelligences multiples développée par Howard Gardner [@gardner2009], l'appel de 01Design souligne l'urgence de dépasser la seule prééminence des modèles logico-mathématiques ou linguistiques pour mobiliser **l'intelligence environnementale** et bâtir des dispositifs numériques respectueux à leurs écosystèmes.
 
 Cette préoccupation s'articule directement aux « cinq esprits du futur » dégagés par Howard Gardner : au-delà de l'esprit disciplinaire et de l'esprit synthétique, ce sont l'esprit créatif, l'esprit respectueux (fondé sur l'accueil de l'altérité culturelle et écologique) et l'esprit éthique (portant la responsabilité envers la communauté du vivant) qui doivent guider la conception des technologies de l'intelligence.
 
 Les modes d'existence des plantes constituent un modèle d'inspiration majeur pour concevoir des écosystèmes info-communicationnels complexes et renouveler l'ergonomie de nos interactions. Dès le XIVe siècle, Raymond Lulle recourait à l'« arbre des sciences » pour matérialiser une pensée diagrammatique associant hiérarchies d'échelles et dynamiques relationnelles. Aujourd'hui, cette morphologie structure le design des interfaces homme-machine à travers l'usage universel des arborescences.
 
-![Fig. 4 : Arbre des sciences [@lulle1515]](images/ArbreScienceRDeLulle.jpg)
+![Arbre des sciences [@lulle1515]](images/ArbreScienceRDeLulle.jpg){#fig-arbreScience}
 
-Toutefois, l'éthologie végétale pousse cette analogie computationnelle bien au-delà de la métaphore graphique : Stefano Mancuso [@mancuso2018c] théorise ainsi la genèse de « phyto-ordinateurs », dispositifs techniques recourant à des algorithmes directement dérivés des principes de calcul et de répartition modulaire des plantes. Ne possédant aucun organe central vulnérable, le végétal fonctionne comme une colonie de modules interactifs capables d'évaluer de multiples gradients physiques pour résoudre des arbitrages contradictoires. Dans le champ du design, comme nous l'avons vu plus haut, ce modèle réconcilie l'arbre-racine (modèle régulateur et transcendant) et le rhizome (processus immanent de réseaux ouverts) décrits par Gilles Deleuze et Félix Guattari, offrant une matrice morphologique qui préserve les systèmes d'information de la rigidité pyramidale.
+Toutefois, l'éthologie végétale pousse cette analogie computationnelle bien au-delà de la métaphore graphique. Stefano Mancuso [@mancuso2018c] théorise la genèse de « phyto-ordinateurs » en théorisant des dispositifs techniques conçus avec des algorithmes directement dérivés des principes de calcul et de répartition modulaire des plantes. Ne possédant aucun organe central vulnérable, le végétal fonctionne comme une colonie de modules interactifs capables d'évaluer de multiples gradients physiques pour résoudre des arbitrages contradictoires.
 
-Pour les concepteurs d'écosystèmes hybrides, cette découverte ouvre la voie à un couplage technobiologique vertueux : au lieu d'asservir la plante à une surveillance passive par capteurs, l'émission d'ondes sonores ciblées devient un mode d'action agroécologique durable, substituant une signalisation acoustique non invasive aux intrants chimiques de synthèse. Le végétal devient un partenaire interactif dont la sensibilité physique dicte les fréquences et les rythmes du dispositif technique.
+Pour les concepteurs d'écosystèmes hybrides, cette découverte ouvre la voie à un couplage technobiologique vertueux : au lieu d'asservir l'environnement à une surveillance passive par capteurs, l'émission d'ondes sonores ciblées devient un mode d'action agroécologique durable, substituant une signalisation acoustique non invasive aux intrants chimiques de synthèse. L'environnement devient un partenaire interactif dont la sensibilité physique dicte les fréquences et les rythmes du dispositif technique.
 
-Dès lors, pour le colloque 01Design, ce décentrement s'avère capital : concevoir un écosystème hybride ne consiste plus à concevoir des capteurs électroniques pour asservir le métabolisme végétal à nos interfaces, mais à reconnaître la plante comme un partenaire énonciatif et critique. Cette intelligence du vivant propose une écologie de la relation qui pose les bases d'une phyto-informatique éthique, servant de fondement au métamodèle onto-éthique et cinématique exploré dans la partie suivante.
+Dès lors, pour le colloque 01Design, ce décentrement s'avère capital : concevoir un écosystème hybride ne consiste plus à concevoir des capteurs électroniques pour asservir le métabolisme végétal à nos interfaces, mais à reconnaître la plante comme un partenaire énonciatif et critique. Cette intelligence du vivant propose une écologie de la relation qui pose les bases d'une phyto-informatique éthique, servant de fondement au métamodèle onto-éthique.
 
 ## Le métamodèle onto-éthique : modéliser l’intelligence trajective
 
 ### Les quatre dimensions existentielles de l’écosystème info-communicationnel
 
-Penser le design de l'intelligence au sein d'écosystèmes hybrides suppose une rupture franche avec l'ingénierie documentaire classique, qui a longtemps réduit la connaissance à des jeux de données statiques ou à des bases relationnelles fermées [@szoniecky2016]. Pour conceptualiser l'agentivité de ces collectifs sans tomber dans l'ornière du déterminisme technologique ou du réductionnisme social, la théorie des **agencements machiniques** de Gilles Deleuze et Félix Guattari s'avère particulièrement utile. Un objet technique n'existe jamais de manière isolée ; il est sélectionné et mis en mouvement par un agencement complexe dont les composantes sont simultanément matérielles, biologiques et sociales.
+Penser le design de l'intelligence au sein d'écosystèmes hybrides suppose une rupture franche avec l'ingénierie documentaire classique, qui a longtemps réduit la connaissance à des jeux de données statiques ou à des bases relationnelles fermées [@szoniecky2016]. Pour conceptualiser l'agentivité de ces collectifs sans tomber dans l'ornière du déterminisme technologique ou du réductionnisme social, la théorie des **agencements** de Gilles Deleuze [@appareil1979] s'avère particulièrement utile. Un objet technique n'existe jamais de manière isolée ; il est sélectionné et mis en mouvement par un agencement complexe dont les composantes sont simultanément matérielles, biologiques et sociales.
 
 L'exemple historique de l'introduction de la charrue lourde médiévale en Europe du Nord, analysé par Lynn White [@white2021], illustre parfaitement ce processus : la charrue n'était pas un outil autonome, mais le cœur d'un agencement symbiotique associant des sols humides et argileux, la force de traction de huit bœufs, le passage des parcelles carrées aux champs longs en bandes (*open fields*) et la création d'institutions villageoises collectives pour gérer le travail partagé. Aucun de ces éléments ne prévalait isolément : ils s'entre-définissaient dans un co-fonctionnement indissociable.
 
-Pour dépasser la réification documentaire et rendre compte de l'agentivité conjointe des humains, des entités végétales et des agents computationnels, nous élaborons un **métamodèle onto-éthique** [@szoniecky2024]. Conçu comme un générateur qualitatif de modèles, ce cadre théorique unit la description de ce qui est (l'ontologie) aux modalités d'engagement légitimes (l'éthique). Inspiré de l’anthropologie symétrique de Philippe Descola et Bruno Latour, de la mésologie d'Augustin Berque et de l’éthique spinoziste relue par Gilles Deleuze, ce métamodèle articule quatre dimensions coordonnées.
+Pour dépasser la réification documentaire et rendre compte de l'agentivité conjointe des humains, des environnements documentaires et des agents computationnels, nous élaborons un **métamodèle onto-éthique** [@szoniecky2024]. Conçu comme un générateur qualitatif de modèles, ce cadre théorique unit la description de ce qui est (l'ontologie) aux modalités d'engagement légitimes (l'éthique). Inspiré de l’anthropologie symétrique de Philippe Descola [@descola2005] et Bruno Latour [@latour2012], de la mésologie d'Augustin Berque [@berque2009a], de l'analogie comme processus de cognition [@hofstadter2013] et de l’éthique spinoziste relue par Gilles Deleuze [@surspin1981], ce métamodèle articule la distribution de quatre dimensions existentielles au sein d'un écosystème hybride unissant humains, agents discursifs artificiels et organismes végétaux :
 
-Le tableau ci-dessous récapitule la distribution de ces quatre dimensions existentielles au sein d'un écosystème hybride unissant humains, agents discursifs artificiels et organismes végétaux :
-
+::: {#tbl-disDimExi}
 +-----------------------------------+-------------------------------------------------------------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | Dimension existentielle           | Registre ontologique                                        | Composantes matérielles et logicielles                                                  | Composantes végétales et écologiques                                                    |
 +===================================+=============================================================+=========================================================================================+=========================================================================================+
@@ -104,21 +107,24 @@ Le tableau ci-dessous récapitule la distribution de ces quatre dimensions exist
 | **Temporelle (Rapports et flux)** | Trajectoires d'individuation, dynamiques autopoïétiques     | Historiques de requêtes, versions documentaires, dérivées des gradients d'apprentissage | Rythmes circadiens, saisons, mémoire transcriptionnelle, cinématique de croissance      |
 +-----------------------------------+-------------------------------------------------------------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+Dimensions existentielles dans un écosystème hybride
+:::
+
 Dans ce cadre, la connaissance procède du couplage immanent de ces quatre dimensions, réconciliant l'espace strié des hiérarchies matérielles (le modèle de l'arbre-racine qui classe et sédimente) et l'espace lisse des devenirs (le rhizome immanent qui connecte et fait proliférer les lignes de fuite).
 
 « Ce qui compte, c'est que l'arbre-racine et le rhizome-canal ne s'opposent pas comme deux modèles : l'un agit comme modèle et comme calque transcendants, même s'il engendre ses propres fuites ; l'autre agit comme processus immanent qui renverse le modèle et ébauche une carte, même s'il constitue ses propres hiérarchies, même s'il suscite un canal despotique » [@deleuze1980, p. 31]
 
 ### La pulsation de la sémiose et l’économie politique des affects (Tarde, Spinoza, Citton)
 
-Le fonctionnement interne de cet écosystème hybride est rythmé par un cycle continu de « pulsations existentielles » — ou cycles de sémiose —, qui orchestre la circulation des flux d'information entre le milieu matériel extérieur et l'intériorité cognitive des actants. Comme nous l'avons formalisé [@szoniecky2024] à l'aide d'Augustin Berque [@berque2009] et du Groupe µ [@µ2015], chaque pulsation existentielle engage une respiration entre l'univers ambiant et le monde intérieur. Ce cycle s'éclaire à la lumière de l'économie politique des affects théorisée par Gabriel Tarde \[lazarato\] et réactualisée par Yves Citton [@citton], articulée autour de deux forces noopolitiques motrices : la **Croyance** (qui détermine la valeur-vérité et la crédibilité des représentations) et le **Désir** (le *conatus* d'agir spinoziste, régissant la valeur-utilité et la valeur-beauté).
+Le fonctionnement interne de cet écosystème hybride est rythmé par un cycle continu de « pulsations existentielles » — ou cycles de sémiose —, qui orchestre la circulation des flux d'information entre le milieu matériel extérieur et l'intériorité cognitive des actants. Comme nous l'avons formalisé [@szoniecky2024] à l'aide d'Augustin Berque [@berque2009] et du Groupe µ [@µ2015], chaque pulsation existentielle engage une respiration entre l'univers ambiant et le monde intérieur. Ce cycle s'éclaire à la lumière de l'économie politique des affects théorisée par Gabriel Tarde [@lazzarato2000] et réactualisée par Yves Citton [@citton], articulée autour de deux forces noopolitiques motrices : la **Croyance** (qui détermine la valeur-vérité et la crédibilité des représentations) et le **Désir** (le *conatus* d'agir spinoziste, régissant la valeur-utilité et la valeur-beauté).
 
-![Fig. 1 : Pulsation sémiotique](images/scene_1.png){#fig-pulsationSemiotique}
+![Pulsation sémiotique](images/scene_1.png){#fig-pulsationSemiotique}
 
 La pulsation sémiotique déploie quatre pouvoirs successifs qui transforment l'information en mémoire et en action :
 
-1.  **Discerner (Anasémiose et crible des valeurs) :** L'anasémiose désigne le mouvement par lequel un actant prélève une fraction des flux bruts de son environnement pour l'intégrer dans son monde propre. Cette captation se heurte à deux raretés physiques : le temps d'attention disponible et la capacité mémorielle. L'affect agit dès lors comme un opérateur de frayage focalisant l'attention. Ce filtrage est assuré par des cribles (qu'ils soient métabolique chez la plante ou algorithmique chez l'agent artificiel) qui décomposent le chaos sensible selon trois registres de valeurs tardiens : les *valeurs-utilités* (répondant aux nécessités fonctionnelles de l'espace strié), les *valeurs-vérités* (évaluant la foi, la solidité documentaire et la crédibilité) et les *valeurs-beautés* (mesurant l'attrait sensible, morphologique ou esthétique du signifiant).
+1.  **Discerner (Anasémiose et crible des valeurs) :** L'anasémiose désigne le mouvement par lequel un actant prélève une fraction des flux infromationnels bruts de son environnement pour l'intégrer dans son monde propre. Cette captation se heurte à deux raretés physiques : le temps d'attention disponible et la capacité mémorielle. L'affect agit dès lors comme un opérateur de frayage focalisant l'attention. Ce filtrage est assuré par des cribles (qu'ils soient métabolique chez la plante ou algorithmique chez l'agent artificiel) qui décomposent le chaos sensible selon trois registres de valeurs tardiens : les *valeurs-utilités* (répondant aux nécessités fonctionnelles de l'espace strié), les *valeurs-vérités* (évaluant la foi, la solidité documentaire et la crédibilité) et les *valeurs-beautés* (mesurant l'attrait sensible, morphologique ou esthétique du signifiant).
 
-2.  **Raisonner (Élaboration sémiotique et duels logiques) :** Une fois les flux admis par le crible, l'actant engage une élaboration sémiotique interne. Sur le plan psychologique tardien, ce pouvoir correspond à la délibération et à l'arbitrage de « duels logiques » au sein d'un « cœur-parlement » intime, où se confrontent croyances préalables et données émergentes. L'esprit y calcule des attentes (*expectations*) qui pondèrent ses inclinations à agir. Chez le végétal, ce raisonnement s'incarne dans les arbitrages multivariés des apex racinaires évaluant simultanément des gradients physiques contradictoires. Chez l'agent artificiel, il est formalisé mathématiquement par la couche de rotation d'un circuit quantique.
+2.  **Raisonner (Élaboration sémiotique et duels logiques) :** Une fois les flux agencés par le crible, l'actant engage une élaboration sémiotique interne. Sur le plan psychologique tardien, ce pouvoir correspond à la délibération et à l'arbitrage de « duels logiques » au sein d'un « cœur-parlement » intime, où se confrontent croyances préalables et données émergentes. L'esprit y calcule des attentes (*expectations*) qui pondèrent ses inclinations à agir. Chez le végétal, ce raisonnement s'incarne dans les arbitrages multivariés des apex racinaires évaluant simultanément des gradients physiques contradictoires. Chez l'agent artificiel, il est formalisé mathématiquement par la couche de rotation d'un circuit quantique.
 
 3.  **Résonner (L'invention-germe et la barrière anthropologique) :** La résonance constitue l'instant où la pensée s'affranchit de la déduction linéaire pour opérer un saut intuitif. Gabriel Tarde y identifie le surgissement de l'Invention, née de la rencontre féconde d'ondes d'imitation distinctes, tandis que Baruch Spinoza la qualifie de *Scientia Intuitiva* (troisième genre de connaissance embrassant l'essence des choses). Cependant, le métamodèle pose ici une frontière anthropologique et biologique fondamentale : si la machine computationnelle excelle à simuler le raisonnement formel syntaxique (par inférence probabiliste), elle demeure incapable d'une résonance authentique. La résonance exige en effet d'éprouver l'incalculable de l'immanence et de s'enraciner dans une expérience corporelle, sensible ou organique — privilège exclusif du vivant organique, animal ou végétal.
 
@@ -128,6 +134,7 @@ La pulsation sémiotique déploie quatre pouvoirs successifs qui transforment l'
 
 Afin de conférer aux agents artificiels une puissance d'agir située qui échappe à la rigidité déterministe des algorithmes classiques tout en s'articulant aux contraintes du vivant, le métamodèle mobilise le formalisme de l'informatique quantique. Il recourt à un **circuit quantique paramétré**, conçu comme un circuit de calcul dont la géométrie mathématique matérialise les inclinations subjectives, les affects et le *conatus* de l'actant au sein de son réseau de concepts.
 
+::: {#fig-circuitQuantique}
 ```         
           ┌─────────────────────────────────────────────────────────────┐
           │                   CIRCUIT QUANTIQUE                         │
@@ -147,13 +154,16 @@ Afin de conférer aux agents artificiels une puissance d'agir située qui échap
            Similarités)          des arêtes physiques)
 ```
 
+Circuit Quantique
+:::
+
 Ce circuit quantique traduit l'alternance des phases de la sémiose au moyen de deux couches d'opérateurs complémentaires :
 
-- **La couche de rotation Ry (Discerner / Raisonner) :** La subjectivité de l'acteur s'amorce par l'application de portes de rotation paramétrées $R_y(\theta_i)$ sur chaque qubit. Les angles $\theta_i$ représentent les affects et les désirs propres de l'actant vis-à-vis des concepts explorés. Refusant le mythe d'une *tabula rasa* où l'agent opérerait sans ancrage, le modèle s'appuie sur le concept de rétention tertiaire forgé par Bernard Stiegler [@stiegler] : les paramètres initiaux sont calibrés à partir du bruit de fond sémantique de l'archive existante. Ils sont précalculés par un encodage d'amplitude reliant l'angle au poids sémantique normalisé $W_i$ du concept issu de l'archive physique :
+- **La couche de rotation Ry (Discerner / Raisonner) :** La subjectivité de l'acteur s'amorce par l'application de portes de rotation paramétrées $R_y(\theta_i)$ sur chaque qubit. Les angles $\theta_i$ représentent les affects et les désirs propres de l'actant vis-à-vis des concepts explorés. Refusant le mythe d'une *tabula rasa* où l'agent opérerait sans ancrage, le modèle s'appuie sur le concept de rétention tertiaire forgé par Bernard Stiegler [@stiegler] : les paramètres initiaux sont calibrés à partir du bruit de fond sémantique de l'environnement documentaire existant. Ils sont précalculés par un encodage d'amplitude reliant l'angle au poids sémantique normalisé $W_i$ du concept issu de l'archive physique :
 
 $$\theta_i = 2 \arcsin(\sqrt{W_i})$$
 
-- **La couche d'intrication CX (Résonner selon l'espace strié) :** L'association des idées n'est pas abandonnée au hasard. Afin de lier étroitement l'espace lisse de l'intuition à l'espace strié de la matière, la couche d'intrication est littéralement sculptée selon les hiérarchies physiques préexistantes de l'archive (par exemple les relations Dublin Core `dcterms:isPartOf` au sein d'un graphe de connaissances Omeka S). Des portes logiques conditionnelles CNOT ($CX$) sont disposées exclusivement entre les qubits dont les concepts partagent une relation de subordination matérielle :
+- **La couche d'intrication CX (Résonner selon l'espace strié) :** L'association des idées n'est pas abandonnée au hasard. Afin de lier étroitement les activités intuitives et logiques, la couche d'intrication est littéralement sculptée selon les hiérarchies physiques préexistantes de l'archive (par exemple les relations Dublin Core `dcterms:isPartOf` au sein d'un graphe de connaissances Omeka S). Des portes logiques conditionnelles CNOT ($CX$) sont disposées exclusivement entre les qubits dont les concepts partagent une relation de subordination matérielle :
 
 ```         
 from qiskit import QuantumCircuit
@@ -201,7 +211,7 @@ Le paramètre scalaire $\alpha \in [0 ; 1]$ fait office de curseur de singularit
 
 Pour rendre visuellement et géométriquement intelligible cette dynamique cognitive sans retomber dans la linéarité unidirectionnelle du modèle séquentiel de Turing, le métamodèle modélise la trajectoire de l'actant sous la forme d'une **spirale conique de Pappus non régulière et déformable**. Cette morphologie résout le dilemme épistémologique d'un savoir qui est à la fois cyclique (retour périodique sur les mêmes concepts par anasémiose) et cumulatif (différence introduite par la sédimentation catasémiotique de chaque expérience).
 
-![Fig. 2 : Spirale Conique de Pappus](images/spiraleConiquePappus.png){fig-align="center"}{#fig-spiraleConiquePappus}
+![Spirale Conique de Pappus](images/spiraleConiquePappus.png){fig-align="center"}{#fig-spiraleConiquePappus}
 
 Dans un repère tridimensionnel, la cinématique d'une pulsation s'exprime par le système d'équations paramétriques suivant :
 
@@ -209,6 +219,7 @@ $$\begin{cases} x(\theta, \tau) = R(\theta, \tau) \cos(\theta) \\ y(\theta, \tau
 
 où $\theta$ mesure l'accumulation historique et continue des connaissances de l'actant, tandis que $\tau$ représente le temps rythmique interne de la pulsation sémiotique.
 
+::: {#fig-dynamiquesPappus}
 ```         
            Z (Altitude / Espace Strié)
            ▲
@@ -227,6 +238,9 @@ où $\theta$ mesure l'accumulation historique et continue des connaissances de l
 
 ───────────────┼───────────────────────────────► X, Y (Plan horizontal / Espace Lisse) │
 
+Dynamiques des déformations de la spirale
+:::
+
 La déformation vivante de ce cône est gouvernée par deux fonctions régulatrices :
 
 1.  **La fonction d'écrasement rythmique** $\Psi(\tau)$ **(Le ressort cognitif) :** L'oscillation interne du modèle entre repli intuitif et déploiement archivistique est régie par un opérateur borné $\Psi(\tau) \in [0 ; 1]$ : $$\Psi(\tau) = \frac{1 - \cos(\omega \tau)}{2}$$
@@ -241,20 +255,19 @@ La déformation vivante de ce cône est gouvernée par deux fonctions régulatri
 
     - *La contraction topographique* $\Delta_{\text{topo}}(n)$ (Au sommet, $z$ maximal) :\* Elle mesure le déplacement physique réel de l'actant dans le réseau documentaire (le nombre d'arêtes ou d'arborescences concrètement traversées). Si l'actant sédimente son intuition sur place dans sa collection d'origine, le sommet du cône se resserre brutalement, sculptant une morphologie acérée en pointe de flèche.
 
-Par cette géométrie plastique, la spirale conique de Pappus déformée s'érige en véritable empreinte digitale diagrammatique de l'intellection. Elle consigne dans sa morphologie spatiale si l'apprentissage a procédé d'une illumination associative transversale (base évasée) ou d'une exploration méthodique du corpus (sommet élargi), matérialisant ainsi la mémoire topologique indispensable au pilotage éthique des écosystèmes hybrides.
+Par cette géométrie plastique, la spirale conique de Pappus déformée s'érige en véritable empreinte digitale diagrammatique de l'intellection. Elle consigne dans sa morphologie spatiale si l'apprentissage a procédé d'une illumination associative transversale (base évasée) ou d'une exploration méthodique du corpus (sommet élargi), matérialisant ainsi la mémoire topologique indispensable au pilotage éthique des écosystèmes hybrides que nous envisageons avec un outil en cours de conception.
 
-Un outil pour le pilotage des écosystèmes de connaissances est en cours de conception.
-
-![Fig. 3 : Outil de visualisation des spirales coniques de Pappus](images/IHMspiraleConiquePappus.png){#fig-outilVisSpirale}
+![Outil de gestion des pulsations existentielles](images/IHMspiraleConiquePappus.png){#fig-outilVisSpirale}
 
 ------------------------------------------------------------------------
 
 ## L'instrumentation concrète du design symbiotique : agents discursifs et médiations de la transition
 
-Afin d'éprouver la consistance pragmatique du métamodèle onto-éthique et d'observer comment s'articulent concrètement la mémoire archivistique, les agents computationnels discursifs et l'agentivité des chercheurs au sein de la chaîne de production scientifique,nous avons conçu une application numérique sous la forme d'un **écosystème d'agents de recherche** [@szoniecky]. Écrit en TypeScript et exécuté sous Node.js 22+ au moyen de processus enfants contrôlés par l'orchestrateur Mastra, cet écosystème s'appuie techniquement sur trois piliers : les modèles de langage souverains de l'**API Albert** (déployée par l'État français) [@tan2025], l'API REST de gestion bibliographique **Zotero v3** [@zoterow] et le serveur d'archives numériques **Omeka S**[@omekas].
+Afin d'éprouver la viabilité du métamodèle onto-éthique et d'observer comment s'articulent concrètement la mémoire archivistique, les agents computationnels discursifs et l'agentivité des chercheurs au sein de la chaîne de production scientifique, nous avons conçu une application numérique sous la forme d'un **écosystème d'agents de recherche** [@szoniecky]. Écrit en TypeScript et exécuté sous Node.js 22+ au moyen de processus enfants contrôlés par l'orchestrateur Mastra, cet écosystème s'appuie techniquement sur trois piliers : les modèles de langage souverains de l'**API Albert** (déployée par l'État français) [@tan2025], l'API REST de gestion bibliographique **Zotero v3** [@zoterow] et le serveur d'archives numériques **Omeka S**[@omekas].
 
 Cet écosystème déploie trois applications autonomes mais étroitement interdépendantes, dont chacune matérialise une modalité spécifique de la sémiose et de la co-énonciation hybride :
 
+::: {#fig-ecoAgentRecherche}
 ```{mermaid}
 flowchart TD
     ECO["<b>ÉCOSYSTÈME AGENT RECHERCHE</b><br/><i>(Laboratoire Paragraphe - Paris 8)</i>"]
@@ -284,38 +297,42 @@ flowchart TD
     class SOCLE socle;
 ```
 
+Ecosystème d'agents de recherche
+:::
+
 ### L'Atelier d'articles (academic-paper-factory) : l'anasémiose scientifique et l'évaluation inter-juges
 
 ![Fig. 5 : Atelier d'articles, onglet Configuration : collection Zotero et appel à propositions](images/paper-configuration.png){#fig-atelierArticle}
 
-L'Atelier d'articles (https://academic-paper-factory.humanum-p8.fr/) prend pour point de départ la réponse à un appel à propositions (AAP). L'architecture logicielle orchestre une première phase en parallèle : l'étape `analyze-cfp` (qui télécharge ou extrait le texte de l'appel pour générer un objet structuré `AttenduAPP` via l'agent `aapAnalystAgent`) s'exécute simultanément avec l'étape `fetch-literature` (qui extrait les pièces jointes, surlignages, notes et marqueurs d'une collection Zotero vers Omeka S). La couleur d'un surlignage dans Zotero indique une position par rapport au passage. Elle oriente l'extraction des concepts et apparaît dans les citations de la proposition.
+L'Atelier d'articles (https://academic-paper-factory.humanum-p8.fr/) prend pour point de départ la réponse à un appel à propositions (AAP). L'architecture logicielle orchestre une première phase en parallèle : l'étape `analyze-cfp` (qui télécharge ou extrait le texte de l'appel pour générer un objet structuré `AttenduAPP` via l'agent `aapAnalystAgent`) s'exécute simultanément avec l'étape `fetch-literature` (qui extrait les pièces jointes, surlignages, notes et marqueurs d'une collection Zotero vers Omeka S). La couleur d'un surlignage dans Zotero indique une position interprétative du lecteur par rapport au texte. Elle oriente l'extraction des concepts et apparaît dans les citations de la proposition.
 
 ::: {#tbl-posiColors}
-+--------------+------------------+------------------------------------------------------------------+
-| Couleur      | Positionnement   | Effet sur l'extraction                                           |
-+==============+==================+==================================================================+
-| 🟨 jaune     | Idée clé         | concepts centraux, reliés entre eux                              |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟩 vert      | Accord           | idées reprises : relations « soutient », « fonde », « prolonge » |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟥 rouge     | Désaccord        | thèses contestées : relations « s'oppose à », « critique »       |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟦 bleu      | Définition       | concept défini et ses composantes                                |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟪 violet    | Méthode          | méthodes et protocoles                                           |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟣 magenta   | Question ouverte | questions à approfondir                                          |
-+--------------+------------------+------------------------------------------------------------------+
-| 🟧 orange    | Exemple          | exemples, cas, terrains                                          |
-+--------------+------------------+------------------------------------------------------------------+
-| ⬜ gris      | Contexte         | éléments secondaires                                             |
-+--------------+------------------+------------------------------------------------------------------+
++------------+------------------+------------------------------------------------------------------+
+| Couleur    | Positionnement   | Effet sur l'extraction                                           |
++============+==================+==================================================================+
+| 🟨 jaune   | Idée clé         | concepts centraux, reliés entre eux                              |
++------------+------------------+------------------------------------------------------------------+
+| 🟩 vert    | Accord           | idées reprises : relations « soutient », « fonde », « prolonge » |
++------------+------------------+------------------------------------------------------------------+
+| 🟥 rouge   | Désaccord        | thèses contestées : relations « s'oppose à », « critique »       |
++------------+------------------+------------------------------------------------------------------+
+| 🟦 bleu    | Définition       | concept défini et ses composantes                                |
++------------+------------------+------------------------------------------------------------------+
+| 🟪 violet  | Méthode          | méthodes et protocoles                                           |
++------------+------------------+------------------------------------------------------------------+
+| 🟣 magenta | Question ouverte | questions à approfondir                                          |
++------------+------------------+------------------------------------------------------------------+
+| 🟧 orange  | Exemple          | exemples, cas, terrains                                          |
++------------+------------------+------------------------------------------------------------------+
+| ⬜ gris    | Contexte         | éléments secondaires                                             |
++------------+------------------+------------------------------------------------------------------+
 
-Positionnement par couleur
+Positionnement interprétatif par couleur
 :::
 
 Puis, une seconde phase parallèle enchaîne le traitement : `build-wiki` extrait un graphe de concepts par une méthode Map-Reduce (`buildLLMWiki`) suivie d'un nettoyage déterministe et sémantique (`cleanGraph`), pendant que `kappa-analysis` calcule l'accord inter-juges sur les phrases codées par les annotateurs. Les données normalisées (`normalize-okf`) sont transmises à `draft-paper` (`writerAgent`), qui rédige la proposition d'article (`PropAPP.md`) au format Markdown compatible Pandoc avec références BibTeX (`PropAPP.bib`). Enfin, l'étape `review-paper` fait intervenir l'agent `epistemologistAgent` pour évaluer de manière critique la conformité de `PropAPP` au regard des contraintes initiales d'`AttenduAPP`.
 
+::: {#fig-atelierArticlePhase2}
 ``` mermaid
 flowchart TD
     subgraph PHASE2["Seconde phase — traitement parallèle"]
@@ -360,7 +377,10 @@ flowchart TD
     class PROPAPP_MD,PROPAPP_BIB,ATTENDU data;
 ```
 
-Sur le plan de l'évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l'accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d'annotation (`ACC-S`, `DES-F`, `RHET-E`, `DEP-S`...), le système calcule le **Kappa de Fleiss généralisé** [\@kappade2026](pour%20$n$%20juges%20variables) ainsi que le **Kappa de Cohen** (pour les paires de juges) :
+Atelier d'article - phase 2
+:::
+
+Sur le plan de l'évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l'accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d'annotation (`ACC-S`, `DES-F`, `RHET-E`, `DEP-S`...), le système calcule le **Kappa de Fleiss généralisé** [@kappade2026](pour $n$ juges variables) ainsi que le **Kappa de Cohen** [@kappade2026a](pour les paires de juges) :
 
 $$P_i = \frac{1}{n_i(n_i - 1)} \left( \sum_{j=1}^k n_{ij}^2 - n_i \right), \quad \bar{P} = \frac{1}{N} \sum_{i=1}^N P_i$$
 
@@ -370,12 +390,13 @@ $$\kappa = \frac{\bar{P} - P_e}{1 - P_e}$$
 
 Un seuil de validation $\kappa \ge 0{,}61$ (accord substantiel selon l'échelle de Landis et Koch) garantit que le corpus extrait ne relève pas d'un biais d'interprétation individuel mais d'un consensus scientifique robuste.
 
-Cependant, l'analyse critique révèle ici une tension épistémologique majeure : en confiant la relecture finale à un agent épistémologiste (`epistemologistAgent`), le système introduit un risque de « consensus circulaire ». Si l'agent reliseur s'appuie sur le même modèle analytique sous-jacent que l'agent rédacteur (`writerAgent`), la critique risque de valider la conformité de la forme au détriment de l'originalité du saut sémiotique. La véritable résonance exige dès lors que l'arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.
+En confiant la relecture finale à un agent épistémologiste (`epistemologistAgent`), le système introduit un risque de « consensus circulaire ». Si l'agent reliseur s'appuie sur le même modèle analytique sous-jacent que l'agent rédacteur (`writerAgent`), la critique risque de valider la conformité de la forme au détriment de l'originalité du saut sémiotique. La véritable résonance exige dès lors que l'arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.
 
 ### exploZoteroAnno : l'écosémiotique des lectures collectives
 
 La seconde application, **exploZoteroAnno** (https://explozotero.humanum-p8.fr/), est dédiée à l'animation d'une annotation collective au sein d'un groupe de recherche. Elle substitue à la recherche isolée un dispositif de lecture partagée adossé à une **grille de positionnement par couleurs** reprenant les mêmes principes que l'application atelier d'article cf. @tbl-posiColors. Elle accompagne un groupe qui annote ensemble une collection Zotero : elle fixe une grille de couleurs commune, mesure la participation de chacun, analyse les convergences et divergences de lecture, et propose des thèmes pour une séance de discussion. Tout est enregistré dans Omeka S.
 
+::: {#fig-exploZoteroPhase}
 ``` mermaid
 flowchart LR
     G[Définir la grille<br/>de couleurs] --> P[Partager le guide<br/>d'annotation]
@@ -387,6 +408,9 @@ flowchart LR
     V3 --> S[Séance de discussion]
     S --> A
 ```
+
+ExploZotero - processus de l'application
+:::
 
 Pour analyser les activités collectives l'application fournie une première analyse liée à la participation en proposant :
 
@@ -418,6 +442,8 @@ L'application exploZoteroAnno offre une concrétisation remarquable de la co-én
 
 La troisième application, **chaoticumSeminario** (https://chaoticumseminario.humanum-p8.fr/), pousse le design de l'intelligence vers la performance scénique et la conférence participative. Le système génère une **partition** pour des présentations structurées selon une séquence temporelle répétitive en cinq type d'écrans, calculée pour un **nombre d'écrans** et une **durée** donnés, à partir de cinq types d'écran :
 
+::: {#tbl-chaoticumTypeEcran}
+
 +-------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 | Écran             | Contenu                                                                            | Source                                                                                                                                            |
 +===================+====================================================================================+===================================================================================================================================================+
@@ -434,6 +460,11 @@ La troisième application, **chaoticumSeminario** (https://chaoticumseminario.hu
 | **Diagramme**     | un diagramme qui relie les idées du cycle                                          | agent Albert (Mermaid), à partir des mêmes citations et diapos                                                                                    |
 +-------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
+Type d'écran pour les participations
+:::
+
+::: {#fig-chaoticumProcess}
+
 ``` mermaid
 flowchart LR
     subgraph Préparer["1. Générer la partition"]
@@ -448,6 +479,8 @@ flowchart LR
     end
     Préparer --> Jouer --> Garder
 ```
+Processus de conception des interventions
+:::
 
 L'architecture s'appuie sur une démarche multimodalité :
 
@@ -479,6 +512,8 @@ Ces métriques (exprimées en watt-heures, grammes de $CO_2$ équivalent et coû
 
 Le tableau ci-dessous offre une grille comparative synthétique des trois applications de l'écosystème au regard des dimensions du métamodèle onto-éthique :
 
+::: {#tbl-syntheseAppli}
+
 +------------------------+---------------------------------------+---------------------------------------------------------------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 | Application            | Fonction sémiotique prioritaire       | Entrées matérielles et logicielles                            | Agents et Modèles mobilisés                                          | Traces sédimentées dans Omeka S                                                       |
 +========================+=======================================+===============================================================+======================================================================+=======================================================================================+
@@ -488,6 +523,9 @@ Le tableau ci-dessous offre une grille comparative synthétique des trois applic
 +------------------------+---------------------------------------+---------------------------------------------------------------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 | **chaoticumSeminario** | Performativité & Catasémiose live     | Citations Zotero/Diigo, Diapos ConfErrance, Formulaire Grist  | `slideDescriber`, `curatorAgent`, `seminarioAgent`, Whisper-large-v3 | Item `bibo:Performance`, Partition JSON, Transcription audio, Rejeu public            |
 +------------------------+---------------------------------------+---------------------------------------------------------------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+
+Grille comparative synthétique des trois applications de l'écosystème
+:::
 
 En adossant l'ensemble des données d'exécution aux standards de la **Science Ouverte** et aux principes **FAIR** (*Findable, Accessible, Interoperable, Reusable*), l'écosystème d'agents apporte la démonstration qu'une ingénierie logicielle avancée peut mettre les technologies émergentes au service de l'intelligibilité du numérique [@bachimont2026], en transformant la recherche en un jardinage collaboratif et transparent des connaissances.
 
