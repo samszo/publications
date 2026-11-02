@@ -531,9 +531,9 @@ Table&nbsp;2: Positionnement interprétatif par couleur
 </figure>
 </div>
 <p>Puis, une seconde phase parallèle enchaîne le traitement : <code>build-wiki</code> extrait un graphe de concepts par une méthode Map-Reduce (<code>buildLLMWiki</code>) suivie d’un nettoyage déterministe et sémantique (<code>cleanGraph</code>), pendant que <code>kappa-analysis</code> calcule l’accord inter-juges sur les phrases codées par les annotateurs. Les données normalisées (<code>normalize-okf</code>) sont transmises à <code>draft-paper</code> (<code>writerAgent</code>), qui rédige la proposition d’article (<code>PropAPP.md</code>) au format Markdown compatible Pandoc avec références BibTeX (<code>PropAPP.bib</code>). Enfin, l’étape <code>review-paper</code> fait intervenir l’agent <code>epistemologistAgent</code> pour évaluer de manière critique la conformité de <code>PropAPP</code> au regard des contraintes initiales d’<code>AttenduAPP</code>.</p>
-<div id="fig-exploZoteroPhase2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-atelierArticlePhase2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-exploZoteroPhase2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-atelierArticlePhase2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <pre class="mermaid"><code>flowchart TD
     subgraph PHASE2["Seconde phase — traitement parallèle"]
         direction LR
@@ -576,21 +576,24 @@ Table&nbsp;2: Positionnement interprétatif par couleur
     class NORM,DRAFT,REVIEW agent;
     class PROPAPP_MD,PROPAPP_BIB,ATTENDU data;</code></pre>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploZoteroPhase2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Explozotero - phase 2
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-atelierArticlePhase2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Atelier d’article - phase 2
 </figcaption>
 </figure>
 </div>
-<p>Sur le plan de l’évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l’accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d’annotation (<code>ACC-S</code>, <code>DES-F</code>, <code>RHET-E</code>, <code>DEP-S</code>…), le système calcule le <strong>Kappa de Fleiss généralisé</strong> <a href="pour%20$n$%20juges%20variables"><span class="citation" data-cites="kappade2026"><em>Kappa de Fleiss</em> (<span>2026</span>)</span></a> ainsi que le <strong>Kappa de Cohen</strong> (pour les paires de juges) :</p>
+<p>Sur le plan de l’évaluation sémiotique, le système apporte une rigueur méthodologique cruciale en formalisant l’accord inter-juges. Lorsque plusieurs chercheurs annotent une bibliothèque de groupe Zotero en attribuant des codes d’annotation (<code>ACC-S</code>, <code>DES-F</code>, <code>RHET-E</code>, <code>DEP-S</code>…), le système calcule le <strong>Kappa de Fleiss généralisé</strong> <a href="pour%20$n$%20juges%20variables"><span class="citation" data-cites="kappade2026"><em>Kappa de Fleiss</em> (<span>2026</span>)</span></a> ainsi que le <strong>Kappa de Cohen</strong> <a href="pour%20les%20paires%20de%20juges"><span class="citation" data-cites="kappade2026a"><em>Kappa de Cohen</em> (<span>2026</span>)</span></a> :</p>
 <p><span class="math display">\[P_i = \frac{1}{n_i(n_i - 1)} \left( \sum_{j=1}^k n_{ij}^2 - n_i \right), \quad \bar{P} = \frac{1}{N} \sum_{i=1}^N P_i\]</span></p>
 <p><span class="math display">\[P_e = \sum_{j=1}^k p_j^2 \quad \text{avec} \quad p_j = \frac{1}{N n} \sum_{i=1}^N n_{ij}\]</span></p>
 <p><span class="math display">\[\kappa = \frac{\bar{P} - P_e}{1 - P_e}\]</span></p>
 <p>Un seuil de validation <span class="math inline">\(\kappa \ge 0{,}61\)</span> (accord substantiel selon l’échelle de Landis et Koch) garantit que le corpus extrait ne relève pas d’un biais d’interprétation individuel mais d’un consensus scientifique robuste.</p>
-<p>Cependant, l’analyse critique révèle ici une tension épistémologique majeure : en confiant la relecture finale à un agent épistémologiste (<code>epistemologistAgent</code>), le système introduit un risque de « consensus circulaire ». Si l’agent reliseur s’appuie sur le même modèle analytique sous-jacent que l’agent rédacteur (<code>writerAgent</code>), la critique risque de valider la conformité de la forme au détriment de l’originalité du saut sémiotique. La véritable résonance exige dès lors que l’arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.</p>
+<p>En confiant la relecture finale à un agent épistémologiste (<code>epistemologistAgent</code>), le système introduit un risque de « consensus circulaire ». Si l’agent reliseur s’appuie sur le même modèle analytique sous-jacent que l’agent rédacteur (<code>writerAgent</code>), la critique risque de valider la conformité de la forme au détriment de l’originalité du saut sémiotique. La véritable résonance exige dès lors que l’arbitrage humain réinjecte sa propre interprétation face aux désaccords révélés par le fichier CSV de confusion des codes.</p>
 </section>
 <section id="explozoteroanno-lécosémiotique-des-lectures-collectives" class="level3">
 <h3 class="anchored" data-anchor-id="explozoteroanno-lécosémiotique-des-lectures-collectives">exploZoteroAnno : l’écosémiotique des lectures collectives</h3>
 <p>La seconde application, <strong>exploZoteroAnno</strong> (https://explozotero.humanum-p8.fr/), est dédiée à l’animation d’une annotation collective au sein d’un groupe de recherche. Elle substitue à la recherche isolée un dispositif de lecture partagée adossé à une <strong>grille de positionnement par couleurs</strong> reprenant les mêmes principes que l’application atelier d’article cf. <a href="#tbl-posiColors" class="quarto-xref">Table&nbsp;2</a>. Elle accompagne un groupe qui annote ensemble une collection Zotero : elle fixe une grille de couleurs commune, mesure la participation de chacun, analyse les convergences et divergences de lecture, et propose des thèmes pour une séance de discussion. Tout est enregistré dans Omeka S.</p>
+<div id="fig-exploZoteroPhase" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exploZoteroPhase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <pre class="mermaid"><code>flowchart LR
     G[Définir la grille&lt;br/&gt;de couleurs] --&gt; P[Partager le guide&lt;br/&gt;d'annotation]
     P --&gt; A["Annotation collective&lt;br/&gt;dans Zotero (groupe)"]
@@ -600,6 +603,12 @@ Figure&nbsp;8: Explozotero - phase 2
     R --&gt; V3[Thèmes de discussion]
     V3 --&gt; S[Séance de discussion]
     S --&gt; A</code></pre>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploZoteroPhase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: ExploZotero - processus de l’application
+</figcaption>
+</figure>
+</div>
 <p>Pour analyser les activités collectives l’application fournie une première analyse liée à la participation en proposant :</p>
 <ul>
 <li>chiffres clés : collaborateurs, surlignages, notes, documents annotés, couleurs hors grille ;</li>
@@ -614,7 +623,7 @@ Figure&nbsp;8: Explozotero - phase 2
 <img src="images/explo-participation.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploZoteroParticipation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Fig. 6 : ExploZotero - Onglet Participation : chiffres clés, annotations par collaborateur et chronologie
+Figure&nbsp;10: Fig. 6 : ExploZotero - Onglet Participation : chiffres clés, annotations par collaborateur et chronologie
 </figcaption>
 </figure>
 </div>
@@ -634,7 +643,7 @@ Figure&nbsp;9: Fig. 6 : ExploZotero - Onglet Participation : chiffres clés, ann
 <img src="img/explo-collaborations.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploZoteroCollaborations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matrice et paires de collaborateurs
+Figure&nbsp;11: ExploZotero - Onglet Collaborations : passages en commun, matrice et paires de collaborateurs
 </figcaption>
 </figure>
 </div>
@@ -644,6 +653,12 @@ Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matric
 <section id="chaoticumseminario-la-conférence-jouée-et-la-performativité-scénique-du-vivant" class="level3">
 <h3 class="anchored" data-anchor-id="chaoticumseminario-la-conférence-jouée-et-la-performativité-scénique-du-vivant">chaoticumSeminario : la conférence jouée et la performativité scénique du vivant</h3>
 <p>La troisième application, <strong>chaoticumSeminario</strong> (https://chaoticumseminario.humanum-p8.fr/), pousse le design de l’intelligence vers la performance scénique et la conférence participative. Le système génère une <strong>partition</strong> pour des présentations structurées selon une séquence temporelle répétitive en cinq type d’écrans, calculée pour un <strong>nombre d’écrans</strong> et une <strong>durée</strong> donnés, à partir de cinq types d’écran :</p>
+<div id="tbl-chaoticumTypeEcran" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-chaoticumTypeEcran-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Type d’écran pour les participations
+</figcaption>
+<div aria-describedby="tbl-chaoticumTypeEcran-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 7%">
@@ -686,6 +701,12 @@ Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matric
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
+<div id="fig-chaoticumProcess" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chaoticumProcess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <pre class="mermaid"><code>flowchart LR
     subgraph Préparer["1. Générer la partition"]
         C[Citations Zotero] --&gt; Q
@@ -698,6 +719,12 @@ Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matric
         O[(Omeka S&lt;br/&gt;partition, séances)] --&gt; RJ[Rejouer une séance]
     end
     Préparer --&gt; Jouer --&gt; Garder</code></pre>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chaoticumProcess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Processus de conception des interventions
+</figcaption>
+</figure>
+</div>
 <p>L’architecture s’appuie sur une démarche multimodalité :</p>
 <ul>
 <li><p>Un modèle de vision (<code>slideDescriberAgent</code>) analyse la copie d’écran de chaque diapositive et chaque image annotée dans Diigo pour en extraire le titre, les mots-clés et le contenu sémantique visible.</p></li>
@@ -719,6 +746,12 @@ Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matric
 <p><span class="math display">\[\text{Émissions (g CO}_2\text{e)} = \text{Énergie (kWh)} \times \text{Intensité Carbone (g CO}_2\text{e/kWh)}\]</span></p>
 <p>Ces métriques (exprimées en watt-heures, grammes de <span class="math inline">\(CO_2\)</span> équivalent et coût financier simulé) sont publiées au sein du rapport de traitement, consignées dans la propriété <code>curation:data</code> de l’item de configuration d’Omeka S et affichées dans l’interface sous la forme d’équivalences parlantes (temps d’éclairage d’une ampoule LED ou nombre de recharges de smartphone).</p>
 <p>Le tableau ci-dessous offre une grille comparative synthétique des trois applications de l’écosystème au regard des dimensions du métamodèle onto-éthique :</p>
+<div id="tbl-syntheseAppli" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntheseAppli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Grille comparative synthétique des trois applications de l’écosystème
+</figcaption>
+<div aria-describedby="tbl-syntheseAppli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -760,6 +793,9 @@ Figure&nbsp;10: ExploZotero - Onglet Collaborations : passages en commun, matric
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p>En adossant l’ensemble des données d’exécution aux standards de la <strong>Science Ouverte</strong> et aux principes <strong>FAIR</strong> (<em>Findable, Accessible, Interoperable, Reusable</em>), l’écosystème d’agents apporte la démonstration qu’une ingénierie logicielle avancée peut mettre les technologies émergentes au service de l’intelligibilité du numérique <span class="citation" data-cites="bachimont2026">(<a href="#ref-bachimont2026" role="doc-biblioref">Bachimont, 2026</a>)</span>, en transformant la recherche en un jardinage collaboratif et transparent des connaissances.</p>
 <hr>
 </section>
@@ -844,6 +880,9 @@ Hui, Y. (2019). <em>Recursivity and Contingency</em>. Rowman &amp; Littlefield I
 </div>
 <div id="ref-ingold2011" class="csl-entry" role="listitem">
 Ingold, T. (2011). <em>Being Alive</em>. Routledge.
+</div>
+<div id="ref-kappade2026a" class="csl-entry" role="listitem">
+<em>Kappa de Cohen</em>. (2026). <a href="https://fr.wikipedia.org/w/index.php?title=Kappa_de_Cohen&amp;oldid=235159409">https://fr.wikipedia.org/w/index.php?title=Kappa_de_Cohen&amp;oldid=235159409</a>
 </div>
 <div id="ref-kappade2026" class="csl-entry" role="listitem">
 <em>Kappa de Fleiss</em>. (2026). <a href="https://fr.wikipedia.org/w/index.php?title=Kappa_de_Fleiss&amp;oldid=236499092">https://fr.wikipedia.org/w/index.php?title=Kappa_de_Fleiss&amp;oldid=236499092</a>
