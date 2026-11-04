@@ -13,7 +13,7 @@ author:
         country: France
 ---
 
-# Des générateurs chaotiques aux IA génératives : vers une symbiose humains \<-\> agents
+# Des générateurs chaotiques aux IA génératives : vers une symbiose humains, agents et environnement
 
 **Auteur** : Samuel Szoniecky\
 **Affiliation** : Laboratoire Paragraphe, Université Paris 8\
@@ -45,7 +45,7 @@ Afin d'alimenter les débats sur ces questions éthiques, nous montreront commen
 +-------------------------------------------------------------------------+
 |                  Collaborations entre J-P Balpe et S. Szoniecky                    |
 |                                                                         |
-| [1995] PhilosHard : application HyperCard pour la génération de textes philosophiques |
+| [1995] Plastiques d'Espace Numériques : application HyperCard pour la génération de partition multimédia |
 |                         |                                               |
 |                         v                                               |
 | [1997] Le jardin cognitif : cultiver les connaissances communes     |
@@ -82,11 +82,13 @@ Nous détaillerons ce parcours en analysant en quoi ces collaborations ont fait 
 
 ## 2. Archéologie des collaborations avec JP Balpe : De la combinatoire aux environnements de création
 
-### 2.1 Les origines symboliques : Expérimentations et combinatoires textuelles
+### 2.1 Les origines symboliques : Expérimentations de générateurs de partitions
 
-Les premiers travaux d'écriture automatisée que j'ai menés reposaient sur les recherches effectuées lors d'un DEA d'Histoire de l'Art sur John Cage, au cours desquelles j'ai étudié les méthodes aléatoires mises en place par cet artiste pour produire de la musique, des textes, des expositions, des événements. Entre septembre 1995 et et s'inscrivaient dans un contexte très particulier. de la bibliothèque de l'université de Nanterre Paris X où je travaillais dans le cadre d'un service civile pour l'accompagnement des personnes déficiantes. aire de celuaty sur la structuration de sources hétérogènes et sur la quantification du texte. L'interface *PhilosHard* (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.
+Ma première rencontre avec Jean-Pierre Balpe s'est déroulée dans un bar de la rue Saint Denis à Paris. J'avais l'ambition de m'inscrire en thèse pour continuer mes travaux sur l'écriture automatisée. Ceux-ci reposaient sur les recherches effectuées lors d'un DEA d'Histoire de l'Art sur John Cage, au cours desquelles j'ai étudié les méthodes aléatoires mises en place par cet artiste pour produire de la musique, des textes, des expositions, des événements. Entre septembre 1995 et juin 1996, ces recherches s'inscrivaient dans un contexte très particulier : la bibliothèque de l'université de Nanterre Paris X (BUPX) où je travaillais dans le cadre d'un service civile pour l'accompagnement des personnes déficientes. A cette époque, j'ai conçu l'application *PhilosHard* (1996) avec HyperCard [@hypercar2026] pour :
 
-Pensée comme un « pur objet de pratique », l'interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la *Critique de la raison pure* de Kant au sein du cours d'Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » \[19\]. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire \[19\].
+"find a way of writing that, though coming from ideas, is not about them but produces them" [@cage1989]
+
+Pensée comme un « pur objet de pratique », l'interface organisait dans un premier temps l'exploration de six sources documentaires en précisant le nombre de traces documentaires qu'il fallait extraire de ces sources et le processus pour le faire. Les sources étaient par exemple des documents provenant des cours de licence de Philosophie que je suivais à l'époque, des bibliographies et textes personnels, des classifications de bibliothèques (Cote Décimale Universelle de BUPX) ou de la « Grande Mer des Sources » qui était constituée de l'ensemble des données récoltées. Pour le processus d'extraction, il y avait par exemple celui dédié au catalogue de la BUPX sous la forme d'une liste de cote CDU dont je choisissais aléatoirement les items grâce à une fonction aléatoire d'HyperCard. Muni de cette liste, je me rendais dans les rayons de la BUPX pour trouver les livres ayant cette cote afin de choisir aléatoirement un livre, puis une des pages de ce livre dans laquelle je choisissais une phrase en rapport avec le thème de la partition. Sans ordinateur portable, ce travail de collecte en bibliothèque et de choix aléatoire se faisait avec du papier, des stylos et des dés à 10 faces. Dans un deuxième temps, les extraits collectés étaient saisies dans HyperCard pour constituer une base de données HyperCard. Dans un troisième temps, une fois les sources de la partition complétées par le nombre d'extraits définis, j'exécutais cette partition avec un algorithme qui choisissait aléatoirement dans la base de données une des sources, puis un des extraits pour créer une relation séquentielle entre un nombre d'extrait lui aussi choisi aléatoirement. Cette séquence d'extraits constituait une des interprétations possible de la partition. L'outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d'indexation documentaire.
 
 ### 2.2 Détournement créatif des outils bureautiques : L'expérience VBA et Word 97
 
@@ -248,15 +250,15 @@ Cette recherche ouvre plusieurs chantiers méthodologiques et appliqués au sein
 
 ## Bibliographie sélective
 
--   **Balpe, Jean-Pierre.** (1986). *Initiation à la génération de textes en langue naturelle : exemples de programmes en Basic*. Paris : Eyrolles \[12\].
--   **Balpe, Jean-Pierre.** (1990). *Hyperdocuments : hypertextes, hypermédias*. Paris : Eyrolles \[12\].
--   **Balpe, Jean-Pierre.** (1999). *La toile*. Paris : Éditions Cylibris \[12\].
--   **Balpe, Jean-Pierre.** (2000). *Production de sens et informatique*. Université de tous les savoirs (UTLS) \[2, 12\].
--   **Balpe, Jean-Pierre.** (2001). « Le livre est tout le problème... ». *Document numérique*, 5(1-2), 9-15 \[2, 13\].
--   **Balpe, Jean-Pierre.** (2021). « Pour une littérature anoptique ». *Hybrid*, n°7 \[2, 13\].
--   **Card, Stuart K., Mackinlay, J. D., & Shneiderman, B.** (1999). *Readings in Information Visualization: Using Vision to Think*. Morgan Kaufmann \[25\].
--   **Reyes, Everardo, Szoniecky, Samuel, & Balpe, Jean-Pierre.** (2016). "Generative Stein Poems". *Extended Proceedings of the 27th ACM conference on Hypertext and Hypermedia (Hypertext'16)* \[16\].
--   **Saemmer, Alexandra.** (2023). « Écrire avec les modèles de l'esprit encodés dans les dispositifs numériques ». *Sens public* \[17\].
--   **Szoniecky, Samuel.** (2020). *Ecosystèmes d'information et design des connaissances*. Paris : Hermès Science - Lavoisier.
--   **Szoniecky, Samuel, Hachour, Hakim, & Bouhaï, Nasreddine.** (2011). « Générateur hypertextuel pour l'interprétation des médias sociaux dans une topologie sémantique ». *Les Cahiers du numérique*, 7(3-4), 93-121 \[17\].
--   **Szoniecky, Samuel.** (2025). *Des générateurs chaotiques aux IA génératives*. ConfErrance / Colloque international Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie, Université Paris 8 \[1, 18\].
+- **Balpe, Jean-Pierre.** (1986). *Initiation à la génération de textes en langue naturelle : exemples de programmes en Basic*. Paris : Eyrolles \[12\].
+- **Balpe, Jean-Pierre.** (1990). *Hyperdocuments : hypertextes, hypermédias*. Paris : Eyrolles \[12\].
+- **Balpe, Jean-Pierre.** (1999). *La toile*. Paris : Éditions Cylibris \[12\].
+- **Balpe, Jean-Pierre.** (2000). *Production de sens et informatique*. Université de tous les savoirs (UTLS) \[2, 12\].
+- **Balpe, Jean-Pierre.** (2001). « Le livre est tout le problème... ». *Document numérique*, 5(1-2), 9-15 \[2, 13\].
+- **Balpe, Jean-Pierre.** (2021). « Pour une littérature anoptique ». *Hybrid*, n°7 \[2, 13\].
+- **Card, Stuart K., Mackinlay, J. D., & Shneiderman, B.** (1999). *Readings in Information Visualization: Using Vision to Think*. Morgan Kaufmann \[25\].
+- **Reyes, Everardo, Szoniecky, Samuel, & Balpe, Jean-Pierre.** (2016). "Generative Stein Poems". *Extended Proceedings of the 27th ACM conference on Hypertext and Hypermedia (Hypertext'16)* \[16\].
+- **Saemmer, Alexandra.** (2023). « Écrire avec les modèles de l'esprit encodés dans les dispositifs numériques ». *Sens public* \[17\].
+- **Szoniecky, Samuel.** (2020). *Ecosystèmes d'information et design des connaissances*. Paris : Hermès Science - Lavoisier.
+- **Szoniecky, Samuel, Hachour, Hakim, & Bouhaï, Nasreddine.** (2011). « Générateur hypertextuel pour l'interprétation des médias sociaux dans une topologie sémantique ». *Les Cahiers du numérique*, 7(3-4), 93-121 \[17\].
+- **Szoniecky, Samuel.** (2025). *Des générateurs chaotiques aux IA génératives*. ConfErrance / Colloque international Jean-Pierre Balpe, (méta-)auteur : l'écriture infinie, Université Paris 8 \[1, 18\].
