@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,10 +10,16 @@
 
 <title>des_generateurs_chaotiques_aux_ia_generatives</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -47,15 +53,14 @@ div.csl-indent {
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/clipboard/clipboard.min.js"></script>
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/popper.min.js"></script>
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/anchor.min.js"></script>
 <link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="des_generateurs_chaotiques_aux_ia_generatives_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -76,7 +81,7 @@ div.csl-indent {
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author">Samuel Szoniecky <a href="mailto:samuel.szoniecky@univ-paris8.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7643-3342" class="quarto-title-author-orcid" aria-label="ORCID profile for Samuel Szoniecky"> <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -97,8 +102,8 @@ div.csl-indent {
 </header>
 
 
-<section id="des-générateurs-chaotiques-aux-ia-génératives-vers-une-symbiose-humains---agents" class="level1">
-<h1>Des générateurs chaotiques aux IA génératives : vers une symbiose humains &lt;-&gt; agents</h1>
+<section id="des-générateurs-chaotiques-aux-ia-génératives-vers-une-symbiose-humains-agents-et-environnement" class="level1">
+<h1>Des générateurs chaotiques aux IA génératives : vers une symbiose humains, agents et environnement</h1>
 <p><strong>Auteur</strong> : Samuel Szoniecky<br>
 <strong>Affiliation</strong> : Laboratoire Paragraphe, Université Paris 8<br>
 <strong>Cadre</strong> : <em>Jean-Pierre Balpe, (méta-)auteur : l’écriture infinie</em> <strong>Format</strong> : Article scientifique (~30 000 signes) [20]</p>
@@ -119,7 +124,7 @@ div.csl-indent {
 <pre><code>+-------------------------------------------------------------------------+
 |                  Collaborations entre J-P Balpe et S. Szoniecky                    |
 |                                                                         |
-| [1995] PhilosHard : application HyperCard pour la génération de textes philosophiques |
+| [1995] Plastiques d'Espace Numériques : application HyperCard pour la génération de partition multimédia |
 |                         |                                               |
 |                         v                                               |
 | [1997] Le jardin cognitif : cultiver les connaissances communes     |
@@ -151,12 +156,13 @@ div.csl-indent {
 <p>Nous détaillerons ce parcours en analysant en quoi ces collaborations ont fait évoluer nos pouvoirs de discernement, de raisonnement, de résonance et d’agir. Nous utiliserons une méthode d’enquête basée sur une analyse auto-réflexive des évolutions de nos manières d’être à partir d’une modélisation onto-éthique <span class="citation" data-cites="szoniecky2026">(<a href="#ref-szoniecky2026" role="doc-biblioref">Szoniecky, 2026</a>)</span> des pulsations existentielles <span class="citation" data-cites="berque2009">(<a href="#ref-berque2009" role="doc-biblioref">Berque, 2009</a>)</span> dans les étapes clefs définies dans le tableau ci-dessus.</p>
 <hr>
 </section>
-<section id="archéologie-des-pouvoirs-existentiels-de-la-combinatoire-aux-environnements-de-création" class="level2">
-<h2 class="anchored" data-anchor-id="archéologie-des-pouvoirs-existentiels-de-la-combinatoire-aux-environnements-de-création">2. Archéologie des pouvoirs existentiels : De la combinatoire aux environnements de création</h2>
-<section id="les-origines-symboliques-expérimentations-et-combinatoires-textuelles" class="level3">
-<h3 class="anchored" data-anchor-id="les-origines-symboliques-expérimentations-et-combinatoires-textuelles">2.1 Les origines symboliques : Expérimentations et combinatoires textuelles</h3>
-<p>Les premiers travaux de modélisation de l’écriture automatisée reposaient sur la structuration de sources hétérogènes et sur la quantification du texte. L’interface <em>PhilosHard</em> (1996) constitue un témoin remarquable de ces recherches pionnières sous environnement HyperCard.</p>
-<p>Pensée comme un « pur objet de pratique », l’interface organisait la mise en relation séquentielle de six sources littéraires et philosophiques distinctes : des extraits de la <em>Critique de la raison pure</em> de Kant au sein du cours d’Étienne Balibar, des bibliographies et textes personnels, des cours sur la conscience chez Locke et Hegel, des classifications de bibliothèques (Cote Décimale Universelle de Paris X) et la « Grande Mer des Sources » [19]. L’outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d’indexation documentaire [19].</p>
+<section id="archéologie-des-collaborations-avec-jp-balpe-de-la-combinatoire-aux-environnements-de-création" class="level2">
+<h2 class="anchored" data-anchor-id="archéologie-des-collaborations-avec-jp-balpe-de-la-combinatoire-aux-environnements-de-création">2. Archéologie des collaborations avec JP Balpe : De la combinatoire aux environnements de création</h2>
+<section id="les-origines-symboliques-expérimentations-de-générateurs-de-partitions" class="level3">
+<h3 class="anchored" data-anchor-id="les-origines-symboliques-expérimentations-de-générateurs-de-partitions">2.1 Les origines symboliques : Expérimentations de générateurs de partitions</h3>
+<p>Ma première rencontre avec Jean-Pierre Balpe s’est déroulée dans un bar de la rue Saint Denis à Paris. J’avais l’ambition de m’inscrire en thèse pour continuer mes travaux sur l’écriture automatisée. Ceux-ci reposaient sur les recherches effectuées lors d’un DEA d’Histoire de l’Art sur John Cage, au cours desquelles j’ai étudié les méthodes aléatoires mises en place par cet artiste pour produire de la musique, des textes, des expositions, des événements. Entre septembre 1995 et juin 1996, ces recherches s’inscrivaient dans un contexte très particulier : la bibliothèque de l’université de Nanterre Paris X (BUPX) où je travaillais dans le cadre d’un service civile pour l’accompagnement des personnes déficientes. A cette époque, j’ai conçu l’application <em>PhilosHard</em> (1996) avec HyperCard <span class="citation" data-cites="hypercar2026">(<a href="#ref-hypercar2026" role="doc-biblioref"><em>HyperCard</em>, 2026</a>)</span> pour :</p>
+<p>“find a way of writing that, though coming from ideas, is not about them but produces them” <span class="citation" data-cites="cage1989">(<a href="#ref-cage1989" role="doc-biblioref">Cage, 1989</a>)</span></p>
+<p>Pensée comme un « pur objet de pratique », l’interface organisait dans un premier temps l’exploration de six sources documentaires en précisant le nombre de traces documentaires qu’il fallait extraire de ces sources et le processus pour le faire. Les sources étaient par exemple des documents provenant des cours de licence de Philosophie que je suivais à l’époque, des bibliographies et textes personnels, des classifications de bibliothèques (Cote Décimale Universelle de BUPX) ou de la « Grande Mer des Sources » qui était constituée de l’ensemble des données récoltées. Pour le processus d’extraction, il y avait par exemple celui dédié au catalogue de la BUPX sous la forme d’une liste de cote CDU dont je choisissais aléatoirement les items grâce à une fonction aléatoire d’HyperCard. Muni de cette liste, je me rendais dans les rayons de la BUPX pour trouver les livres ayant cette cote afin de choisir aléatoirement un livre, puis une des pages de ce livre dans laquelle je choisissais une phrase en rapport avec le thème de la partition. Sans ordinateur portable, ce travail de collecte en bibliothèque et de choix aléatoire se faisait avec du papier, des stylos et des dés à 10 faces. Dans un deuxième temps, les extraits collectés étaient saisies dans HyperCard pour constituer une base de données HyperCard. Dans un troisième temps, une fois les sources de la partition complétées par le nombre d’extraits définis, j’exécutais cette partition avec un algorithme qui choisissait aléatoirement dans la base de données une des sources, puis un des extraits pour créer une relation séquentielle entre un nombre d’extrait lui aussi choisi aléatoirement. Cette séquence d’extraits constituait une des interprétations possible de la partition. L’outil comptabilisait rigoureusement les paragraphes et les entrées textuelles, préfigurant les systèmes modernes de gestion de contenu et d’indexation documentaire.</p>
 </section>
 <section id="détournement-créatif-des-outils-bureautiques-lexpérience-vba-et-word-97" class="level3">
 <h3 class="anchored" data-anchor-id="détournement-créatif-des-outils-bureautiques-lexpérience-vba-et-word-97">2.2 Détournement créatif des outils bureautiques : L’expérience VBA et Word 97</h3>
@@ -335,6 +341,9 @@ Balpe, J.-P., Saleh, I., &amp; Lelu, A. (1996). <em>Techniques avancées pour l�
 <div id="ref-berque2009" class="csl-entry" role="listitem">
 Berque, A. (2009). Conclusion. Raison trajective et dépassement de la modernité. <em>Alpha</em>, 397–402. <a href="https://shs.cairn.info/ecoumene--9782701151779-page-397">https://shs.cairn.info/ecoumene--9782701151779-page-397</a>
 </div>
+<div id="ref-cage1989" class="csl-entry" role="listitem">
+Cage, J. (1989). <em>Cage autobiographical statement</em>. <a href="https://johncage.org/cage-autobiographical-statement">https://johncage.org/cage-autobiographical-statement</a>
+</div>
 <div id="ref-cassou-noguès2019" class="csl-entry" role="listitem">
 Cassou-Noguès, P. (2019). Le modèle de la carte : Wittgenstein, Deleuze et les neurosciences. <em>Revue de métaphysique et de morale</em>, <em>104</em>(4), 351–361. <a href="https://doi.org/10.3917/rmm.194.0351">https://doi.org/10.3917/rmm.194.0351</a>
 </div>
@@ -346,6 +355,9 @@ Corteel, M. (2025). 6. Le capitalisme cognitif avancé. <em>Poche / Sciences hum
 </div>
 <div id="ref-guattari1989" class="csl-entry" role="listitem">
 Guattari, F. (1989). <em>Cartographies schizoanalytiques</em>. Galilée.
+</div>
+<div id="ref-hypercar2026" class="csl-entry" role="listitem">
+<em>HyperCard</em>. (2026). <a href="https://fr.wikipedia.org/w/index.php?title=HyperCard&amp;oldid=240528367">https://fr.wikipedia.org/w/index.php?title=HyperCard&amp;oldid=240528367</a>
 </div>
 <div id="ref-latour2017" class="csl-entry" role="listitem">
 Latour, B. (2017). <em>Où atterrir ?: Comment s’orienter en politique</em>. La Découverte.
@@ -360,7 +372,7 @@ Roxin, I., &amp; Bersini, H. (2026). <em>IA générative : espace latent, mécan
 Saleh, I. (1992). <em>Les Bases de données avancées</em>. Hermes Sciences Publicat.
 </div>
 <div id="ref-szoniecky2019" class="csl-entry" role="listitem">
-Szoniecky, S. (2019). Métamorphoses et hybridations d<span>’</span>une archive numérique pour sa valorisation&nbsp;: vers des écosystèmes de connaissances. <em>Journal of Human Mediated Interactions</em>, <em>20</em>(1), 77–104. <a href="http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf">http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf</a>
+Szoniecky, S. (2019). Métamorphoses et hybridations d<span>’</span>une archive numérique pour sa valorisation&nbsp;: Vers des écosystèmes de connaissances. <em>Journal of Human Mediated Interactions</em>, <em>20</em>(1), 77–104. <a href="http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf">http://europia.org/RIHM/V20N1/3-RIHM20V1-samszo.pdf</a>
 </div>
 <div id="ref-szoniecky2024" class="csl-entry" role="listitem">
 Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD thesis]. <a href="https://hal.science/tel-05063347">https://hal.science/tel-05063347</a>
@@ -369,7 +381,7 @@ Szoniecky, S. (2024). <em>Modéliser des écosystèmes de connaissance</em> [PhD
 Szoniecky, S. (2026). Du texte au diagramme : modéliser les pouvoirs dans un environnement numérique. <em>Revue Intelligibilité du numérique</em>, <em>N°77</em>. <a href="https://numerev.com/call_for_papers/73/paper_submission/5423">https://numerev.com/call_for_papers/73/paper_submission/5423</a>
 </div>
 <div id="ref-taniguchi" class="csl-entry" role="listitem">
-Taniguchi, T., Hayashi, Y., Hirose, M., Oka, M., Suzuki, K., Witkowski, O., &amp; Tang, A. (n.d.). <em>Symbiotic Alignment via Collective Predictive Coding: A Theoretical Framework for Co-Creative Human<span></span>AI Ecosystems</em>.
+Taniguchi, T., Hayashi, Y., Hirose, M., Oka, M., Suzuki, K., Witkowski, O., &amp; Tang, A. (n.d.). <em>Symbiotic alignment via collective predictive coding: A theoretical framework for co-creative human<span></span>AI ecosystems</em>.
 </div>
 </div></section></div></main>
 <!-- /main column -->
