@@ -29,10 +29,10 @@
      inkscape:deskcolor="#455050"
      inkscape:document-units="mm"
      inkscape:zoom="1.0053654"
-     inkscape:cx="277.51104"
-     inkscape:cy="531.6475"
+     inkscape:cx="277.01371"
+     inkscape:cy="530.65284"
      inkscape:window-width="1680"
-     inkscape:window-height="966"
+     inkscape:window-height="932"
      inkscape:window-x="2069"
      inkscape:window-y="30"
      inkscape:window-maximized="0"
@@ -165,7 +165,10 @@
        width="205.34766"
        height="245.17969"
        x="2.3261743"
-       y="36.351562" /><g
+       y="36.351562"
+       inkscape:export-filename="../../01 Design 13/images/scene_1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><g
        id="g1"
        transform="translate(-0.65792547)"><text
          xml:space="preserve"
